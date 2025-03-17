@@ -41,9 +41,6 @@ namespace _Project.Scripts.Infrastructure
         {
             switch (nextState)
             {
-                case NextState.Game:
-                    _gameplayStateMachine.Enter<StartGameState>();
-                    break;
                 case NextState.GameOver:
                     _gameplayStateMachine.Enter<GameOverState>();
                     break;

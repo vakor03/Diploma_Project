@@ -1,5 +1,4 @@
 ﻿using _Project.Scripts.Infrastructure.StateMachines;
-using _Project.Scripts.Infrastructure.StateMachines.GameplayStates;
 using _Project.Scripts.Infrastructure.StateMachines.GlobalStates;
 using UnityEngine;
 using Zenject;

@@ -20,13 +20,10 @@ namespace _Project.Scripts.Infrastructure.Bootstraps
 
         private void Start()
         {
-            _gameplayStateMachine.RegisterState(_statesFactory.Create<InitGameState>());
-            _gameplayStateMachine.RegisterState(_statesFactory.Create<StartGameState>());
             _gameplayStateMachine.RegisterState(_statesFactory.Create<GamePauseState>());
             _gameplayStateMachine.RegisterState(_statesFactory.Create<GameOverState>());
-            _gameplayStateMachine.RegisterState(_statesFactory.Create<ChoosePowerUpState>());
 
-            _gameplayStateMachine.Enter<InitGameState>();
+            // _gameplayStateMachine.Enter<InitGameState>();
         }
     }
 }
