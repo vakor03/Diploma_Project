@@ -8,6 +8,7 @@ namespace _Project.Scripts.Infrastructure.Installers
     {
         public override void InstallBindings()
         {
+            InputSystemInstaller.Install(Container);
             SeedServiceInstaller.Install(Container);
             LevelGeneratorInstaller.Install(Container);
             PlayerSpawnerInstaller.Install(Container);
