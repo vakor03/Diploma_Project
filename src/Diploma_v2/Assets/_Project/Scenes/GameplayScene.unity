@@ -566,6 +566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GamePlayUI
       objectReference: {fileID: 0}
+    - target: {fileID: 6705306282663399090, guid: e5106201cb020854db4a208ba83a7beb, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8179780982375628801, guid: e5106201cb020854db4a208ba83a7beb, type: 3}
     m_RemovedGameObjects: []

@@ -1,4 +1,6 @@
-﻿using _Project.Scripts.Infrastructure.AssetProviders;
+﻿using _Project.Features.MapGeneration;
+using _Project.Features.MapGeneration.Matrix;
+using _Project.Scripts.Infrastructure.AssetProviders;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Zenject;
 
@@ -6,6 +8,7 @@ namespace _Project.Scripts.Infrastructure.Installers {
     public class ProjectContextInstaller : MonoInstaller<ProjectContextInstaller> {
         public override void InstallBindings() {
             DataInstaller.Install(Container);
+            MatrixInstaller.Install(Container);
 
             BindSceneLoader();
 
