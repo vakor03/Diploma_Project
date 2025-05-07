@@ -20,7 +20,6 @@ namespace _Project.Features.MapGeneration.BSP {
             Rooms = new List<RectInt>();
 
             Matrix = initialMatrix;
-            ClearTiles();
 
             BSPNode root = new(new RectInt(0, 0, Matrix.Width, Matrix.Height));
             List<BSPNode> nodes = new() { root };
@@ -38,14 +37,7 @@ namespace _Project.Features.MapGeneration.BSP {
                 if (leaf.IsLeaf)
                     CreateRoom(leaf, @params.minRoomSize, @params.offsetFromBorders);
 
-            CarveRooms();
             return Rooms;
-        }
-
-        private void ClearTiles() {
-            for (int x = 0; x < Matrix.Width; x++)
-            for (int y = 0; y < Matrix.Height; y++)
-                Matrix[x, y] = 0;
         }
 
         private bool Split(BSPNode node) {
@@ -82,13 +74,6 @@ namespace _Project.Features.MapGeneration.BSP {
             RectInt room = new RectInt(roomX, roomY, roomW, roomH);
             leaf.Room = room;
             Rooms.Add(room);
-        }
-
-        private void CarveRooms() {
-            foreach (RectInt room in Rooms)
-                for (int x = room.x; x < room.xMax; x++)
-                for (int y = room.y; y < room.yMax; y++)
-                    Matrix[x, y] = 1;
         }
     }
 }

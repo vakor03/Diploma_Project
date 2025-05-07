@@ -27,6 +27,21 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             container.Inject(window);
             window.Show();
         }
+        
+        private void OnEnable()
+        {
+            AssemblyReloadEvents.afterAssemblyReload += OnAfterAssemblyReload;
+        }
+
+        private void OnAfterAssemblyReload() {
+            DiContainer container = ConstructContainerForCurrentWindow();
+            container.Inject(this);
+        }
+
+        private void OnDisable()
+        {
+            AssemblyReloadEvents.afterAssemblyReload -= OnAfterAssemblyReload;
+        }
 
         private static DiContainer ConstructContainerForCurrentWindow() {
             DiContainer container = new DiContainer();

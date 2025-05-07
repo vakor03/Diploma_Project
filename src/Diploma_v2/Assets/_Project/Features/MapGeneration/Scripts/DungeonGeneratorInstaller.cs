@@ -1,4 +1,5 @@
 ﻿using _Project.Features.MapGeneration.BSP;
+using _Project.Features.MapGeneration.CA;
 using Zenject;
 
 namespace _Project.Features.MapGeneration {
@@ -6,6 +7,11 @@ namespace _Project.Features.MapGeneration {
         public override void InstallBindings() {
             BindMacroLayoutGenerationService();
             BindGenerationService();
+            BindCaveCarvingService();
+        }
+
+        private void BindCaveCarvingService() {
+            Container.Bind<ICaveRoomCarveService>().To<CellularAutomataCaveGeneratorService>().AsSingle();
         }
 
         private void BindGenerationService() =>
