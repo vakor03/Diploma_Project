@@ -5,6 +5,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         public static class Prefab
         {
             public const string PLAYER_PREFAB = "PlayerPrefab";
+            public const string CAMERA_PREFAB = "CameraPrefab";
         }
 
         public static class Configuration
