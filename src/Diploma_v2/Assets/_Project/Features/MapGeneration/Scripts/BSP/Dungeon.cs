@@ -1,10 +1,25 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using _Project.Features.MapGeneration.Matrix;
 using UnityEngine;
 
 namespace _Project.Features.MapGeneration.BSP {
     public class Dungeon {
         public Matrix<int> Matrix;
-        public List<RectInt> Rooms;
+        public List<Room> Rooms;
+        public List<Tunnel> Tunnels;
+    }
+
+    public class Room {
+        public RectInt PartitionBounds;
+        public RectInt RoomBounds;
+        public List<Vector2Int> Cells;
+        
+        public List<Room> ConnectedRooms; 
+    }
+
+    public class Tunnel {
+        public Vector2Int Start;
+        public Vector2Int End;
     }
 }

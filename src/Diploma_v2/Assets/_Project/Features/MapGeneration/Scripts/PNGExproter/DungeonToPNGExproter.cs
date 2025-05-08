@@ -6,9 +6,16 @@ using UnityEngine;
 
 namespace _Project.Features.MapGeneration.PNGExproter {
     public class DungeonToPNGExporter {
-        public void Export(Dungeon dungeon, string filePath, int scale = 10, Dictionary<int, Color> colorMap = null, Color? borderColor = null) {
-            int rows = dungeon.Matrix.Height;
-            int cols = dungeon.Matrix.Width;
+        private Texture2D _texture;
+        private int _scale;
+        private Color _borderColor;
+        private int _rowCount;
+        private int _colCount;
+        public void Export(Dungeon dungeon, string filePath, int scale1 = 10, Dictionary<int, Color> colorMap = null, Color? borderColor = null) {
+            _rowCount = dungeon.Matrix.Height;
+            _colCount = dungeon.Matrix.Width;
+            
+            _scale = scale1;
 
             if (colorMap == null) {
                 colorMap = new Dictionary<int, Color> {
@@ -17,35 +24,38 @@ namespace _Project.Features.MapGeneration.PNGExproter {
                 };
             }
 
-            Color bColor = borderColor ?? Color.magenta;
-            Texture2D tex = new Texture2D(cols * scale, rows * scale, TextureFormat.RGB24, false) {
+            _borderColor = borderColor ?? Color.magenta;
+            _texture = new Texture2D(_colCount * _scale, _rowCount * _scale, TextureFormat.RGB24, false) {
                 filterMode = FilterMode.Point
             };
 
-            for (int y = 0; y < rows; y++) {
-                for (int x = 0; x < cols; x++) {
+            for (int y = 0; y < _rowCount; y++) {
+                for (int x = 0; x < _colCount; x++) {
                     int value = dungeon.Matrix[x, y];
                     Color c = colorMap.ContainsKey(value) ? colorMap[value] : Color.magenta;
-                    bool inRoom = false;
+                    bool useBorder = false;
                     foreach (var room in dungeon.Rooms) {
-                        if (x >= room.x && x < room.xMax && y >= room.y && y < room.yMax) {
-                            inRoom = true;
+                        if (x >= room.PartitionBounds.x && x < room.PartitionBounds.xMax && y >= room.PartitionBounds.y && y < room.PartitionBounds.yMax) {
+                            useBorder = true;
                             break;
                         }
                     }
-                    for (int dy = 0; dy < scale; dy++) {
-                        for (int dx = 0; dx < scale; dx++) {
-                            int px = x * scale + dx;
-                            int py = (rows - 1 - y) * scale + dy;
-                            bool drawBorder = inRoom && (dx == 0 || dy == 0 || dx == scale - 1 || dy == scale - 1);
-                            tex.SetPixel(px, py, drawBorder ? bColor : c);
-                        }
-                    }
+                    DrawCell(x, y, useBorder, c);
                 }
             }
+            
+            foreach (Room room in dungeon.Rooms) {
+                foreach (Vector2Int cell in room.Cells)
+                    DrawCell(cell, true, Color.green);
+            }
+            
+            foreach (Tunnel dungeonTunnel in dungeon.Tunnels) {
+                DrawCell(dungeonTunnel.Start, false, Color.red);
+                DrawCell(dungeonTunnel.End, false, Color.red);
+            }
 
-            tex.Apply();
-            byte[] bytes = tex.EncodeToPNG();
+            _texture.Apply();
+            byte[] bytes = _texture.EncodeToPNG();
             string dir = Path.GetDirectoryName(filePath);
             if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
             File.WriteAllBytes(filePath, bytes);
@@ -56,5 +66,19 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             Application.OpenURL($"file://{filePath}");
             Debug.Log($"Dungeon PNG exported with room borders to: {filePath}");
         }
+
+        private void DrawCell(int x, int y, bool withBorder, Color c) {
+            for (int dy = 0; dy < _scale; dy++) {
+                for (int dx = 0; dx < _scale; dx++) {
+                    int px = x * _scale + dx;
+                    int py = (_rowCount - 1 - y) * _scale + dy;
+                    bool drawBorder = withBorder && (dx == 0 || dy == 0 || dx == _scale - 1 || dy == _scale - 1);
+                    _texture.SetPixel(px, py, drawBorder ? _borderColor : c);
+                }
+            }
+        }
+
+        private void DrawCell(Vector2Int position, bool withBorder, Color c) =>
+            DrawCell(position.x, position.y, withBorder, c);
     }
 }

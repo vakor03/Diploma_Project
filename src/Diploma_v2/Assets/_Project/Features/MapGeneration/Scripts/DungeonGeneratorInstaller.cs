@@ -1,5 +1,7 @@
 ﻿using _Project.Features.MapGeneration.BSP;
 using _Project.Features.MapGeneration.CA;
+using _Project.Features.MapGeneration.Drukard;
+using _Project.Features.MapGeneration.RoomConnections;
 using Zenject;
 
 namespace _Project.Features.MapGeneration {
@@ -8,11 +10,18 @@ namespace _Project.Features.MapGeneration {
             BindMacroLayoutGenerationService();
             BindGenerationService();
             BindCaveCarvingService();
+            BindRoomConnectorService();
+            BindCorridorGeneratorService();
         }
 
-        private void BindCaveCarvingService() {
+        private void BindCorridorGeneratorService() =>
+            Container.Bind<ICorridorGeneratorService>().To<DrunkardCorridorGeneratorService>().AsSingle();
+
+        private void BindRoomConnectorService() =>
+            Container.Bind<IRoomConnectorService>().To<ClosestRoomConnectorService>().AsSingle();
+
+        private void BindCaveCarvingService() =>
             Container.Bind<ICaveRoomCarveService>().To<CellularAutomataCaveGeneratorService>().AsSingle();
-        }
 
         private void BindGenerationService() =>
             Container.Bind<IDungeonGeneratorService>().To<DungeonGeneratorService>().AsSingle();

@@ -14,6 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <DungeonSize>k__BackingField: {x: 100, y: 100}
   <BspDungeonGeneratorParams>k__BackingField:
-    minLeafSize: 12
-    minRoomSize: 5
+    minLeafSize: 30
+    minRoomSize: 10
+    offsetFromBorders: 0
+  <CACaveRoomParams>k__BackingField:
     offsetFromBorders: 1
+    fillProbability: 0.35
+    steps: 10
+    birthLimit: 4
+    deathLimit: 3

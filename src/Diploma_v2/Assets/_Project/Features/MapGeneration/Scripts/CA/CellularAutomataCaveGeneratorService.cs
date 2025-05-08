@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _Project.Features.MapGeneration.BSP;
 using UnityEngine;
 using _Project.Features.MapGeneration.Matrix;
 using _Project.Features.SeedModule;
@@ -22,16 +23,21 @@ namespace _Project.Features.MapGeneration.CA {
         public CellularAutomataCaveGeneratorService(ISeedService seedService) =>
             _seedService = seedService;
 
-        public void CarveRoom(Matrix<int> matrix, RectInt region, CAConfig config) {
+        public Room CarveRoom(Matrix<int> matrix, RectInt region, CAConfig config) {
             int[,] cells = InitializeCells(region, config);
 
             SmoothCells(ref cells, config);
             List<Vector2Int> largest = GetLargestRegion(cells);
             int[,] mask = CreateRegionMask(cells, largest);
             BlitToMatrix(matrix, region, mask, config.offsetFromBorders);
-            // for (int i = 0; i < cells.GetLength(0); i++)
-            // for (int j = 0; j < cells.GetLength(1); j++)
-            //     matrix[i + region.x + config.offsetFromBorders, j + region.y + config.offsetFromBorders] = cells[i, j];
+            
+            Room room = new Room {
+                PartitionBounds = region,
+                RoomBounds = new RectInt(region.x + config.offsetFromBorders, region.y + config.offsetFromBorders, region.width - config.offsetFromBorders * 2, region.height - config.offsetFromBorders * 2),
+                Cells = largest.ConvertAll(positionLocal => positionLocal + new Vector2Int(region.x + config.offsetFromBorders, region.y + config.offsetFromBorders)),
+            };
+
+            return room;
         }
 
         private int[,] InitializeCells(RectInt region, CAConfig config) {
