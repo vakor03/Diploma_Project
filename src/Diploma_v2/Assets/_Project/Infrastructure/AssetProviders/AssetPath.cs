@@ -10,6 +10,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         public static class Configuration
         {
             public const string PREDEFINED_SEED_CONFIGURATION = "PredefinedSeedConfiguration";
+            public const string LEVEL_CONFIGURATION = "LevelConfiguration_Default";
         }
     }
 }

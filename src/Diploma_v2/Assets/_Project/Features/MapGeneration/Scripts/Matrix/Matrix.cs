@@ -1,4 +1,6 @@
-﻿namespace _Project.Features.MapGeneration.Matrix {
+﻿using System;
+
+namespace _Project.Features.MapGeneration.Matrix {
     public class Matrix<T> : ICloneable<Matrix<T>> {
         private T[,] _matrix;
 
@@ -31,6 +33,44 @@
                 newMatrix._matrix[i, j] = _matrix[i, j];
             
             return newMatrix;
+        }
+
+        
+        public void Crop(Predicate<T> predicate) {
+            int minRow = int.MaxValue, maxRow = int.MinValue;
+            int minCol = int.MaxValue, maxCol = int.MinValue;
+
+            for (int row = 0; row < Height; row++) {
+                for (int col = 0; col < Width; col++) {
+                    if (predicate(_matrix[row, col])) {
+                        if (row < minRow) minRow = row;
+                        if (row > maxRow) maxRow = row;
+                        if (col < minCol) minCol = col;
+                        if (col > maxCol) maxCol = col;
+                    }
+                }
+            }
+
+            if (maxRow < minRow || maxCol < minCol) {
+                _matrix = new T[0, 0];
+                Width = 0;
+                Height = 0;
+                return;
+            }
+
+            int newHeight = maxRow - minRow + 1;
+            int newWidth = maxCol - minCol + 1;
+            T[,] cropped = new T[newHeight, newWidth];
+
+            for (int row = 0; row < newHeight; row++) {
+                for (int col = 0; col < newWidth; col++) {
+                    cropped[row, col] = _matrix[minRow + row, minCol + col];
+                }
+            }
+
+            _matrix = cropped;
+            Height = newHeight;
+            Width = newWidth;
         }
     }
 }

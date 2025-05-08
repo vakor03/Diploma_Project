@@ -1,4 +1,6 @@
 ﻿using _Project.Features.Installers;
+using _Project.Features.MapGeneration;
+using _Project.Features.MapGeneration.Matrix;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Zenject;
 
@@ -12,6 +14,8 @@ namespace _Project.Scripts.Infrastructure.Installers
             SeedServiceInstaller.Install(Container);
             LevelGeneratorInstaller.Install(Container);
             PlayerSpawnerInstaller.Install(Container);
+            MatrixInstaller.Install(Container);
+            DungeonGeneratorInstaller.Install(Container);
 
             BindStatesFactory();
 

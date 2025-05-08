@@ -1,4 +1,5 @@
-﻿using _Project.Features.PlayerModule;
+﻿using _Project.Features.LevelGeneratorModule;
+using _Project.Features.PlayerModule;
 using _Project.Features.SeedModule;
 using Zenject;
 
@@ -10,6 +11,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
 
         private Player _playerPrefab;
         private PredefinedSeedConfiguration _predefinedSeedConfiguration;
+        private LevelConfiguration _levelConfiguration;
 
         public StaticDataService(IAssetProvider assetProvider) =>
             _assetProvider = assetProvider;
@@ -20,11 +22,16 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         public PredefinedSeedConfiguration GetPredefinedSeedConfiguration() =>
             _predefinedSeedConfiguration;
 
+        public LevelConfiguration GetLevelConfiguration() =>
+            _levelConfiguration;
+
         public void Initialize()
         {
             _playerPrefab = _assetProvider.Load<Player>(AssetPath.Prefab.PLAYER_PREFAB);
             _predefinedSeedConfiguration =
                 _assetProvider.Load<PredefinedSeedConfiguration>(AssetPath.Configuration.PREDEFINED_SEED_CONFIGURATION);
+            _levelConfiguration =
+                _assetProvider.Load<LevelConfiguration>(AssetPath.Configuration.LEVEL_CONFIGURATION);
         }
     }
 }

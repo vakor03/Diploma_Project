@@ -20,9 +20,9 @@ namespace _Project.Scripts.Infrastructure.StateMachines.GameplayStates
 
         public void Enter()
         {
+            _levelGenerationService.Generate();
             Vector3 playerSpawnPoint = _playerSpawnPointsService.GetPlayerSpawnPoint();
             _playerSpawnerService.SpawnPlayerAt(playerSpawnPoint);
-            _levelGenerationService.Generate();
         }
 
         public void Exit()

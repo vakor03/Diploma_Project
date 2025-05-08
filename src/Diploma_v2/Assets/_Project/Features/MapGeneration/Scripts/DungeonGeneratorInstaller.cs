@@ -2,6 +2,7 @@
 using _Project.Features.MapGeneration.CA;
 using _Project.Features.MapGeneration.Drukard;
 using _Project.Features.MapGeneration.RoomConnections;
+using _Project.Features.MapGeneration.Tagging;
 using Zenject;
 
 namespace _Project.Features.MapGeneration {
@@ -12,7 +13,11 @@ namespace _Project.Features.MapGeneration {
             BindCaveCarvingService();
             BindRoomConnectorService();
             BindCorridorGeneratorService();
+            BindDungeonTagService();
         }
+
+        private void BindDungeonTagService() =>
+            Container.Bind<IDungeonTagService>().To<DungeonTagService>().AsSingle();
 
         private void BindCorridorGeneratorService() =>
             Container.Bind<ICorridorGeneratorService>().To<DrunkardCorridorGeneratorService>().AsSingle();

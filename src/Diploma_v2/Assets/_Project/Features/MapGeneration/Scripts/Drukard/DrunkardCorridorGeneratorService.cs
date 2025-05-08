@@ -1,4 +1,6 @@
-﻿using _Project.Features.MapGeneration.BSP;
+﻿using System.Collections.Generic;
+using System.Linq;
+using _Project.Features.MapGeneration.BSP;
 using _Project.Features.MapGeneration.Matrix;
 using _Project.Features.SeedModule;
 using UnityEngine;
@@ -14,19 +16,23 @@ namespace _Project.Features.MapGeneration.Drukard {
 
         public Tunnel CarveCorridor(Matrix<int> matrix, Vector2Int start, Vector2Int end, CorridorConfig config)
         {
+            HashSet<Vector2Int> cells = new HashSet<Vector2Int>();
             System.Random rng = _seedService.GetRandom();
             Vector2Int current = start;
-            Vector2Int previousStep = Vector2Int.zero;
-            CarveCellBlock(matrix, current, config.CorridorWidth);
+            CarveCellBlock(matrix, current, config.CorridorWidth, cells);
 
             while (!IsAtTarget(current, end))
             {
                 Vector2Int step = StepTowardsTarget(current, end, rng, config.WanderChance);
                 current = new Vector2Int(current.x + step.x, current.y + step.y);
-                CarveCellBlock(matrix, current, config.CorridorWidth);
+                CarveCellBlock(matrix, current, config.CorridorWidth, cells);
             }
 
-            return new Tunnel { Start = start, End = end };
+            return new Tunnel {
+                Start = start,
+                End = end,
+                Cells = cells.ToList()
+            };
         }
 
         private Vector2Int StepTowardsTarget(Vector2Int current, Vector2Int target, System.Random rng, float wanderChance) {
@@ -66,7 +72,7 @@ namespace _Project.Features.MapGeneration.Drukard {
         }
 
 
-        private void CarveCellBlock(Matrix<int> matrix, Vector2Int center, int width) {
+        private void CarveCellBlock(Matrix<int> matrix, Vector2Int center, int width, HashSet<Vector2Int> corridorCells) {
             int half = width / 2;
             int startOffset = -half;
             int endOffset;
@@ -83,6 +89,7 @@ namespace _Project.Features.MapGeneration.Drukard {
                     int y = center.y + oy;
 
                     if (x >= 0 && y >= 0 && x < matrix.Width && y < matrix.Height) {
+                        corridorCells.Add(new(x, y));
                         matrix[x, y] = FloorTile;
                     }
                 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using _Project.Features.MapGeneration.BSP;
+using _Project.Features.MapGeneration.Tagging;
 using UnityEditor;
 using UnityEngine;
 
@@ -29,30 +30,11 @@ namespace _Project.Features.MapGeneration.PNGExproter {
                 filterMode = FilterMode.Point
             };
 
-            for (int y = 0; y < _rowCount; y++) {
-                for (int x = 0; x < _colCount; x++) {
-                    int value = dungeon.Matrix[x, y];
-                    Color c = colorMap.ContainsKey(value) ? colorMap[value] : Color.magenta;
-                    bool useBorder = false;
-                    foreach (var room in dungeon.Rooms) {
-                        if (x >= room.PartitionBounds.x && x < room.PartitionBounds.xMax && y >= room.PartitionBounds.y && y < room.PartitionBounds.yMax) {
-                            useBorder = true;
-                            break;
-                        }
-                    }
-                    DrawCell(x, y, useBorder, c);
-                }
-            }
-            
-            foreach (Room room in dungeon.Rooms) {
-                foreach (Vector2Int cell in room.Cells)
-                    DrawCell(cell, true, Color.green);
-            }
-            
-            foreach (Tunnel dungeonTunnel in dungeon.Tunnels) {
-                DrawCell(dungeonTunnel.Start, false, Color.red);
-                DrawCell(dungeonTunnel.End, false, Color.red);
-            }
+            DrawOverallMatrix(dungeon, colorMap);
+
+            DrawRooms(dungeon);
+            DrawTunnels(dungeon);
+            DrawTagRules(dungeon);
 
             _texture.Apply();
             byte[] bytes = _texture.EncodeToPNG();
@@ -65,6 +47,44 @@ namespace _Project.Features.MapGeneration.PNGExproter {
 #endif
             Application.OpenURL($"file://{filePath}");
             Debug.Log($"Dungeon PNG exported with room borders to: {filePath}");
+        }
+
+        private void DrawTagRules(Dungeon dungeon) {
+            foreach ((SubSpaceTag tag, List<Vector2Int> value) in dungeon.Tags.TaggedSubSpaces) {
+                foreach (Vector2Int cell in value)
+                    DrawCell(cell, true, Color.yellow);
+            }
+        }
+
+        private void DrawOverallMatrix(Dungeon dungeon, Dictionary<int, Color> colorMap) {
+            for (int y = 0; y < _rowCount; y++)
+            for (int x = 0; x < _colCount; x++) {
+                int value = dungeon.Matrix[x, y];
+                Color c = colorMap.ContainsKey(value) ? colorMap[value] : Color.magenta;
+                bool useBorder = false;
+                foreach (var room in dungeon.Rooms) {
+                    if (x >= room.PartitionBounds.x && x < room.PartitionBounds.xMax && y >= room.PartitionBounds.y && y < room.PartitionBounds.yMax) {
+                        useBorder = true;
+                        break;
+                    }
+                }
+                DrawCell(x, y, useBorder, c);
+            }
+        }
+
+        private void DrawRooms(Dungeon dungeon) {
+            foreach (Room room in dungeon.Rooms)
+            foreach (Vector2Int cell in room.Cells)
+                DrawCell(cell, true, Color.green);
+        }
+
+        private void DrawTunnels(Dungeon dungeon) {
+            foreach (Tunnel dungeonTunnel in dungeon.Tunnels) {
+                foreach (Vector2Int cell in dungeonTunnel.Cells)
+                    DrawCell(cell, true, Color.blue);
+                DrawCell(dungeonTunnel.End, true, Color.red);
+                DrawCell(dungeonTunnel.Start, true, Color.red);
+            }
         }
 
         private void DrawCell(int x, int y, bool withBorder, Color c) {
