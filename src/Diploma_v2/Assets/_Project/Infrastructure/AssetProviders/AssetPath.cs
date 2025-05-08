@@ -14,4 +14,9 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string LEVEL_CONFIGURATION = "LevelConfiguration_Default";
         }
     }
+
+    public enum Layer {
+        Default = 0,
+        Ground = 6,
+    }
 }

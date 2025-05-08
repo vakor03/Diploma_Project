@@ -7,6 +7,9 @@ namespace _Project.Features.InputModule
     {
         public Vector2 GetLookDirection();
         public Vector2 GetMoveDirection();
+        public bool GetJumpPressed();
+        public bool GetJumpReleased();
+        public bool GetJumpHeld();
 
         public event Action OnAttackStarted;
         public event Action OnAttackCanceled;

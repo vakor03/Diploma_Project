@@ -15,6 +15,15 @@ namespace _Project.Features.InputModule
         public Vector2 GetMoveDirection() =>
             _inputSystemActions.Player.Move.ReadValue<Vector2>();
 
+        public bool GetJumpPressed() =>
+            _inputSystemActions.Player.Jump.WasPressedThisFrame();
+
+        public bool GetJumpReleased() =>
+            _inputSystemActions.Player.Jump.WasReleasedThisFrame();
+
+        public bool GetJumpHeld() =>
+            _inputSystemActions.Player.Jump.IsPressed();
+
         public event Action OnAttackStarted;
         public event Action OnAttackCanceled;
 

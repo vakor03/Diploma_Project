@@ -26,6 +26,7 @@ namespace _Project.Features.LevelGeneratorModule.TilemapsBootstrap {
             Tilemap tilemap = _instantiator.InstantiatePrefabForComponent<Tilemap>(tilemapConfiguration.Prefab);
             tilemap.transform.SetParent(grid.transform);
             tilemap.GetComponent<TilemapRenderer>().sortingOrder = tilemapConfiguration.OrderInLayer;
+            tilemap.gameObject.layer = (int)tilemapConfiguration.Layer;
             return tilemap;
         }
 
