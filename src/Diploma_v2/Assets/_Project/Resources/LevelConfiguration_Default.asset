@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2532cfee104eb6810a903a15887ce2, type: 3}
   m_Name: LevelConfiguration_Default
   m_EditorClassIdentifier: 
-  <DungeonGenerationConfiguration>k__BackingField: {fileID: 0}
+  <DungeonGenerationConfiguration>k__BackingField: {fileID: 11400000, guid: 89351d8fe8b37004f95ffe56767753eb, type: 2}
+  <TilePrefab>k__BackingField: {fileID: 9043503128147158215, guid: 4c8865dd8356d3445b3062b7e469f8c7, type: 3}
+  <TilemapsBootstrapConfiguration>k__BackingField: {fileID: 11400000, guid: d31baa35cde63224287c479d5ed8c931, type: 2}
+  <TilesConfiguration>k__BackingField: {fileID: 11400000, guid: dd6f02a1b8bff1a408865bda38142144, type: 2}

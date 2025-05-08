@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b96f030978dc47ce86a9d0fd55ac181a, type: 3}
+  m_Name: TilemapsBootstrapConfiguration_Default
+  m_EditorClassIdentifier: 
+  <GridPrefab>k__BackingField: {fileID: 7978562324975780251, guid: ff9b44c33449988449c10219590f7381, type: 3}
+  <Tilemaps>k__BackingField:
+    _serializedList:
+    - Key: 1
+      Value:
+        Prefab: {fileID: 6743215306492577111, guid: 0feac75855c11ce4aaecf5009cdb5ebc, type: 3}
+        OrderInLayer: 0

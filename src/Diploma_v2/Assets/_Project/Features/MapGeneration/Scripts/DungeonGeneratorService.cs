@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using _Project.Features.MapGeneration.BSP;
 using _Project.Features.MapGeneration.CA;
 using _Project.Features.MapGeneration.Drukard;
@@ -18,7 +19,8 @@ namespace _Project.Features.MapGeneration {
 
         public DungeonGeneratorService(IMatrixFactory matrixFactory,
                                        IMacroLayoutDungeonGenerationService macroLayoutDungeonGenerationService,
-                                       ICaveRoomCarveService caveRoomCarveService, IRoomConnectorService roomConnectorService, ICorridorGeneratorService corridorGeneratorService, IDungeonTagService dungeonTagService) {
+                                       ICaveRoomCarveService caveRoomCarveService, IRoomConnectorService roomConnectorService,
+                                       ICorridorGeneratorService corridorGeneratorService, IDungeonTagService dungeonTagService) {
             _matrixFactory = matrixFactory;
             _macroLayoutDungeonGenerationService = macroLayoutDungeonGenerationService;
             _caveRoomCarveService = caveRoomCarveService;
@@ -30,18 +32,20 @@ namespace _Project.Features.MapGeneration {
         public Dungeon GenerateDungeon(DungeonGenerationConfiguration config) {
             Matrix<int> dungeonMatrix = _matrixFactory.CreateMatrix<int>(config.DungeonSize.x, config.DungeonSize.y);
             List<RectInt> macroGroup = _macroLayoutDungeonGenerationService.Generate(dungeonMatrix, config.BspDungeonGeneratorParams);
-            List<Room> rooms = macroGroup.ConvertAll(room => _caveRoomCarveService.CarveRoom(dungeonMatrix, room, config.CACaveRoomParams));
+            List<Room> rooms = macroGroup.Select(room => _caveRoomCarveService.CarveRoom(dungeonMatrix, room, config.CACaveRoomParams))
+                .Where(room => room.Cells.Count > 0).ToList();
             List<(Vector2Int start, Vector2Int end)> connections = _roomConnectorService.GetConnections(rooms);
-            List<Tunnel> tunnels = connections.ConvertAll(tunnelEnds=>_corridorGeneratorService.CarveCorridor(dungeonMatrix, tunnelEnds.start, tunnelEnds.end, config.CorridorParams));
-            
+            List<Tunnel> tunnels = connections.ConvertAll(tunnelEnds =>
+                _corridorGeneratorService.CarveCorridor(dungeonMatrix, tunnelEnds.start, tunnelEnds.end, config.CorridorParams));
+
             Dungeon dungeon = new Dungeon() {
                 Matrix = dungeonMatrix,
                 Rooms = rooms,
                 Tunnels = tunnels,
             };
-            
-            DungeonTags dungeonTags = _dungeonTagService.TagAllRegions(dungeon,CreateTagRules(),CreateSubSpaceTagRules());
-            
+
+            DungeonTags dungeonTags = _dungeonTagService.TagAllRegions(dungeon, CreateTagRules(), CreateSubSpaceTagRules());
+
             dungeon.Tags = dungeonTags;
 
             return dungeon;
@@ -52,7 +56,7 @@ namespace _Project.Features.MapGeneration {
             rules.Add(new InitialRoomTagRule());
             return rules;
         }
-        
+
         private List<IRoomSubSpaceTagRule> CreateSubSpaceTagRules() {
             List<IRoomSubSpaceTagRule> rules = new();
             rules.Add(new PlayerPositionSubSpaceTagRule());

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using _Project.Extensions.EnumerableExtensions;
 using _Project.Features.MapGeneration.BSP;
+using _Project.Features.SeedModule;
 using UnityEngine;
 
 namespace _Project.Features.MapGeneration.Tagging {
@@ -9,6 +11,11 @@ namespace _Project.Features.MapGeneration.Tagging {
 
     public class DungeonTagService : IDungeonTagService {
         private List<IRoomTagRule> _roomTagRules;
+        private readonly ISeedService _seedService;
+        public DungeonTagService(ISeedService seedService) {
+            _seedService = seedService;
+        }
+
         public DungeonTags TagAllRegions(Dungeon dungeon, List<IRoomTagRule> roomTagRules, List<IRoomSubSpaceTagRule> roomSubSpaceTagRules) {
             DungeonTags dungeonTags = new();
             foreach (IRoomTagRule roomTagRule in roomTagRules)
@@ -16,11 +23,11 @@ namespace _Project.Features.MapGeneration.Tagging {
             foreach (IRoomSubSpaceTagRule roomSubSpaceTagRule in roomSubSpaceTagRules)
                 roomSubSpaceTagRule.Context = dungeon;
 
-            foreach (IRoomTagRule roomTagRule in roomTagRules)
+            foreach (IRoomTagRule roomTagRule in roomTagRules.InRandomOrder(_seedService.GetRandom()))
                 ApplyTagRule(roomTagRule, dungeon.Rooms, dungeonTags);
             
-            foreach (Room dungeonRoom in dungeon.Rooms)
-            foreach (IRoomSubSpaceTagRule roomSubSpaceTagRule in roomSubSpaceTagRules)
+            foreach (Room dungeonRoom in dungeon.Rooms.InRandomOrder(_seedService.GetRandom()))
+            foreach (IRoomSubSpaceTagRule roomSubSpaceTagRule in roomSubSpaceTagRules.InRandomOrder(_seedService.GetRandom()))
                 ApplySubSpaceTagRule(roomSubSpaceTagRule, dungeonRoom, dungeonTags);
 
             return dungeonTags;
@@ -34,8 +41,9 @@ namespace _Project.Features.MapGeneration.Tagging {
                     appliedCount++;
                 }
 
-                if (appliedCount >= roomTagRule.MaxCount)
+                if (appliedCount >= roomTagRule.MaxCount) {
                     break;
+                }
             }
         }
         

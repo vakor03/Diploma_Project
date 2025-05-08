@@ -5,21 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/LevelGenerationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/LevelGenerationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/Dungeon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/Dungeon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Drukard/DrunkardCorridorGeneratorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Drukard/DrunkardCorridorGeneratorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Validator/Editor/Config/AutomationConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Validator/Editor/Config/AutomationConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Validator/Editor/Profiles/Main Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Validator/Editor/Profiles/Main Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/ILevelGenerationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/ILevelGenerationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/ILevelGenerationService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/ILevelGenerationService.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/LevelConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/LevelConfiguration.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelConfiguration.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/LevelGenerationService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/LevelGenerationService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/GameResources/DungeonGenerationConfiguration_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/GameResources/DungeonGenerationConfiguration_Default.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Matrix/Matrix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Matrix/Matrix.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/DungeonToPNGExproter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/DungeonToPNGExproter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerSpawnerModule/PlayerSpawnPointsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerSpawnerModule/PlayerSpawnPointsService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/IStaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/DungeonTagService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/DungeonTagService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/InitGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/InitGameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/LevelConfiguration_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/LevelConfiguration_Default.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +52,17 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Features/WeaponModule/SelfRegisterWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap.extras@13634da7dbe0/Runtime/Tiles/RuleTile/RuleTile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@e2c83221d2dc/InputSystem/InputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13c0c460649d4ce49f991e2c222fa63546ae00/18/94a5785d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/20/3a0803a8/Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/48/d8a93664/Vector2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/e5/a0b2f47f/RectInt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/fe/4716d0e7/Color.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95707308f6f3498991e9df8902fe97ba9b8e00/02/baaa5861/AssetDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95707308f6f3498991e9df8902fe97ba9b8e00/11/f65c0546/CompilationPipeline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95707308f6f3498991e9df8902fe97ba9b8e00/ef/e62b56f0/PlayModeStateChange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95707308f6f3498991e9df8902fe97ba9b8e00/fb/1a73b402/EditorApplication.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d5777de7a100410290026b63ce3a48256000/63/a7c34a3d/NativeClassAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/Telegram Desktop/Voronoi.cs" root0="SKIP_HIGHLIGHTING" />
@@ -66,23 +79,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "XThreadsFramesViewSplitterKey": "0.42319748",
-    "git-widget-placeholder": "development/EnemyAI",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.42319748&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development/EnemyAI&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Unity.exe" />
@@ -120,10 +133,10 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21832">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10584">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="21832" />
+      <option name="pid" value="10584" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
         <list>
@@ -151,6 +164,7 @@
       <workItem from="1746634384196" duration="12396000" />
       <workItem from="1746653141103" duration="2837000" />
       <workItem from="1746700146584" duration="16073000" />
+      <workItem from="1746730640470" duration="7160000" />
     </task>
     <servers />
   </component>
@@ -170,83 +184,18 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/WeaponModule/SelfRegisterWeapon.cs</url>
-          <line>11</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\WeaponModule\SelfRegisterWeapon.cs" containingFunctionPresentation="Method 'Awake'">
-            <startOffsets>
-              <option value="285" />
-            </startOffsets>
-            <endOffsets>
-              <option value="328" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/LevelGenerationService.cs</url>
-          <line>33</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\LevelGeneratorModule\LevelGenerationService.cs" containingFunctionPresentation="Method 'SpawnSquaresFromMatrix'">
-            <startOffsets>
-              <option value="1618" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1619" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/DungeonTagService.cs</url>
-          <line>89</line>
+          <line>97</line>
           <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\MapGeneration\Scripts\Tagging\DungeonTagService.cs" containingFunctionPresentation="Method 'IsValid'">
             <startOffsets>
-              <option value="3534" />
+              <option value="3922" />
             </startOffsets>
             <endOffsets>
-              <option value="3569" />
+              <option value="3957" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/DungeonTagService.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\MapGeneration\Scripts\Tagging\DungeonTagService.cs" containingFunctionPresentation="Method 'TagAllRegions'">
-            <startOffsets>
-              <option value="1193" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1261" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/DungeonTagService.cs</url>
-          <line>42</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\MapGeneration\Scripts\Tagging\DungeonTagService.cs" containingFunctionPresentation="Method 'ApplySubSpaceTagRule'">
-            <startOffsets>
-              <option value="1923" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1944" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/DungeonTagService.cs</url>
-          <line>45</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\MapGeneration\Scripts\Tagging\DungeonTagService.cs" containingFunctionPresentation="Method 'ApplySubSpaceTagRule'">
-            <startOffsets>
-              <option value="2135" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2205" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />

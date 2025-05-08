@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace _Project.Features.MapGeneration.Matrix {
     public class Matrix<T> : ICloneable<Matrix<T>> {
@@ -10,6 +12,8 @@ namespace _Project.Features.MapGeneration.Matrix {
         public T[,] ToArray() =>
             _matrix;
 
+        public T this[int i, int j] { get => _matrix[i, j]; set => _matrix[i, j] = value; }
+
         public Matrix(int width, int height, T fillValue = default) {
             Width = width;
             Height = height;
@@ -17,15 +21,7 @@ namespace _Project.Features.MapGeneration.Matrix {
             _matrix = new T[height, width];
             FillMatrix(fillValue);
         }
-        
-        private void FillMatrix(T value) {
-            for (int i = 0; i < _matrix.GetLength(0); i++)
-            for (int j = 0; j < _matrix.GetLength(1); j++)
-                _matrix[i, j] = value;
-        }
 
-        public T this[int i, int j] { get => _matrix[i, j]; set => _matrix[i, j] = value; }
-        
         public Matrix<T> Clone() {
             Matrix<T> newMatrix = new Matrix<T>(_matrix.GetLength(0), _matrix.GetLength(1));
             for (int i = 0; i < _matrix.GetLength(0); i++)
@@ -34,8 +30,21 @@ namespace _Project.Features.MapGeneration.Matrix {
             
             return newMatrix;
         }
-
         
+        public IEnumerable<Vector2Int> GetAllIndices(Predicate<T> predicate) {
+            for (int i = 0; i < _matrix.GetLength(0); i++)
+            for (int j = 0; j < _matrix.GetLength(1); j++)
+                if (predicate(_matrix[i, j]))
+                    yield return new Vector2Int(i, j);
+        }
+
+        private void FillMatrix(T value) {
+            for (int i = 0; i < _matrix.GetLength(0); i++)
+            for (int j = 0; j < _matrix.GetLength(1); j++)
+                _matrix[i, j] = value;
+        }
+
+
         public void Crop(Predicate<T> predicate) {
             int minRow = int.MaxValue, maxRow = int.MinValue;
             int minCol = int.MaxValue, maxCol = int.MinValue;

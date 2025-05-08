@@ -1,10 +1,11 @@
 ﻿using _Project.Features.Installers;
+using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
 using _Project.Features.MapGeneration;
 using _Project.Features.MapGeneration.Matrix;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Zenject;
 
-namespace _Project.Scripts.Infrastructure.Installers
+namespace _Project.Infrastructure.SceneContexts.Scripts
 {
     public class GameplayInstaller : MonoInstaller
     {
@@ -16,6 +17,7 @@ namespace _Project.Scripts.Infrastructure.Installers
             PlayerSpawnerInstaller.Install(Container);
             MatrixInstaller.Install(Container);
             DungeonGeneratorInstaller.Install(Container);
+            TilemapsInstaller.Install(Container);
 
             BindStatesFactory();
 
