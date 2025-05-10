@@ -20,3 +20,13 @@ MonoBehaviour:
   accelInAir: 0.316
   deccelInAir: 0.385
   doConserveMomentum: 0
+  jumpForce: 14
+  jumpCutMultiplier: 0.4
+  coyoteTime: 0.15
+  jumpBufferTime: 0.12
+  maxAirJumps: 10
+  jumpHangTimeThreshold: 1.5
+  jumpHangAccelerationMult: 1.3
+  jumpHangMaxSpeedMult: 1.2
+  fallMultiplier: 1.7
+  fastFallMultiplier: 2.5

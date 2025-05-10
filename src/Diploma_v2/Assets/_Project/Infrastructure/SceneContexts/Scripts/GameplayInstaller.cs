@@ -3,6 +3,7 @@ using _Project.Features.Installers;
 using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
 using _Project.Features.MapGeneration;
 using _Project.Features.MapGeneration.Matrix;
+using _Project.Infrastructure.MVP.Core;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Zenject;
 
@@ -20,6 +21,7 @@ namespace _Project.Infrastructure.SceneContexts.Scripts
             DungeonGeneratorInstaller.Install(Container);
             TilemapsInstaller.Install(Container);
             CameraInstaller.Install(Container);
+            WindowServiceInstaller.Install(Container);
 
             BindStatesFactory();
 

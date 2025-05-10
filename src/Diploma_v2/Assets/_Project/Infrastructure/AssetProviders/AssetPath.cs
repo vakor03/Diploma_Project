@@ -19,4 +19,10 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         Default = 0,
         Ground = 6,
     }
+
+    public static class Address {
+        public static class Group {
+            public const string WINDOW = "Window";
+        }
+    }
 }

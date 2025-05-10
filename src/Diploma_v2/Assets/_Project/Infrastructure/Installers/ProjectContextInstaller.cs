@@ -1,5 +1,6 @@
 ﻿using _Project.Features.MapGeneration;
 using _Project.Features.MapGeneration.Matrix;
+using _Project.Infrastructure.AssetLoaderModule.Core;
 using _Project.Scripts.Infrastructure.AssetProviders;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Zenject;
@@ -9,6 +10,7 @@ namespace _Project.Scripts.Infrastructure.Installers {
         public override void InstallBindings() {
             DataInstaller.Install(Container);
             MatrixInstaller.Install(Container);
+            AssetLoaderInstaller.Install(Container);
 
             BindSceneLoader();
 
