@@ -9,11 +9,13 @@ namespace _Project.Features.PlayerSpawnerModule
     {
         private readonly IInstantiator _instantiator;
         private readonly IStaticDataService  _staticDataService;
+        private readonly PlayerTransformDataHolder _playerTransformDataHolder;
 
-        public PlayerSpawnerService(IInstantiator instantiator, IStaticDataService staticDataService)
+        public PlayerSpawnerService(IInstantiator instantiator, IStaticDataService staticDataService, PlayerTransformDataHolder playerTransformDataHolder)
         {
             _instantiator = instantiator;
             _staticDataService = staticDataService;
+            _playerTransformDataHolder = playerTransformDataHolder;
         }
 
         public Player SpawnPlayerAt(Vector3 position)
@@ -23,7 +25,13 @@ namespace _Project.Features.PlayerSpawnerModule
             Player instantiated = _instantiator.InstantiatePrefabForComponent<Player>(playerPrefab);
             instantiated.transform.position = position;
             
+            _playerTransformDataHolder.Player = instantiated.transform;
+            
             return instantiated;
         }
+    }
+
+    public class PlayerTransformDataHolder {
+        public Transform Player { get; set; }
     }
 }

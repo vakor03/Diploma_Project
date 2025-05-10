@@ -6,5 +6,6 @@ namespace _Project.Features.LevelGeneratorModule {
         menuName = "Configurations/LevelGenerationModule/" + nameof(TilesConfiguration))]
     public class TilesConfiguration : ScriptableObject {
         [field: SerializeField] public TileBase FloorTile { get; private set; }
+        [field: SerializeField] public TileBase PlatformTile { get; private set; }
     }
 }

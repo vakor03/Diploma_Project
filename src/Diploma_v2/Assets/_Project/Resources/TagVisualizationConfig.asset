@@ -17,9 +17,9 @@ MonoBehaviour:
     - Key: 0
       Value: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
     - Key: 6
-      Value: {r: 1, g: 0, b: 0, a: 1}
+      Value: {r: 1, g: 0, b: 0, a: 0.39215687}
     - Key: 1
-      Value: {r: 0, g: 1, b: 0, a: 1}
+      Value: {r: 0, g: 1, b: 0, a: 0.39215687}
     - Key: 2
       Value: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - Key: 3
@@ -56,7 +56,7 @@ MonoBehaviour:
       Value: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - Key: 4
       Value: {r: 1, g: 0.6, b: 0, a: 1}
-  VisualizationPriority: 0
+  VisualizationPriority: 7
   ColorBlendFactor: 0.7
   ShowRoomBoundaries: 0
   RoomBoundaryColor: {r: 1, g: 1, b: 1, a: 1}

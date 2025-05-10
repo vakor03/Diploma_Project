@@ -1,4 +1,5 @@
-﻿using _Project.Features.MapGeneration.Tagging;
+﻿using System;
+using _Project.Features.MapGeneration.Tagging;
 using AYellowpaper.SerializedCollections;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -36,21 +37,27 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             { MicroTag.None, Color.gray },
             { MicroTag.PlayerSpawnPoint, Color.green },
             { MicroTag.EnemySpawnPoint, Color.red },
-            { MicroTag.ChestSpawnPoint, Color.yellow },
-            { MicroTag.TorchPosition, new Color(1f, 0.6f, 0f)}
+            { MicroTag.Platform, Color.yellow },
         };
     
-        [FoldoutGroup("Visualization Settings")]
-        public enum TagLayerPriority
+        [Flags]
+        public enum TagLayerPriority : byte
         {
-            MicroTags,
-            MacroTags,
-            GlobalPlaceTags
+            None = 0,
+            GlobalPlaceTags = 1 << 0,  // 1
+            MacroTags = 1 << 1,        // 2
+            MicroTags = 1 << 2,        // 4
+            RoomBoundaries = 1 << 3,   // 8
+        
+            // Common combinations
+            All = GlobalPlaceTags | MacroTags | MicroTags | RoomBoundaries,  // 15
+            TagsOnly = GlobalPlaceTags | MacroTags | MicroTags,              // 7
+            StructureOnly = GlobalPlaceTags | MacroTags | RoomBoundaries,    // 11
         }
     
         [FoldoutGroup("Visualization Settings")]
-        public TagLayerPriority VisualizationPriority = TagLayerPriority.MicroTags;
-    
+        [EnumToggleButtons]
+        public TagLayerPriority VisualizationPriority = TagLayerPriority.All;
         [FoldoutGroup("Visualization Settings")]
         [Range(0.1f, 1f)]
         public float ColorBlendFactor = 0.7f; // For blending multiple tag colors

@@ -20,6 +20,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
     public enum Layer {
         Default = 0,
         Ground = 6,
+        Platform = 7,
     }
 
     public static class Address {

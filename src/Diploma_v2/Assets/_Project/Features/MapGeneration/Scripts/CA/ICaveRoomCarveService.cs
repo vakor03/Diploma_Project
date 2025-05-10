@@ -4,6 +4,6 @@ using UnityEngine;
 
 namespace _Project.Features.MapGeneration.CA {
     public interface ICaveRoomCarveService {
-        public Room CarveRoom(Matrix<int> matrix, RectInt region, CAConfig config);
+        public Room CarveRoom(Matrix<BlockType> matrix, RectInt region, CAConfig config);
     }
 }

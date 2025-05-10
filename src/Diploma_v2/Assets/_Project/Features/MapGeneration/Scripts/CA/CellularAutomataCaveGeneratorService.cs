@@ -8,9 +8,6 @@ namespace _Project.Features.MapGeneration.CA {
     public class CellularAutomataCaveGeneratorService : ICaveRoomCarveService {
         private readonly ISeedService _seedService;
 
-        private const int WALL = 0;
-        private const int FLOOR = 1;
-
         private static readonly int[,] NeighborDirections8 = new int[8, 2] {
             { -1, -1 }, { -1, 0 }, { -1, 1 }, { 0, -1 },
             { 0, 1 }, { 1, -1 }, { 1, 0 }, { 1, 1 }
@@ -23,12 +20,12 @@ namespace _Project.Features.MapGeneration.CA {
         public CellularAutomataCaveGeneratorService(ISeedService seedService) =>
             _seedService = seedService;
 
-        public Room CarveRoom(Matrix<int> matrix, RectInt region, CAConfig config) {
-            int[,] cells = InitializeCells(region, config);
+        public Room CarveRoom(Matrix<BlockType> matrix, RectInt region, CAConfig config) {
+            BlockType[,] cells = InitializeCells(region, config);
 
             SmoothCells(ref cells, config);
             List<Vector2Int> largest = GetLargestRegion(cells);
-            int[,] mask = CreateRegionMask(cells, largest);
+            BlockType[,] mask = CreateRegionMask(cells, largest);
             BlitToMatrix(matrix, region, mask, config.offsetFromBorders);
             
             Room room = new Room {
@@ -40,37 +37,37 @@ namespace _Project.Features.MapGeneration.CA {
             return room;
         }
 
-        private int[,] InitializeCells(RectInt region, CAConfig config) {
+        private BlockType[,] InitializeCells(RectInt region, CAConfig config) {
             int offset = config.offsetFromBorders;
             int width = region.width - offset * 2;
             int height = region.height - offset * 2;
-            int[,] cells = new int[width, height];
+            BlockType[,] cells = new BlockType[width, height];
             System.Random rng = _seedService.GetRandom();
 
             for (int x = 0; x < width; x++) {
                 for (int y = 0; y < height; y++) {
                     double r = rng.NextDouble();
-                    cells[x, y] = (r < config.fillProbability) ? WALL : FLOOR;
+                    cells[x, y] = (r < config.fillProbability) ? BlockType.Wall : BlockType.EmptySpace;
                 }
             }
 
             return cells;
         }
 
-        private void SmoothCells(ref int[,] cells, CAConfig config) {
+        private void SmoothCells(ref BlockType[,] cells, CAConfig config) {
             int width = cells.GetLength(0);
             int height = cells.GetLength(1);
 
             for (int step = 0; step < config.steps; step++) {
-                int[,] newCells = new int[width, height];
+                BlockType[,] newCells = new BlockType[width, height];
 
                 for (int x = 0; x < width; x++) {
                     for (int y = 0; y < height; y++) {
                         int wallCount = CountWallNeighbors(cells, x, y, width, height);
                         if (wallCount > config.birthLimit)
-                            newCells[x, y] = WALL;
+                            newCells[x, y] = BlockType.Wall;
                         else if (wallCount < config.deathLimit)
-                            newCells[x, y] = FLOOR;
+                            newCells[x, y] = BlockType.EmptySpace;
                         else
                             newCells[x, y] = cells[x, y];
                     }
@@ -80,7 +77,7 @@ namespace _Project.Features.MapGeneration.CA {
             }
         }
 
-        private List<Vector2Int> GetLargestRegion(int[,] cells) {
+        private List<Vector2Int> GetLargestRegion(BlockType[,] cells) {
             int width = cells.GetLength(0);
             int height = cells.GetLength(1);
             bool[,] visited = new bool[width, height];
@@ -88,7 +85,7 @@ namespace _Project.Features.MapGeneration.CA {
 
             for (int x = 0; x < width; x++) {
                 for (int y = 0; y < height; y++) {
-                    if (!visited[x, y] && cells[x, y] == FLOOR) {
+                    if (!visited[x, y] && cells[x, y] == BlockType.EmptySpace) {
                         List<Vector2Int> region = FloodFill(cells, visited, x, y, width, height);
                         regions.Add(region);
                     }
@@ -108,18 +105,18 @@ namespace _Project.Features.MapGeneration.CA {
             return largest;
         }
 
-        private int[,] CreateRegionMask(int[,] cells, List<Vector2Int> region) {
+        private BlockType[,] CreateRegionMask(BlockType[,] cells, List<Vector2Int> region) {
             int width = cells.GetLength(0);
             int height = cells.GetLength(1);
-            int[,] mask = new int[width, height];
+            BlockType[,] mask = new BlockType[width, height];
 
             foreach (Vector2Int cell in region)
-                mask[cell.x, cell.y] = FLOOR;
+                mask[cell.x, cell.y] = BlockType.EmptySpace;
 
             return mask;
         }
 
-        private void BlitToMatrix(Matrix<int> matrix, RectInt region, int[,] mask, int offset) {
+        private void BlitToMatrix(Matrix<BlockType> matrix, RectInt region, BlockType[,] mask, int offset) {
             int width = mask.GetLength(0);
             int height = mask.GetLength(1);
 
@@ -128,11 +125,11 @@ namespace _Project.Features.MapGeneration.CA {
                 int globalX = region.x + offset + x;
                 int globalY = region.y + offset + y;
 
-                matrix[globalX, globalY] = mask[x, y] == FLOOR ? FLOOR : WALL;
+                matrix[globalX, globalY] = mask[x, y] == BlockType.EmptySpace ? BlockType.EmptySpace : BlockType.Wall;
             }
         }
 
-        private int CountWallNeighbors(int[,] cells, int x, int y, int width, int height) {
+        private int CountWallNeighbors(BlockType[,] cells, int x, int y, int width, int height) {
             int count = 0;
             int length = NeighborDirections8.GetLength(0);
             for (int i = 0; i < length; i++) {
@@ -140,7 +137,7 @@ namespace _Project.Features.MapGeneration.CA {
                 int dy = NeighborDirections8[i, 1];
                 int nx = x + dx;
                 int ny = y + dy;
-                if (nx < 0 || ny < 0 || nx >= width || ny >= height || cells[nx, ny] == WALL) {
+                if (nx < 0 || ny < 0 || nx >= width || ny >= height || cells[nx, ny] == BlockType.Wall) {
                     count++;
                 }
             }
@@ -148,7 +145,7 @@ namespace _Project.Features.MapGeneration.CA {
             return count;
         }
 
-        private List<Vector2Int> FloodFill(int[,] cells, bool[,] visited, int startX, int startY, int width, int height) {
+        private List<Vector2Int> FloodFill(BlockType[,] cells, bool[,] visited, int startX, int startY, int width, int height) {
             List<Vector2Int> region = new List<Vector2Int>();
             Queue<Vector2Int> queue = new Queue<Vector2Int>();
             visited[startX, startY] = true;
@@ -164,7 +161,7 @@ namespace _Project.Features.MapGeneration.CA {
                     int dy = Directions4[i, 1];
                     int nx = cell.x + dx;
                     int ny = cell.y + dy;
-                    if (nx >= 0 && ny >= 0 && nx < width && ny < height && !visited[nx, ny] && cells[nx, ny] == FLOOR) {
+                    if (nx >= 0 && ny >= 0 && nx < width && ny < height && !visited[nx, ny] && cells[nx, ny] == BlockType.EmptySpace) {
                         visited[nx, ny] = true;
                         queue.Enqueue(new Vector2Int(nx, ny));
                     }

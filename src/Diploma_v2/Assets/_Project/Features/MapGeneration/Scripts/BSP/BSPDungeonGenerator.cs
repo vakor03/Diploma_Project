@@ -7,7 +7,7 @@ namespace _Project.Features.MapGeneration.BSP {
     public class BSPDungeonGenerator : IMacroLayoutDungeonGenerationService {
         private readonly ISeedService _seedService;
 
-        private Matrix<int> Matrix { get; set; }
+        private Matrix<BlockType> Matrix { get; set; }
         private List<RectInt> Rooms { get; set; }
 
         private int _minLeafSize;
@@ -15,7 +15,7 @@ namespace _Project.Features.MapGeneration.BSP {
         public BSPDungeonGenerator(ISeedService seedService) =>
             _seedService = seedService;
 
-        public List<RectInt> Generate(Matrix<int> initialMatrix, BSPDungeonGeneratorParams @params) {
+        public List<RectInt> Generate(Matrix<BlockType> initialMatrix, BSPDungeonGeneratorParams @params) {
             _minLeafSize = @params.minLeafSize;
             Rooms = new List<RectInt>();
 
@@ -35,7 +35,7 @@ namespace _Project.Features.MapGeneration.BSP {
 
             foreach (BSPNode leaf in nodes)
                 if (leaf.IsLeaf)
-                    CreateRoom(leaf, @params.minRoomSize, @params.offsetFromBorders);
+                    CreateRoom(leaf, @params.minRoomSize, @params.offsetFromBorders, @params.ShrinkageFactor);
 
             return Rooms;
         }
@@ -65,9 +65,13 @@ namespace _Project.Features.MapGeneration.BSP {
             return true;
         }
 
-        private void CreateRoom(BSPNode leaf, int minRoomSize, int offset) {
-            int roomW = _seedService.GetRandom().Next(minRoomSize, leaf.Rect.width - offset * 2);
-            int roomH = _seedService.GetRandom().Next(minRoomSize, leaf.Rect.height - offset * 2);
+        private void CreateRoom(BSPNode leaf, int minRoomSize, int offset, float shrinkageRate) {
+            int roomW = _seedService.GetRandom().Next((int)(leaf.Rect.width * (1 - shrinkageRate)), leaf.Rect.width );
+            int roomH = _seedService.GetRandom().Next((int)(leaf.Rect.height * (1 - shrinkageRate)), leaf.Rect.height);
+            roomW = Mathf.Max(roomW, minRoomSize);
+            roomH = Mathf.Max(roomH, minRoomSize);
+           // int roomW = leaf.Rect.width;
+            // int roomH = leaf.Rect.height;
             int roomX = _seedService.GetRandom().Next(leaf.Rect.x + offset, leaf.Rect.x + leaf.Rect.width - roomW - offset);
             int roomY = _seedService.GetRandom().Next(leaf.Rect.y + offset, leaf.Rect.y + leaf.Rect.height - roomH - offset);
 

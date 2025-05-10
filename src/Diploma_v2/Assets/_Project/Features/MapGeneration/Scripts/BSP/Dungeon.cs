@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace _Project.Features.MapGeneration.BSP {
     public class Dungeon {
-        public Matrix<int> Matrix;
+        public Matrix<BlockType> Matrix;
         public List<Room> Rooms;
         public List<Tunnel> Tunnels;
         public DungeonTags Tags;

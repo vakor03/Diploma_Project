@@ -58,25 +58,26 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             Debug.Log($"Dungeon PNG exported with room borders to: {filePath}");
         }
 
-        private void DrawTagRules(Dungeon dungeon, TagVisualizationConfig config) {
-            // Draw global place tags
-            if (config.VisualizationPriority == TagVisualizationConfig.TagLayerPriority.GlobalPlaceTags) {
+        private void DrawTagRules(Dungeon dungeon, TagVisualizationConfig config)
+        {
+            // Using byte mask approach
+            if ((config.VisualizationPriority & TagVisualizationConfig.TagLayerPriority.GlobalPlaceTags) != 0)
+            {
                 DrawGlobalPlaceTags(dungeon, config);
             }
-
-            // Draw macro tags
-            if (config.VisualizationPriority == TagVisualizationConfig.TagLayerPriority.MacroTags ||
-                config.VisualizationPriority == TagVisualizationConfig.TagLayerPriority.GlobalPlaceTags) {
+    
+            if ((config.VisualizationPriority & TagVisualizationConfig.TagLayerPriority.MacroTags) != 0)
+            {
                 DrawMacroTags(dungeon, config);
             }
-
-            // Draw micro tags (highest priority)
-            if (config.VisualizationPriority == TagVisualizationConfig.TagLayerPriority.MicroTags) {
+    
+            if ((config.VisualizationPriority & TagVisualizationConfig.TagLayerPriority.MicroTags) != 0)
+            {
                 DrawMicroTags(dungeon, config);
             }
-
-            // Draw room boundaries if enabled
-            if (config.ShowRoomBoundaries) {
+    
+            if ((config.VisualizationPriority & TagVisualizationConfig.TagLayerPriority.RoomBoundaries) != 0)
+            {
                 DrawRoomBoundaries(dungeon, config);
             }
         }
@@ -173,10 +174,10 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             }
         }
 
-        private void DrawOverallMatrix(Dungeon dungeon, Dictionary<int, Color> colorMap) {
+        private void DrawOverallMatrix(Dungeon dungeon, Dictionary<BlockType, Color> colorMap) {
             for (int y = 0; y < _rowCount; y++)
             for (int x = 0; x < _colCount; x++) {
-                int value = dungeon.Matrix[x, y];
+                BlockType value = dungeon.Matrix[x, y];
                 Color c = colorMap.ContainsKey(value) ? colorMap[value] : Color.magenta;
                 bool useBorder = false;
                 foreach (var room in dungeon.Rooms) {

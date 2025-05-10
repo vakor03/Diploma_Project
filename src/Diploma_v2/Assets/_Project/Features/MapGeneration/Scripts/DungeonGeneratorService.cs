@@ -31,10 +31,13 @@ namespace _Project.Features.MapGeneration {
         }
 
         public Dungeon GenerateDungeon(DungeonGenerationConfiguration config) {
-            Matrix<int> dungeonMatrix = _matrixFactory.CreateMatrix<int>(config.DungeonSize.x, config.DungeonSize.y);
+            Matrix<BlockType> dungeonMatrix = _matrixFactory.CreateMatrix<BlockType>(config.DungeonSize.x, config.DungeonSize.y);
             List<RectInt> macroGroup = _macroLayoutDungeonGenerationService.Generate(dungeonMatrix, config.BspDungeonGeneratorParams);
             List<Room> rooms = macroGroup.Select(room => _caveRoomCarveService.CarveRoom(dungeonMatrix, room, config.CACaveRoomParams))
                 .Where(room => room.Cells.Count > 0).ToList();
+            foreach (Room room in rooms) {
+                new HorizontalSurfaceSmoother().SmoothHorizontalSurfaces(dungeonMatrix, room);
+            }
             List<(Vector2Int start, Vector2Int end)> connections = _roomConnectorService.GetConnections(rooms);
             List<Tunnel> tunnels = connections.ConvertAll(tunnelEnds =>
                 _corridorGeneratorService.CarveCorridor(dungeonMatrix, tunnelEnds.start, tunnelEnds.end, config.CorridorParams));
@@ -62,6 +65,7 @@ namespace _Project.Features.MapGeneration {
 
         private PriorityList<IMicroTagRule> MicroTagRules() {
             PriorityList<IMicroTagRule> rules = new();
+            rules.Add(new PlatformMicroTagRule(), 11);
             rules.Add(new PlayerSpawnMicroTagRule(), 10);
             rules.Add(new EnemySpawnMicroTagRule(), 9);
             return rules;
@@ -72,5 +76,10 @@ namespace _Project.Features.MapGeneration {
             rules.Add(new FloorMacroTagRule(), 10);
             return rules;
         }
+    }
+
+    public enum BlockType {
+        Wall = 0,
+        EmptySpace = 1,
     }
 }

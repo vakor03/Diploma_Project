@@ -20,3 +20,8 @@ MonoBehaviour:
         Prefab: {fileID: 6743215306492577111, guid: 0feac75855c11ce4aaecf5009cdb5ebc, type: 3}
         OrderInLayer: 0
         Layer: 6
+    - Key: 3
+      Value:
+        Prefab: {fileID: 6743215306492577111, guid: 199b01714d1e3b14b8d1bde4f2ac6601, type: 3}
+        OrderInLayer: 1
+        Layer: 7

@@ -105,6 +105,7 @@ namespace _Project.Features.MapGeneration.Tagging.TagAppliers {
             Dictionary<IMicroTagRule, int> localCounts = new();
 
             foreach (Vector2Int position in room.Cells.InRandomOrder(_seedService.GetRandom())) {
+                if (dungeonTags.GetMicroTag(position) != MicroTag.None) continue;
                 ProcessRoomPosition(position, room, roomGlobalTag, dungeonTags, ruleGroups, localCounts, ruleCounts);
             }
         }

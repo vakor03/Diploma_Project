@@ -13,5 +13,10 @@ namespace _Project.Features.PlayerModule
 
         public bool CheckGrounded() =>
             Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer);
+
+        private void OnDrawGizmosSelected() {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(_groundCheckPoint.position, _groundCheckSize);
+        }
     }
 }

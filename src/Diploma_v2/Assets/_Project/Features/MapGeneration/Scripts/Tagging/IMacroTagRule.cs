@@ -18,9 +18,9 @@ namespace _Project.Features.MapGeneration.Tagging {
         public GlobalPlaceTagFilter GlobalPlaceTagFilter => new();
 
         public bool IsValidForPosition(Vector2Int position, Room room, GlobalPlaceTag globalPlaceTag, DungeonTags dungeonTags) =>
-            !room.Cells.Contains(position + Vector2Int.down);
+            Context.Matrix[position + Vector2Int.down] == 0;
 
         public bool IsValidForPosition(Vector2Int position, Tunnel tunnel, GlobalPlaceTag globalPlaceTag, DungeonTags dungeonTags) =>
-            !tunnel.Cells.Contains(position + Vector2Int.down);
+            Context.Matrix[position + Vector2Int.down] == 0;
     }
 }

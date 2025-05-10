@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528c9465e76a4dc19f8472afbd3b449f, type: 3}
   m_Name: DungeonGenerationConfiguration_Default
   m_EditorClassIdentifier: 
-  <DungeonSize>k__BackingField: {x: 100, y: 100}
+  <DungeonSize>k__BackingField: {x: 75, y: 75}
   <BspDungeonGeneratorParams>k__BackingField:
-    minLeafSize: 30
+    minLeafSize: 20
     minRoomSize: 10
     offsetFromBorders: 0
+    ShrinkageFactor: 0.382
   <CACaveRoomParams>k__BackingField:
     offsetFromBorders: 1
     fillProbability: 0.35
@@ -24,5 +25,5 @@ MonoBehaviour:
     birthLimit: 4
     deathLimit: 3
   <CorridorParams>k__BackingField:
-    WanderChance: 0.2
+    WanderChance: 0
     CorridorWidth: 2

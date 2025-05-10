@@ -9,12 +9,11 @@ namespace _Project.Features.MapGeneration.Drukard {
     public class DrunkardCorridorGeneratorService : ICorridorGeneratorService
     {
         private readonly ISeedService _seedService;
-        private const int FloorTile = 1;
 
         public DrunkardCorridorGeneratorService(ISeedService seedService) =>
             _seedService = seedService;
 
-        public Tunnel CarveCorridor(Matrix<int> matrix, Vector2Int start, Vector2Int end, CorridorConfig config)
+        public Tunnel CarveCorridor(Matrix<BlockType> matrix, Vector2Int start, Vector2Int end, CorridorConfig config)
         {
             HashSet<Vector2Int> cells = new HashSet<Vector2Int>();
             System.Random rng = _seedService.GetRandom();
@@ -71,8 +70,7 @@ namespace _Project.Features.MapGeneration.Drukard {
             return new Vector2Int(0, yStep);
         }
 
-
-        private void CarveCellBlock(Matrix<int> matrix, Vector2Int center, int width, HashSet<Vector2Int> corridorCells) {
+        private void CarveCellBlock(Matrix<BlockType> matrix, Vector2Int center, int width, HashSet<Vector2Int> corridorCells) {
             int half = width / 2;
             int startOffset = -half;
             int endOffset;
@@ -90,7 +88,7 @@ namespace _Project.Features.MapGeneration.Drukard {
 
                     if (x >= 0 && y >= 0 && x < matrix.Width && y < matrix.Height) {
                         corridorCells.Add(new(x, y));
-                        matrix[x, y] = FloorTile;
+                        matrix[x, y] = BlockType.EmptySpace;
                     }
                 }
             }
@@ -101,5 +99,4 @@ namespace _Project.Features.MapGeneration.Drukard {
             return current.x == target.x && current.y == target.y;
         }
     }
-
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace _Project.Features.MapGeneration.BSP
 {
@@ -21,5 +22,8 @@ namespace _Project.Features.MapGeneration.BSP
 
         private bool ValidateLeafSize(int leafSize) =>
             leafSize > minRoomSize + offsetFromBorders * 2;
+        
+        [Range(0f,1f)]
+        public float ShrinkageFactor = 0.5f;
     }
 }

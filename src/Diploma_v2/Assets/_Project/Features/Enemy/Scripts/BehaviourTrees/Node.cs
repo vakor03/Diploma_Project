@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 
 namespace _Project.Features.Enemy.BehaviourTree {
-    public class BehaviourNode : Node, IStrategy {
-        public BehaviourNode(string name = "Behaviour Tree") : base(name) { }
+    public class BehaviourTree : Node, IStrategy {
+        public BehaviourTree(string name = "Behaviour Tree") : base(name) { }
 
         public override Status Process() {
             while (_currentChild < Children.Count) {
@@ -68,7 +68,7 @@ namespace _Project.Features.Enemy.BehaviourTree {
     public class Leaf : Node {
         private readonly IStrategy _strategy;
 
-        public Leaf(IStrategy strategy, string name) : base(name) =>
+        public Leaf(string name, IStrategy strategy) : base(name) =>
             _strategy = strategy;
 
         public override Status Process() =>

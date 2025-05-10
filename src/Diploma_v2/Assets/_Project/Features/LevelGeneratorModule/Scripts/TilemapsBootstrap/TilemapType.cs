@@ -3,5 +3,6 @@
         None = 0,
         Background = 1,
         Foreground = 2,
+        Platform = 3,
     }
 }

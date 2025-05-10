@@ -41,11 +41,21 @@ namespace _Project.Features.LevelGeneratorModule {
             Dungeon dungeon = _dungeonGeneratorService.GenerateDungeon(generationConfiguration);
 
             SpawnTilesForDungeon(dungeon.Matrix);
+            SpawnPlatformsForDungeon(dungeon);
             foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.PlayerSpawnPoint))
                 _playerSpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, true));
             
             foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.EnemySpawnPoint))
                 _enemySpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, true));
+        }
+
+        private void SpawnPlatformsForDungeon(Dungeon dungeon) {
+            Vector2Int[] platformIndices = dungeon.Tags.GetPositionsWithMicroTag(MicroTag.Platform).ToArray();
+            TileBase[] tileBases = Enumerable.Repeat(_levelConfiguration.TilesConfiguration.PlatformTile, platformIndices.Length).ToArray();
+
+            _tilemapsService.SetTiles(TilemapType.Platform,
+                platformIndices,
+                tileBases);
         }
 
         private Vector2 GetPositionFromTilemap(Vector2Int tilePosition, bool centerOfTile) {
@@ -64,8 +74,8 @@ namespace _Project.Features.LevelGeneratorModule {
             return worldPosition;
         }
 
-        private void SpawnTilesForDungeon(Matrix<int> matrix) {
-            Vector2Int[] floorIndices = matrix.GetAllIndices(el => el == 0).ToArray();
+        private void SpawnTilesForDungeon(Matrix<BlockType> matrix) {
+            Vector2Int[] floorIndices = matrix.GetAllIndices(el => el == BlockType.Wall).ToArray();
             TileBase[] tileBases = Enumerable.Repeat(_levelConfiguration.TilesConfiguration.FloorTile, floorIndices.Length).ToArray();
 
             _tilemapsService.SetTiles(TilemapType.Background,

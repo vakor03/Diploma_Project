@@ -4,6 +4,6 @@ using UnityEngine;
 
 namespace _Project.Features.MapGeneration.BSP {
     public interface IMacroLayoutDungeonGenerationService {
-        public List<RectInt> Generate(Matrix<int> initialMatrix, BSPDungeonGeneratorParams @params);
+        public List<RectInt> Generate(Matrix<BlockType> initialMatrix, BSPDungeonGeneratorParams @params);
     }
 }

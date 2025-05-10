@@ -81,5 +81,7 @@ namespace _Project.Features.MapGeneration.Matrix {
             Height = newHeight;
             Width = newWidth;
         }
+
+        public T this[Vector2Int position] {get=> _matrix[position.x, position.y]; set => _matrix[position.x, position.y] = value; }
     }
 }
