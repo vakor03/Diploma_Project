@@ -6,46 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dungeon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dungeon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTree.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTrees.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTree/IStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTrees/IStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTree/IStrategy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTrees/IStrategy.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTree/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTrees/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTree/Node.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTrees/Node.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Installers/PlayerSpawnerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/Installers/PlayerSpawnerInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/Tilemap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/Tilemap.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/TilemapsBootstrapConfiguration_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/TilemapsBootstrapConfiguration_Default.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/TilesConfiguration_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/TilesConfiguration_Default.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/TilesConfiguration_Default.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/TilesConfiguration_Default.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/TilemapsBootstrap/TilemapType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/TilemapsBootstrap/TilemapType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/TilesConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/TilesConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/GameResources/DungeonGenerationConfiguration_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/GameResources/DungeonGenerationConfiguration_Default.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/BSPDungeonGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/BSPDungeonGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/BSPDungeonGeneratorParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/BSPDungeonGeneratorParams.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/Dungeon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/Dungeon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/IMacroLayoutDungeonGenerationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/IMacroLayoutDungeonGenerationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/CA/CellularAutomataCaveGeneratorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/CA/CellularAutomataCaveGeneratorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/CA/ICaveRoomCarveService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/CA/ICaveRoomCarveService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Drukard/DrunkardCorridorGeneratorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Drukard/DrunkardCorridorGeneratorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Drukard/ICorridorGeneratorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Drukard/ICorridorGeneratorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Matrix/Matrix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Matrix/Matrix.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/DungeonToPNGExproter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/DungeonToPNGExproter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/TagVisualizationConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/TagVisualizationConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/IMacroTagRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/IMacroTagRule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/MicroTag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/MicroTag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/PlayerSpawnMicroTagRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/PlayerSpawnMicroTagRule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/TagAppliers/MicroTagApplier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/TagAppliers/MicroTagApplier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/GroundChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/GroundChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerSpawnerModule/PlayerSpawnerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerSpawnerModule/PlayerSpawnerService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/EnemyPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/EnemyPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/LevelConfiguration_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/LevelConfiguration_Default.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/TagVisualizationConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/TagVisualizationConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +36,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/LevelConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Features/WeaponModule/SelfRegisterWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap.extras@13634da7dbe0/Runtime/Tiles/RuleTile/RuleTile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@624f919d8cdd/Runtime/Core/CinemachineVirtualCameraBase.cs" root0="SKIP_HIGHLIGHTING" />
@@ -194,7 +158,7 @@
       <workItem from="1746743095977" duration="4713000" />
       <workItem from="1746758826612" duration="8115000" />
       <workItem from="1746877570019" duration="7484000" />
-      <workItem from="1746886872328" duration="12506000" />
+      <workItem from="1746886872328" duration="17581000" />
     </task>
     <servers />
   </component>
@@ -242,41 +206,28 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs</url>
-          <line>46</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\PlayerModule\DropThroughPlatformController.cs" containingFunctionPresentation="Method 'TryDropThrough'">
-            <startOffsets>
-              <option value="1241" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1273" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <condition expression="_dropTimer &lt;= 0f" language="C#" />
           <url>file://$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs</url>
-          <line>62</line>
+          <line>41</line>
           <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\PlayerModule\DropThroughPlatformController.cs" containingFunctionPresentation="Method 'UpdateDropState'">
             <startOffsets>
-              <option value="1706" />
+              <option value="1012" />
             </startOffsets>
             <endOffsets>
-              <option value="1735" />
+              <option value="1041" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs</url>
-          <line>60</line>
+          <line>40</line>
           <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\PlayerModule\DropThroughPlatformController.cs" containingFunctionPresentation="Method 'UpdateDropState'">
             <startOffsets>
-              <option value="1667" />
+              <option value="981" />
             </startOffsets>
             <endOffsets>
-              <option value="1683" />
+              <option value="997" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="25" />

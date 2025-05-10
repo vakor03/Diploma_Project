@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 3801061889173329630}
   - component: {fileID: -3433008259604731931}
   - component: {fileID: 5379287984967324320}
+  - component: {fileID: 6593112515337380651}
+  - component: {fileID: 8326252047709485894}
   m_Layer: 0
   m_Name: EnemyPrefab
   m_TagString: Untagged
@@ -206,6 +208,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyMovement: {fileID: -3433008259604731931}
+  _isPlayerInRange: 0
+--- !u!114 &6593112515337380651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980256991180106563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c51f19a3471f4b74a22f981d123f7276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthData: {fileID: 11400000, guid: d3b7721a1960771448758c9041b7b42c, type: 2}
+  OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHealed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8326252047709485894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980256991180106563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c64856f0b8614a60b21555905f6c22bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthController: {fileID: 6593112515337380651}
 --- !u!1 &7756013070610996909
 GameObject:
   m_ObjectHideFlags: 0
