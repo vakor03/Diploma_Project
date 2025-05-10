@@ -1,4 +1,5 @@
 ﻿using _Project.Features.CameraModule;
+using _Project.Features.Enemy.EnemySpawner;
 using _Project.Features.Installers;
 using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
 using _Project.Features.MapGeneration;
@@ -22,6 +23,7 @@ namespace _Project.Infrastructure.SceneContexts.Scripts
             TilemapsInstaller.Install(Container);
             CameraInstaller.Install(Container);
             WindowServiceInstaller.Install(Container);
+            EnemySpawnerInstaller.Install(Container);
 
             BindStatesFactory();
 

@@ -3,6 +3,7 @@ using _Project.Features.MapGeneration.CA;
 using _Project.Features.MapGeneration.Drukard;
 using _Project.Features.MapGeneration.RoomConnections;
 using _Project.Features.MapGeneration.Tagging;
+using _Project.Features.MapGeneration.Tagging.TagAppliers;
 using Zenject;
 
 namespace _Project.Features.MapGeneration {
@@ -14,6 +15,7 @@ namespace _Project.Features.MapGeneration {
             BindRoomConnectorService();
             BindCorridorGeneratorService();
             BindDungeonTagService();
+            TagAppliersInstaller.Install(Container);
         }
 
         private void BindDungeonTagService() =>

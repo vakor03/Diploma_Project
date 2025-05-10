@@ -1,4 +1,6 @@
-﻿using _Project.Features.LevelGeneratorModule;
+﻿using _Project.Features.Enemy;
+using _Project.Features.LevelGeneratorModule;
+using _Project.Features.MapGeneration.PNGExproter;
 using _Project.Features.PlayerModule;
 using _Project.Features.SeedModule;
 using Unity.Cinemachine;
@@ -14,6 +16,8 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         private PredefinedSeedConfiguration _predefinedSeedConfiguration;
         private LevelConfiguration _levelConfiguration;
         private CinemachineVirtualCameraBase _cameraPrefab;
+        private TagVisualizationConfig _tagVisualizationConfig;
+        private Enemy _enemyPrefab;
 
         public StaticDataService(IAssetProvider assetProvider) =>
             _assetProvider = assetProvider;
@@ -30,6 +34,12 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         public CinemachineVirtualCameraBase GetCameraPrefab() =>
             _cameraPrefab;
 
+        public TagVisualizationConfig GetTagVisualizationConfig() =>
+            _tagVisualizationConfig;
+
+        public Enemy GetEnemyPrefab() =>
+            _enemyPrefab;
+
         public void Initialize()
         {
             _playerPrefab = _assetProvider.Load<Player>(AssetPath.Prefab.PLAYER_PREFAB);
@@ -39,6 +49,10 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
                 _assetProvider.Load<LevelConfiguration>(AssetPath.Configuration.LEVEL_CONFIGURATION);
             _cameraPrefab =
                 _assetProvider.Load<CinemachineVirtualCameraBase>(AssetPath.Prefab.CAMERA_PREFAB);
+            _tagVisualizationConfig =
+                _assetProvider.Load<TagVisualizationConfig>(AssetPath.Configuration.TAG_VISUALIZATION_CONFIG);
+            _enemyPrefab =
+                _assetProvider.Load<Enemy>(AssetPath.Prefab.ENEMY_PREFAB);
         }
     }
 }

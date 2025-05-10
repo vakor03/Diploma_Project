@@ -30,4 +30,8 @@ namespace _Project.Features.PlayerSpawnerModule
     public class PlayerSpawnPointsModel : IModel {
         public List<Vector3> SpawnPoints { get; set; } = new();
     }
+    
+    public class EnemySpawnPointsModel : IModel {
+        public List<Vector3> SpawnPoints { get; set; } = new();
+    }
 }

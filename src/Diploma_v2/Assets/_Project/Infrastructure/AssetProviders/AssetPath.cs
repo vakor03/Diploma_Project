@@ -6,12 +6,14 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         {
             public const string PLAYER_PREFAB = "PlayerPrefab";
             public const string CAMERA_PREFAB = "CameraPrefab";
+            public const string ENEMY_PREFAB = "EnemyPrefab";
         }
 
         public static class Configuration
         {
             public const string PREDEFINED_SEED_CONFIGURATION = "PredefinedSeedConfiguration";
             public const string LEVEL_CONFIGURATION = "LevelConfiguration_Default";
+            public const string TAG_VISUALIZATION_CONFIG = "TagVisualizationConfig";
         }
     }
 

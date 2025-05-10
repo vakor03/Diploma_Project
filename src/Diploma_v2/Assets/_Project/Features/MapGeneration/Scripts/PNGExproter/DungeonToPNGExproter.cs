@@ -2,6 +2,7 @@
 using System.IO;
 using _Project.Features.MapGeneration.BSP;
 using _Project.Features.MapGeneration.Tagging;
+using _Project.Scripts.Infrastructure.AssetProviders;
 using UnityEditor;
 using UnityEngine;
 
@@ -12,10 +13,17 @@ namespace _Project.Features.MapGeneration.PNGExproter {
         private Color _borderColor;
         private int _rowCount;
         private int _colCount;
-        public void Export(Dungeon dungeon, string filePath, int scale1 = 10, Dictionary<int, Color> colorMap = null, Color? borderColor = null) {
+
+        private TagVisualizationConfig _tagVisualizationConfig;
+
+        public DungeonToPNGExporter(IStaticDataService staticDataService) =>
+            _tagVisualizationConfig = staticDataService.GetTagVisualizationConfig();
+
+        public void Export(Dungeon dungeon, string filePath, int scale1 = 10, Dictionary<int, Color> colorMap = null,
+                           Color? borderColor = null) {
             _rowCount = dungeon.Matrix.Height;
             _colCount = dungeon.Matrix.Width;
-            
+
             _scale = scale1;
 
             if (colorMap == null) {
@@ -30,16 +38,17 @@ namespace _Project.Features.MapGeneration.PNGExproter {
                 filterMode = FilterMode.Point
             };
 
-            DrawOverallMatrix(dungeon, colorMap);
-
-            DrawRooms(dungeon);
-            DrawTunnels(dungeon);
-            DrawTagRules(dungeon);
+            // DrawOverallMatrix(dungeon, colorMap);
+            //
+            // DrawRooms(dungeon);
+            // DrawTunnels(dungeon);
+            DrawTagRules(dungeon, _tagVisualizationConfig);
 
             _texture.Apply();
             byte[] bytes = _texture.EncodeToPNG();
             string dir = Path.GetDirectoryName(filePath);
-            if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
+            if (!Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
             File.WriteAllBytes(filePath, bytes);
 
 #if UNITY_EDITOR
@@ -49,10 +58,118 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             Debug.Log($"Dungeon PNG exported with room borders to: {filePath}");
         }
 
-        private void DrawTagRules(Dungeon dungeon) {
-            foreach ((SubSpaceTag tag, List<Vector2Int> value) in dungeon.Tags.TaggedSubSpaces) {
-                foreach (Vector2Int cell in value)
-                    DrawCell(cell, true, Color.yellow);
+        private void DrawTagRules(Dungeon dungeon, TagVisualizationConfig config) {
+            // Draw global place tags
+            if (config.VisualizationPriority == TagVisualizationConfig.TagLayerPriority.GlobalPlaceTags) {
+                DrawGlobalPlaceTags(dungeon, config);
+            }
+
+            // Draw macro tags
+            if (config.VisualizationPriority == TagVisualizationConfig.TagLayerPriority.MacroTags ||
+                config.VisualizationPriority == TagVisualizationConfig.TagLayerPriority.GlobalPlaceTags) {
+                DrawMacroTags(dungeon, config);
+            }
+
+            // Draw micro tags (highest priority)
+            if (config.VisualizationPriority == TagVisualizationConfig.TagLayerPriority.MicroTags) {
+                DrawMicroTags(dungeon, config);
+            }
+
+            // Draw room boundaries if enabled
+            if (config.ShowRoomBoundaries) {
+                DrawRoomBoundaries(dungeon, config);
+            }
+        }
+        
+        private void DrawRoomBoundaries(Dungeon dungeon, TagVisualizationConfig config)
+        {
+            // Draw room outline using a different approach to make it visible
+            foreach (Room room in dungeon.Rooms)
+            {
+                HashSet<Vector2Int> roomCells = new HashSet<Vector2Int>(room.Cells);
+        
+                foreach (Vector2Int cell in room.Cells)
+                {
+                    // Check if this cell is on the boundary
+                    bool isBoundary = false;
+            
+                    // Check all four directions
+                    Vector2Int[] directions = { Vector2Int.up, Vector2Int.down, Vector2Int.left, Vector2Int.right };
+            
+                    foreach (Vector2Int direction in directions)
+                    {
+                        Vector2Int adjacentCell = cell + direction;
+                
+                        // If any adjacent cell is not part of the room, this is a boundary cell
+                        if (!roomCells.Contains(adjacentCell))
+                        {
+                            isBoundary = true;
+                            break;
+                        }
+                    }
+            
+                    if (isBoundary)
+                    {
+                        // Draw boundary with specified thickness
+                        for (int i = 0; i < config.BoundaryThickness; i++)
+                        {
+                            DrawCell(cell, true, config.RoomBoundaryColor);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void DrawGlobalPlaceTags(Dungeon dungeon, TagVisualizationConfig config) {
+            // Draw room global place tags
+            foreach (Room room in dungeon.Rooms) {
+                GlobalPlaceTag tag = dungeon.Tags.GetGlobalPlaceTagForRoom(room);
+                if (tag != GlobalPlaceTag.None && config.GlobalPlaceTagColors.TryGetValue(tag, out Color color)) {
+                    // Make the color semi-transparent for better layering
+                    color.a = config.ColorBlendFactor;
+
+                    foreach (Vector2Int cell in room.Cells) {
+                        DrawCell(cell, true, color);
+                    }
+                }
+            }
+
+            // Draw tunnel global place tags
+            foreach (Tunnel tunnel in dungeon.Tunnels) {
+                GlobalPlaceTag tag = dungeon.Tags.GetGlobalPlaceTagForTunnel(tunnel);
+                if (tag != GlobalPlaceTag.None && config.GlobalPlaceTagColors.TryGetValue(tag, out Color color)) {
+                    color.a = config.ColorBlendFactor;
+
+                    foreach (Vector2Int cell in tunnel.Cells) {
+                        DrawCell(cell, true, color);
+                    }
+                }
+            }
+        }
+
+        private void DrawMacroTags(Dungeon dungeon, TagVisualizationConfig config) {
+            // Get all positions with macro tags
+            foreach (KeyValuePair<Vector2Int, MacroTag> taggedPosition in dungeon.Tags.GetAllMacroTaggedPositions()) {
+                if (taggedPosition.Value != MacroTag.None && config.MacroTagColors.TryGetValue(taggedPosition.Value, out Color color)) {
+                    // If we're in macro tag priority mode, use full opacity
+                    // Otherwise, blend with other tags
+                    if (config.VisualizationPriority == TagVisualizationConfig.TagLayerPriority.MacroTags) {
+                        DrawCell(taggedPosition.Key, true, color);
+                    }
+                    else {
+                        color.a = config.ColorBlendFactor;
+                        DrawCell(taggedPosition.Key, true, color);
+                    }
+                }
+            }
+        }
+
+        private void DrawMicroTags(Dungeon dungeon, TagVisualizationConfig config) {
+            // Get all positions with micro tags
+            foreach (KeyValuePair<Vector2Int, MicroTag> taggedPosition in dungeon.Tags.GetAllMicroTaggedPositions()) {
+                if (taggedPosition.Value != MicroTag.None && config.MicroTagColors.TryGetValue(taggedPosition.Value, out Color color)) {
+                    DrawCell(taggedPosition.Key, true, color);
+                }
             }
         }
 
@@ -63,11 +180,13 @@ namespace _Project.Features.MapGeneration.PNGExproter {
                 Color c = colorMap.ContainsKey(value) ? colorMap[value] : Color.magenta;
                 bool useBorder = false;
                 foreach (var room in dungeon.Rooms) {
-                    if (x >= room.PartitionBounds.x && x < room.PartitionBounds.xMax && y >= room.PartitionBounds.y && y < room.PartitionBounds.yMax) {
+                    if (x >= room.PartitionBounds.x && x < room.PartitionBounds.xMax && y >= room.PartitionBounds.y &&
+                        y < room.PartitionBounds.yMax) {
                         useBorder = true;
                         break;
                     }
                 }
+
                 DrawCell(x, y, useBorder, c);
             }
         }
@@ -91,7 +210,7 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             for (int dy = 0; dy < _scale; dy++) {
                 for (int dx = 0; dx < _scale; dx++) {
                     int px = x * _scale + dx;
-                    int py = (_rowCount - 1 - y) * _scale + dy;
+                    int py = y * _scale + dy;  // Fixed: removed the mirroring calculation
                     bool drawBorder = withBorder && (dx == 0 || dy == 0 || dx == _scale - 1 || dy == _scale - 1);
                     _texture.SetPixel(px, py, drawBorder ? _borderColor : c);
                 }

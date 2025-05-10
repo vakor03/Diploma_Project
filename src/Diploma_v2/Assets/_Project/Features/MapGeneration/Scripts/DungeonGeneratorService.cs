@@ -6,6 +6,7 @@ using _Project.Features.MapGeneration.Drukard;
 using _Project.Features.MapGeneration.Matrix;
 using _Project.Features.MapGeneration.RoomConnections;
 using _Project.Features.MapGeneration.Tagging;
+using _Project.Global.Collections;
 using UnityEngine;
 
 namespace _Project.Features.MapGeneration {
@@ -44,22 +45,31 @@ namespace _Project.Features.MapGeneration {
                 Tunnels = tunnels,
             };
 
-            DungeonTags dungeonTags = _dungeonTagService.TagAllRegions(dungeon, CreateTagRules(), CreateSubSpaceTagRules());
+            DungeonTags dungeonTags = _dungeonTagService.TagAllRegions(dungeon, GlobalPlaceTagRules(), MacroTagRules(), MicroTagRules());
 
             dungeon.Tags = dungeonTags;
 
             return dungeon;
         }
 
-        private List<IRoomTagRule> CreateTagRules() {
-            List<IRoomTagRule> rules = new();
-            rules.Add(new InitialRoomTagRule());
+        private PriorityList<IGlobalPlaceTagRule> GlobalPlaceTagRules() {
+            PriorityList<IGlobalPlaceTagRule> rules = new();
+            rules.Add(new InitialRoomGlobalPlaceTagRule(), 10);
+            rules.Add(new DefaultRoomGlobalPlaceTagRule(), 0);
+            rules.Add(new DefaultTunnelGlobalPlaceTagRule(), 0);
             return rules;
         }
 
-        private List<IRoomSubSpaceTagRule> CreateSubSpaceTagRules() {
-            List<IRoomSubSpaceTagRule> rules = new();
-            rules.Add(new PlayerPositionSubSpaceTagRule());
+        private PriorityList<IMicroTagRule> MicroTagRules() {
+            PriorityList<IMicroTagRule> rules = new();
+            rules.Add(new PlayerSpawnMicroTagRule(), 10);
+            rules.Add(new EnemySpawnMicroTagRule(), 9);
+            return rules;
+        }
+
+        private PriorityList<IMacroTagRule> MacroTagRules() {
+            PriorityList<IMacroTagRule> rules = new();
+            rules.Add(new FloorMacroTagRule(), 10);
             return rules;
         }
     }

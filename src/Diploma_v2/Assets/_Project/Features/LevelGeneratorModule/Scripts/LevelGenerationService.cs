@@ -19,16 +19,18 @@ namespace _Project.Features.LevelGeneratorModule {
         private readonly ITilemapsBootstrapService _tilemapsBootstrapService;
         private readonly ITilemapsService _tilemapsService;
         private readonly TilemapsDataHolder _tilemapsDataHolder;
+        private readonly EnemySpawnPointsModel _enemySpawnPointsModel;
 
         public LevelGenerationService(IDungeonGeneratorService dungeonGeneratorService, IStaticDataService staticData,
                                       PlayerSpawnPointsModel playerSpawnPointsModel, IInstantiator instantiator,
-                                      ITilemapsBootstrapService tilemapsBootstrapService, ITilemapsService tilemapsService, TilemapsDataHolder tilemapsDataHolder) {
+                                      ITilemapsBootstrapService tilemapsBootstrapService, ITilemapsService tilemapsService, TilemapsDataHolder tilemapsDataHolder, EnemySpawnPointsModel enemySpawnPointsModel) {
             _dungeonGeneratorService = dungeonGeneratorService;
             _playerSpawnPointsModel = playerSpawnPointsModel;
             _instantiator = instantiator;
             _tilemapsBootstrapService = tilemapsBootstrapService;
             _tilemapsService = tilemapsService;
             _tilemapsDataHolder = tilemapsDataHolder;
+            _enemySpawnPointsModel = enemySpawnPointsModel;
             _levelConfiguration = staticData.GetLevelConfiguration();
         }
 
@@ -39,8 +41,11 @@ namespace _Project.Features.LevelGeneratorModule {
             Dungeon dungeon = _dungeonGeneratorService.GenerateDungeon(generationConfiguration);
 
             SpawnTilesForDungeon(dungeon.Matrix);
-            foreach (Vector2Int vector2Int in dungeon.Tags.TaggedSubSpaces[SubSpaceTag.PlayerSpawnPoint])
+            foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.PlayerSpawnPoint))
                 _playerSpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, true));
+            
+            foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.EnemySpawnPoint))
+                _enemySpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, true));
         }
 
         private Vector2 GetPositionFromTilemap(Vector2Int tilePosition, bool centerOfTile) {
