@@ -1,100 +1,72 @@
-﻿using UnityEngine;
-using Zenject;
+﻿using _Project.Features.StatsModule;
 
 namespace _Project.Features.UpgradesModule.API {
-    public class UpgradeApplicationService : IUpgradeApplicationService
-    {
-        private readonly IStatService _statService;
+    public class UpgradeApplicationService : IUpgradeApplicationService {
         private readonly IPlayerWeaponService _playerWeaponService;
-    
-        // [Inject]
-        // public UpgradeApplicationService(IStatService statService, IPlayerWeaponService playerWeaponService)
-        // {
-        //     _statService = statService;
-        //     _playerWeaponService = playerWeaponService;
-        // }
-    
-        public void ApplyUpgrade(UpgradeData upgrade, int currentLevel, GameObject target)
-        {
-            switch (upgrade.upgradeType)
-            {
-                case UpgradeType.Stat:
-                    ApplyStatUpgrade(upgrade.statData, currentLevel + 1, target);
-                    break;
-                
-                case UpgradeType.Weapon:
-                    ApplyWeaponUpgrade(upgrade.weaponData, currentLevel + 1, target);
-                    break;
-                
-                case UpgradeType.WeaponUnlock:
-                    ApplyWeaponUnlock(upgrade.unlockData, target);
-                    break;
+        private readonly IStatService<PlayerStats> _statService;
+
+        public void ApplyUpgrade(UpgradeData upgrade, int currentLevel) {
+            switch (upgrade.upgradeType) {
+                case UpgradeType.Stat: ApplyStatUpgrade(upgrade.statData, currentLevel + 1); break;
+
+                case UpgradeType.Weapon: ApplyWeaponUpgrade(upgrade.weaponData, currentLevel + 1); break;
+
+                case UpgradeType.WeaponUnlock: ApplyWeaponUnlock(upgrade.unlockData); break;
             }
         }
-    
-        private void ApplyStatUpgrade(StatUpgradeData statData, int level, GameObject target)
-        {
+
+        private void ApplyStatUpgrade(StatUpgradeData statData, int level) {
             float value = statData.baseValue + (statData.valuePerLevel * (level - 1));
-            _statService.ModifyStat(target, statData.statType, value, statData.isPercentage);
+            if (statData.isPercentage)
+                _statService.ModifyStatPercentage(statData.statType, value);
+            else
+                _statService.ModifyStat(statData.statType, value);
         }
-    
-        private void ApplyWeaponUpgrade(WeaponUpgradeData weaponData, int level, GameObject target)
-        {
-            foreach (var modifier in weaponData.modifiers)
-            {
+
+        private void ApplyWeaponUpgrade(WeaponUpgradeData weaponData, int level) {
+            foreach (WeaponModifier modifier in weaponData.modifiers) {
                 float value = modifier.baseValue + (modifier.valuePerLevel * (level - 1));
-                _playerWeaponService.ModifyWeapon(target, weaponData.weaponId, modifier.modifierName, value, modifier.isPercentage);
+                _playerWeaponService.ModifyWeapon(weaponData.weaponType, modifier.statToModify, value, modifier.isPercentage);
             }
         }
-    
-        private void ApplyWeaponUnlock(WeaponUnlockData unlockData, GameObject target)
-        {
-            _playerWeaponService.UnlockWeapon(target, unlockData.weaponId, unlockData.weaponPrefab, unlockData.spawnOffset, unlockData.isPassiveWeapon);
-        }
-    
-        public string GetUpgradeDescription(UpgradeData upgrade, int level)
-        {
-            switch (upgrade.upgradeType)
-            {
-                case UpgradeType.Stat:
-                    return GetStatUpgradeDescription(upgrade.statData, level);
-                
-                case UpgradeType.Weapon:
-                    return GetWeaponUpgradeDescription(upgrade.weaponData, level);
-                
-                case UpgradeType.WeaponUnlock:
-                    return GetWeaponUnlockDescription(upgrade.unlockData, level);
-                
-                default:
-                    return upgrade.description;
+
+        private void ApplyWeaponUnlock(WeaponUnlockData unlockData) =>
+            _playerWeaponService.UnlockWeapon(unlockData.weaponType);
+
+        public string GetUpgradeDescription(UpgradeData upgrade, int level) {
+            switch (upgrade.upgradeType) {
+                case UpgradeType.Stat: return GetStatUpgradeDescription(upgrade.statData, level);
+
+                case UpgradeType.Weapon: return GetWeaponUpgradeDescription(upgrade.weaponData, level);
+
+                case UpgradeType.WeaponUnlock: return GetWeaponUnlockDescription(upgrade.unlockData, level);
+
+                default: return upgrade.description;
             }
         }
-    
-        private string GetStatUpgradeDescription(StatUpgradeData statData, int level)
-        {
+
+        private string GetStatUpgradeDescription(StatUpgradeData statData, int level) {
             float value = statData.baseValue + (statData.valuePerLevel * (level - 1));
             string suffix = statData.isPercentage ? "%" : "";
             return $"{statData.statType}: +{value}{suffix}";
         }
-    
-        private string GetWeaponUpgradeDescription(WeaponUpgradeData weaponData, int level)
-        {
+
+        private string GetWeaponUpgradeDescription(WeaponUpgradeData weaponData, int level) {
             var description = "";
-            foreach (var modifier in weaponData.modifiers)
-            {
+            foreach (var modifier in weaponData.modifiers) {
                 float value = modifier.baseValue + (modifier.valuePerLevel * (level - 1));
                 string suffix = modifier.isPercentage ? "%" : "";
-                description += $"{modifier.modifierName}: +{value}{suffix}\n";
+                description += $"{modifier.statToModify.ToString()}: +{value}{suffix}\n";
             }
+
             return description.TrimEnd('\n');
         }
-    
-        private string GetWeaponUnlockDescription(WeaponUnlockData unlockData, int level)
-        {
+
+        private string GetWeaponUnlockDescription(WeaponUnlockData unlockData, int level) {
             if (level >= 1)
                 return "Already Unlocked";
-        
-            return $"Unlock: {unlockData.weaponId}";
+
+            return $"Unlock: {unlockData.weaponType.ToString()}";
         }
     }
 }

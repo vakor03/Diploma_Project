@@ -12,7 +12,6 @@ namespace _Project.Features.UpgradesModule.API {
     
         public event Action<UpgradeData, int> OnUpgradeApplied;
     
-        [Inject]
         public UpgradeManagerService(
             IUpgradeValidationService validationService,
             IUpgradeApplicationService applicationService)
@@ -27,8 +26,9 @@ namespace _Project.Features.UpgradesModule.API {
             return level;
         }
     
-        public bool TryApplyUpgrade(UpgradeData upgrade, GameObject target)
-        {
+        public bool TryApplyUpgrade(UpgradeData upgrade) {
+
+            return true;
             int currentLevel = GetUpgradeLevel(upgrade.upgradeId);
         
             if (!_validationService.CanApplyUpgrade(upgrade, currentLevel))
@@ -37,7 +37,7 @@ namespace _Project.Features.UpgradesModule.API {
             }
         
             // Apply upgrade
-            _applicationService.ApplyUpgrade(upgrade, currentLevel, target);
+            _applicationService.ApplyUpgrade(upgrade, currentLevel);
         
             // Update level
             _upgradeLevels[upgrade.upgradeId] = currentLevel + 1;

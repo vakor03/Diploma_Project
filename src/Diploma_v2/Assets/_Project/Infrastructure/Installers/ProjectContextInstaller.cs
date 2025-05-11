@@ -1,7 +1,9 @@
 ﻿using _Project.Features.ExperienceModule;
+using _Project.Features.GameTimeModule;
 using _Project.Features.MapGeneration;
 using _Project.Features.MapGeneration.Matrix;
 using _Project.Infrastructure.AssetLoaderModule.Core;
+using _Project.Infrastructure.Installers;
 using _Project.Scripts.Infrastructure.AssetProviders;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Zenject;
@@ -13,6 +15,7 @@ namespace _Project.Scripts.Infrastructure.Installers {
             MatrixInstaller.Install(Container);
             AssetLoaderInstaller.Install(Container);
             EnumHelpersInstaller.Install(Container);
+            GameTimeInstaller.Install(Container);
 
             BindSceneLoader();
 

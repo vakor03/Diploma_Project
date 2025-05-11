@@ -6,24 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Configuraiton.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Configuraiton.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Window.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Window.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/HUDWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/Windows/HUDWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/HUDWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/Windows/HUDWindow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/Tilemap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/Tilemap.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/SingleUpgradeUI/SingleUpgradePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/SingleUpgradeUI/SingleUpgradePresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/IUpgradeApplicationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/IUpgradeApplicationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/IUpgradeManagerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/IUpgradeManagerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/UpgradeApplicationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/UpgradeApplicationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/UpgradeManagerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/UpgradeManagerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/UpgradeValidationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/UpgradeValidationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/IPlayerWeaponService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/IPlayerWeaponService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/IStatService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/IStatService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/StatType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/StatType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/StatUpgradeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/StatUpgradeData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/UpgradePools/UpgradeSelectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/UpgradePools/UpgradeSelectionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/WeaponModifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/WeaponModifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/WeaponUnlockData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/WeaponUnlockData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/WeaponUpgradeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/WeaponUpgradeData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/MVP/Core/Scripts/IWindowFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/MVP/Core/Scripts/IWindowFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/MVP/Core/Scripts/IWindowService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/MVP/Core/Scripts/IWindowService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/MVP/Core/Scripts/WindowFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/MVP/Core/Scripts/WindowFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/MVP/Core/Scripts/WindowService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/MVP/Core/Scripts/WindowService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/ProjectContextInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/ProjectContextInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/InitGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/InitGameState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,15 +147,13 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19284">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="19284" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -175,6 +182,7 @@
       <workItem from="1746877570019" duration="7484000" />
       <workItem from="1746886872328" duration="19926000" />
       <workItem from="1746965788564" duration="17369000" />
+      <workItem from="1746991736497" duration="5066000" />
     </task>
     <servers />
   </component>
@@ -249,13 +257,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/UpgradePools/UpgradeSelectionController.cs</url>
-          <line>28</line>
+          <line>30</line>
           <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\UpgradesModule\Scripts\UpgradePools\UpgradeSelectionController.cs" containingFunctionPresentation="Method 'ShowUpgradeSelection'">
             <startOffsets>
-              <option value="1131" />
+              <option value="1233" />
             </startOffsets>
             <endOffsets>
-              <option value="1217" />
+              <option value="1319" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="40" />

@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Configuraiton
   m_GUID: 63b082eee4a6314418e21026fc803e80
   m_SerializeEntries:
+  - m_GUID: 0363ba7cfd7c60e408865d74650c21d0
+    m_Address: DefaultStatsDatabase
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 546aa882416e9ae42bfb02ac61be9935
     m_Address: SingleUpgradeFactoryConfiguration
     m_ReadOnly: 0

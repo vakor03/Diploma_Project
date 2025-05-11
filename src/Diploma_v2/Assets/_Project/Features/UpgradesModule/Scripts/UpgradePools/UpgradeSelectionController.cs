@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _Project.Features.GameTimeModule;
 using _Project.Features.UIModule;
 using _Project.Features.UIModule.ChooseUpgradesUI;
 using _Project.Features.UIModule.Windows;
@@ -14,6 +15,7 @@ namespace _Project.Features.UpgradesModule.UpgradePools {
         [Inject] private IUpgradePoolService _upgradePool;
         [Inject] private UpgradesToShowModel _upgradesToShowModel;
         [Inject] private IWindowService _windowService;
+        [Inject] private IGamePauseService _gamePauseService;
         // [Inject] private IPlayerStatsService _playerStats;
         [SerializeField] private float _luck;
         [SerializeField] private int _level;
@@ -33,6 +35,7 @@ namespace _Project.Features.UpgradesModule.UpgradePools {
             //     Debug.Log($"Upgrade {i+1}: {upgrades[i].displayName} ({upgrades[i].rarity})");
             
             _upgradesToShowModel.SetUpgradesToShow(upgrades.ConvertAll(el=>el.upgradeId));
+            _gamePauseService.StopTime();
             _windowService.ShowWindow<ChooseUpgradeWindow>();
         }
 

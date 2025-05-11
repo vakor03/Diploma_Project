@@ -1,37 +1,24 @@
-﻿using Zenject;
-
-namespace _Project.Features.UpgradesModule.API {
-    public class UpgradeValidationService : IUpgradeValidationService
-    {
-        // private readonly IPlayerWeaponService _playerWeaponService;
-        //
-        // [Inject]
-        // public UpgradeValidationService(IPlayerWeaponService playerWeaponService) =>
-        //     _playerWeaponService = playerWeaponService;
-
-        public bool CanApplyUpgrade(UpgradeData upgrade, int currentLevel)
-        {
-            // Here you can add your custom logic for when upgrades can be applied
-            // For example, based on player level, resources, etc.
+﻿namespace _Project.Features.UpgradesModule.API {
+    public class UpgradeValidationService : IUpgradeValidationService {
+        private readonly IPlayerWeaponService _playerWeaponService;
         
-            // switch (upgrade.upgradeType)
-            // {
-            //     case UpgradeType.WeaponUnlock:
-            //         // Check if weapon is already unlocked
-            //         return !_playerWeaponService.IsWeaponUnlocked(upgrade.unlockData.weaponId);
-            //     
-            //     case UpgradeType.Weapon:
-            //         // Check if target weapon is unlocked
-            //         return _playerWeaponService.IsWeaponUnlocked(upgrade.weaponData.weaponId);
-            //     
-            //     case UpgradeType.Stat:
-            //         // Stats can always be upgraded - add your custom logic here
-            //         return true;
-            // }
-            //
-            // return false;
+        public UpgradeValidationService(IPlayerWeaponService playerWeaponService) =>
+            _playerWeaponService = playerWeaponService;
 
-            return true;
+        public bool CanApplyUpgrade(UpgradeData upgrade, int currentLevel) {
+            switch (upgrade.upgradeType)
+            {
+                case UpgradeType.WeaponUnlock:
+                    return !_playerWeaponService.IsWeaponUnlocked(upgrade.unlockData.weaponType);
+                
+                case UpgradeType.Weapon:
+                    return _playerWeaponService.IsWeaponUnlocked(upgrade.weaponData.weaponType);
+                
+                case UpgradeType.Stat:
+                    return true;
+            }
+            
+            return false;
         }
     }
 }
