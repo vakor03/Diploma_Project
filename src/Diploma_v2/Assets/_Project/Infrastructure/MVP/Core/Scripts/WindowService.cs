@@ -1,14 +1,19 @@
 ﻿using System;
+using System.Linq;
+using UnityEngine;
+using Zenject;
 using Object = UnityEngine.Object;
 
 namespace _Project.Infrastructure.MVP.Core {
     public class WindowService : IWindowService {
         private readonly ActiveWindowDataHolder _activeWindowDataHolder;
         private readonly IWindowFactory _windowFactory;
+        private readonly IInstantiator _instantiator;
 
-        public WindowService(ActiveWindowDataHolder activeWindowDataHolder, IWindowFactory windowFactory) {
+        public WindowService(ActiveWindowDataHolder activeWindowDataHolder, IWindowFactory windowFactory, IInstantiator instantiator) {
             _activeWindowDataHolder = activeWindowDataHolder;
             _windowFactory = windowFactory;
+            _instantiator = instantiator;
         }
 
         public WindowStatus GetWindowStatus<TWindow>() where TWindow : WindowBehaviour =>
@@ -30,9 +35,28 @@ namespace _Project.Infrastructure.MVP.Core {
                 _activeWindowDataHolder.WindowGameObjectMap[windowType] = windowBehaviour;
                 _activeWindowDataHolder.WindowStatusMap[windowType] = WindowStatus.Opened;
                 
-                foreach (PresenterBehaviour presenterBehaviour in windowBehaviour.GetAllWindowPresenters())
+                foreach (PresenterBehaviour presenterBehaviour in windowBehaviour.GetAllWindowPresenters().ToList())
                     presenterBehaviour.OnViewSet();
             }
+        }
+        
+        public TPresenter CreatePresenterForWindow<TWindow, TPresenter>(RectTransform parent, ViewBehaviour prefab)
+            where TWindow : WindowBehaviour where TPresenter : PresenterBehaviour {
+            if (GetWindowStatus<TWindow>() != WindowStatus.Opened)
+                throw new Exception($"Window {typeof(TWindow).Name} should be opened.");
+            
+            Type windowType = typeof(TWindow);
+            if (!_activeWindowDataHolder.WindowGameObjectMap.TryGetValue(windowType, out WindowBehaviour windowBehaviour))
+                throw new Exception($"Window {typeof(TWindow).Name} not found.");
+
+            ViewBehaviour viewBehaviour = _instantiator.InstantiatePrefabForComponent<ViewBehaviour>(prefab, parent);
+            PresenterBehaviour presenter = _windowFactory.CreatePresenterForView(windowBehaviour, viewBehaviour);
+            
+            presenter.OnViewSet();
+            
+            Debug.Assert(presenter is TPresenter, $"Presenter {presenter.GetType()} is not of type {typeof(TPresenter)}");
+
+            return presenter as TPresenter;
         }
 
         public void HideWindow<TWindow>() where TWindow : WindowBehaviour {

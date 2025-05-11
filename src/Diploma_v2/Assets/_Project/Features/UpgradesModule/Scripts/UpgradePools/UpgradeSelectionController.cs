@@ -1,5 +1,9 @@
 ﻿using System.Collections.Generic;
+using _Project.Features.UIModule;
+using _Project.Features.UIModule.ChooseUpgradesUI;
+using _Project.Features.UIModule.Windows;
 using _Project.Features.UpgradesModule.API;
+using _Project.Infrastructure.MVP.Core;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Zenject;
@@ -8,6 +12,8 @@ namespace _Project.Features.UpgradesModule.UpgradePools {
     public class UpgradeSelectionController : MonoBehaviour
     {
         [Inject] private IUpgradePoolService _upgradePool;
+        [Inject] private UpgradesToShowModel _upgradesToShowModel;
+        [Inject] private IWindowService _windowService;
         // [Inject] private IPlayerStatsService _playerStats;
         [SerializeField] private float _luck;
         [SerializeField] private int _level;
@@ -23,8 +29,11 @@ namespace _Project.Features.UpgradesModule.UpgradePools {
             List<UpgradeData> upgrades = _upgradePool.GetRandomUpgrades(playerLevel, luckStat, 3);
 
             // Display them
-            for (int i = 0; i < upgrades.Count; i++)
-                Debug.Log($"Upgrade {i+1}: {upgrades[i].displayName} ({upgrades[i].rarity})");
+            // for (int i = 0; i < upgrades.Count; i++)
+            //     Debug.Log($"Upgrade {i+1}: {upgrades[i].displayName} ({upgrades[i].rarity})");
+            
+            _upgradesToShowModel.SetUpgradesToShow(upgrades.ConvertAll(el=>el.upgradeId));
+            _windowService.ShowWindow<ChooseUpgradeWindow>();
         }
 
         // Optional: See what rarities would be selected

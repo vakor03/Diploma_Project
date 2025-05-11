@@ -17,6 +17,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string XP_ORB_CONFIGURATION = "XPOrbConfiguration_Default";
             public const string XP_LEVEL_CONFIGURATION = "XPLevelConfiguration_Default";
             public const string UPGRADE_DATABASE = "UpgradeDatabase";
+            public const string SINGLE_UPGRADE_FACTORY_CONFIGURATION = "SingleUpgradeFactoryConfiguration";
         }
     }
 

@@ -4,6 +4,7 @@ using _Project.Features.LevelGeneratorModule;
 using _Project.Features.PlayerModule;
 using _Project.Features.PlayerSpawnerModule;
 using _Project.Features.UIModule;
+using _Project.Features.UIModule.Windows;
 using _Project.Infrastructure.MVP.Core;
 using UnityEngine;
 
@@ -43,6 +44,7 @@ namespace _Project.Scripts.Infrastructure.StateMachines.GameplayStates
                 _enemySpawnerService.SpawnEnemyAt(spawnPoint);
             _cameraService.FollowTarget(player.transform);
             _windowService.ShowWindow<HUDWindow>();
+            // _windowService.ShowWindow<ChooseUpgradeWindow>();
         }
 
         public void Exit()

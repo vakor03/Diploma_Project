@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: UpgradeData_Test3_Default
   m_EditorClassIdentifier: 
   upgradeId: 4
-  displayName: 
-  description: 
+  displayName: asdfhbgfhd
+  description: sedtgjnsdrtyfgjkfsg
   rarity: 2
   upgradeType: 1
-  icon: {fileID: 0}
+  icon: {fileID: -537221702989897742, guid: 154ccd4fa6b97d94584a7cdfb2d7d49f, type: 3}
   statData:
     statType: 0
     baseValue: 10

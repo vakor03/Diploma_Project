@@ -39,13 +39,18 @@ namespace _Project.Infrastructure.MVP.Core {
             return windowInstance;
         }
 
+        public PresenterBehaviour CreatePresenterForView<TWindow>(TWindow windowBehaviour, ViewBehaviour viewBehaviour) where TWindow : WindowBehaviour {
+            PresenterBehaviour presenter = _presenterFactory.CreatePresenterForView(viewBehaviour);
+            windowBehaviour.RegisterPresenter(presenter);
+            presenter.SetView(viewBehaviour);
+
+            return presenter;
+        }
+
         private void CreatePresentersForWindow<TWindow>(GameObject windowInstance, TWindow windowBehaviour)
             where TWindow : WindowBehaviour {
-            foreach (ViewBehaviour viewBehaviour in windowInstance.GetComponentsInChildren<ViewBehaviour>()) {
-                PresenterBehaviour presenter = _presenterFactory.CreatePresenterForView(viewBehaviour);
-                windowBehaviour.RegisterPresenter(presenter);
-                presenter.SetView(viewBehaviour);
-            }
+            foreach (ViewBehaviour viewBehaviour in windowInstance.GetComponentsInChildren<ViewBehaviour>())
+                CreatePresenterForView(windowBehaviour, viewBehaviour);
         }
     }
 }

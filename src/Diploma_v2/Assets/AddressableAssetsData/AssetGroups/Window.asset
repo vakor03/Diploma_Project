@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Window
   m_GUID: 4a7989f53f6c53f4681a1b9e405e3f39
   m_SerializeEntries:
+  - m_GUID: d3d772a2cac67174485ddf8cb293bb36
+    m_Address: ChooseUpgradeWindow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e5106201cb020854db4a208ba83a7beb
     m_Address: HUDWindow
     m_ReadOnly: 0
