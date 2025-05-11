@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using _Project.Scripts.Infrastructure.AssetProviders;
+using NUnit.Framework;
+using UnityEngine;
 using Zenject;
 
 namespace _Project.Features.ExperienceModule {
@@ -6,8 +8,8 @@ namespace _Project.Features.ExperienceModule {
         private readonly XPOrbConfiguration _orbConfig;
         private readonly IInstantiator _instantiator;
 
-        public XPOrbFactory(XPOrbConfiguration orbConfig, DiContainer instantiator) {
-            _orbConfig = orbConfig;
+        public XPOrbFactory(IStaticDataService staticDataService, DiContainer instantiator) {
+            _orbConfig = staticDataService.GetXPOrbConfiguration();
             _instantiator = instantiator;
         }
 
@@ -19,9 +21,5 @@ namespace _Project.Features.ExperienceModule {
 
             return orb;
         }
-    }
-    
-    public interface IXPOrbSpawnService {
-        public void SpawnXPOrb(XPOrbType orbType, float experience, Vector3 position);
     }
 }

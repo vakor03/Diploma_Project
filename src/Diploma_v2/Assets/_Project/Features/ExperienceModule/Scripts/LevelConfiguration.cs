@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace _Project.Features.ExperienceModule {
-    [CreateAssetMenu(fileName = "LevelConfig", menuName = "Game/Level Configuration")]
+    [CreateAssetMenu(fileName = nameof(XPLevelConfiguration) + "_Default", menuName = "Configurations/ExperienceModule/" + nameof(XPLevelConfiguration))]
     public class XPLevelConfiguration : ScriptableObject
     {
         [Header("Level Settings")]

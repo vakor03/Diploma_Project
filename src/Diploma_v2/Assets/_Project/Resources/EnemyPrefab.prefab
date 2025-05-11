@@ -17,7 +17,8 @@ GameObject:
   - component: {fileID: 5379287984967324320}
   - component: {fileID: 6593112515337380651}
   - component: {fileID: 8326252047709485894}
-  m_Layer: 0
+  - component: {fileID: 883707553138689310}
+  m_Layer: 8
   m_Name: EnemyPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,6 +248,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthController: {fileID: 6593112515337380651}
+--- !u!114 &883707553138689310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980256991180106563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2cca95e5df6435fb18a5a535b4ac242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _experienceAmount: 100
+  _entityHealthController: {fileID: 6593112515337380651}
+  _spawnPoint: {fileID: 8731129376497610844}
 --- !u!1 &7756013070610996909
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7537006007702296606}
   - component: {fileID: 246782683731735101}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

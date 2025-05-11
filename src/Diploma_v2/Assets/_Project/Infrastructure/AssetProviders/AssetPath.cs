@@ -14,6 +14,8 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string PREDEFINED_SEED_CONFIGURATION = "PredefinedSeedConfiguration";
             public const string LEVEL_CONFIGURATION = "LevelConfiguration_Default";
             public const string TAG_VISUALIZATION_CONFIG = "TagVisualizationConfig";
+            public const string XP_ORB_CONFIGURATION = "XPOrbConfiguration_Default";
+            public const string XP_LEVEL_CONFIGURATION = "XPLevelConfiguration_Default";
         }
     }
 
@@ -21,6 +23,8 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         Default = 0,
         Ground = 6,
         Platform = 7,
+        Enemy = 8,
+        Player = 9,
     }
 
     public static class Address {

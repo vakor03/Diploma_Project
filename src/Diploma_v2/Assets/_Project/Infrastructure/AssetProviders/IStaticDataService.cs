@@ -1,4 +1,5 @@
 ﻿using _Project.Features.Enemy;
+using _Project.Features.ExperienceModule;
 using _Project.Features.LevelGeneratorModule;
 using _Project.Features.MapGeneration.PNGExproter;
 using _Project.Features.PlayerModule;
@@ -15,5 +16,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         public CinemachineVirtualCameraBase GetCameraPrefab();
         public TagVisualizationConfig GetTagVisualizationConfig();
         public Enemy GetEnemyPrefab();
+        public XPOrbConfiguration GetXPOrbConfiguration();
+        public XPLevelConfiguration GetXPLevelConfiguration();
     }
 }

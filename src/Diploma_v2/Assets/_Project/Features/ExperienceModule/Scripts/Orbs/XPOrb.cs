@@ -44,34 +44,36 @@ namespace _Project.Features.ExperienceModule {
         public void MoveToTarget(Transform target)
         {
             if (isMoving) return;
-        
+
             isMoving = true;
             orbCollider.enabled = false;
-        
-            // Create movement sequence
+
+            Transform targetTransform = target;
+    
+            float moveTime = 1f / orbData.moveSpeed;
+    
             moveSequence = DOTween.Sequence();
-        
-            // Move to target
-            moveSequence.Append(transform.DOMove(target.position, 1f / orbData.moveSpeed)
-                .SetEase(orbData.moveCurve));
-        
-            // Dissolve effect
+    
+            Vector3 startPos = transform.position;
+            moveSequence.Append(DOTween.To(() => 0f, x => 
+            {
+                float t = orbData.moveCurve.Evaluate(x);
+                transform.position = Vector3.Lerp(startPos, targetTransform.position, t);
+            }, 1f, moveTime));
+
             moveSequence.AppendCallback(() => 
             {
                 if (pickupFX != null)
                 {
                     pickupFX.Play();
                 }
-            
-                // Scale down during dissolve
+    
                 transform.DOScale(0f, orbData.dissolveDuration)
                     .SetEase(Ease.InBack);
-            
-                // Fade out sprite
+    
                 orbSprite.DOFade(0f, orbData.dissolveDuration)
                     .OnComplete(() => 
                     {
-                        // Call pickup event here if needed
                         Destroy(gameObject);
                     });
             });

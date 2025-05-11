@@ -1,4 +1,5 @@
-﻿using _Project.Features.MapGeneration;
+﻿using _Project.Features.ExperienceModule;
+using _Project.Features.MapGeneration;
 using _Project.Features.MapGeneration.Matrix;
 using _Project.Infrastructure.AssetLoaderModule.Core;
 using _Project.Scripts.Infrastructure.AssetProviders;
@@ -11,6 +12,7 @@ namespace _Project.Scripts.Infrastructure.Installers {
             DataInstaller.Install(Container);
             MatrixInstaller.Install(Container);
             AssetLoaderInstaller.Install(Container);
+            EnumHelpersInstaller.Install(Container);
 
             BindSceneLoader();
 
