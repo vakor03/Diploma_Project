@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/ExperienceModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/ExperienceModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/GameResources/HUDWindow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/GameResources/HUDWindow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/HUDWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/HUDWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/InitGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/InitGameState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +161,7 @@
       <workItem from="1746758826612" duration="8115000" />
       <workItem from="1746877570019" duration="7484000" />
       <workItem from="1746886872328" duration="19926000" />
-      <workItem from="1746965788564" duration="4742000" />
+      <workItem from="1746965788564" duration="7604000" />
     </task>
     <servers />
   </component>
@@ -205,6 +207,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/PlayerLevelUI/PlayerXPPresenter.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\UIModule\Scripts\PlayerLevelUI\PlayerXPPresenter.cs" containingFunctionPresentation="Method 'UpdateXPPercent'">
+            <startOffsets>
+              <option value="1365" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1382" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/ExperienceModel.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\ExperienceModule\Scripts\ExperienceModel.cs" containingFunctionPresentation="Method 'SetCurrentXP'">
+            <startOffsets>
+              <option value="677" />
+            </startOffsets>
+            <endOffsets>
+              <option value="692" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/ExperienceModel.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\ExperienceModule\Scripts\ExperienceModel.cs" containingFunctionPresentation="Method 'IncrementLevel'">
+            <startOffsets>
+              <option value="1153" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1168" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />

@@ -3,7 +3,7 @@ using _Project.Features.Enemy.EnemySpawner;
 using _Project.Features.LevelGeneratorModule;
 using _Project.Features.PlayerModule;
 using _Project.Features.PlayerSpawnerModule;
-using _Project.Features.UIModule.Scripts;
+using _Project.Features.UIModule;
 using _Project.Infrastructure.MVP.Core;
 using UnityEngine;
 

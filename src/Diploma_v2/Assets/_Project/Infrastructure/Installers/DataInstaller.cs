@@ -1,4 +1,5 @@
 ﻿using _Project.Features.ExperienceModule;
+using _Project.Features.PlayerModule;
 using _Project.Features.PlayerSpawnerModule;
 using Zenject;
 
@@ -8,6 +9,7 @@ namespace _Project.Scripts.Infrastructure.Installers {
             InstallModel<PlayerSpawnPointsModel>();
             InstallModel<EnemySpawnPointsModel>();
             InstallModel<ExperienceModel>();
+            InstallModel<PlayerHealthModel>();
         }
         
         private void InstallModel<T> () where T : IModel =>
