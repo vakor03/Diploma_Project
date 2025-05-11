@@ -16,6 +16,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string TAG_VISUALIZATION_CONFIG = "TagVisualizationConfig";
             public const string XP_ORB_CONFIGURATION = "XPOrbConfiguration_Default";
             public const string XP_LEVEL_CONFIGURATION = "XPLevelConfiguration_Default";
+            public const string UPGRADE_DATABASE = "UpgradeDatabase";
         }
     }
 

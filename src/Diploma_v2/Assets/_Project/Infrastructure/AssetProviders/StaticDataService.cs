@@ -4,6 +4,7 @@ using _Project.Features.LevelGeneratorModule;
 using _Project.Features.MapGeneration.PNGExproter;
 using _Project.Features.PlayerModule;
 using _Project.Features.SeedModule;
+using _Project.Features.UpgradesModule.API;
 using Unity.Cinemachine;
 using UnityEditor.VersionControl;
 using Zenject;
@@ -22,6 +23,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         private Enemy _enemyPrefab;
         private XPOrbConfiguration _xpOrbConfiguration;
         private XPLevelConfiguration _xpLevelConfiguration;
+        private UpgradeDatabase _upgradeDatabase;
 
         public StaticDataService(IAssetProvider assetProvider) =>
             _assetProvider = assetProvider;

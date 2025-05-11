@@ -5,6 +5,7 @@ using _Project.Features.Installers;
 using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
 using _Project.Features.MapGeneration;
 using _Project.Features.MapGeneration.Matrix;
+using _Project.Features.UpgradesModule.API;
 using _Project.Infrastructure.MVP.Core;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Zenject;
@@ -27,6 +28,7 @@ namespace _Project.Infrastructure.SceneContexts.Scripts
             EnemySpawnerInstaller.Install(Container);
             XPOrbsInstaller.Install(Container);
             ExperienceInstaller.Install(Container);
+            UpgradesInstaller.Install(Container);
 
             BindStatesFactory();
 
