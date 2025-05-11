@@ -6,20 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/ExperienceService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/ExperienceService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/LevelConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/LevelConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/Orbs/XPOrb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/Orbs/XPOrb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/Orbs/XPOrbConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/Orbs/XPOrbConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/Orbs/XPOrbFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/Orbs/XPOrbFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/IStaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/ProjectContextInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/ProjectContextInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/EnemyPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/EnemyPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +159,7 @@
       <workItem from="1746758826612" duration="8115000" />
       <workItem from="1746877570019" duration="7484000" />
       <workItem from="1746886872328" duration="19926000" />
-      <workItem from="1746965788564" duration="3173000" />
+      <workItem from="1746965788564" duration="4742000" />
     </task>
     <servers />
   </component>
@@ -216,33 +205,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <condition expression="_dropTimer &lt;= 0f" language="C#" />
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs</url>
-          <line>41</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\PlayerModule\DropThroughPlatformController.cs" containingFunctionPresentation="Method 'UpdateDropState'">
-            <startOffsets>
-              <option value="1012" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1041" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs</url>
-          <line>40</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\PlayerModule\DropThroughPlatformController.cs" containingFunctionPresentation="Method 'UpdateDropState'">
-            <startOffsets>
-              <option value="981" />
-            </startOffsets>
-            <endOffsets>
-              <option value="997" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />

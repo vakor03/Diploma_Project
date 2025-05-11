@@ -1,51 +1,46 @@
-﻿// PlatformDropThrough.cs
-
+﻿using System.Linq;
 using _Project.Features.InputModule;
+using _Project.Features.PhysicsModule;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Zenject;
 
-public class DropThroughPlatformController : MonoBehaviour {
-    [Header("Settings")]
-    [SerializeField] private float dropThroughTime = 0.5f;
+namespace _Project.Features.PlayerModule {
+    public class DropThroughPlatformController : MonoBehaviour {
+        [Header("Settings")]
+        [SerializeField] private Collider2D _platformCollider;
+        [SerializeField] private CollisionHandler2D _platformDetector;
 
-    [SerializeField] private LayerMask platformLayers = -1;
+        [Inject] private IInputService _inputService;
 
-    [SerializeField] private Collider2D _platformCollider;
+        private bool _isDropping = false;
 
-    [Inject] private IInputService _inputService;
-
-    private bool _isDropping = false;
-    private float _dropTimer = 0f;
-    private float _originalRotation = 0f;
-
-    void Update() {
-        HandleDropThroughInput();
-        UpdateDropState();
-    }
-
-    void HandleDropThroughInput() {
-        if (_inputService.GetMoveDirection().y < 0) {
-            TryDropThrough();
+        private void Update() {
+            HandleDropThroughInput();
+            if (_isDropping)
+                HandleIsDropping();
+            else
+                HandleIsNotDropping();
         }
-    }
 
-    [Button]
-    void TryDropThrough() {
-        _isDropping = true;
-        _dropTimer = dropThroughTime;
-        _platformCollider.enabled = false;
-    }
-
-    void UpdateDropState() {
-        if (_isDropping) {
-            _dropTimer -= Time.deltaTime;
-
-            if (_dropTimer <= 0f) {
+        private void HandleIsNotDropping() {
+            if (ColliderCanBeEnabledBack())
                 _platformCollider.enabled = true;
+        }
 
-                _isDropping = false;
-            }
+        private void HandleIsDropping() =>
+            _platformCollider.enabled = false;
+
+        private bool ColliderCanBeEnabledBack() =>
+            !_platformDetector.TriggeredColliders.Any();
+
+        private void HandleDropThroughInput() =>
+            _isDropping = _inputService.GetMoveDirection().y < 0;
+
+        [Button]
+        void TryDropThrough() {
+            _isDropping = true;
+            _platformCollider.enabled = false;
         }
     }
 }
