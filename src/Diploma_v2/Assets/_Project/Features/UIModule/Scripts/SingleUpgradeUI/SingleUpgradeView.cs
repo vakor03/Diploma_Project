@@ -12,20 +12,22 @@ namespace _Project.Features.UIModule.SingleUpgradeUI {
 
         private void OnEnable() =>
             _claimUpgradeButton.onClick.AddListener(InvokeOnClaimUpgradeClicked);
-    
+
         private void OnDisable() =>
             _claimUpgradeButton.onClick.RemoveListener(InvokeOnClaimUpgradeClicked);
-    
+
         public override void SetIconImage(Sprite sprite) =>
             _iconImage.sprite = sprite;
-    
+
         public override void SetTitle(string title) =>
             _titleText.text = title;
-    
+
         public override void SetDescription(string description) =>
             _descriptionText.text = description;
-    
-        public override void SetPanelColor(Color color) =>
-            _panelImage.color = color;
+
+        public override void SetPanelColor(Color color) {
+            if (_panelImage)
+                _panelImage.color = color;
+        }
     }
 }

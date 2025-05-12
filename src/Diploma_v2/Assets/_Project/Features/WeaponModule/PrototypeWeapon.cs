@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _Project.Features.StatsModule;
+using UnityEngine;
 using Zenject;
 
 namespace _Project.Features.WeaponModule
@@ -32,6 +33,11 @@ namespace _Project.Features.WeaponModule
             //     Quaternion.Euler(0f, 0f, Mathf.Atan2(globalFireDirection.y, globalFireDirection.x) * Mathf.Rad2Deg),
             //     null
             // );
+        }
+
+        public IStatService<WeaponStats> Stats { get; }
+        public void InitWeaponStats(IStatService<WeaponStats> weaponStats) {
+            throw new System.NotImplementedException();
         }
     }
 }

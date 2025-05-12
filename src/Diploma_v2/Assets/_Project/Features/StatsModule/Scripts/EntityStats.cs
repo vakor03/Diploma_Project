@@ -1,5 +1,5 @@
 ﻿namespace _Project.Features.StatsModule {
-    public enum EnemyStats
+    public enum EntityStats
     {
         Health = 0,
         AttackDamage = 1,

@@ -13,9 +13,9 @@ namespace _Project.Features.UpgradesModule {
         private readonly PlayerWeaponModel _playerWeaponModel;
         private readonly IStatService<WeaponStats> _statService;
 
-        public PlayerWeaponService(PlayerWeaponModel playerWeaponModel, IStatService<WeaponStats> statService) {
+        public PlayerWeaponService(PlayerWeaponModel playerWeaponModel) {
             _playerWeaponModel = playerWeaponModel;
-            _statService = statService;
+            // _statService = statService;
         }
 
         public void ModifyWeapon(WeaponType weaponType, WeaponStats statToModify, float value, bool isPercentage) {

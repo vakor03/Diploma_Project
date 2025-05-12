@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _Project.Features.StatsModule;
 using UnityEngine;
 
 namespace _Project.Features.WeaponModule
@@ -12,7 +13,7 @@ namespace _Project.Features.WeaponModule
         public void ClearAllWeapons() =>
             _equippedWeapons.Clear();
 
-        public void AddWeapon(IWeapon weapon)
+        public void AddWeapon(IWeapon weapon, IStatService<WeaponStats> weaponStats)
         {
             if (_equippedWeapons.Contains(weapon))
             {
@@ -21,6 +22,7 @@ namespace _Project.Features.WeaponModule
             }
 
             _equippedWeapons.Add(weapon);
+            weapon.InitWeaponStats(weaponStats);
         }
 
         public void RemoveWeapon(IWeapon weapon) =>

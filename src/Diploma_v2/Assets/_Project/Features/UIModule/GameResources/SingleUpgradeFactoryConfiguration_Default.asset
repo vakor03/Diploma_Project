@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e674aa8fe2f49228ab6fb94e829ca30, type: 3}
   m_Name: SingleUpgradeFactoryConfiguration_Default
   m_EditorClassIdentifier: 
-  <SingleUpgradePrefab>k__BackingField: {fileID: 7962720315726880878, guid: 56f75c2a01d0cfb45a97415cdfe20526, type: 3}
+  <SingleUpgradePrefab>k__BackingField: {fileID: 2316176769346351215, guid: 9492eece933ad6c448f14e2d0374a2c8, type: 3}
