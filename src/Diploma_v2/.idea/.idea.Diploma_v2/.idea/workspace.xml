@@ -5,24 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GenerateLevelState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Configuraiton.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Configuraiton.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Tilemap/BasicLevelRuleTile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Tilemap/BasicLevelRuleTile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Tilemap/LevelPalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Tilemap/LevelPalette.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/Tilemap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/Tilemap.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Bootstraps/Scripts/GameplayBootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Bootstraps/Scripts/GameplayBootstrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/InitGameState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/InitGameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GenerateLevelState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/TilesConfiguration_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/TilesConfiguration_Default.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/New Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/ShadowOfStorms.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/ShadowOfStorms.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/ShadowOfStorms.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/ShadowOfStorms.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/attack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/attack1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/attack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/attack2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/gunshotWithFX.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/gunshotWithFX.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/reload.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/reload.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/run.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/walkWithGun.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/walkWithGun.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/stormhead/StormHead.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/stormhead/StormHead.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/stormhead/attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/stormhead/attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/stormhead/damaged.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/stormhead/damaged.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/sword of storms/SwordOfStorms.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/sword of storms/SwordOfStorms.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/sword of storms/SwordOfStorms_Visuals.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/sword of storms/SwordOfStorms_Visuals.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/sword of storms/attack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/sword of storms/attack1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/sword of storms/attack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/sword of storms/attack2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/sword of storms/damagedAndDeath.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/sword of storms/damagedAndDeath.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/DamageArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageArgs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/DamageArgs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageArgs.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/DamageResistances.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageResistances.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/DamageResistances.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageResistances.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/DamageType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/DamageType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/DeathArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DeathArgs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/DeathArgs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DeathArgs.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/EntityHealthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/EntityHealthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/EntityHealthController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/EntityHealthController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/EntityHealthData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/EntityHealthData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/EntityHealthData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/EntityHealthData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/HealArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealArgs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/HealArgs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealArgs.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/HealType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/HealType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/HealthChangeArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealthChangeArgs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/HealthChangeArgs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealthChangeArgs.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +76,14 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@624f919d8cdd/Runtime/Core/CinemachineVirtualCameraBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@e2c83221d2dc/InputSystem/InputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/asdf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/131dc8adfd6d4dd29afb49ff24f8b5c22f200/0d/f6e84b6f/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/131dc8adfd6d4dd29afb49ff24f8b5c22f200/a3/ae67ce45/ContactFilter2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13c0c460649d4ce49f991e2c222fa63546ae00/18/94a5785d/List`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13c0c460649d4ce49f991e2c222fa63546ae00/7b/62f8d4e8/Dictionary`2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/20/3a0803a8/Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/3a/0ba99a0d/Resources.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/48/d8a93664/Vector2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/8d/309c0bf0/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/8d/309c0bf0/Transform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/e5/a0b2f47f/RectInt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/fe/4716d0e7/Color.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7ae67de414c34a0397e0ee5801c5da5a10fc00/c9/ef0bba6a/LargeArrayBuilder`1.cs" root0="FORCE_HIGHLIGHTING" />
@@ -177,6 +201,7 @@
       <workItem from="1746991736497" duration="8498000" />
       <workItem from="1747057075546" duration="595000" />
       <workItem from="1747059870729" duration="7153000" />
+      <workItem from="1747130175744" duration="9579000" />
     </task>
     <servers />
   </component>
