@@ -1,0 +1,563 @@
+fileFormatVersion: 2
+guid: 32695cedda81c7f4caea42efb0acc8a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6862520964493181699
+    second: Electricuitioner-Range Attack_0
+  - first:
+      213: -6067532687296640516
+    second: Electricuitioner-Range Attack_1
+  - first:
+      213: -4104606843634106059
+    second: Electricuitioner-Range Attack_2
+  - first:
+      213: -8048468624738641583
+    second: Electricuitioner-Range Attack_3
+  - first:
+      213: 5898383204417392193
+    second: Electricuitioner-Range Attack_4
+  - first:
+      213: -8001390703782556548
+    second: Electricuitioner-Range Attack_5
+  - first:
+      213: 5770707282411436738
+    second: Electricuitioner-Range Attack_6
+  - first:
+      213: 6533643830968589973
+    second: Electricuitioner-Range Attack_7
+  - first:
+      213: 1355578333057955520
+    second: Electricuitioner-Range Attack_8
+  - first:
+      213: 8707847287107282603
+    second: Electricuitioner-Range Attack_9
+  - first:
+      213: -9078329816505174006
+    second: Electricuitioner-Range Attack_10
+  - first:
+      213: -6256898558310223082
+    second: Electricuitioner-Range Attack_11
+  - first:
+      213: 1918667639522363314
+    second: Electricuitioner-Range Attack_12
+  - first:
+      213: -2794731864466312539
+    second: Electricuitioner-Range Attack_13
+  - first:
+      213: 8501583660873087244
+    second: Electricuitioner-Range Attack_14
+  - first:
+      213: -2644764734269573966
+    second: Electricuitioner-Range Attack_15
+  - first:
+      213: -214701341326083361
+    second: Electricuitioner-Range Attack_16
+  - first:
+      213: -7307808115761848545
+    second: Electricuitioner-Range Attack_17
+  - first:
+      213: 2378749433151191092
+    second: Electricuitioner-Range Attack_18
+  - first:
+      213: 4139630163754816294
+    second: Electricuitioner-Range Attack_19
+  - first:
+      213: 108536342740509748
+    second: Electricuitioner-Range Attack_20
+  - first:
+      213: 2301042801236626515
+    second: Electricuitioner-Range Attack_21
+  - first:
+      213: -8734725981236119943
+    second: Electricuitioner-Range Attack_22
+  - first:
+      213: -9006273478100106101
+    second: Electricuitioner-Range Attack_23
+  - first:
+      213: 6120278886327972941
+    second: Electricuitioner-Range Attack_24
+  - first:
+      213: 558714727348380050
+    second: Electricuitioner-Range Attack_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7020f54401758a94ea84255d3217718e
+      internalID: -449353138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_1
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bd262dccadf2d42b8fd1247ac1dd87
+      internalID: 433054646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_2
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c641bbff28d498744b6d5d10089f7a85
+      internalID: -1233742422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_3
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707c7a86a0135e44f93a75bb8f9fb846
+      internalID: -300793502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_4
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f5a9d32ab476246bf6acf149abada5
+      internalID: -396862213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_5
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd6e8174dfce5548a3287dca4d03819
+      internalID: -613473034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_6
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55526b2da255d964ab6e1e7649c8bddf
+      internalID: -489230635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_7
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef67eacecd74afd4dbdf49916748e0f5
+      internalID: -96826635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_8
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdf6cc747c77824e8bba934742c0e55
+      internalID: 1041434692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_9
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d192437b1e9d047a7a6955f399290d
+      internalID: -767940806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_10
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac102e575e2bcc741a69e9ceb29aa1e6
+      internalID: -2051370311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_11
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9545ce5a2a0b5e4481101c681ad2bd1
+      internalID: -445202060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_12
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d10f4fa20fb98944bf16798013511a5
+      internalID: -1512463778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_13
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960c15d8a76baaf4caa2cba775c7884b
+      internalID: -300869036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_14
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27622e2a2c93ba043ae4d68764e47905
+      internalID: -443473527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Range Attack_15
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081281712add0164caced3edf1b51e8f
+      internalID: 2080115457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 91b07617716f2794fbadce8e0408d5c9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Electricuitioner-Range Attack_0: -449353138
+      Electricuitioner-Range Attack_1: 433054646
+      Electricuitioner-Range Attack_10: -2051370311
+      Electricuitioner-Range Attack_11: -445202060
+      Electricuitioner-Range Attack_12: -1512463778
+      Electricuitioner-Range Attack_13: -300869036
+      Electricuitioner-Range Attack_14: -443473527
+      Electricuitioner-Range Attack_15: 2080115457
+      Electricuitioner-Range Attack_2: -1233742422
+      Electricuitioner-Range Attack_3: -300793502
+      Electricuitioner-Range Attack_4: -396862213
+      Electricuitioner-Range Attack_5: -613473034
+      Electricuitioner-Range Attack_6: -489230635
+      Electricuitioner-Range Attack_7: -96826635
+      Electricuitioner-Range Attack_8: 1041434692
+      Electricuitioner-Range Attack_9: -767940806
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

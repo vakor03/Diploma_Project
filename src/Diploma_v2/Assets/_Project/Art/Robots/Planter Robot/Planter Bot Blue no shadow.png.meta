@@ -1,0 +1,1117 @@
+fileFormatVersion: 2
+guid: 4c27640000e28c34488aa01aa821f47b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2752085625681360710
+    second: Planter Bot Blue no shadow_0
+  - first:
+      213: -3162369469094151408
+    second: Planter Bot Blue no shadow_1
+  - first:
+      213: -2996792714801313158
+    second: Planter Bot Blue no shadow_2
+  - first:
+      213: 2848749851918228861
+    second: Planter Bot Blue no shadow_3
+  - first:
+      213: 2327581049837219898
+    second: Planter Bot Blue no shadow_4
+  - first:
+      213: 6366034039649869415
+    second: Planter Bot Blue no shadow_5
+  - first:
+      213: 5958042377515369125
+    second: Planter Bot Blue no shadow_6
+  - first:
+      213: 3757679171164659841
+    second: Planter Bot Blue no shadow_7
+  - first:
+      213: -5731377991413283715
+    second: Planter Bot Blue no shadow_8
+  - first:
+      213: 7974235731330319111
+    second: Planter Bot Blue no shadow_9
+  - first:
+      213: -7783386739707027642
+    second: Planter Bot Blue no shadow_10
+  - first:
+      213: -8905846876782753047
+    second: Planter Bot Blue no shadow_11
+  - first:
+      213: -6400580308121253574
+    second: Planter Bot Blue no shadow_12
+  - first:
+      213: -4157390946649666458
+    second: Planter Bot Blue no shadow_13
+  - first:
+      213: 5814946302324524725
+    second: Planter Bot Blue no shadow_14
+  - first:
+      213: 4697425516751973214
+    second: Planter Bot Blue no shadow_15
+  - first:
+      213: 3362201339244558615
+    second: Planter Bot Blue no shadow_16
+  - first:
+      213: 7642802560742281896
+    second: Planter Bot Blue no shadow_17
+  - first:
+      213: 969564774026164426
+    second: Planter Bot Blue no shadow_18
+  - first:
+      213: 5298609420364376954
+    second: Planter Bot Blue no shadow_19
+  - first:
+      213: -6019850390107305407
+    second: Planter Bot Blue no shadow_20
+  - first:
+      213: 4734369123723800168
+    second: Planter Bot Blue no shadow_21
+  - first:
+      213: 764937208946618298
+    second: Planter Bot Blue no shadow_22
+  - first:
+      213: -5837198679036345702
+    second: Planter Bot Blue no shadow_23
+  - first:
+      213: -7686274013032754997
+    second: Planter Bot Blue no shadow_24
+  - first:
+      213: 460601586571478817
+    second: Planter Bot Blue no shadow_25
+  - first:
+      213: -2801531046882941275
+    second: Planter Bot Blue no shadow_26
+  - first:
+      213: -554675125404553964
+    second: Planter Bot Blue no shadow_27
+  - first:
+      213: -167582198024627164
+    second: Planter Bot Blue no shadow_28
+  - first:
+      213: 3001869851849363025
+    second: Planter Bot Blue no shadow_29
+  - first:
+      213: -2591415286884267783
+    second: Planter Bot Blue no shadow_30
+  - first:
+      213: -5938183560177076295
+    second: Planter Bot Blue no shadow_31
+  - first:
+      213: 4273574381194311787
+    second: Planter Bot Blue no shadow_32
+  - first:
+      213: -2103264457315245080
+    second: Planter Bot Blue no shadow_33
+  - first:
+      213: -9201032167702812116
+    second: Planter Bot Blue no shadow_34
+  - first:
+      213: 4414467496172585806
+    second: Planter Bot Blue no shadow_35
+  - first:
+      213: 5847905549853546214
+    second: Planter Bot Blue no shadow_36
+  - first:
+      213: 6407759041084414257
+    second: Planter Bot Blue no shadow_37
+  - first:
+      213: -4027850721060757059
+    second: Planter Bot Blue no shadow_38
+  - first:
+      213: -4270223952277987942
+    second: Planter Bot Blue no shadow_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 79
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647323e9b4f513620800000000000000
+      internalID: 2752085625681360710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 79
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b3a1a09b10d14d0800000000000000
+      internalID: -3162369469094151408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 80
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a0ac057e04966d0800000000000000
+      internalID: -2996792714801313158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 80
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d5881a5eac88720800000000000000
+      internalID: 2848749851918228861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 81
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a307a7df1aa3d4020800000000000000
+      internalID: 2327581049837219898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_5
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 81
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e1069fa32b85850800000000000000
+      internalID: 6366034039649869415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_6
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 80
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2078ca9f73fa250800000000000000
+      internalID: 5958042377515369125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 80
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18067211c45f52430800000000000000
+      internalID: 3757679171164659841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 42
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74c15c351e0670b0800000000000000
+      internalID: -5731377991413283715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 42
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703cb29f52d2aae60800000000000000
+      internalID: 7974235731330319111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 43
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fd6469ffadbf390800000000000000
+      internalID: -7783386739707027642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 43
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea87556373186480800000000000000
+      internalID: -8905846876782753047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_12
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 44
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39821a1f129c27a0800000000000000
+      internalID: -6400580308121253574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_13
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 44
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c8588f5fafd46c0800000000000000
+      internalID: -4157390946649666458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_14
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 43
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b646026ad6d2b050800000000000000
+      internalID: 5814946302324524725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_15
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 43
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b6bd49e9b903140800000000000000
+      internalID: 4697425516751973214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719b309ed40f8ae20800000000000000
+      internalID: 3362201339244558615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_17
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a25d798f60b01a60800000000000000
+      internalID: 7642802560742281896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_18
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8bf866606947d00800000000000000
+      internalID: 969564774026164426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_19
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b6b50d131788940800000000000000
+      internalID: 5298609420364376954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_20
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 11
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a48a8f6f1357ca0800000000000000
+      internalID: -6019850390107305407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_21
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 13
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e622f52abd3b140800000000000000
+      internalID: 4734369123723800168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_22
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 14
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfedb6b65a9d9a00800000000000000
+      internalID: 764937208946618298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_23
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 13
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92c8ac6aba1efea0800000000000000
+      internalID: -5837198679036345702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_24
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0ddde328ed45590800000000000000
+      internalID: -7686274013032754997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_25
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127039ed3b2646600800000000000000
+      internalID: 460601586571478817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_26
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a660532b56fe19d0800000000000000
+      internalID: -2801531046882941275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_27
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d248889e56d48f0800000000000000
+      internalID: -554675125404553964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_28
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 11
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c1018f0e0acadf0800000000000000
+      internalID: -167582198024627164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_29
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 10
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e8f65c9b8c8a920800000000000000
+      internalID: 3001869851849363025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_30
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 6
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f80fb7c681790cd0800000000000000
+      internalID: -2591415286884267783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_31
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7b49c8385579da0800000000000000
+      internalID: -5938183560177076295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_32
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68fb40e149ce4b30800000000000000
+      internalID: 4273574381194311787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_33
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e32501ae14bfc2e0800000000000000
+      internalID: -2103264457315245080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_34
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2aa12d1efd5f4080800000000000000
+      internalID: -9201032167702812116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_35
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4300e58cc6534d30800000000000000
+      internalID: 4414467496172585806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_36
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e65e033d1fe72150800000000000000
+      internalID: 5847905549853546214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_37
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139522ae5eeece850800000000000000
+      internalID: 6407759041084414257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_38
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db16fd21c133a18c0800000000000000
+      internalID: -4027850721060757059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Blue no shadow_39
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d1b15a0fd1db4c0800000000000000
+      internalID: -4270223952277987942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

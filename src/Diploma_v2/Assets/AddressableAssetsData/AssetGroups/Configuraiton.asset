@@ -25,6 +25,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a4d7b6004689a24681ea2574ec837f1
+    m_Address: VisualsConfiguration
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 87ebe1adddb17a541a7cd19e6052dc43
     m_Address: UpgradeDatabase
     m_ReadOnly: 0

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848785c0b6094004852ef2a30181db94, type: 3}
   m_Name: TilesConfiguration_Default
   m_EditorClassIdentifier: 
-  <FloorTile>k__BackingField: {fileID: 11400000, guid: ba5e2f78f27106a438c9e59fdc90b246, type: 2}
-  <PlatformTile>k__BackingField: {fileID: 11400000, guid: 598c436862ea0974a833c68e85f0995f, type: 2}
+  <FloorTile>k__BackingField: {fileID: 11400000, guid: 97079e53f44d6f649a80a84fa286dee2, type: 2}
+  <PlatformTile>k__BackingField: {fileID: 11400000, guid: 79494881e77487b44bb380bd35a8964f, type: 2}

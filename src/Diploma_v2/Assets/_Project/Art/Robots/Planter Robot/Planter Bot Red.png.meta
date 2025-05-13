@@ -1,0 +1,1892 @@
+fileFormatVersion: 2
+guid: 7f7beb55b27541242b3361b285948e24
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7943714626118032398
+    second: Planter Bot Red_0
+  - first:
+      213: 521987784053743066
+    second: Planter Bot Red_1
+  - first:
+      213: 6983244319768815713
+    second: Planter Bot Red_2
+  - first:
+      213: 8937102964003668673
+    second: Planter Bot Red_3
+  - first:
+      213: -3574447478928925623
+    second: Planter Bot Red_4
+  - first:
+      213: -370414604770473945
+    second: Planter Bot Red_5
+  - first:
+      213: 1791830663675425478
+    second: Planter Bot Red_6
+  - first:
+      213: 846826883995164494
+    second: Planter Bot Red_7
+  - first:
+      213: 671492129900777733
+    second: Planter Bot Red_8
+  - first:
+      213: 3761500705865423880
+    second: Planter Bot Red_9
+  - first:
+      213: 9059370864697677073
+    second: Planter Bot Red_10
+  - first:
+      213: 4373124070425197152
+    second: Planter Bot Red_11
+  - first:
+      213: -3224998952075036350
+    second: Planter Bot Red_12
+  - first:
+      213: 68493228146158119
+    second: Planter Bot Red_13
+  - first:
+      213: -8573571711759652012
+    second: Planter Bot Red_14
+  - first:
+      213: 2525997666299728483
+    second: Planter Bot Red_15
+  - first:
+      213: -8960835824433024329
+    second: Planter Bot Red_16
+  - first:
+      213: 6183327077618401466
+    second: Planter Bot Red_17
+  - first:
+      213: 3732842712082298440
+    second: Planter Bot Red_18
+  - first:
+      213: 37799966057561528
+    second: Planter Bot Red_19
+  - first:
+      213: 552971774986311206
+    second: Planter Bot Red_20
+  - first:
+      213: 6338434806938653559
+    second: Planter Bot Red_21
+  - first:
+      213: -1223181910342251265
+    second: Planter Bot Red_22
+  - first:
+      213: -5332189608483860707
+    second: Planter Bot Red_23
+  - first:
+      213: -308757180630615356
+    second: Planter Bot Red_24
+  - first:
+      213: 5840582975082079059
+    second: Planter Bot Red_25
+  - first:
+      213: 2159101194227346621
+    second: Planter Bot Red_26
+  - first:
+      213: -4995858241787797921
+    second: Planter Bot Red_27
+  - first:
+      213: -1474077876639501773
+    second: Planter Bot Red_28
+  - first:
+      213: 8182457327313381277
+    second: Planter Bot Red_29
+  - first:
+      213: 6068802478304586540
+    second: Planter Bot Red_30
+  - first:
+      213: 2137258977898960871
+    second: Planter Bot Red_31
+  - first:
+      213: 2330745073197106276
+    second: Planter Bot Red_32
+  - first:
+      213: -3515455625889172093
+    second: Planter Bot Red_33
+  - first:
+      213: -4870548317739112242
+    second: Planter Bot Red_34
+  - first:
+      213: -3462448723149486176
+    second: Planter Bot Red_35
+  - first:
+      213: 4977021519171257834
+    second: Planter Bot Red_36
+  - first:
+      213: -9214971944940779998
+    second: Planter Bot Red_37
+  - first:
+      213: -7995929784731152704
+    second: Planter Bot Red_38
+  - first:
+      213: -7999853575356364863
+    second: Planter Bot Red_39
+  - first:
+      213: -9003228213755280408
+    second: Planter Bot Red_40
+  - first:
+      213: 6127138563556518213
+    second: Planter Bot Red_41
+  - first:
+      213: -251508432602290207
+    second: Planter Bot Red_42
+  - first:
+      213: -7791019322129126780
+    second: Planter Bot Red_43
+  - first:
+      213: -8985176599700980505
+    second: Planter Bot Red_44
+  - first:
+      213: 5355680400801006061
+    second: Planter Bot Red_45
+  - first:
+      213: 4893482170490354842
+    second: Planter Bot Red_46
+  - first:
+      213: 9096562712201620650
+    second: Planter Bot Red_47
+  - first:
+      213: -8453401084328403131
+    second: Planter Bot Red_48
+  - first:
+      213: 3283191971507291355
+    second: Planter Bot Red_49
+  - first:
+      213: 1097427443491425162
+    second: Planter Bot Red_50
+  - first:
+      213: -1350621958577141936
+    second: Planter Bot Red_51
+  - first:
+      213: -5038150777902548468
+    second: Planter Bot Red_52
+  - first:
+      213: -2924212755821361961
+    second: Planter Bot Red_53
+  - first:
+      213: -7993241053519668795
+    second: Planter Bot Red_54
+  - first:
+      213: 885792789121325438
+    second: Planter Bot Red_55
+  - first:
+      213: -222390465033115803
+    second: Planter Bot Red_56
+  - first:
+      213: 1473890652383422040
+    second: Planter Bot Red_57
+  - first:
+      213: -5803823909335799450
+    second: Planter Bot Red_58
+  - first:
+      213: 6323401000730258203
+    second: Planter Bot Red_59
+  - first:
+      213: 2615958090565303083
+    second: Planter Bot Red_60
+  - first:
+      213: -8164482535732580656
+    second: Planter Bot Red_61
+  - first:
+      213: 6168789447887629994
+    second: Planter Bot Red_62
+  - first:
+      213: 6032412805839560211
+    second: Planter Bot Red_63
+  - first:
+      213: 769905932489153616
+    second: Planter Bot Red_64
+  - first:
+      213: 1979742875443388762
+    second: Planter Bot Red_65
+  - first:
+      213: 1145815392143686595
+    second: Planter Bot Red_66
+  - first:
+      213: 1923675059223211469
+    second: Planter Bot Red_67
+  - first:
+      213: 4636075205075926321
+    second: Planter Bot Red_68
+  - first:
+      213: -771744224330751957
+    second: Planter Bot Red_69
+  - first:
+      213: 935928613983617879
+    second: Planter Bot Red_70
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Planter Bot Red_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 79
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3e82992a142c190800000000000000
+      internalID: -7943714626118032398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 79
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adddd9dbf197e3700800000000000000
+      internalID: 521987784053743066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 80
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168a593c5b779e060800000000000000
+      internalID: 6983244319768815713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 80
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c287828bc7f60c70800000000000000
+      internalID: 8937102964003668673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 81
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c9626c4f2056ec0800000000000000
+      internalID: -3574447478928925623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_5
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 81
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7280a0721e50cdaf0800000000000000
+      internalID: -370414604770473945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_6
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 80
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2b60ebe7cddd810800000000000000
+      internalID: 1791830663675425478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 80
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f58c6709880cb00800000000000000
+      internalID: 846826883995164494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 73
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501d430d88e915900800000000000000
+      internalID: 671492129900777733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 73
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c5d7376f8833430800000000000000
+      internalID: 3761500705865423880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_10
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 73
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11514d68dc959bd70800000000000000
+      internalID: 9059370864697677073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_11
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 73
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a77681c2570bc30800000000000000
+      internalID: 4373124070425197152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 73
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2497f843a808e33d0800000000000000
+      internalID: -3224998952075036350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_13
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 73
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72aeb256a3653f000800000000000000
+      internalID: 68493228146158119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_14
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 73
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b6a30f3fd840980800000000000000
+      internalID: -8573571711759652012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 73
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362d2438e752e0320800000000000000
+      internalID: 2525997666299728483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 42
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b233125b47b4a380800000000000000
+      internalID: -8960835824433024329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 42
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0cf7767379fc550800000000000000
+      internalID: 6183327077618401466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_18
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 43
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84632105ba8bdc330800000000000000
+      internalID: 3732842712082298440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_19
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 43
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bdf16d6eda468000800000000000000
+      internalID: 37799966057561528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_20
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 44
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62650ea46ec8ca700800000000000000
+      internalID: 552971774986311206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_21
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 44
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773dc8bdfd4a6f750800000000000000
+      internalID: 6338434806938653559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_22
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 43
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffccd528882660fe0800000000000000
+      internalID: -1223181910342251265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_23
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 43
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f4a4f5dc14006b0800000000000000
+      internalID: -5332189608483860707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 36
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca39a6eaf217bbf0800000000000000
+      internalID: -308757180630615356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_25
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 36
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35326f6654bed0150800000000000000
+      internalID: 5840582975082079059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_26
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 36
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbcea04c81ba6fd10800000000000000
+      internalID: 2159101194227346621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_27
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 36
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ed706f5652baab0800000000000000
+      internalID: -4995858241787797921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 36
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332f3af2bf50b8be0800000000000000
+      internalID: -1474077876639501773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_29
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 36
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d976e40369ded8170800000000000000
+      internalID: 8182457327313381277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_30
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 13
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bea5b33b7b83450800000000000000
+      internalID: 6068802478304586540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_31
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 14
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e79eaa77b119ad10800000000000000
+      internalID: 2137258977898960871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_32
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 36
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464c7e59b48785020800000000000000
+      internalID: 2330745073197106276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_33
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 13
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3853a33ebb7963fc0800000000000000
+      internalID: -3515455625889172093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_34
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8a8cb3c16586cb0800000000000000
+      internalID: -4870548317739112242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_35
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a78bab2b39e2ffc0800000000000000
+      internalID: -3462448723149486176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_36
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae58da9c3bee11540800000000000000
+      internalID: 4977021519171257834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_37
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2264d9ec6d7dd1080800000000000000
+      internalID: -9214971944940779998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_38
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 11
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce422c9930c80190800000000000000
+      internalID: -7995929784731152704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_39
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 10
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7ceb9ee8fcaf090800000000000000
+      internalID: -7999853575356364863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_40
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3875704ab1e0380800000000000000
+      internalID: -9003228213755280408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_41
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 5
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54922628f08f70550800000000000000
+      internalID: 6127138563556518213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_42
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 6
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7a9b0c966728cf0800000000000000
+      internalID: -251508432602290207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_43
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 8
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ae942843db0e390800000000000000
+      internalID: -7791019322129126780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_44
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 11
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecbba2fc7d3e4380800000000000000
+      internalID: -8985176599700980505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_45
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 6
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1044ce2f2335a40800000000000000
+      internalID: 5355680400801006061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_46
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 0
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cf8c67b1429e340800000000000000
+      internalID: 4893482170490354842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_47
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 0
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac67d1579b7d3e70800000000000000
+      internalID: 9096562712201620650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_48
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f14b8708c7faa80800000000000000
+      internalID: -8453401084328403131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_49
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 0
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd44b17f3bd309d20800000000000000
+      internalID: 3283191971507291355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_50
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 0
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b42180278da3f00800000000000000
+      internalID: 1097427443491425162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_51
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057ca2d0c70a14de0800000000000000
+      internalID: -1350621958577141936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_52
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 0
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ab24e8f84e41ab0800000000000000
+      internalID: -5038150777902548468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_53
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 0
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d40a91edfb1b67d0800000000000000
+      internalID: -2924212755821361961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_54
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 5
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c914e0ac9d421190800000000000000
+      internalID: -7993241053519668795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_55
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79dd2c39d7fa4c00800000000000000
+      internalID: 885792789121325438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_56
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5676442ec09e9ecf0800000000000000
+      internalID: -222390465033115803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_57
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85625154dbf447410800000000000000
+      internalID: 1473890652383422040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_58
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669ee1987eca47fa0800000000000000
+      internalID: -5803823909335799450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_59
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b60e415bb31c750800000000000000
+      internalID: 6323401000730258203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_60
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b347ff500cd4420800000000000000
+      internalID: 2615958090565303083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_61
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de67ca146ee1be80800000000000000
+      internalID: -8164482535732580656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_62
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae2587b151fb9550800000000000000
+      internalID: 6168789447887629994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_63
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e959e5c7f67b350800000000000000
+      internalID: 6032412805839560211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_64
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c5b70dd514faa00800000000000000
+      internalID: 769905932489153616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_65
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51e965f7a5797b10800000000000000
+      internalID: 1979742875443388762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_66
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb36e24701c6ef00800000000000000
+      internalID: 1145815392143686595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_67
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd2748364442ba10800000000000000
+      internalID: 1923675059223211469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_68
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13dfb8606d5a65040800000000000000
+      internalID: 4636075205075926321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_69
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b206e4387b63a45f0800000000000000
+      internalID: -771744224330751957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planter Bot Red_70
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 0
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7530e9b9d161dfc00800000000000000
+      internalID: 935928613983617879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

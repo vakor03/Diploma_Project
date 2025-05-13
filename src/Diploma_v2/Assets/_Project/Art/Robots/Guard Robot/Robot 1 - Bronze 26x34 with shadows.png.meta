@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: a48a07243cb3d4c40a06be69f28c1764
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1943464185035895730
+    second: Robot 1 - Bronze 26x34 with shadows_0
+  - first:
+      213: -7760439628184643612
+    second: Robot 1 - Bronze 26x34 with shadows_1
+  - first:
+      213: -8261158783446989500
+    second: Robot 1 - Bronze 26x34 with shadows_2
+  - first:
+      213: -1679747639705558661
+    second: Robot 1 - Bronze 26x34 with shadows_3
+  - first:
+      213: 3330075235376272894
+    second: Robot 1 - Bronze 26x34 with shadows_4
+  - first:
+      213: -439674459664143226
+    second: Robot 1 - Bronze 26x34 with shadows_5
+  - first:
+      213: -308160257272357145
+    second: Robot 1 - Bronze 26x34 with shadows_6
+  - first:
+      213: -920513869978125919
+    second: Robot 1 - Bronze 26x34 with shadows_7
+  - first:
+      213: 201213761368448259
+    second: Robot 1 - Bronze 26x34 with shadows_8
+  - first:
+      213: 3428381392974659410
+    second: Robot 1 - Bronze 26x34 with shadows_9
+  - first:
+      213: -1492378069296358153
+    second: Robot 1 - Bronze 26x34 with shadows_10
+  - first:
+      213: 8379441724233558416
+    second: Robot 1 - Bronze 26x34 with shadows_11
+  - first:
+      213: -2700534188946889783
+    second: Robot 1 - Bronze 26x34 with shadows_12
+  - first:
+      213: 769255355893424461
+    second: Robot 1 - Bronze 26x34 with shadows_13
+  - first:
+      213: 7825818560071355686
+    second: Robot 1 - Bronze 26x34 with shadows_14
+  - first:
+      213: 462503850989784499
+    second: Robot 1 - Bronze 26x34 with shadows_15
+  - first:
+      213: 7292816009901471870
+    second: Robot 1 - Bronze 26x34 with shadows_16
+  - first:
+      213: 7399646907538688216
+    second: Robot 1 - Bronze 26x34 with shadows_17
+  - first:
+      213: 4401319189279636387
+    second: Robot 1 - Bronze 26x34 with shadows_18
+  - first:
+      213: 6697247165097108213
+    second: Robot 1 - Bronze 26x34 with shadows_19
+  - first:
+      213: 6328503405165408260
+    second: Robot 1 - Bronze 26x34 with shadows_20
+  - first:
+      213: -1116592526643117528
+    second: Robot 1 - Bronze 26x34 with shadows_21
+  - first:
+      213: -4697815592160598568
+    second: Robot 1 - Bronze 26x34 with shadows_22
+  - first:
+      213: 1226131963549710377
+    second: Robot 1 - Bronze 26x34 with shadows_23
+  - first:
+      213: 946265502918957151
+    second: Robot 1 - Bronze 26x34 with shadows_24
+  - first:
+      213: 133792444695650847
+    second: Robot 1 - Bronze 26x34 with shadows_25
+  - first:
+      213: -8401273682167897166
+    second: Robot 1 - Bronze 26x34 with shadows_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ccd31ee9d6705e0800000000000000
+      internalID: -1943464185035895730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 101
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7903556416d4490800000000000000
+      internalID: -7760439628184643612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4454b8f1bd77a5d80800000000000000
+      internalID: -8261158783446989500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71ac0fdb6650b8e0800000000000000
+      internalID: -1679747639705558661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 101
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef59de778cdc63e20800000000000000
+      internalID: 3330075235376272894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 33
+        width: 27
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c28ee8866f5e9f0800000000000000
+      internalID: -439674459664143226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 33
+        width: 27
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee5363f0e139bbf0800000000000000
+      internalID: -308160257272357145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 67
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a93229238da933f0800000000000000
+      internalID: -920513869978125919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_8
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 67
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d594299dadac200800000000000000
+      internalID: 201213761368448259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 101
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f30da66be049f20800000000000000
+      internalID: 3428381392974659410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 67
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fcd10d8d020a4be0800000000000000
+      internalID: -1492378069296358153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 67
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099270d1ad1c94470800000000000000
+      internalID: 8379441724233558416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_12
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 67
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3e5049676c58ad0800000000000000
+      internalID: -2700534188946889783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_13
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 67
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d412895aba1fcaa00800000000000000
+      internalID: 769255355893424461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d46b57484ea9c60800000000000000
+      internalID: 7825818560071355686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_15
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 33
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd0f715dc42b6600800000000000000
+      internalID: 462503850989784499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_16
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 67
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e787572a589453560800000000000000
+      internalID: 7292816009901471870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8492b48a3d0b660800000000000000
+      internalID: 7399646907538688216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 33
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab7f14cb70a41d30800000000000000
+      internalID: 4401319189279636387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_19
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 33
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2ea9820d661fc50800000000000000
+      internalID: 6697247165097108213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 33
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400fbb0315c53d750800000000000000
+      internalID: 6328503405165408260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_21
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822c49253011180f0800000000000000
+      internalID: -1116592526643117528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_22
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5e9f8eb910eceb0800000000000000
+      internalID: -4697815592160598568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928f1274688140110800000000000000
+      internalID: 1226131963549710377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_24
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58d0bc167fc12d00800000000000000
+      internalID: 946265502918957151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1227b305835bd100800000000000000
+      internalID: 133792444695650847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Bronze 26x34 with shadows_26
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b36b81191ea86b80800000000000000
+      internalID: -8401273682167897166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

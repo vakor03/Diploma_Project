@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: 2a6846878480ada4a89c2fde2a5b4b30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6612141991471891156
+    second: Robot 1 - Blue 26x34 with shadows_0
+  - first:
+      213: 1489389913896513590
+    second: Robot 1 - Blue 26x34 with shadows_1
+  - first:
+      213: 9107133540071440404
+    second: Robot 1 - Blue 26x34 with shadows_2
+  - first:
+      213: 2051732175403207317
+    second: Robot 1 - Blue 26x34 with shadows_3
+  - first:
+      213: 15416581596924224
+    second: Robot 1 - Blue 26x34 with shadows_4
+  - first:
+      213: 7084949855450492905
+    second: Robot 1 - Blue 26x34 with shadows_5
+  - first:
+      213: 2705083588244099949
+    second: Robot 1 - Blue 26x34 with shadows_6
+  - first:
+      213: -5791762666444340401
+    second: Robot 1 - Blue 26x34 with shadows_7
+  - first:
+      213: -7222560896500439506
+    second: Robot 1 - Blue 26x34 with shadows_8
+  - first:
+      213: 5330125893545965757
+    second: Robot 1 - Blue 26x34 with shadows_9
+  - first:
+      213: 3527121437181398956
+    second: Robot 1 - Blue 26x34 with shadows_10
+  - first:
+      213: 167678355179022077
+    second: Robot 1 - Blue 26x34 with shadows_11
+  - first:
+      213: 5719852962483863270
+    second: Robot 1 - Blue 26x34 with shadows_12
+  - first:
+      213: -7417920710596183576
+    second: Robot 1 - Blue 26x34 with shadows_13
+  - first:
+      213: -6718280263101309119
+    second: Robot 1 - Blue 26x34 with shadows_14
+  - first:
+      213: -2950229320453108218
+    second: Robot 1 - Blue 26x34 with shadows_15
+  - first:
+      213: 1822224651316964167
+    second: Robot 1 - Blue 26x34 with shadows_16
+  - first:
+      213: -4664039189006806508
+    second: Robot 1 - Blue 26x34 with shadows_17
+  - first:
+      213: -6357373906287145106
+    second: Robot 1 - Blue 26x34 with shadows_18
+  - first:
+      213: -687702520002738408
+    second: Robot 1 - Blue 26x34 with shadows_19
+  - first:
+      213: -3052876623612722710
+    second: Robot 1 - Blue 26x34 with shadows_20
+  - first:
+      213: -7324185162454583089
+    second: Robot 1 - Blue 26x34 with shadows_21
+  - first:
+      213: 7337657747540909016
+    second: Robot 1 - Blue 26x34 with shadows_22
+  - first:
+      213: 8600069701295243378
+    second: Robot 1 - Blue 26x34 with shadows_23
+  - first:
+      213: 689421605451094707
+    second: Robot 1 - Blue 26x34 with shadows_24
+  - first:
+      213: -1847920750860689241
+    second: Robot 1 - Blue 26x34 with shadows_25
+  - first:
+      213: -870939565251732544
+    second: Robot 1 - Blue 26x34 with shadows_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2dbfd134e3fc34a0800000000000000
+      internalID: -6612141991471891156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 101
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630f9dd4c306ba410800000000000000
+      internalID: 1489389913896513590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410010af3b9036e70800000000000000
+      internalID: 9107133540071440404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ac5210b87397c10800000000000000
+      internalID: 2051732175403207317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 101
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0494cbd9c45c63000800000000000000
+      internalID: 15416581596924224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 33
+        width: 27
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efe4991b5cc25260800000000000000
+      internalID: 7084949855450492905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 33
+        width: 27
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63570df0336a8520800000000000000
+      internalID: 2705083588244099949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 67
+        width: 27
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43473b7a868f9fa0800000000000000
+      internalID: -5791762666444340401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_8
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 67
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26e673a12f44cb90800000000000000
+      internalID: -7222560896500439506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 101
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db83bec824968f940800000000000000
+      internalID: 5330125893545965757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 67
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cafccd6724ad2f030800000000000000
+      internalID: 3527121437181398956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 67
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6a7fc5396b35200800000000000000
+      internalID: 167678355179022077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_12
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 67
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eef05cd6fff06f40800000000000000
+      internalID: 5719852962483863270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_13
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 67
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9b6e06a604e0990800000000000000
+      internalID: -7417920710596183576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f145812bfd3c2a0800000000000000
+      internalID: -6718280263101309119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_15
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 33
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e4374601eae07d0800000000000000
+      internalID: -2950229320453108218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_16
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 67
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b25b27aa7d94910800000000000000
+      internalID: 1822224651316964167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4129fb89111064fb0800000000000000
+      internalID: -4664039189006806508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 33
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6fca637d1216c7a0800000000000000
+      internalID: -6357373906287145106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_19
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 33
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8178810a33ac476f0800000000000000
+      internalID: -687702520002738408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 33
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1487ab2e002a5d0800000000000000
+      internalID: -3052876623612722710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_21
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc835b266644b5a90800000000000000
+      internalID: -7324185162454583089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_22
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db919548d894d560800000000000000
+      internalID: 7337657747540909016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2708d4504d5995770800000000000000
+      internalID: 8600069701295243378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_24
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba54652c41519900800000000000000
+      internalID: 689421605451094707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a020e72eddda56e0800000000000000
+      internalID: -1847920750860689241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot 1 - Blue 26x34 with shadows_26
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb5650741dc9e3f0800000000000000
+      internalID: -870939565251732544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

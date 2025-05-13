@@ -9,6 +9,7 @@ using _Project.Features.StatsModule;
 using _Project.Features.UIModule;
 using _Project.Features.UpgradesModule;
 using _Project.Features.UpgradesModule.API;
+using _Project.Features.VisualsModule.Scripts;
 using _Project.Infrastructure.MVP.Core;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Zenject;
@@ -35,6 +36,7 @@ namespace _Project.Infrastructure.SceneContexts.Scripts
             GameplayUIInstaller.Install(Container);
             PlayerWeaponsInstaller.Install(Container);
             StatsInstaller.Install(Container);
+            VisualsInstaller.Install(Container);
 
             BindStatesFactory();
 

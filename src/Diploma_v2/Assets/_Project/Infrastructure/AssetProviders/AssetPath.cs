@@ -19,6 +19,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string UPGRADE_DATABASE = "UpgradeDatabase";
             public const string SINGLE_UPGRADE_FACTORY_CONFIGURATION = "SingleUpgradeFactoryConfiguration";
             public const string DEFAULT_STATS_DATABASE = "DefaultStatsDatabase";
+            public const string VISUALS_CONFIGURATION = "VisualsConfiguration";
         }
     }
 

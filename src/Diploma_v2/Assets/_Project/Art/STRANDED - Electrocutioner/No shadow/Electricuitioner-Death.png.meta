@@ -1,0 +1,581 @@
+fileFormatVersion: 2
+guid: fe480f1a64794e7499c8a01d46b26d0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3564765608391361325
+    second: Electricuitioner-Death_0
+  - first:
+      213: 883784897091048353
+    second: Electricuitioner-Death_1
+  - first:
+      213: -5660853846451292519
+    second: Electricuitioner-Death_2
+  - first:
+      213: 5730632524416094385
+    second: Electricuitioner-Death_3
+  - first:
+      213: -2443037119003993341
+    second: Electricuitioner-Death_4
+  - first:
+      213: -8270081176343947754
+    second: Electricuitioner-Death_5
+  - first:
+      213: -5174822496605596427
+    second: Electricuitioner-Death_6
+  - first:
+      213: 1908350378843239280
+    second: Electricuitioner-Death_7
+  - first:
+      213: 4878946459145071256
+    second: Electricuitioner-Death_8
+  - first:
+      213: 7413510324312670606
+    second: Electricuitioner-Death_9
+  - first:
+      213: -6998464360875697904
+    second: Electricuitioner-Death_10
+  - first:
+      213: 1161317236829132263
+    second: Electricuitioner-Death_11
+  - first:
+      213: -3653356095543149328
+    second: Electricuitioner-Death_12
+  - first:
+      213: -3883064249446962622
+    second: Electricuitioner-Death_13
+  - first:
+      213: -1173951935283869941
+    second: Electricuitioner-Death_14
+  - first:
+      213: 4378046768640289930
+    second: Electricuitioner-Death_15
+  - first:
+      213: -4245041866443967951
+    second: Electricuitioner-Death_16
+  - first:
+      213: -8994475999114330575
+    second: Electricuitioner-Death_17
+  - first:
+      213: 5330858627023956488
+    second: Electricuitioner-Death_18
+  - first:
+      213: -7243826499717254306
+    second: Electricuitioner-Death_19
+  - first:
+      213: -7361011410638170613
+    second: Electricuitioner-Death_20
+  - first:
+      213: -3679754823593284625
+    second: Electricuitioner-Death_21
+  - first:
+      213: 7668131686713991107
+    second: Electricuitioner-Death_22
+  - first:
+      213: 8064561458586754849
+    second: Electricuitioner-Death_23
+  - first:
+      213: -8530499980743226071
+    second: Electricuitioner-Death_24
+  - first:
+      213: -1536039828980916523
+    second: Electricuitioner-Death_25
+  - first:
+      213: -3856478606209648723
+    second: Electricuitioner-Death_26
+  - first:
+      213: 4363908170005403562
+    second: Electricuitioner-Death_27
+  - first:
+      213: -5175109602895553570
+    second: Electricuitioner-Death_28
+  - first:
+      213: -3644088269869344186
+    second: Electricuitioner-Death_29
+  - first:
+      213: -4565470308555452466
+    second: Electricuitioner-Death_30
+  - first:
+      213: 39527802969289965
+    second: Electricuitioner-Death_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Electricuitioner-Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be4a80b5c53d754a8cb1dda18124b6f
+      internalID: 1461870068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_1
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5ac17cb89ab574db88d5adc159fce4
+      internalID: 2113963795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_2
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8c6cedd7c304b4aa7bd40b3d840026
+      internalID: 2120134492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_3
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646c077468c6ce443a212c00a3fd2d9d
+      internalID: 444714485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_4
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ad2887429af9c4b922492cbafb3a65
+      internalID: 107741481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_5
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e61500da6e65a94289c4a4d5c990e34
+      internalID: 957159980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_6
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04bb3ccaf7469a4fb8081d643936111
+      internalID: -1844455230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_7
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2340a5ef553a420479d5315cc745017e
+      internalID: -2105144568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_8
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13eac46b85ebe5458ed809c9b033d0c
+      internalID: -1603050252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_9
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c203a4cf2a82e439a3afce07a95f5e
+      internalID: 874531918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_10
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcc4e9ca30d79940b9b72a69ed64eb4
+      internalID: 1544003182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_11
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860696c2439ac9a4b8003dfefa72e748
+      internalID: -1641776332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_12
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c42b5516d137b41920c507198a48e1
+      internalID: 1266006100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_13
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4404debc246ac8c42b0407e5a7a95279
+      internalID: 1166240486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_14
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7be9b57f2d8214a93b56712db91490
+      internalID: 1059020068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electricuitioner-Death_15
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 0
+        width: 157
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c820d459d987fb45bb05bc45ae76c84
+      internalID: 1500339945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a899b5f36229f6648a6b07ec95c189b9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Electricuitioner-Death_0: 1461870068
+      Electricuitioner-Death_1: 2113963795
+      Electricuitioner-Death_10: 1544003182
+      Electricuitioner-Death_11: -1641776332
+      Electricuitioner-Death_12: 1266006100
+      Electricuitioner-Death_13: 1166240486
+      Electricuitioner-Death_14: 1059020068
+      Electricuitioner-Death_15: 1500339945
+      Electricuitioner-Death_2: 2120134492
+      Electricuitioner-Death_3: 444714485
+      Electricuitioner-Death_4: 107741481
+      Electricuitioner-Death_5: 957159980
+      Electricuitioner-Death_6: -1844455230
+      Electricuitioner-Death_7: -2105144568
+      Electricuitioner-Death_8: -1603050252
+      Electricuitioner-Death_9: 874531918
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

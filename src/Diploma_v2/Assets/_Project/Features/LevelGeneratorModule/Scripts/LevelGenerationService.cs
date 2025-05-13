@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
 using _Project.Features.MapGeneration;
 using _Project.Features.MapGeneration.BSP;
@@ -42,6 +43,7 @@ namespace _Project.Features.LevelGeneratorModule {
 
             SpawnTilesForDungeon(dungeon.Matrix);
             SpawnPlatformsForDungeon(dungeon);
+            SpawnCollidersForDungeon(dungeon);
             foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.PlayerSpawnPoint))
                 _playerSpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, true));
             
@@ -81,6 +83,42 @@ namespace _Project.Features.LevelGeneratorModule {
             _tilemapsService.SetTiles(TilemapType.Background,
                 floorIndices,
                 tileBases);
+        }
+        
+        private void SpawnCollidersForDungeon(Dungeon dungeon)
+        {
+            IEnumerable<Vector2Int> wallIndices = dungeon.Matrix.GetAllIndices(el => el == BlockType.Wall);
+            
+            GameObject colliderParent = new GameObject("DungeonColliders");
+            
+            Rigidbody2D rb = colliderParent.AddComponent<Rigidbody2D>();
+            rb.bodyType = RigidbodyType2D.Static;
+            rb.simulated = true;
+            rb.useFullKinematicContacts = false;
+            
+            CompositeCollider2D compositeCollider = colliderParent.AddComponent<CompositeCollider2D>();
+            compositeCollider.geometryType = CompositeCollider2D.GeometryType.Polygons;
+            compositeCollider.generationType = CompositeCollider2D.GenerationType.Manual;
+            
+            foreach (Vector2Int wallPos in wallIndices)
+            {
+                GameObject tileCollider = new GameObject($"WallCollider_{wallPos.x}_{wallPos.y}");
+                tileCollider.transform.parent = colliderParent.transform;
+                
+                Vector2 worldPos = GetPositionFromTilemap(wallPos, true);
+                tileCollider.transform.position = worldPos - Vector2.one * 0.5f;
+                
+                BoxCollider2D boxCollider = tileCollider.AddComponent<BoxCollider2D>();
+                
+                _tilemapsDataHolder.TryGetTilemap(TilemapType.Background, out Tilemap tilemap);
+                Vector3 cellSize = tilemap.cellSize;
+                
+                boxCollider.size = new Vector2(cellSize.x, cellSize.y);
+                
+                boxCollider.compositeOperation = Collider2D.CompositeOperation.Merge;
+            }
+            
+            compositeCollider.GenerateGeometry();
         }
     }
 }

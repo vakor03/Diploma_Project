@@ -1,54 +1,51 @@
 ﻿using _Project.Features.CameraModule;
 using _Project.Features.Enemy.EnemySpawner;
-using _Project.Features.LevelGeneratorModule;
 using _Project.Features.PlayerModule;
 using _Project.Features.PlayerSpawnerModule;
-using _Project.Features.UIModule;
 using _Project.Features.UIModule.Windows;
+using _Project.Features.VisualsModule.Scripts;
 using _Project.Infrastructure.MVP.Core;
+using _Project.Scripts.Infrastructure.StateMachines;
 using UnityEngine;
+using Zenject;
 
-namespace _Project.Scripts.Infrastructure.StateMachines.GameplayStates
-{
-    public class InitGameState : IState
-    {
+namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
+    public class SpawnEntitiesState : IState {
         private readonly IPlayerSpawnerService _playerSpawnerService;
-        private readonly ILevelGenerationService _levelGenerationService;
         private readonly IPlayerSpawnPointsService _playerSpawnPointsService;
         private readonly ICameraSpawnService _cameraSpawnService;
         private readonly ICameraService _cameraService;
         private readonly IWindowService _windowService;
         private readonly IEnemySpawnerService _enemySpawnerService;
         private readonly EnemySpawnPointsModel _enemySpawnPointsModel;
+        private readonly IInstantiator _instantiator;
+        private readonly VisualsConfiguration _visualsConfiguration;
 
-        public InitGameState(IPlayerSpawnPointsService playerSpawnPointsService,
-            ILevelGenerationService levelGenerationService, IPlayerSpawnerService playerSpawnerService, ICameraSpawnService cameraSpawnService, ICameraService cameraService, IWindowService windowService, EnemySpawnPointsModel enemySpawnPointsModel, IEnemySpawnerService enemySpawnerService)
-        {
-            _playerSpawnPointsService = playerSpawnPointsService;
-            _levelGenerationService = levelGenerationService;
+        public SpawnEntitiesState(IPlayerSpawnerService playerSpawnerService,
+                                  IPlayerSpawnPointsService playerSpawnPointsService, ICameraSpawnService cameraSpawnService,
+                                  ICameraService cameraService, IWindowService windowService, IEnemySpawnerService enemySpawnerService,
+                                  EnemySpawnPointsModel enemySpawnPointsModel, IInstantiator instantiator, VisualsConfiguration visualsConfiguration) {
             _playerSpawnerService = playerSpawnerService;
+            _playerSpawnPointsService = playerSpawnPointsService;
             _cameraSpawnService = cameraSpawnService;
             _cameraService = cameraService;
             _windowService = windowService;
-            _enemySpawnPointsModel = enemySpawnPointsModel;
             _enemySpawnerService = enemySpawnerService;
+            _enemySpawnPointsModel = enemySpawnPointsModel;
+            _instantiator = instantiator;
+            _visualsConfiguration = visualsConfiguration;
         }
-
-        public void Enter()
-        {
+        public void Enter() {
             _cameraSpawnService.SpawnCamera();
-            _levelGenerationService.Generate();
             Vector3 playerSpawnPoint = _playerSpawnPointsService.GetPlayerSpawnPoint();
             Player player = _playerSpawnerService.SpawnPlayerAt(playerSpawnPoint);
             foreach (Vector3 spawnPoint in _enemySpawnPointsModel.SpawnPoints)
                 _enemySpawnerService.SpawnEnemyAt(spawnPoint);
             _cameraService.FollowTarget(player.transform);
+            _instantiator.InstantiatePrefab(_visualsConfiguration.BackgroundPrefab)
+                .transform.position = player.transform.position;
+            
             _windowService.ShowWindow<HUDWindow>();
-            // _windowService.ShowWindow<ChooseUpgradeWindow>();
-        }
-
-        public void Exit()
-        {
         }
     }
 }

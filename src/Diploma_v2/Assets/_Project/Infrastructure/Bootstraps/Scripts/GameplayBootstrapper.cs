@@ -1,4 +1,5 @@
-﻿using _Project.Scripts.Infrastructure.StateMachines;
+﻿using _Project.Infrastructure.StateMachines.Scripts.GameplayStates;
+using _Project.Scripts.Infrastructure.StateMachines;
 using _Project.Scripts.Infrastructure.StateMachines.GameplayStates;
 using UnityEngine;
 using Zenject;
@@ -22,9 +23,10 @@ namespace _Project.Scripts.Infrastructure.Bootstraps
         {
             _gameplayStateMachine.RegisterState(_statesFactory.Create<GamePauseState>());
             _gameplayStateMachine.RegisterState(_statesFactory.Create<GameOverState>());
-            _gameplayStateMachine.RegisterState(_statesFactory.Create<InitGameState>());
+            _gameplayStateMachine.RegisterState(_statesFactory.Create<GenerateLevelState>());
+            _gameplayStateMachine.RegisterState(_statesFactory.Create<SpawnEntitiesState>());
 
-            _gameplayStateMachine.Enter<InitGameState>();
+            _gameplayStateMachine.Enter<GenerateLevelState>();
         }
     }
 }
