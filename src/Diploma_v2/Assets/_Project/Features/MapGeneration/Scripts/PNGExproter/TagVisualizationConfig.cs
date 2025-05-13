@@ -15,7 +15,7 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             { GlobalPlaceTag.InitialRoom, Color.green },
             { GlobalPlaceTag.TreasureRoom, Color.yellow },
             { GlobalPlaceTag.BossRoom, Color.red },
-            { GlobalPlaceTag.MainCorridor, Color.blue },
+            { GlobalPlaceTag.TunnelHorizontal, Color.blue },
             { GlobalPlaceTag.SecretPassage, Color.magenta }
         };
     
@@ -48,6 +48,7 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             MacroTags = 1 << 1,        // 2
             MicroTags = 1 << 2,        // 4
             RoomBoundaries = 1 << 3,   // 8
+            RoomParts = 1 << 4,      // 16
         
             // Common combinations
             All = GlobalPlaceTags | MacroTags | MicroTags | RoomBoundaries,  // 15
@@ -71,5 +72,8 @@ namespace _Project.Features.MapGeneration.PNGExproter {
         [FoldoutGroup("Visualization Settings")]
         [Range(1, 5)]
         public int BoundaryThickness = 1;
+
+        public Color RoomPartColor;
+        public Color RoomPartBorderColor;
     }
 }

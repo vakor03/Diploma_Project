@@ -32,12 +32,24 @@ namespace _Project.Features.MapGeneration {
 
         public Dungeon GenerateDungeon(DungeonGenerationConfiguration config) {
             Matrix<BlockType> dungeonMatrix = _matrixFactory.CreateMatrix<BlockType>(config.DungeonSize.x, config.DungeonSize.y);
-            List<RectInt> macroGroup = _macroLayoutDungeonGenerationService.Generate(dungeonMatrix, config.BspDungeonGeneratorParams);
+            List<RectInt> macroGroup = _macroLayoutDungeonGenerationService.Generate(config.DungeonSize, config.BspDungeonGeneratorParams);
             List<Room> rooms = macroGroup.Select(room => _caveRoomCarveService.CarveRoom(dungeonMatrix, room, config.CACaveRoomParams))
                 .Where(room => room.Cells.Count > 0).ToList();
-            foreach (Room room in rooms) {
-                new HorizontalSurfaceSmoother().SmoothHorizontalSurfaces(dungeonMatrix, room);
+            for (int i = 0; i < rooms.Count; i++) {
+                Room room = rooms[i];
+                List<RectInt> parts = _macroLayoutDungeonGenerationService.Generate(room.PartitionBounds.size-2*Vector2Int.one,
+                    new BSPDungeonGeneratorParams() {
+                        minLeafSize = new Vector2Int(6,5),
+                        minRoomSize = new Vector2Int(1, 1),
+                        offsetFromBorders = 0,
+                        ShrinkageFactor = 0
+                    });
+                room.Parts = parts.Select(el => {
+                    el.position += (room.PartitionBounds.position+Vector2Int.one);
+                    return el;
+                }).ToList();
             }
+
             List<(Vector2Int start, Vector2Int end)> connections = _roomConnectorService.GetConnections(rooms);
             List<Tunnel> tunnels = connections.ConvertAll(tunnelEnds =>
                 _corridorGeneratorService.CarveCorridor(dungeonMatrix, tunnelEnds.start, tunnelEnds.end, config.CorridorParams));
@@ -59,7 +71,8 @@ namespace _Project.Features.MapGeneration {
             PriorityList<IGlobalPlaceTagRule> rules = new();
             rules.Add(new InitialRoomGlobalPlaceTagRule(), 10);
             rules.Add(new DefaultRoomGlobalPlaceTagRule(), 0);
-            rules.Add(new DefaultTunnelGlobalPlaceTagRule(), 0);
+            rules.Add(new HorizontalTunnelGlobalPlaceTagRule(), 0);
+            rules.Add(new VerticalTunnelGlobalPlaceTagRule(), 0);
             return rules;
         }
 
@@ -81,5 +94,6 @@ namespace _Project.Features.MapGeneration {
     public enum BlockType {
         Wall = 0,
         EmptySpace = 1,
+        Platform = 2,
     }
 }

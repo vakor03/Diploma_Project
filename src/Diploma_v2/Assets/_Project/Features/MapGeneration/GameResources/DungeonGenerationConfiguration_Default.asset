@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <DungeonSize>k__BackingField: {x: 75, y: 75}
   <BspDungeonGeneratorParams>k__BackingField:
-    minLeafSize: 20
-    minRoomSize: 10
+    minLeafSize: {x: 20, y: 20}
+    minRoomSize: {x: 10, y: 10}
     offsetFromBorders: 0
     ShrinkageFactor: 0.382
   <CACaveRoomParams>k__BackingField:
@@ -26,4 +26,4 @@ MonoBehaviour:
     deathLimit: 3
   <CorridorParams>k__BackingField:
     WanderChance: 0
-    CorridorWidth: 2
+    CorridorWidth: 3

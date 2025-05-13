@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using _Project.Features.MapGeneration.BSP;
 using UnityEngine;
 using _Project.Features.MapGeneration.Matrix;
@@ -10,7 +11,7 @@ namespace _Project.Features.MapGeneration.CA {
 
         private static readonly int[,] NeighborDirections8 = new int[8, 2] {
             { -1, -1 }, { -1, 0 }, { -1, 1 }, { 0, -1 },
-            { 0, 1 }, { 1, -1 }, { 1, 0 }, { 1, 1 }
+            { 0, 1 }, { 1, -1 }, { 1, 0 }, { 1, 1 },
         };
 
         private static readonly int[,] Directions4 = new int[4, 2] {
@@ -30,11 +31,27 @@ namespace _Project.Features.MapGeneration.CA {
             
             Room room = new Room {
                 PartitionBounds = region,
-                RoomBounds = new RectInt(region.x + config.offsetFromBorders, region.y + config.offsetFromBorders, region.width - config.offsetFromBorders * 2, region.height - config.offsetFromBorders * 2),
+                RoomBounds = CalculateRoomBounds(region, config, largest),
                 Cells = largest.ConvertAll(positionLocal => positionLocal + new Vector2Int(region.x + config.offsetFromBorders, region.y + config.offsetFromBorders)),
             };
 
             return room;
+        }
+
+        private RectInt CalculateRoomBounds(RectInt region, CAConfig config, List<Vector2Int> largest) {
+            int minX = largest.Min(el => el.x);
+            int minY = largest.Min(el => el.y);
+            int maxX = largest.Max(el => el.x);
+            int maxY = largest.Max(el => el.y);
+            
+            int width = maxX - minX + 1;
+            int height = maxY - minY + 1;
+            int x = minX + region.x + config.offsetFromBorders;
+            int y = minY + region.y + config.offsetFromBorders;
+            RectInt roomBounds = new RectInt(x, y, width, height);
+            return roomBounds;
+            // return new(region.x + config.offsetFromBorders, region.y + config.offsetFromBorders,
+                // region.width - config.offsetFromBorders * 2, region.height - config.offsetFromBorders * 2);
         }
 
         private BlockType[,] InitializeCells(RectInt region, CAConfig config) {
@@ -141,6 +158,7 @@ namespace _Project.Features.MapGeneration.CA {
                     count++;
                 }
             }
+            // count += cells[x-1,y] + cells[x+1,y];
 
             return count;
         }

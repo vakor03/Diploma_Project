@@ -9,19 +9,19 @@ namespace _Project.Features.MapGeneration.BSP
     {
         [LabelText("Min Leaf Size")]
         [MinValue(1)]
-        [ValidateInput(
-            "ValidateLeafSize", 
-            "minLeafSize must be greater than minRoomSize + 2 × offsetFromBorders")]
-        public int minLeafSize;
+        // [ValidateInput(
+        //     "ValidateLeafSize", 
+        //     "minLeafSize must be greater than minRoomSize + 2 × offsetFromBorders")]
+        public Vector2Int minLeafSize;
 
         [LabelText("Min Room Size"), MinValue(1)]
-        public int minRoomSize;
+        public Vector2Int minRoomSize;
 
         [LabelText("Offset From Borders"), MinValue(0)]
         public int offsetFromBorders = 1;
 
-        private bool ValidateLeafSize(int leafSize) =>
-            leafSize > minRoomSize + offsetFromBorders * 2;
+        // private bool ValidateLeafSize(int leafSize) =>
+        //     leafSize > minRoomSize + offsetFromBorders * 2;
         
         [Range(0f,1f)]
         public float ShrinkageFactor = 0.5f;

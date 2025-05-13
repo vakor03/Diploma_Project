@@ -80,28 +80,49 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             {
                 DrawRoomBoundaries(dungeon, config);
             }
+            
+            if ((config.VisualizationPriority & TagVisualizationConfig.TagLayerPriority.RoomParts) != 0)
+            {
+                DrawRoomParts(dungeon, config);
+            }
         }
-        
+
+        private void DrawRoomParts(Dungeon dungeon, TagVisualizationConfig config) {
+            foreach (Room dungeonRoom in dungeon.Rooms) {
+                foreach (RectInt dungeonRoomPart in dungeonRoom.Parts) {
+                    for (int i = 0; i < dungeonRoomPart.height; i++) {
+                        for (int j = 0; j < dungeonRoomPart.width; j++) {
+                            if (i == 0 || i == dungeonRoomPart.height - 1 ||
+                                j == 0 || j == dungeonRoomPart.width - 1) {
+                                DrawCell(
+                                    dungeonRoomPart.x + j,
+                                    dungeonRoomPart.y + i,
+                                    true,
+                                    config.RoomPartBorderColor
+                                );
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         private void DrawRoomBoundaries(Dungeon dungeon, TagVisualizationConfig config)
         {
-            // Draw room outline using a different approach to make it visible
             foreach (Room room in dungeon.Rooms)
             {
                 HashSet<Vector2Int> roomCells = new HashSet<Vector2Int>(room.Cells);
         
                 foreach (Vector2Int cell in room.Cells)
                 {
-                    // Check if this cell is on the boundary
                     bool isBoundary = false;
             
-                    // Check all four directions
                     Vector2Int[] directions = { Vector2Int.up, Vector2Int.down, Vector2Int.left, Vector2Int.right };
             
                     foreach (Vector2Int direction in directions)
                     {
                         Vector2Int adjacentCell = cell + direction;
                 
-                        // If any adjacent cell is not part of the room, this is a boundary cell
                         if (!roomCells.Contains(adjacentCell))
                         {
                             isBoundary = true;
@@ -111,7 +132,6 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             
                     if (isBoundary)
                     {
-                        // Draw boundary with specified thickness
                         for (int i = 0; i < config.BoundaryThickness; i++)
                         {
                             DrawCell(cell, true, config.RoomBoundaryColor);

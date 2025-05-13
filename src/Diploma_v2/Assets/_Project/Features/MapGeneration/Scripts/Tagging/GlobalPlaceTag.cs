@@ -4,8 +4,9 @@
         InitialRoom = 1,
         TreasureRoom = 2,
         BossRoom = 3,
-        MainCorridor = 4,
+        TunnelHorizontal = 4,
         SecretPassage = 5,
         DefaultRoom = 6,
+        TunnelVertical = 7,
     }
 }

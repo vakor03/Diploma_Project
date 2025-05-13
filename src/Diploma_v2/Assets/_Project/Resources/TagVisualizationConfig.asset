@@ -16,6 +16,8 @@ MonoBehaviour:
     _serializedList:
     - Key: 0
       Value: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
+    - Key: 7
+      Value: {r: 1, g: 0.6513464, b: 0, a: 1}
     - Key: 6
       Value: {r: 1, g: 0, b: 0, a: 0.39215687}
     - Key: 1
@@ -56,8 +58,10 @@ MonoBehaviour:
       Value: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - Key: 4
       Value: {r: 1, g: 0.6, b: 0, a: 1}
-  VisualizationPriority: 7
+  VisualizationPriority: 15
   ColorBlendFactor: 0.7
   ShowRoomBoundaries: 0
   RoomBoundaryColor: {r: 1, g: 1, b: 1, a: 1}
   BoundaryThickness: 1
+  RoomPartColor: {r: 1, g: 0.75, b: 0.75, a: 0.65882355}
+  RoomPartBorderColor: {r: 0, g: 0.9960785, b: 0.9960785, a: 1}

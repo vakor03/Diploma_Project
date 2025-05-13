@@ -17,7 +17,8 @@ namespace _Project.Features.MapGeneration.BSP {
         public RectInt RoomBounds;
         public List<Vector2Int> Cells;
         
-        public List<Room> ConnectedRooms; 
+        public List<Room> ConnectedRooms;
+        public List<RectInt> Parts;
     }
 
     public class Tunnel {

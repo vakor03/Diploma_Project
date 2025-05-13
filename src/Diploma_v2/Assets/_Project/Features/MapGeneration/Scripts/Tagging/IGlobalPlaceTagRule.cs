@@ -1,4 +1,5 @@
 ﻿using _Project.Features.MapGeneration.BSP;
+using UnityEngine;
 
 namespace _Project.Features.MapGeneration.Tagging {
     public interface IGlobalPlaceTagRule {
@@ -33,16 +34,29 @@ namespace _Project.Features.MapGeneration.Tagging {
             false;
     }
 
-    public class DefaultTunnelGlobalPlaceTagRule : IGlobalPlaceTagRule {
+    public class HorizontalTunnelGlobalPlaceTagRule : IGlobalPlaceTagRule {
         public int MaxCount => int.MaxValue;
         public Dungeon Context { get; set; }
-        public GlobalPlaceTag GlobalPlaceTag => GlobalPlaceTag.MainCorridor;
+        public GlobalPlaceTag GlobalPlaceTag => GlobalPlaceTag.TunnelHorizontal;
 
         public bool IsValidForRoom(Room room) =>
             false;
 
         public bool IsValidForTunnel(Tunnel tunnel) =>
-            true;
-        
+            Mathf.Abs(tunnel.Start.x - tunnel.End.x) >= Mathf.Abs(tunnel.Start.y - tunnel.End.y);
     }
+    
+    public class VerticalTunnelGlobalPlaceTagRule : IGlobalPlaceTagRule {
+        public int MaxCount => int.MaxValue;
+        public Dungeon Context { get; set; }
+        public GlobalPlaceTag GlobalPlaceTag => GlobalPlaceTag.TunnelVertical;
+
+        public bool IsValidForRoom(Room room) =>
+            false;
+
+        public bool IsValidForTunnel(Tunnel tunnel) =>
+            Mathf.Abs(tunnel.Start.x - tunnel.End.x) < Mathf.Abs(tunnel.Start.y - tunnel.End.y);
+    }
+    
+    
 }
