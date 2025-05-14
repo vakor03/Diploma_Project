@@ -16,8 +16,8 @@ namespace _Project.Features.Enemy {
 
         private void Awake() {
             _tree = new BehaviourTree.BehaviourTree("Enemy");
-            Leaf isPlayerInRange = new Leaf("IsPlayerInRange", new Condition(()=> _isPlayerInRange));
-            Leaf moveToPlayer = new Leaf("MoveToPlayer", new FollowStrategy(_playerTransformDataHolder.Player,_enemyMovement));
+            Leaf isPlayerInRange = new Leaf(new Condition(()=> _isPlayerInRange), "IsPlayerInRange");
+            Leaf moveToPlayer = new Leaf(new FollowStrategy(_playerTransformDataHolder.Player,_enemyMovement), "MoveToPlayer");
 
             Sequence goToPlayer = new Sequence("GoToPlayer");
             goToPlayer.AddChild(isPlayerInRange);

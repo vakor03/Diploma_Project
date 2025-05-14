@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using _Project.Scripts.Infrastructure;
 
 namespace _Project.Features.StatsModule {
-    [Serializable]
-    public class StatDataHolder<T> : IModel where T : Enum
+    public class StatDataHolder<T> where T : Enum
     {
         private Dictionary<T, float> _stats = new Dictionary<T, float>();
         private Dictionary<T, float> _baseStats = new Dictionary<T, float>();

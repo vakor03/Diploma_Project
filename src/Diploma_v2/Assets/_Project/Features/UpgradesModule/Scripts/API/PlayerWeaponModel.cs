@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using _Project.Scripts.Infrastructure;
+using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 
 namespace _Project.Features.UpgradesModule.API {
     public class PlayerWeaponModel : IModel {

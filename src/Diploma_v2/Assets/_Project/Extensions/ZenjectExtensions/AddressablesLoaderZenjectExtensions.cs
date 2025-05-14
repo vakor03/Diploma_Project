@@ -9,5 +9,11 @@ namespace _Project.Extensions.ZenjectExtensions {
 
             return container.Bind<T>().FromScriptableObject(configuration);
         }
+        
+        public static ScopeConcreteIdArgConditionCopyNonLazyBinder BindInterfacesAndSelfToFromAddressables<T>(this DiContainer container, string addressableKey) where T : ScriptableObject {
+            T configuration = container.Resolve<IAddressablesAssetLoaderService>().LoadAsset<T>(addressableKey);
+
+            return container.BindInterfacesAndSelfTo<T>().FromScriptableObject(configuration);
+        }
     }
 }

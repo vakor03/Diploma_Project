@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3508750502291154329}
   - component: {fileID: 7661051128751625526}
+  - component: {fileID: 4022298831095275986}
   m_Layer: 0
   m_Name: WeaponSocket
   m_TagString: Untagged
@@ -174,12 +175,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953291186877065358}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6b94237113b4061aefb91d43b1a014b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _gameObject: {fileID: 4674226719920866884, guid: 323990f20ab22534686323d17bf6d322, type: 3}
+--- !u!114 &4022298831095275986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953291186877065358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7786f83873114286b231df19c3997fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _weaponType: 1
+  _parent: {fileID: 3508750502291154329}
 --- !u!1 &2496841844421966495
 GameObject:
   m_ObjectHideFlags: 0

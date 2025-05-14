@@ -6,22 +6,32 @@
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dungeon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dungeon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/New Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/GameResources/DungeonGenerationConfiguration_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/GameResources/DungeonGenerationConfiguration_Default.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/BSPDungeonGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/BSPDungeonGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/BSPDungeonGeneratorParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/BSPDungeonGeneratorParams.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/Dungeon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/Dungeon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/IMacroLayoutDungeonGenerationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/IMacroLayoutDungeonGenerationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/CA/CellularAutomataCaveGeneratorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/CA/CellularAutomataCaveGeneratorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/DungeonToPNGExproter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/DungeonToPNGExproter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/TagVisualizationConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/TagVisualizationConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/GlobalPlaceTag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/GlobalPlaceTag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/IGlobalPlaceTagRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/IGlobalPlaceTagRule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/PlayerSpawnMicroTagRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/PlayerSpawnMicroTagRule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/TagVisualizationConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/TagVisualizationConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Configuraiton.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Configuraiton.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Extensions/ZenjectExtensions/AddressablesLoaderZenjectExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Extensions/ZenjectExtensions/AddressablesLoaderZenjectExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTrees/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/BehaviourTrees/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/EnemyAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/EnemySpawner/IEnemySpawnerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/Enemy/Scripts/EnemySpawner/IEnemySpawnerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/InputModule/IInputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/InputModule/IInputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/InputModule/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/InputModule/InputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerWeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerWeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultStatsDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultStatsDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/EntityStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/EntityStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/IStatService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/IStatService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/StatDataHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/StatDataHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/StatsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/StatsInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/PlayerWeaponModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/PlayerWeaponModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/WeaponType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/API/WeaponType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/IPlayerWeaponService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/IPlayerWeaponService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/WeaponUnlockData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/WeaponUnlockData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/WeaponUpgradeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/WeaponUpgradeData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/SpawnEntitiesState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/SpawnEntitiesState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/EnemyPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/EnemyPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +57,10 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../Diploma/DiplomaProject/Assets/_Project/Features/Global/GlobalConfigurations/LayersConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/LevelConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Features/WeaponModule/SelfRegisterWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.unitask@6a18b5d4ef81/Runtime/UniTaskScheduler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap.extras@13634da7dbe0/Runtime/Tiles/RuleTile/RuleTile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@624f919d8cdd/Runtime/Core/CinemachineVirtualCameraBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@e2c83221d2dc/InputSystem/InputSystem.cs" root0="SKIP_HIGHLIGHTING" />
@@ -63,7 +75,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/48/d8a93664/Vector2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/69/50476923/Vector2Int.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/8d/309c0bf0/Transform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/8d/987b6983/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/e5/a0b2f47f/RectInt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/ea/2139756e/Component.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/f0/dc5d412a/ObjectPool`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/fe/4716d0e7/Color.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7ae67de414c34a0397e0ee5801c5da5a10fc00/c9/ef0bba6a/LargeArrayBuilder`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95707308f6f3498991e9df8902fe97ba9b8e00/02/baaa5861/AssetDatabase.cs" root0="FORCE_HIGHLIGHTING" />
@@ -142,10 +157,10 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4124">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21428">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="4124" />
+      <option name="pid" value="21428" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
         <list>
@@ -184,6 +199,10 @@
       <workItem from="1747059870729" duration="7153000" />
       <workItem from="1747130175744" duration="9579000" />
       <workItem from="1747149165974" duration="5878000" />
+      <workItem from="1747245364482" duration="483000" />
+      <workItem from="1747246005838" duration="2242000" />
+      <workItem from="1747248337220" duration="40000" />
+      <workItem from="1747248388514" duration="2494000" />
     </task>
     <servers />
   </component>
@@ -294,6 +313,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/ObjectPoolModule/Scripts/GenericObjectPool.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\ObjectPoolModule\Scripts\GenericObjectPool.cs" containingFunctionPresentation="Method 'Initialize'">
+            <startOffsets>
+              <option value="1128" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1148" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/ObjectPoolModule/Scripts/GenericPoolFactory.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\ObjectPoolModule\Scripts\GenericPoolFactory.cs" containingFunctionPresentation="Method 'Create'">
+            <startOffsets>
+              <option value="1071" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1167" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/DamagablesModule/EntityHealth.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\WeaponsModule\Scripts\Weapons\DamagablesModule\EntityHealth.cs" containingFunctionPresentation="Method 'TakeDamage'">
+            <startOffsets>
+              <option value="475" />
+            </startOffsets>
+            <endOffsets>
+              <option value="476" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />

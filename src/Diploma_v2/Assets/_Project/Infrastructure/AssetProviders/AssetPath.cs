@@ -20,6 +20,11 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string SINGLE_UPGRADE_FACTORY_CONFIGURATION = "SingleUpgradeFactoryConfiguration";
             public const string DEFAULT_STATS_DATABASE = "DefaultStatsDatabase";
             public const string VISUALS_CONFIGURATION = "VisualsConfiguration";
+            public const string PROJECTILE_POOL_CONFIGURATION = "ProjectilePoolConfiguration";
+            public const string MUZZLES_POOL_CONFIGURATION = "MuzzlesPoolConfiguration";
+            public const string LAYERS_CONFIGURATION = "LayersConfiguration";
+            public const string WEAPONS_CONFIGURATIONS_HOLDER = "WeaponsConfigurationHolder";
+            public const string WEAPON_INSTANCE_CONFIGURATION = "WeaponInstanceConfiguration";
         }
     }
 

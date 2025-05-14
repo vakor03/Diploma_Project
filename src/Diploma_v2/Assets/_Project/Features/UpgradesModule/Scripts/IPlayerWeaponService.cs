@@ -1,5 +1,6 @@
 ﻿using _Project.Features.StatsModule;
 using _Project.Features.UpgradesModule.API;
+using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using UnityEngine;
 
 namespace _Project.Features.UpgradesModule {

@@ -1,0 +1,91 @@
+﻿using _Project.Features.StatsModule;
+using _Project.Features.WeaponModule;
+using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesPool;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponConfigurations;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponSpreadModule;
+using Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
+using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
+using Sirenix.OdinInspector;
+using UnityEngine;
+using Zenject;
+
+namespace Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
+	public class AK47_Raycast : MonoBehaviour, IWeapon, IDirectionalShootable, IReloadable, IRotatable {
+		[SerializeField] private Transform _firePoint;
+
+		private const WeaponType WEAPON_TYPE = WeaponType.AK47_Raycast;
+		private const ProjectileType PROJECTILE_TYPE = ProjectileType.BulletRaycast;
+
+		private ProjectilesObjectPool _projectilesPool;
+		private WeaponConfiguration _weaponConfiguration;
+		private IWeaponConfigurationService _weaponConfigurationService;
+		private IWeaponSpreadService _weaponSpreadService;
+
+		private int _bulletsInMagazine;
+		private float _lastShotTime;
+		private float _reloadingTimer;
+
+		[Inject]
+		private void InjectDependencies(ProjectilesObjectPool projectilePoolService,
+		                                IWeaponSpreadService weaponSpreadService,
+		                                IWeaponConfigurationService weaponConfigurationService) {
+			_projectilesPool = projectilePoolService;
+			_weaponSpreadService = weaponSpreadService;
+			_weaponConfigurationService = weaponConfigurationService;
+		}
+
+		private void Awake() {
+			_weaponConfiguration = _weaponConfigurationService.GetConfiguration(WEAPON_TYPE);
+			RefillMagazine();
+		}
+
+		private void Update() {
+			if (!IsReloading)
+				return;
+
+			_reloadingTimer -= Time.deltaTime;
+			if (_reloadingTimer <= 0)
+				RefillMagazine();
+		}
+
+		[Button]
+		public void Shoot(Vector2 direction) {
+			if (IsReloading || Time.time - _lastShotTime < _weaponConfiguration.ShootDelay)
+				return;
+
+			IProjectile projectile = _projectilesPool.Get(PROJECTILE_TYPE);
+			projectile.GetBehaviour<IRaycastBulletBehaviour>()
+			          .SetStartPosition(_firePoint.position)
+			          .SetDirection(_weaponSpreadService.ApplySpread(direction, _weaponConfiguration.Spread))
+			          .SetDamage(_weaponConfiguration.Damage)
+			          .SetSpeed(_weaponConfiguration.Speed)
+			          .SetMaxDistance(_weaponConfiguration.MaxDistance)
+			          .SetTrailRendererConfiguration(_weaponConfiguration.TrailRendererConfiguration);
+
+			projectile.Launch();
+
+			_lastShotTime = Time.time;
+			if (--_bulletsInMagazine == 0)
+				StartReloading();
+		}
+
+		public bool IsReloading => _reloadingTimer > 0;
+
+		public void StartReloading() =>
+			_reloadingTimer = _weaponConfiguration.ReloadTime;
+		
+		public void RotateInDirection(Vector2 direction)
+		{
+			float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+			transform.rotation = Quaternion.Euler(0f, 0f, angle);
+		}
+
+		private void RefillMagazine() =>
+			_bulletsInMagazine = _weaponConfiguration.MagazineSize;
+
+		public IStatService<WeaponStats> Stats { get; private set; }
+		public void InitWeaponStats(IStatService<WeaponStats> weaponStats) {
+			Stats = weaponStats;
+		}
+	}
+}

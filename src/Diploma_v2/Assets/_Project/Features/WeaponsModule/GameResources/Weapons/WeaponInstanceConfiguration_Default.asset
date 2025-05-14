@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138ae99b478b46eb9c5ae0e4311185a2, type: 3}
+  m_Name: WeaponInstanceConfiguration_Default
+  m_EditorClassIdentifier: 
+  <WeaponPrefabs>k__BackingField:
+    m_Keys: 01000000
+    m_Values:
+    - {fileID: 6044620519910715698, guid: 3eee6f63d9ab7724089dce462f7e12ab, type: 3}

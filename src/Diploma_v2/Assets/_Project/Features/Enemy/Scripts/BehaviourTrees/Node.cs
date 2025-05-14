@@ -68,7 +68,7 @@ namespace _Project.Features.Enemy.BehaviourTree {
     public class Leaf : Node {
         private readonly IStrategy _strategy;
 
-        public Leaf(string name, IStrategy strategy) : base(name) =>
+        public Leaf(IStrategy strategy, string name) : base(name) =>
             _strategy = strategy;
 
         public override Status Process() =>

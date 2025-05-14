@@ -26,6 +26,7 @@ namespace _Project.Features.InputModule
 
         public event Action OnAttackStarted;
         public event Action OnAttackCanceled;
+        public bool IsAttacking { get; private set; }
 
         public void Initialize()
         {
@@ -37,11 +38,15 @@ namespace _Project.Features.InputModule
             _inputSystemActions.Player.Attack.canceled += HandleOnAttackCanceled;
         }
 
-        private void HandleOnAttackCanceled(InputAction.CallbackContext obj) =>
+        private void HandleOnAttackCanceled(InputAction.CallbackContext obj) {
+            IsAttacking = false;
             OnAttackCanceled?.Invoke();
+        }
 
-        private void HandleOnAttackPerformed(InputAction.CallbackContext obj) =>
+        private void HandleOnAttackPerformed(InputAction.CallbackContext obj) {
+            IsAttacking = true;
             OnAttackStarted?.Invoke();
+        }
 
         public void Dispose()
         {

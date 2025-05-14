@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b2b851719146c6a0921d4aab0d0ec1, type: 3}
+  m_Name: WeaponConfiguration_Minigun_Default
+  m_EditorClassIdentifier: 
+  _damage: 2
+  _speed: 100
+  _reloadTime: 5
+  _spread: 0.2
+  _maxDistance: 30
+  _trailRendererConfiguration: {fileID: 11400000, guid: 0c741bf2647e2754db7224ff63bc47be, type: 2}
+  _burstCount: 2
+  _magazineSize: 100
+  _fireRate: 20
+  _cameraShakeConfiguration:
+    intensity: 2
+    duration: 0.2

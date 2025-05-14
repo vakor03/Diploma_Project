@@ -13,5 +13,10 @@ namespace _Project.Features.StatsModule {
         public Dictionary<T, float> GetAllStats();
     
         public event Action<T, float> OnStatChanged;
+        
+        public float this[T stat] {
+            get { return GetStat(stat); }
+            set { SetStat(stat, value); }
+        }
     }
 }

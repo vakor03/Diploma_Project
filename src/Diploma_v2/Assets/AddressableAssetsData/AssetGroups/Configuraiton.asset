@@ -15,8 +15,23 @@ MonoBehaviour:
   m_GroupName: Configuraiton
   m_GUID: 63b082eee4a6314418e21026fc803e80
   m_SerializeEntries:
+  - m_GUID: 01926a71951b40a4f8dddcae06e6c94d
+    m_Address: WeaponInstanceConfiguration
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0363ba7cfd7c60e408865d74650c21d0
     m_Address: DefaultStatsDatabase
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11aa820925c4f734895f38e20c76c695
+    m_Address: WeaponsConfigurationHolder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3cc48fc86ab28b147a714ac8a218b930
+    m_Address: ProjectilePoolConfiguration
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -30,8 +45,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84b4f152b846ab34b86b77f8ad1dfe17
+    m_Address: MuzzlesPoolConfiguration
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 87ebe1adddb17a541a7cd19e6052dc43
     m_Address: UpgradeDatabase
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7739849f5aa1874e96ed28eab84f47c
+    m_Address: LayersConfiguration
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

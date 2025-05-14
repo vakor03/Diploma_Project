@@ -9,7 +9,7 @@ namespace _Project.Features.StatsModule {
 
             // Container.Bind<StatDataHolder<PlayerStats>>().AsSingle();
             // Container.Bind<StatDataHolder<WeaponStats>>().AsTransient();
-            // Container.Bind<StatDataHolder<EntityStats>>().AsTransient();
+            Container.Bind<StatDataHolder<EntityStats>>().AsTransient();
 
             // Container.Bind<IStatService<PlayerStats>>().To<StatService<PlayerStats>>().AsSingle();
             // Container.Bind<IStatService<WeaponStats>>().To<StatService<WeaponStats>>().AsTransient();

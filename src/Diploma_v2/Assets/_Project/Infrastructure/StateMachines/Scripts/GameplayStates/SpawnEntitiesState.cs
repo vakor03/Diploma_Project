@@ -39,8 +39,9 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
             _cameraSpawnService.SpawnCamera();
             Vector3 playerSpawnPoint = _playerSpawnPointsService.GetPlayerSpawnPoint();
             Player player = _playerSpawnerService.SpawnPlayerAt(playerSpawnPoint);
+            GameObject enemies = new GameObject("Enemies");
             foreach (Vector3 spawnPoint in _enemySpawnPointsModel.SpawnPoints)
-                _enemySpawnerService.SpawnEnemyAt(spawnPoint);
+                _enemySpawnerService.SpawnEnemyAt(spawnPoint, enemies.transform);
             _cameraService.FollowTarget(player.transform);
             _instantiator.InstantiatePrefab(_visualsConfiguration.BackgroundPrefab)
                 .transform.position = player.transform.position;

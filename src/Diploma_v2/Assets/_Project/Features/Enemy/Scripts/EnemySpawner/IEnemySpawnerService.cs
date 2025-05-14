@@ -4,7 +4,7 @@ using Zenject;
 
 namespace _Project.Features.Enemy.EnemySpawner {
     public interface IEnemySpawnerService {
-        public Enemy SpawnEnemyAt(Vector3 spawnPoint);
+        public Enemy SpawnEnemyAt(Vector3 spawnPoint, Transform parent);
     }
  
     public class EnemySpawnerService : IEnemySpawnerService {
@@ -17,11 +17,11 @@ namespace _Project.Features.Enemy.EnemySpawner {
             _staticDataService = staticDataService;
         }
 
-        public Enemy SpawnEnemyAt(Vector3 position)
+        public Enemy SpawnEnemyAt(Vector3 position, Transform parent)
         {
             Enemy enemyPrefab = _staticDataService.GetEnemyPrefab();
 
-            Enemy instantiated = _instantiator.InstantiatePrefabForComponent<Enemy>(enemyPrefab);
+            Enemy instantiated = _instantiator.InstantiatePrefabForComponent<Enemy>(enemyPrefab, parent);
             instantiated.transform.position = position;
             
             return instantiated;

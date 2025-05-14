@@ -10,8 +10,15 @@ using _Project.Features.UIModule;
 using _Project.Features.UpgradesModule;
 using _Project.Features.UpgradesModule.API;
 using _Project.Features.VisualsModule.Scripts;
+using _Project.Features.WeaponsModule.Scripts.Muzzles.MuzzlesPoolModule;
+using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesPool;
+using _Project.Features.WeaponsModule.Scripts.Weapons.HitDetectorModule;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponConfigurations;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponSpreadModule;
+using _Project.Features.WeaponsModule.Scripts.WeaponSpawn;
 using _Project.Infrastructure.MVP.Core;
 using _Project.Scripts.Infrastructure.StateMachines;
+using Features.WeaponsModule.Scripts.Weapons.WeaponsInstances;
 using Zenject;
 
 namespace _Project.Infrastructure.SceneContexts.Scripts
@@ -37,6 +44,13 @@ namespace _Project.Infrastructure.SceneContexts.Scripts
             PlayerWeaponsInstaller.Install(Container);
             StatsInstaller.Install(Container);
             VisualsInstaller.Install(Container);
+            ProjectilePoolInstaller.Install(Container);
+            MuzzlePoolInstaller.Install(Container);
+            RaycastHitDetectorInstaller.Install(Container);
+            GlobalConfigurationsInstaller.Install(Container);
+            WeaponConfigurationInstaller.Install(Container);
+            WeaponSpreadServiceInstaller.Install(Container);
+            WeaponSpawnServiceInstaller.Install(Container);
 
             BindStatesFactory();
 
