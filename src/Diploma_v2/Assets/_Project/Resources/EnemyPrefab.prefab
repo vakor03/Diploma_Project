@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 883707553138689310}
   - component: {fileID: 3720778840171602047}
   - component: {fileID: 8136963466060894935}
+  - component: {fileID: 3865107896556214955}
   m_Layer: 8
   m_Name: EnemyPrefab
   m_TagString: Untagged
@@ -297,6 +298,18 @@ MonoBehaviour:
   _installerPrefabs: []
   _autoRun: 1
   _kernel: {fileID: 0}
+--- !u!114 &3865107896556214955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980256991180106563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a89614a77f246419c731ae21ca4500f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1311730744680259936
 GameObject:
   m_ObjectHideFlags: 0

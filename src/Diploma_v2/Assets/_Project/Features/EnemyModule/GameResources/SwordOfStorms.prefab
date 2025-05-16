@@ -475,6 +475,7 @@ GameObject:
   - component: {fileID: 2018556789002114487}
   - component: {fileID: 1011271925600383172}
   - component: {fileID: 6839938269466501338}
+  - component: {fileID: 965259811995686688}
   m_Layer: 0
   m_Name: SwordOfStorms
   m_TagString: Untagged
@@ -635,3 +636,16 @@ MonoBehaviour:
   _isDead: 0
   _isStatic: 0
   _currentSpeed: 0
+  _isDamaged: 0
+--- !u!114 &965259811995686688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6619486486326227694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a89614a77f246419c731ae21ca4500f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

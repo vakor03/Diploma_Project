@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8872660965951592325}
   - component: {fileID: 1665872496108659627}
   - component: {fileID: 262242628280751099}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlatfromDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 532921570827942386}
   - component: {fileID: 1344172310923185879}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EntityStatsInstaller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 3508750502291154329}
   - component: {fileID: 7661051128751625526}
   - component: {fileID: 4022298831095275986}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WeaponSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 8032617578652552828}
   - component: {fileID: 3278042468467922513}
   - component: {fileID: 724553562387961018}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6236600073917622763}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerInstallers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6449319044279844629}
   - component: {fileID: 2323759010579702820}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EntityWeaponDataHolderInstaller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 5636811596852726667}
   - component: {fileID: 7483008437394863470}
   - component: {fileID: 2896406840212828004}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: XPCollector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,7 +667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 51839189810222738}
   - component: {fileID: 3949442171867109297}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

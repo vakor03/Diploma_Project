@@ -55,6 +55,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ded0fb3fd27d0204f9208af22b6543c9
+    m_Address: EnemyPoolConfiguration
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e7739849f5aa1874e96ed28eab84f47c
     m_Address: LayersConfiguration
     m_ReadOnly: 0

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _Project.Features.WeaponsModule.Scripts.Weapons.DamagablesModule;
 using UnityEngine;
 
 namespace _Project.Features.DamageModule {

@@ -1,5 +1,5 @@
 ﻿using _Project.Features.CameraModule;
-using _Project.Features.Enemy.EnemySpawner;
+using _Project.Features.Enemy;
 using _Project.Features.ExperienceModule;
 using _Project.Features.Installers;
 using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
@@ -36,7 +36,6 @@ namespace _Project.Infrastructure.SceneContexts.Scripts
             TilemapsInstaller.Install(Container);
             CameraInstaller.Install(Container);
             WindowServiceInstaller.Install(Container);
-            EnemySpawnerInstaller.Install(Container);
             XPOrbsInstaller.Install(Container);
             ExperienceInstaller.Install(Container);
             UpgradesInstaller.Install(Container);
@@ -51,6 +50,7 @@ namespace _Project.Infrastructure.SceneContexts.Scripts
             WeaponConfigurationInstaller.Install(Container);
             WeaponSpreadServiceInstaller.Install(Container);
             WeaponSpawnServiceInstaller.Install(Container);
+            EnemyPoolInstaller.Install(Container);
 
             BindStatesFactory();
 

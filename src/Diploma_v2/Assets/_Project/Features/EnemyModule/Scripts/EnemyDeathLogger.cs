@@ -20,7 +20,7 @@ namespace _Project.Features.Enemy {
 
         private string CreateDeathLogMessage(DeathArgs deathArgs) {
             string enemyName = gameObject.name;
-            string enemyType = GetComponent<Enemy>()?.GetType().Name ?? "Enemy";
+            string enemyType = GetComponent<Enemy>()?.GetType().Name ?? "EnemyModule";
             string killerName = deathArgs.Killer != null ? deathArgs.Killer.name : "Unknown";
             string deathType = deathArgs.IsInstantDeath ? "Instant Death" : "Normal Death";
             string timestamp = System.DateTime.Now.ToString("HH:mm:ss");

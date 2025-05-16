@@ -1,4 +1,5 @@
-﻿using _Project.Features.WeaponsModule.Scripts.Weapons.DamagablesModule;
+﻿using _Project.Features.DamageModule;
+using _Project.Features.WeaponsModule.Scripts.Weapons.DamagablesModule;
 using Features.WeaponsModule.Scripts.Weapons.WeaponsInstances;
 using Global.Helpers.Scripts;
 using UnityEngine;
@@ -17,7 +18,7 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.HitDetectorModule {
 				return new TargetHit()
 				       .With(targetHit => targetHit.Point = hit.point)
 				       .With(targetHit => targetHit.Distance = hit.distance)
-				       .With(targetHit => targetHit.Damageable = hit.collider.GetComponent<IDamageable>());
+				       .With(targetHit => targetHit.Damageable = hit.collider.GetComponent<HurtBox>().Damageable);
 
 			hit = Physics2D.Raycast(startPosition, direction, maxDistance, _layersConfiguration.EnvironmentLayerMask);
 			if (hit.collider != null)

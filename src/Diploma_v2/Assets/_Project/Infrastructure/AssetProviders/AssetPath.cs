@@ -25,6 +25,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string LAYERS_CONFIGURATION = "LayersConfiguration";
             public const string WEAPONS_CONFIGURATIONS_HOLDER = "WeaponsConfigurationHolder";
             public const string WEAPON_INSTANCE_CONFIGURATION = "WeaponInstanceConfiguration";
+            public const string ENEMY_POOL_CONFIGURATION = "EnemyPoolConfiguration";
         }
     }
 

@@ -15,7 +15,7 @@ namespace _Project.Features.Enemy {
         [Inject] private PlayerTransformDataHolder _playerTransformDataHolder;
 
         private void Awake() {
-            _tree = new BehaviourTree.BehaviourTree("Enemy");
+            _tree = new BehaviourTree.BehaviourTree("EnemyModule");
             Leaf isPlayerInRange = new Leaf(new Condition(()=> _isPlayerInRange), "IsPlayerInRange");
             Leaf moveToPlayer = new Leaf(new FollowStrategy(_playerTransformDataHolder.Player,_enemyMovement), "MoveToPlayer");
 
