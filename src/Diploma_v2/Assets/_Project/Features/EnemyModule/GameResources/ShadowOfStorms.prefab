@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 4077242118194887249}
   - component: {fileID: 5203926069703046409}
   - component: {fileID: 1695284932037802209}
+  - component: {fileID: 6444184435018769815}
   m_Layer: 8
   m_Name: ShadowOfStorms
   m_TagString: Untagged
@@ -364,7 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _monoPooledEnemy: {fileID: 3102587130823250649}
-  _simpleMonoDamageable: {fileID: 1342832108536562182}
+  _enemyAnimationEvents: {fileID: 2861147927325919903}
 --- !u!50 &5203926069703046409
 Rigidbody2D:
   serializedVersion: 5
@@ -406,6 +407,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnPoint: {fileID: 7491434414100068538}
   _monoPooledEnemy: {fileID: 3102587130823250649}
+--- !u!114 &6444184435018769815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6239193435523365897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9303d6dac4b94feb807543b8034699c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damageable: {fileID: 1342832108536562182}
+  _animationController: {fileID: 2629427363854297760}
 --- !u!1001 &4595873495485426064
 PrefabInstance:
   m_ObjectHideFlags: 0

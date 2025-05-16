@@ -3,7 +3,7 @@ using _Project.Features.WeaponsModule.Scripts.Weapons.DamagablesModule;
 using UnityEngine;
 
 namespace _Project.Features.DamageModule {
-    public class SimpleMonoDamageable : MonoBehaviour, IDamageable {
+    public class SimpleMonoDamageable : MonoDamageable {
         [SerializeField] private HurtBox[] _hurtBoxes;
         [SerializeField] private float _health = 100f;
 
@@ -12,11 +12,14 @@ namespace _Project.Features.DamageModule {
                 hurtBox.Damageable = this;
         }
 
-        public event Action<float> OnTakeDamage;
-        public event Action OnDeath;
-        public event Action OnAfterDeath;
+        public override event Action<float> OnTakeDamage;
+        public override event Action OnDeath;
+        public override event Action OnAfterDeath;
 
-        public void TakeDamage(float damage) {
+        public override void TakeDamage(float damage) {
+            if (_health <= 0)
+                return;
+
             _health -= damage;
             OnTakeDamage?.Invoke(damage);
 

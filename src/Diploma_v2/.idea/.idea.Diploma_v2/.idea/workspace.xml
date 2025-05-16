@@ -6,44 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Configuraiton.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Configuraiton.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageArgs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageArgs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageResistances.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageResistances.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageType.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DamageType.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DeathArgs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/DeathArgs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/EntityHealthController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/EntityHealthController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/EntityHealthData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/EntityHealthData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealArgs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealArgs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealType.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealType.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealthChangeArgs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/Deprecated/HealthChangeArgs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/ReleaseEnemyAfterDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/ReleaseEnemyAfterDeath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/death.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/AnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/AnimationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/EnemyAnimationEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/EnemyAnimationEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/ReleaseEnemyAfterDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/ReleaseEnemyAfterDeathAnimationEnd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/ReleaseEnemyAfterDeath.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/ReleaseEnemyAfterDeathAnimationEnd.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/SimpleMonoDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/SimpleMonoDamageable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/GameResources/ShadowOfStorms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/GameResources/ShadowOfStorms.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/EnemyDeathLogger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/EnemyDeathLogger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/SpawnXPOrbsOnDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/SpawnXPOrbsOnDeath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/ExperienceService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/ExperienceService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/DamagablesModule/EntityHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/DamagablesModule/EntityHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/DamagablesModule/IDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/DamagablesModule/IDamageable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/HitDetectorModule/RaycastHitDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/HitDetectorModule/RaycastHitDetector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/IStaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/IStaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/StaticDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/StaticDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/XPLevelConfiguration_Default.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/XPLevelConfiguration_Default.asset.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +64,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/ea/2139756e/Component.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/f0/dc5d412a/ObjectPool`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/fe/4716d0e7/Color.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32c22f7c1b7049ccad5f07031bb43bf35b8590/72/7fdc4c0e/IDataGridEditingService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7ae67de414c34a0397e0ee5801c5da5a10fc00/c9/ef0bba6a/LargeArrayBuilder`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95707308f6f3498991e9df8902fe97ba9b8e00/02/baaa5861/AssetDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95707308f6f3498991e9df8902fe97ba9b8e00/11/f65c0546/CompilationPipeline.cs" root0="FORCE_HIGHLIGHTING" />
@@ -216,7 +188,7 @@
       <workItem from="1747246005838" duration="2242000" />
       <workItem from="1747248337220" duration="40000" />
       <workItem from="1747248388514" duration="2494000" />
-      <workItem from="1747414986154" duration="7062000" />
+      <workItem from="1747414986154" duration="7726000" />
     </task>
     <servers />
   </component>
@@ -249,32 +221,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/PlayerLevelUI/PlayerXPPresenter.cs</url>
-          <line>39</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\UIModule\Scripts\PlayerLevelUI\PlayerXPPresenter.cs" containingFunctionPresentation="Method 'UpdateXPPercent'">
-            <startOffsets>
-              <option value="1365" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1382" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/ExperienceModel.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\ExperienceModule\Scripts\ExperienceModel.cs" containingFunctionPresentation="Method 'SetCurrentXP'">
-            <startOffsets>
-              <option value="677" />
-            </startOffsets>
-            <endOffsets>
-              <option value="692" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/UpgradePools/UpgradePoolService.cs</url>
@@ -316,45 +262,6 @@
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/BSP/BSPDungeonGenerator.cs</url>
-          <line>71</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\MapGeneration\Scripts\BSP\BSPDungeonGenerator.cs" containingFunctionPresentation="Method 'CreateRoom'">
-            <startOffsets>
-              <option value="3042" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3147" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/ObjectPoolModule/Scripts/GenericObjectPool.cs</url>
-          <line>27</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\ObjectPoolModule\Scripts\GenericObjectPool.cs" containingFunctionPresentation="Method 'Initialize'">
-            <startOffsets>
-              <option value="1128" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1148" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/ObjectPoolModule/Scripts/GenericPoolFactory.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\ObjectPoolModule\Scripts\GenericPoolFactory.cs" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="1071" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1167" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/DamagablesModule/EntityHealth.cs</url>
           <line>14</line>
           <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\WeaponsModule\Scripts\Weapons\DamagablesModule\EntityHealth.cs" containingFunctionPresentation="Method 'TakeDamage'">
@@ -368,30 +275,43 @@
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/XPCollector.cs</url>
-          <line>17</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\ExperienceModule\Scripts\XPCollector.cs" containingFunctionPresentation="Method 'OnTriggerEnter2D'">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/EnemyAnimationEvents.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\DamageModule\Scripts\EnemyAnimationEvents.cs" containingFunctionPresentation="Method 'OnDeathAnimationEnd'">
             <startOffsets>
-              <option value="501" />
+              <option value="613" />
             </startOffsets>
             <endOffsets>
-              <option value="557" />
+              <option value="640" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/XPCollector.cs</url>
-          <line>14</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\ExperienceModule\Scripts\XPCollector.cs" containingFunctionPresentation="Method 'OnTriggerEnter2D'">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/ReleaseEnemyAfterDeathAnimationEnd.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\DamageModule\Scripts\ReleaseEnemyAfterDeathAnimationEnd.cs" containingFunctionPresentation="Method 'ReleaseEnemy'">
             <startOffsets>
-              <option value="401" />
+              <option value="768" />
             </startOffsets>
             <endOffsets>
-              <option value="441" />
+              <option value="804" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="47" />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/ReleaseEnemyAfterDeathAnimationEnd.cs</url>
+          <line>16</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\DamageModule\Scripts\ReleaseEnemyAfterDeathAnimationEnd.cs" containingFunctionPresentation="Method 'OnEnable'">
+            <startOffsets>
+              <option value="553" />
+            </startOffsets>
+            <endOffsets>
+              <option value="608" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />

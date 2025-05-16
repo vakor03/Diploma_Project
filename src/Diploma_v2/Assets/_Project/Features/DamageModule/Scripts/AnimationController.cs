@@ -15,13 +15,11 @@ namespace _Project.Features.DamageModule {
         [SerializeField]private float _currentSpeed;
         [SerializeField] private bool _isDamaged;
 
-        private void OnEnable() {
+        private void OnEnable() =>
             _animationEvents.DamagedAnimationEnd += OnDamagedAnimationEnd;
-        }
-        
-        private void OnDisable() {
+
+        private void OnDisable() =>
             _animationEvents.DamagedAnimationEnd -= OnDamagedAnimationEnd;
-        }
 
         private void OnDamagedAnimationEnd() {
             _isDamaged = false;
@@ -80,6 +78,7 @@ namespace _Project.Features.DamageModule {
             _isDead = false;
             _isAttacking = false;
             _isDamaged = false;
+            _isStatic = false;
         }
     }
 }

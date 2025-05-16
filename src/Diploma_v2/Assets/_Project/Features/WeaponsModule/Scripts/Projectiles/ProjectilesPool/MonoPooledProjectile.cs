@@ -37,8 +37,11 @@ namespace _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesPool {
 		public void OnDisabled() =>
 			gameObject.SetActive(false);
 
-		public void OnDestroyed() =>
+		public void OnDestroyed() {
+			if (gameObject == null)
+				return;
 			Destroy(gameObject);
+		}
 
 		public void Launch() {
 			foreach (IProjectileBehaviour projectileBehaviour in _projectileBehaviours)

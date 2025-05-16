@@ -6,6 +6,7 @@ namespace _Project.Features.DamageModule {
         public event Action AttackEnd;
         public event Action DamageDealt;
         public event Action DamagedAnimationEnd;
+        public event Action DeathAnimationEnd;
 
         public void OnDamageDealt() =>
             DamageDealt?.Invoke();
@@ -15,5 +16,8 @@ namespace _Project.Features.DamageModule {
         
         public void OnAnimationEnd() =>
             DamagedAnimationEnd?.Invoke();
+        
+        public void OnDeathAnimationEnd() =>
+            DeathAnimationEnd?.Invoke();
     }
 }
