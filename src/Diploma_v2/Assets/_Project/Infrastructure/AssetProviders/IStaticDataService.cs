@@ -17,6 +17,5 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         public TagVisualizationConfig GetTagVisualizationConfig();
         public Enemy GetEnemyPrefab();
         public XPOrbConfiguration GetXPOrbConfiguration();
-        public XPLevelConfiguration GetXPLevelConfiguration();
     }
 }

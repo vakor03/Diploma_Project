@@ -15,7 +15,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string LEVEL_CONFIGURATION = "LevelConfiguration_Default";
             public const string TAG_VISUALIZATION_CONFIG = "TagVisualizationConfig";
             public const string XP_ORB_CONFIGURATION = "XPOrbConfiguration_Default";
-            public const string XP_LEVEL_CONFIGURATION = "XPLevelConfiguration_Default";
+            public const string XP_LEVEL_CONFIGURATION = "XPLevelConfiguration";
             public const string UPGRADE_DATABASE = "UpgradeDatabase";
             public const string SINGLE_UPGRADE_FACTORY_CONFIGURATION = "SingleUpgradeFactoryConfiguration";
             public const string DEFAULT_STATS_DATABASE = "DefaultStatsDatabase";
@@ -26,6 +26,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string WEAPONS_CONFIGURATIONS_HOLDER = "WeaponsConfigurationHolder";
             public const string WEAPON_INSTANCE_CONFIGURATION = "WeaponInstanceConfiguration";
             public const string ENEMY_POOL_CONFIGURATION = "EnemyPoolConfiguration";
+            public const string ENEMY_XP_CONFIGURATION = "EnemyXPConfiguration";
         }
     }
 

@@ -14,13 +14,12 @@ namespace _Project.Features.DamageModule {
             _enemyPool = enemyPool;
 
         private void OnEnable() =>
-            _simpleMonoDamageable.OnDeath += ReleaseEnemy;
+            _simpleMonoDamageable.OnAfterDeath += ReleaseEnemy;
 
         private void OnDisable() =>
-            _simpleMonoDamageable.OnDeath -= ReleaseEnemy;
+            _simpleMonoDamageable.OnAfterDeath -= ReleaseEnemy;
 
-        private void ReleaseEnemy() {
+        private void ReleaseEnemy() =>
             _enemyPool.Release(_monoPooledEnemy);
-        }
     }
 }

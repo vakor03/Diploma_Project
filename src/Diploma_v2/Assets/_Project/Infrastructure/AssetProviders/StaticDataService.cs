@@ -22,7 +22,6 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         private TagVisualizationConfig _tagVisualizationConfig;
         private Enemy _enemyPrefab;
         private XPOrbConfiguration _xpOrbConfiguration;
-        private XPLevelConfiguration _xpLevelConfiguration;
         private UpgradeDatabase _upgradeDatabase;
 
         public StaticDataService(IAssetProvider assetProvider) =>
@@ -49,9 +48,6 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
         public XPOrbConfiguration GetXPOrbConfiguration() =>
             _xpOrbConfiguration;
 
-        public XPLevelConfiguration GetXPLevelConfiguration() =>
-            _xpLevelConfiguration;
-
         public void Initialize()
         {
             _playerPrefab = _assetProvider.Load<Player>(AssetPath.Prefab.PLAYER_PREFAB);
@@ -67,8 +63,6 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
                 _assetProvider.Load<Enemy>(AssetPath.Prefab.ENEMY_PREFAB);
             _xpOrbConfiguration =
                 _assetProvider.Load<XPOrbConfiguration>(AssetPath.Configuration.XP_ORB_CONFIGURATION);
-            _xpLevelConfiguration =
-                _assetProvider.Load<XPLevelConfiguration>(AssetPath.Configuration.XP_LEVEL_CONFIGURATION);
         }
     }
 }

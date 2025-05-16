@@ -1,14 +1,11 @@
-﻿using _Project.Scripts.Infrastructure.AssetProviders;
-using Zenject;
-
-namespace _Project.Features.ExperienceModule {
+﻿namespace _Project.Features.ExperienceModule {
     public class ExperienceService : IExperienceService {
         private readonly ExperienceModel _model;
         private readonly XPLevelConfiguration _levelConfig;
 
-        public ExperienceService(IStaticDataService staticDataService, ExperienceModel model) {
-            _levelConfig = staticDataService.GetXPLevelConfiguration();
+        public ExperienceService(ExperienceModel model, XPLevelConfiguration levelConfig) {
             _model = model;
+            _levelConfig = levelConfig;
         }
 
         public void AddXP(int amount) {
@@ -23,10 +20,5 @@ namespace _Project.Features.ExperienceModule {
 
             _model.SetCurrentXP(remainingXP);
         }
-    }
-
-    public class ExperienceInstaller : Installer<ExperienceInstaller> {
-        public override void InstallBindings() =>
-            Container.Bind<IExperienceService>().To<ExperienceService>().AsSingle();
     }
 }

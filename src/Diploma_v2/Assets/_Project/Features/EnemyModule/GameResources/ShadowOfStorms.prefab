@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 1342832108536562182}
   - component: {fileID: 4077242118194887249}
   - component: {fileID: 5203926069703046409}
+  - component: {fileID: 1695284932037802209}
   m_Layer: 8
   m_Name: ShadowOfStorms
   m_TagString: Untagged
@@ -391,6 +392,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1695284932037802209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6239193435523365897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2cca95e5df6435fb18a5a535b4ac242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnPoint: {fileID: 7491434414100068538}
+  _monoPooledEnemy: {fileID: 3102587130823250649}
 --- !u!1001 &4595873495485426064
 PrefabInstance:
   m_ObjectHideFlags: 0

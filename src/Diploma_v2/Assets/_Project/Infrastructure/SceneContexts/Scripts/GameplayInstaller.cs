@@ -51,6 +51,7 @@ namespace _Project.Infrastructure.SceneContexts.Scripts
             WeaponSpreadServiceInstaller.Install(Container);
             WeaponSpawnServiceInstaller.Install(Container);
             EnemyPoolInstaller.Install(Container);
+            EnemyXPInstaller.Install(Container);
 
             BindStatesFactory();
 

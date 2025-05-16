@@ -1,34 +1,128 @@
 ﻿using _Project.Features.DamageModule;
-using _Project.Features.WeaponsModule.Scripts.Weapons.DamagablesModule;
 using Features.WeaponsModule.Scripts.Weapons.WeaponsInstances;
 using Global.Helpers.Scripts;
 using UnityEngine;
+using System.Collections.Generic;
 
-namespace _Project.Features.WeaponsModule.Scripts.Weapons.HitDetectorModule {
-	public class RaycastHitDetector : IRaycastHitDetector {
-		private readonly LayersConfiguration _layersConfiguration;
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.HitDetectorModule 
+{
+    public class RaycastHitDetector : IRaycastHitDetector 
+    {
+        private readonly LayersConfiguration _layersConfiguration;
+        private readonly int _initialBufferSize = 16;
+        private RaycastHit2D[] _enemyHitResults;
+        private RaycastHit2D[] _environmentHitResults;
+        private readonly List<HitInfo> _validHits = new();
 
-		public RaycastHitDetector(LayersConfiguration layersConfiguration) =>
-			_layersConfiguration = layersConfiguration;
+        public RaycastHitDetector(LayersConfiguration layersConfiguration)
+        {
+            _layersConfiguration = layersConfiguration;
+            _enemyHitResults = new RaycastHit2D[_initialBufferSize];
+            _environmentHitResults = new RaycastHit2D[_initialBufferSize];
+        }
 
-		public Hit DetectHit(Vector2 startPosition, Vector2 direction, float maxDistance) {
-			RaycastHit2D hit;
-			hit = Physics2D.Raycast(startPosition, direction, maxDistance, _layersConfiguration.EnemyLayerMask);
-			if (hit.collider != null)
-				return new TargetHit()
-				       .With(targetHit => targetHit.Point = hit.point)
-				       .With(targetHit => targetHit.Distance = hit.distance)
-				       .With(targetHit => targetHit.Damageable = hit.collider.GetComponent<HurtBox>().Damageable);
+        public Hit DetectHit(Vector2 startPosition, Vector2 direction, float maxDistance) 
+        {
+            _validHits.Clear();
 
-			hit = Physics2D.Raycast(startPosition, direction, maxDistance, _layersConfiguration.EnvironmentLayerMask);
-			if (hit.collider != null)
-				return new EnvironmentHit()
-				       .With(environmentHit => environmentHit.Point = hit.point)
-				       .With(environmentHit => environmentHit.Distance = hit.distance);
+            PerformEnemyRaycast(startPosition, direction, maxDistance);
+            PerformEnvironmentRaycast(startPosition, direction, maxDistance);
 
-			return new NullHit()
-			       .With(nullHit => nullHit.Point = startPosition + direction * maxDistance)
-			       .With(nullHit => nullHit.Distance = maxDistance);
-		}
-	}
+            _validHits.Sort((a, b) => a.Hit.distance.CompareTo(b.Hit.distance));
+            
+            foreach (HitInfo hitInfo in _validHits)
+                if (hitInfo.IsEnemy) 
+                {
+                    HurtBox hurtBox = hitInfo.Hit.collider.GetComponent<HurtBox>();
+                    if (hurtBox != null && hurtBox.Damageable != null)
+                        return new TargetHit()
+                            .With(targetHit => targetHit.Point = hitInfo.Hit.point)
+                            .With(targetHit => targetHit.Distance = hitInfo.Hit.distance)
+                            .With(targetHit => targetHit.Damageable = hurtBox.Damageable);
+                } 
+                else
+                    return new EnvironmentHit()
+                        .With(environmentHit => environmentHit.Point = hitInfo.Hit.point)
+                        .With(environmentHit => environmentHit.Distance = hitInfo.Hit.distance);
+
+            return new NullHit()
+                .With(nullHit => nullHit.Point = startPosition + direction * maxDistance)
+                .With(nullHit => nullHit.Distance = maxDistance);
+        }
+
+        private void PerformEnvironmentRaycast(Vector2 startPosition, Vector2 direction, float maxDistance) {
+            int environmentHitCount = Physics2D.RaycastNonAlloc(
+                startPosition, 
+                direction, 
+                _environmentHitResults, 
+                maxDistance, 
+                _layersConfiguration.EnvironmentLayerMask
+            );
+
+            if (environmentHitCount > _environmentHitResults.Length) {
+                int newSize = Mathf.NextPowerOfTwo(environmentHitCount);
+                _environmentHitResults = new RaycastHit2D[newSize];
+                environmentHitCount = Physics2D.RaycastNonAlloc(
+                    startPosition, 
+                    direction, 
+                    _environmentHitResults, 
+                    maxDistance, 
+                    _layersConfiguration.EnvironmentLayerMask
+                );
+            }
+
+            for (int i = 0; i < environmentHitCount; i++) 
+            {
+                RaycastHit2D hit = _environmentHitResults[i];
+                
+                if (hit.collider != null) 
+                {
+                    _validHits.Add(new HitInfo(hit, false));
+                }
+            }
+        }
+
+        private void PerformEnemyRaycast(Vector2 startPosition, Vector2 direction, float maxDistance) {
+            int enemyHitCount = Physics2D.RaycastNonAlloc(
+                startPosition, 
+                direction, 
+                _enemyHitResults, 
+                maxDistance, 
+                _layersConfiguration.EnemyLayerMask
+            );
+            
+            if (enemyHitCount > _enemyHitResults.Length) 
+            {
+                int newSize = Mathf.NextPowerOfTwo(enemyHitCount);
+                _enemyHitResults = new RaycastHit2D[newSize];
+                enemyHitCount = Physics2D.RaycastNonAlloc(
+                    startPosition, 
+                    direction, 
+                    _enemyHitResults, 
+                    maxDistance, 
+                    _layersConfiguration.EnemyLayerMask
+                );
+            }
+
+            for (int i = 0; i < enemyHitCount; i++) 
+            {
+                RaycastHit2D hit = _enemyHitResults[i];
+                
+                if (hit.collider != null && hit.collider.gameObject.activeSelf)
+                    _validHits.Add(new HitInfo(hit, true));
+            }
+        }
+
+        private class HitInfo
+        {
+            public RaycastHit2D Hit;
+            public bool IsEnemy;
+            
+            public HitInfo(RaycastHit2D hit, bool isEnemy)
+            {
+                Hit = hit;
+                IsEnemy = isEnemy;
+            }
+        }
+    }
 }

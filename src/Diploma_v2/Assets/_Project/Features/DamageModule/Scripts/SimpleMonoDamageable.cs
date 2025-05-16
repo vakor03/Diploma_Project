@@ -14,6 +14,7 @@ namespace _Project.Features.DamageModule {
 
         public event Action<float> OnTakeDamage;
         public event Action OnDeath;
+        public event Action OnAfterDeath;
 
         public void TakeDamage(float damage) {
             _health -= damage;
@@ -22,6 +23,7 @@ namespace _Project.Features.DamageModule {
             if (_health <= 0) {
                 _health = 0;
                 OnDeath?.Invoke();
+                OnAfterDeath?.Invoke();
             }
         }
     }
