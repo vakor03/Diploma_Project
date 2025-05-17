@@ -1,13 +1,18 @@
 ﻿using System;
+using _Project.Features.StatsModule;
 using _Project.Features.WeaponsModule.Scripts.Weapons.DamagablesModule;
 using UnityEngine;
+using Zenject;
 
 namespace _Project.Features.DamageModule {
     public class SimpleMonoDamageable : MonoDamageable {
         [SerializeField] private HurtBox[] _hurtBoxes;
-        [SerializeField] private float _health = 100f;
+        [Inject] private IStatService<EntityStats> _stats;
+        
+        private float _health { get => _stats[EntityStats.CurrentHealth]; set => _stats[EntityStats.CurrentHealth] = value; }
 
         private void OnEnable() {
+            _stats[EntityStats.CurrentHealth] = _stats[EntityStats.MaxHealth];
             foreach (HurtBox hurtBox in _hurtBoxes)
                 hurtBox.Damageable = this;
         }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _poolName: Enemies
   _defaultObjectPoolSettings:
-    Prefab: {fileID: 980256991180106563, guid: 629bd8492b288174983725eb78b6bbed, type: 3}
+    Prefab: {fileID: 6239193435523365897, guid: e8f648fee5bc5684681f651e93266788, type: 3}
     StartCapacity: 5
     DefaultCapacity: 5
     MaxSize: 5
@@ -22,7 +22,7 @@ MonoBehaviour:
     _serializedList:
     - Key: 0
       Value:
-        Prefab: {fileID: 980256991180106563, guid: 629bd8492b288174983725eb78b6bbed, type: 3}
+        Prefab: {fileID: 6239193435523365897, guid: e8f648fee5bc5684681f651e93266788, type: 3}
         StartCapacity: 5
         DefaultCapacity: 5
         MaxSize: 5
@@ -34,13 +34,13 @@ MonoBehaviour:
         MaxSize: 5
     - Key: 2
       Value:
-        Prefab: {fileID: 585064961447021463, guid: 7123e74826dacb94fb291f799fed026b, type: 3}
+        Prefab: {fileID: 6239193435523365897, guid: e8f648fee5bc5684681f651e93266788, type: 3}
         StartCapacity: 5
         DefaultCapacity: 5
         MaxSize: 5
     - Key: 3
       Value:
-        Prefab: {fileID: 6619486486326227694, guid: 9f4fad8e6b72fd848afcb20e3faf4307, type: 3}
+        Prefab: {fileID: 6239193435523365897, guid: e8f648fee5bc5684681f651e93266788, type: 3}
         StartCapacity: 5
         DefaultCapacity: 5
         MaxSize: 5
