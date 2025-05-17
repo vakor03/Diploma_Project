@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace _Project.Features.Enemy {
+namespace _Project.Features.EnemyModule {
     public class Enemy : MonoBehaviour{
         
     }

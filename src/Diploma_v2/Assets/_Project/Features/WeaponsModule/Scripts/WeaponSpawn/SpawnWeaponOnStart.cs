@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using _Project.Features.StatsModule;
 using _Project.Features.WeaponModule;
-using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using UnityEngine;
 using Zenject;
 

@@ -1,9 +1,10 @@
-﻿using _Project.Features.Enemy.BehaviourTree;
-using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
+﻿using _Project.Features.EnemyModule.BehaviourTrees;
+using _Project.Features.EnemyModule.Enemies.Core.ChooseTargetStrategy;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using UnityEngine;
 using Zenject;
 
-namespace _Project.Features.EnemiesModule.Scripts.Enemies.Core {
+namespace _Project.Features.EnemyModule.Enemies.Core {
     public class EnemyBehaviourTree : MonoBehaviour {
         private BehaviourTree _behaviourTree;
         // private IMoveStrategy _moveStrategy;

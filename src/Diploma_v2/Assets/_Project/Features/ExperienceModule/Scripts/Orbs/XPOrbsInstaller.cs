@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-namespace _Project.Features.ExperienceModule {
+namespace _Project.Features.ExperienceModule.Orbs {
     public class XPOrbsInstaller : Installer<XPOrbsInstaller> {
         public override void InstallBindings() {
             Container.Bind<IXPOrbFactory>().To<XPOrbFactory>().AsSingle();

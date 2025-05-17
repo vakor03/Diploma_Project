@@ -1,6 +1,6 @@
-﻿using _Project.Features.Enemy.BehaviourTree;
+﻿using _Project.Features.EnemyModule.BehaviourTrees;
 
-namespace _Project.Features.EnemiesModule.Scripts.Enemies.Core {
+namespace _Project.Features.EnemyModule.Enemies.Core {
     public class EntityPatrolStrategy : IStrategy {
         private readonly IPatrolArea _patrolArea;
 

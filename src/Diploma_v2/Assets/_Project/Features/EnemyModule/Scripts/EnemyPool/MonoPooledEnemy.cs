@@ -1,8 +1,7 @@
-﻿using System;
-using _Project.Features.ObjectPoolModule;
+﻿using _Project.Features.ObjectPoolModule;
 using UnityEngine;
 
-namespace _Project.Features.Enemy {
+namespace _Project.Features.EnemyModule.EnemyPool {
     public class MonoPooledEnemy : MonoBehaviour, IPooledObject<EnemyType> {
         public EnemyType Type { get; set; }
         public void OnEnabled() =>
@@ -11,7 +10,11 @@ namespace _Project.Features.Enemy {
         public void OnDisabled() =>
             gameObject.SetActive(false);
 
-        public void OnDestroyed() =>
+        public void OnDestroyed() {
+            if (gameObject == null)
+                return;
+
             Destroy(gameObject);
+        }
     }
 }

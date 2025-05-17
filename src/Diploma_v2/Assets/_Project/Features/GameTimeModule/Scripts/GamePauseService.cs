@@ -9,7 +9,7 @@
         public GamePauseService(GamePauseModel model) =>
             _model = model;
 
-        public void StopTime() =>
+        public void PauseTime() =>
             _model.IncrementPause();
 
         public void ResumeTime() =>

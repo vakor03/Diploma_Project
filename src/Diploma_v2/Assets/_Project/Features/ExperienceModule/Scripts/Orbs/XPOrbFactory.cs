@@ -1,9 +1,8 @@
 ﻿using _Project.Scripts.Infrastructure.AssetProviders;
-using NUnit.Framework;
 using UnityEngine;
 using Zenject;
 
-namespace _Project.Features.ExperienceModule {
+namespace _Project.Features.ExperienceModule.Orbs {
     public class XPOrbFactory : IXPOrbFactory {
         private readonly XPOrbConfiguration _orbConfig;
         private readonly IInstantiator _instantiator;

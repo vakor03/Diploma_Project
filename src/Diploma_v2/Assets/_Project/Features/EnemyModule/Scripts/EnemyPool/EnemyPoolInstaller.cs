@@ -3,7 +3,7 @@ using _Project.Features.ObjectPoolModule;
 using _Project.Scripts.Infrastructure.AssetProviders;
 using Zenject;
 
-namespace _Project.Features.Enemy {
+namespace _Project.Features.EnemyModule.EnemyPool {
     public class EnemyPoolInstaller : Installer<EnemyPoolInstaller> {
         public override void InstallBindings() {
             Container.BindInterfacesAndSelfToFromAddressables<EnemyPoolConfiguration>(AssetPath.Configuration.ENEMY_POOL_CONFIGURATION)

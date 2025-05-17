@@ -1,7 +1,7 @@
 ﻿using System;
 using _Project.Features.InputModule;
 using _Project.Features.WeaponModule;
-using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using UnityEngine;
 using Zenject;
 using IShootable = _Project.Features.WeaponModule.IShootable;

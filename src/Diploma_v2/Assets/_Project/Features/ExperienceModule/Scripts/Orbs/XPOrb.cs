@@ -1,7 +1,7 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-namespace _Project.Features.ExperienceModule {
+namespace _Project.Features.ExperienceModule.Orbs {
     public class XPOrb : MonoBehaviour
     {
         [Header("Components")]

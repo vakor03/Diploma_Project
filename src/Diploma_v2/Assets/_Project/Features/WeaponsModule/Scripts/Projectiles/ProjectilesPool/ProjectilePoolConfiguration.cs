@@ -1,5 +1,5 @@
 ﻿using _Project.Features.ObjectPoolModule;
-using Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
+using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
 using UnityEngine;
 
 namespace _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesPool {

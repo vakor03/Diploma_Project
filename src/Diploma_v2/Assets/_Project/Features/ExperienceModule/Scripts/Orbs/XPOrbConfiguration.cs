@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace _Project.Features.ExperienceModule {
+namespace _Project.Features.ExperienceModule.Orbs {
     [CreateAssetMenu(fileName = nameof(XPOrbConfiguration) + "_Default",
         menuName = "Configurations/ExperienceModule/" + nameof(XPOrbConfiguration))]
     public class XPOrbConfiguration : ScriptableObject

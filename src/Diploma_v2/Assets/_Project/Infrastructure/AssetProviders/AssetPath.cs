@@ -28,6 +28,12 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string ENEMY_POOL_CONFIGURATION = "EnemyPoolConfiguration";
             public const string ENEMY_XP_CONFIGURATION = "EnemyXPConfiguration";
         }
+        
+        public static class Scene
+        {
+            public const string MAIN_MENU = "MainMenuScene";
+            public const string GAMEPLAY = "GameplayScene";
+        }
     }
 
     public enum Layer {

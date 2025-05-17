@@ -1,8 +1,9 @@
 ﻿using _Project.Features.CameraModule;
-using _Project.Features.Enemy;
+using _Project.Features.EnemyModule;
+using _Project.Features.EnemyModule.EnemyPool;
 using _Project.Features.PlayerModule;
 using _Project.Features.PlayerSpawnerModule;
-using _Project.Features.VisualsModule.Scripts;
+using _Project.Features.VisualsModule;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Global.Helpers.Scripts;
 using UnityEngine;

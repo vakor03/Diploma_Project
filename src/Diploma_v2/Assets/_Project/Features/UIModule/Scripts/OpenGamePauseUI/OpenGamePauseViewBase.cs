@@ -1,7 +1,7 @@
 ﻿using System;
 using _Project.Infrastructure.MVP.Core;
 
-namespace _Project.Features.UIModule.GamePauseUI {
+namespace _Project.Features.UIModule.OpenGamePauseUI {
     public abstract class OpenGamePauseViewBase : ViewBehaviour {
         public event Action OnGamePauseButtonClicked;
 

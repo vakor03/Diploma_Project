@@ -1,6 +1,8 @@
 ﻿using _Project.Features.CameraModule;
-using _Project.Features.Enemy;
+using _Project.Features.EnemyModule;
+using _Project.Features.EnemyModule.EnemyPool;
 using _Project.Features.ExperienceModule;
+using _Project.Features.ExperienceModule.Orbs;
 using _Project.Features.Installers;
 using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
 using _Project.Features.MapGeneration;
@@ -9,7 +11,7 @@ using _Project.Features.StatsModule;
 using _Project.Features.UIModule;
 using _Project.Features.UpgradesModule;
 using _Project.Features.UpgradesModule.API;
-using _Project.Features.VisualsModule.Scripts;
+using _Project.Features.VisualsModule;
 using _Project.Features.WeaponsModule.Scripts.Muzzles.MuzzlesPoolModule;
 using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesPool;
 using _Project.Features.WeaponsModule.Scripts.Weapons.HitDetectorModule;

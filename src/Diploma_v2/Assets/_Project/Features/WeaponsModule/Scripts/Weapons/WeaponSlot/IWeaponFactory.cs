@@ -1,5 +1,4 @@
-﻿using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
-using Zenject;
+﻿using Zenject;
 
 namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponSlot {
 	public interface IGenericFactory<TInterface> {

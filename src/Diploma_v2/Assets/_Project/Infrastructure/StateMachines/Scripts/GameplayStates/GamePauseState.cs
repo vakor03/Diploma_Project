@@ -1,9 +1,25 @@
-﻿namespace _Project.Scripts.Infrastructure.StateMachines.GameplayStates {
-    public class GamePauseState : IState {
-        public void Enter() =>
-            throw new System.NotImplementedException();
+﻿using _Project.Features.GameTimeModule;
+using _Project.Features.UIModule.Windows;
+using _Project.Infrastructure.MVP.Core;
 
-        public void Exit() =>
-            throw new System.NotImplementedException();
+namespace _Project.Scripts.Infrastructure.StateMachines.GameplayStates {
+    public class GamePauseState : IState {
+        private readonly IWindowService _windowService;
+        private readonly IGamePauseService _gamePauseService;
+        
+        public GamePauseState(IWindowService windowService, IGamePauseService gamePauseService) {
+            _windowService = windowService;
+            _gamePauseService = gamePauseService;
+        }
+
+        public void Enter() {
+            _gamePauseService.PauseTime();
+            _windowService.ShowWindow<GamePauseWindow>();
+        }
+
+        public void Exit() {
+            _gamePauseService.ResumeTime();
+            _windowService.CloseWindow<GamePauseWindow>();
+        }
     }
 }

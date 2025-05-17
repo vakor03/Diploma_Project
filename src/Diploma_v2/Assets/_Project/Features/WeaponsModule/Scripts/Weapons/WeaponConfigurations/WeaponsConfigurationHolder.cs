@@ -1,5 +1,5 @@
-﻿using AYellowpaper.SerializedCollections;
-using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
+﻿using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
+using AYellowpaper.SerializedCollections;
 using UnityEngine;
 
 namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponConfigurations {

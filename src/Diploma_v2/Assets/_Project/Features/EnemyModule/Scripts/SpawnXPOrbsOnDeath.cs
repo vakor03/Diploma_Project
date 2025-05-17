@@ -1,12 +1,11 @@
-﻿using System;
-using _Project.Features.EnemyModule;
-using _Project.Features.ExperienceModule;
+﻿using _Project.Features.EnemyModule.EnemyPool;
+using _Project.Features.ExperienceModule.Orbs;
 using _Project.Features.WeaponsModule.Scripts.Weapons.DamagablesModule;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Zenject;
 
-namespace _Project.Features.Enemy {
+namespace _Project.Features.EnemyModule {
     public class SpawnXPOrbsOnDeath : MonoBehaviour {
         private IXPOrbSpawnService _xpOrbSpawnService;
         private EnemyXPConfiguration _xpConfiguration;

@@ -2,7 +2,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace _Project.Features.VisualsModule.Scripts {
+namespace _Project.Features.VisualsModule {
     public class ParallaxController : MonoBehaviour {
         [SerializeField] ParallaxLayer[] _backgrounds;
         [SerializeField] private bool _isWithXParallax = true;

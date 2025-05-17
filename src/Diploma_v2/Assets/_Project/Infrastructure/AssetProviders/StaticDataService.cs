@@ -1,5 +1,6 @@
-﻿using _Project.Features.Enemy;
+﻿using _Project.Features.EnemyModule;
 using _Project.Features.ExperienceModule;
+using _Project.Features.ExperienceModule.Orbs;
 using _Project.Features.LevelGeneratorModule;
 using _Project.Features.MapGeneration.PNGExproter;
 using _Project.Features.PlayerModule;

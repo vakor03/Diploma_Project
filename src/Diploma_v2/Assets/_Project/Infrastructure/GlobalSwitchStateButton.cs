@@ -49,7 +49,7 @@ switch (nextState)
                     _globalStateMachine.Enter<GameplayState>();
                     break;
                 case NextState.Quit:
-                    _globalStateMachine.Enter<QuitState>();
+                    _globalStateMachine.Enter<QuitGameState>();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

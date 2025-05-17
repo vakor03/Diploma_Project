@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	public class BulletTrailScriptableObject : ScriptableObject {
 		public AnimationCurve widthCurve;
 		public float time = 0.5f;

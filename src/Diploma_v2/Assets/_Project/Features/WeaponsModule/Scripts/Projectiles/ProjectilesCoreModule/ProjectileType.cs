@@ -1,4 +1,4 @@
-﻿namespace Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule {
+﻿namespace _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule {
 	public enum ProjectileType {
 		None,
 		Default,

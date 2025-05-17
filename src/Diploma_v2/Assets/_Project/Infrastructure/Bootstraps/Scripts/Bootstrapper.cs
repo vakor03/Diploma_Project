@@ -22,7 +22,7 @@ namespace _Project.Scripts.Infrastructure.Bootstraps
             _globalStateMachine.RegisterState(_statesFactory.Create<MainMenuState>());
             _globalStateMachine.RegisterState(_statesFactory.Create<HubState>());
             _globalStateMachine.RegisterState(_statesFactory.Create<GameplayState>());
-            _globalStateMachine.RegisterState(_statesFactory.Create<QuitState>());
+            _globalStateMachine.RegisterState(_statesFactory.Create<QuitGameState>());
             
             _globalStateMachine.Enter<MainMenuState>();
             DontDestroyOnLoad(this);

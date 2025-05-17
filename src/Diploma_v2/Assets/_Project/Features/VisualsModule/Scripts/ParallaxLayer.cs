@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace _Project.Features.VisualsModule.Scripts {
+namespace _Project.Features.VisualsModule {
     [Serializable]
     public class ParallaxLayer {
         public Transform Transform;

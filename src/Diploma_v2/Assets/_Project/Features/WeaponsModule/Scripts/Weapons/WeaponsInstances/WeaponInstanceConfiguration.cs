@@ -1,4 +1,4 @@
-﻿using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
+﻿using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using UnityEngine;
 using UnityEngine.Rendering;
 

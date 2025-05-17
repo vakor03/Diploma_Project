@@ -33,7 +33,7 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
             _upgradeEvents.OnUpgradeClaimed += ProceedToExploreLevel;
             List<UpgradeData> upgrades = _upgradePool.GetRandomUpgrades(_experienceModel.CurrentLevel, 0, 3);
             _upgradesToShowModel.SetUpgradesToShow(upgrades.ConvertAll(el=>el.upgradeId));
-            _gamePauseService.StopTime();
+            _gamePauseService.PauseTime();
             _windowService.ShowWindow<ChooseUpgradeWindow>();
         }
 

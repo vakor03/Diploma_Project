@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace _Project.Features.UIModule.GamePauseUI {
+namespace _Project.Features.UIModule.OpenGamePauseUI {
     internal class OpenGamePauseView : OpenGamePauseViewBase {
         [SerializeField] private Button _button;
 

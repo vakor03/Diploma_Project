@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	[CreateAssetMenu(menuName = "Configurations/Other/" + nameof(LineRendererConfiguration),
 		fileName = nameof(LineRendererConfiguration) + "_Default", order = 0)]
 	public class LineRendererConfiguration : ScriptableObject {

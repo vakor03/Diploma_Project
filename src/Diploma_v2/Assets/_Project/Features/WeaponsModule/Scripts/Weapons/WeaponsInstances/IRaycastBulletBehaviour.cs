@@ -1,8 +1,8 @@
-﻿using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponConfigurations;
-using Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
+﻿using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponConfigurations;
 using UnityEngine;
 
-namespace Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	public interface IRaycastBulletBehaviour : IProjectileBehaviour {
 		public IRaycastBulletBehaviour SetDirection(Vector2 direction);
 		public IRaycastBulletBehaviour SetStartPosition(Vector2 startPosition);

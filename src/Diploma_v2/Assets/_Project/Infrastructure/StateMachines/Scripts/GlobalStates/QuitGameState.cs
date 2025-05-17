@@ -2,7 +2,7 @@
 
 namespace _Project.Scripts.Infrastructure.StateMachines.GlobalStates
 {
-    public class QuitState : IState
+    public class QuitGameState : IState
     {
         public void Enter()
         {

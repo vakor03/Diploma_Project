@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using _Project.Features.ObjectPoolModule;
-using Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
+using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
 using UnityEngine;
 using Zenject;
 

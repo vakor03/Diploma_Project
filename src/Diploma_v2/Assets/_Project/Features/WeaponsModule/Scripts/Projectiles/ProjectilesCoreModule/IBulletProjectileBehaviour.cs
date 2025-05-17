@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule {
+namespace _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule {
 	public interface IBulletProjectileBehaviour : IProjectileBehaviour {
 		public IBulletProjectileBehaviour SetDirection(Vector2 direction);
 		public IBulletProjectileBehaviour SetSpeed(float speed);

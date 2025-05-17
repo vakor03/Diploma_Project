@@ -1,4 +1,4 @@
-﻿namespace _Project.Features.Enemy {
+﻿namespace _Project.Features.EnemyModule {
     public enum EnemyType {
         None = 0,
         ShadowOfStorms = 1,

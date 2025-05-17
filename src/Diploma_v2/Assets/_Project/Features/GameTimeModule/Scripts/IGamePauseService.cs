@@ -4,7 +4,7 @@
         public bool IsPaused { get; }
         public int PauseCounter { get; }
     
-        public void StopTime();
+        public void PauseTime();
         public void ResumeTime();
         public void ForceResumeTime();
     }

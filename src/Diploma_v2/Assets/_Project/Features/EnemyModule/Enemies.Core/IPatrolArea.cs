@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace _Project.Features.EnemiesModule.Scripts.Enemies.Core {
+namespace _Project.Features.EnemyModule.Enemies.Core {
     public interface IPatrolArea {
         public Transform[] PatrolPoints { get; }
     }

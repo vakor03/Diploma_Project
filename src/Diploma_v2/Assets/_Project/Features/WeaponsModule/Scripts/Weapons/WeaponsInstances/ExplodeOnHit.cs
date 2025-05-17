@@ -1,9 +1,9 @@
 ﻿using _Project.Features.WeaponsModule.Scripts.Muzzles.MuzzlesPoolModule;
-using Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
+using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
 using UnityEngine;
 using Zenject;
 
-namespace Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	public class ExplodeOnHit : MonoBehaviour {
 		[SerializeField] private MuzzleType _muzzleType;
 

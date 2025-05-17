@@ -1,8 +1,8 @@
 ﻿using System;
-using _Project.Features.EnemyModule;
+using _Project.Features.EnemyModule.BasicBehaviour;
 using UnityEngine;
 
-namespace _Project.Features.Enemy.BehaviourTree {
+namespace _Project.Features.EnemyModule.BehaviourTrees {
     public interface IStrategy {
         public Node.Status Process();
 

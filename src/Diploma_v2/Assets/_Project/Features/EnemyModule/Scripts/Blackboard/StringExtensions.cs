@@ -1,4 +1,4 @@
-﻿namespace _Project.Features.Enemy.Blackboard {
+﻿namespace _Project.Features.EnemyModule.Blackboard {
     public static class StringExtensions {
         /// <summary>
         /// Computes the FNV-1a hash for the input string. 

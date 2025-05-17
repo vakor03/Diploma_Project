@@ -1,15 +1,15 @@
 ﻿using _Project.Features.CameraShakeModule.Scripts;
 using _Project.Features.StatsModule;
 using _Project.Features.WeaponModule;
+using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
 using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesPool;
 using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponConfigurations;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponSpreadModule;
-using Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
-using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using UnityEngine;
 using Zenject;
 
-namespace Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	public class Minigun : MonoBehaviour, IWeapon, IDirectionalShootable, IReloadable {
 		[SerializeField] private BoxCollider2D _firePointBounds;
 

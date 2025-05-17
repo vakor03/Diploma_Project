@@ -1,7 +1,7 @@
-﻿using _Project.Features.Enemy.BehaviourTree;
+﻿using _Project.Features.EnemyModule.BehaviourTrees;
 using UnityEngine;
 
-namespace _Project.Features.EnemiesModule.Scripts.Enemies.Core {
+namespace _Project.Features.EnemyModule.Enemies.Core {
     public class WaitStrategy : IStrategy {
         private readonly float _totalWaitTime;
         private float _startWaitTime;

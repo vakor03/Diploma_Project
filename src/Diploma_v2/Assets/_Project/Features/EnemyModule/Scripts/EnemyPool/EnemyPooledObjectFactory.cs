@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-using _Project.Features.ObjectPoolModule;
+﻿using _Project.Features.ObjectPoolModule;
 using _Project.Features.StatsModule;
 using UnityEngine;
 using Zenject;
 
-namespace _Project.Features.Enemy {
+namespace _Project.Features.EnemyModule.EnemyPool {
     public class EnemyPooledObjectFactory : IGenericPooledObjectFactory<MonoPooledEnemy, EnemyType> {
         private readonly DiContainer _parentContainer;
         private readonly IObjectPoolConfiguration<EnemyType> _poolConfig;

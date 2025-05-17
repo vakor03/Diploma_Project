@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule {
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule {
 	public enum WeaponType {
 		[Tooltip("Projectile AK47")]
 		AK47 = 0,

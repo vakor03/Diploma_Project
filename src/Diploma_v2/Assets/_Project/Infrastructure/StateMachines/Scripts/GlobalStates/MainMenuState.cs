@@ -8,12 +8,9 @@ namespace _Project.Scripts.Infrastructure.StateMachines.GlobalStates {
         public MainMenuState(ISceneLoader sceneLoader) =>
             _sceneLoader = sceneLoader;
 
-        public void Enter()
-        {
-        }
-
-        // _sceneLoader.Load(AssetPath.MAIN_MENU_SCENE_NAME);
-
+        public void Enter() =>
+            _sceneLoader.Load(AssetPath.Scene.MAIN_MENU);
+        
         public void Exit() { }
     }
 }

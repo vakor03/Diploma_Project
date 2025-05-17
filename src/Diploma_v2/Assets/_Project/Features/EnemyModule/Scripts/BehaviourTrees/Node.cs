@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _Project.Features.Enemy.BehaviourTree {
+namespace _Project.Features.EnemyModule.BehaviourTrees {
     public class BehaviourTree : Node, IStrategy {
         public BehaviourTree(string name = "Behaviour Tree") : base(name) { }
 

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections;
+using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
 using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesPool;
-using Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
 using Global.Helpers.Scripts;
 using UnityEngine;
 
-namespace Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	[SelectionBase]
 	public class BulletProjectileBehaviour : MonoBehaviour, IBulletProjectileBehaviour {
 		[SerializeField] private MonoPooledProjectile _monoPooledProjectile;

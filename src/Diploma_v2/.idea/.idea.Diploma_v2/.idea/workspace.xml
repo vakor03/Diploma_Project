@@ -7,14 +7,32 @@
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Window.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Window.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/GameResources/ShadowOfStorms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/GameResources/ShadowOfStorms.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/EnemyPool/MonoPooledEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/EnemyPool/MonoPooledEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Bootstraps/Scripts/GameplayBootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Bootstraps/Scripts/GameplayBootstrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GenerateLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GenerateLevelState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/SpawnEntitiesState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/PrepareSceneState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/SpawnEntitiesState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/PrepareSceneState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/GameTimeModule/Scripts/GamePauseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/GameTimeModule/Scripts/GamePauseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/GameTimeModule/Scripts/IGamePauseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/GameTimeModule/Scripts/IGamePauseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/GamePauseUI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/OpenGamePauseUI.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/GamePauseUI/OpenGamePausePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/OpenGamePauseUI/OpenGamePausePresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/GamePauseUI/OpenGamePausePresenter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/OpenGamePauseUI/OpenGamePausePresenter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/GamePauseUI/OpenGamePauseView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/OpenGamePauseUI/OpenGamePauseView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/GamePauseUI/OpenGamePauseView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/OpenGamePauseUI/OpenGamePauseView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/GamePauseUI/OpenGamePauseViewBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/OpenGamePauseUI/OpenGamePauseViewBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/GamePauseUI/OpenGamePauseViewBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/OpenGamePauseUI/OpenGamePauseViewBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/UpgradePools/UpgradeSelectionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/Scripts/UpgradePools/UpgradeSelectionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/AssetProviders/AssetPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Bootstraps/Scripts/Bootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Bootstraps/Scripts/Bootstrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/GlobalSwitchStateButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/GlobalSwitchStateButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneLoader/ISceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneLoader/ISceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneLoader/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneLoader/SceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/ChooseUpgradeState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/ChooseUpgradeState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GamePauseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GamePauseState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GlobalStates/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GlobalStates/GameplayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GlobalStates/MainMenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GlobalStates/MainMenuState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GlobalStates/QuitState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GlobalStates/QuitGameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GlobalStates/QuitState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GlobalStates/QuitGameState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +207,7 @@
       <workItem from="1747414986154" duration="8505000" />
       <workItem from="1747471637422" duration="5271000" />
       <workItem from="1747509403740" duration="389000" />
-      <workItem from="1747511244844" duration="675000" />
+      <workItem from="1747511244844" duration="4218000" />
     </task>
     <servers />
   </component>

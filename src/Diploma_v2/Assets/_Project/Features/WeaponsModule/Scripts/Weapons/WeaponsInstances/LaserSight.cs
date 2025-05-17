@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	public class LaserSight : MonoBehaviour {
 		[SerializeField] private LineRenderer _lineRenderer;
 		[SerializeField] private Transform _firePoint;

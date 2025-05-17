@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _Project.Features.ExperienceModule.Orbs;
+using UnityEngine;
 using Zenject;
 
 namespace _Project.Features.ExperienceModule {

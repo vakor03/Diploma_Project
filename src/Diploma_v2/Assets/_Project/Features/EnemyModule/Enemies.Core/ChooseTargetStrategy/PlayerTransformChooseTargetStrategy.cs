@@ -1,7 +1,7 @@
 ﻿using _Project.Features.PlayerModule;
 using UnityEngine;
 
-namespace _Project.Features.EnemiesModule.Scripts.Enemies.Core {
+namespace _Project.Features.EnemyModule.Enemies.Core.ChooseTargetStrategy {
     public class PlayerTransformChooseTargetStrategy : IChooseTargetStrategy {
         private readonly Player _player;
 

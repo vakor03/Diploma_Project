@@ -35,7 +35,7 @@ namespace _Project.Features.UpgradesModule.UpgradePools {
             //     Debug.Log($"Upgrade {i+1}: {upgrades[i].displayName} ({upgrades[i].rarity})");
             
             _upgradesToShowModel.SetUpgradesToShow(upgrades.ConvertAll(el=>el.upgradeId));
-            _gamePauseService.StopTime();
+            _gamePauseService.PauseTime();
             _windowService.ShowWindow<ChooseUpgradeWindow>();
         }
 

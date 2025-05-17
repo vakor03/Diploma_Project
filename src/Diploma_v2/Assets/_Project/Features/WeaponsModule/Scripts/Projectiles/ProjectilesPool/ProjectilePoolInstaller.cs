@@ -1,7 +1,7 @@
 ﻿using _Project.Extensions.ZenjectExtensions;
 using _Project.Features.ObjectPoolModule;
+using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
 using _Project.Scripts.Infrastructure.AssetProviders;
-using Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
 using UnityEngine;
 using Zenject;
 

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace _Project.Features.VisualsModule.Scripts {
+namespace _Project.Features.VisualsModule {
     [CreateAssetMenu(fileName = nameof(VisualsConfiguration) + "_Default",
         menuName = "Configurations/VisualsModule/" + nameof(VisualsConfiguration))]
     public class VisualsConfiguration : ScriptableObject {

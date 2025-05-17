@@ -8,11 +8,8 @@ namespace _Project.Scripts.Infrastructure.StateMachines.GlobalStates {
         public GameplayState(ISceneLoader sceneLoader) =>
             _sceneLoader = sceneLoader;
 
-        public void Enter()
-        {
-        }
-
-        // _sceneLoader.Load(AssetPath.GAME_SCENE_NAME);
+        public void Enter() =>
+            _sceneLoader.Load(AssetPath.Scene.GAMEPLAY);
 
         public void Exit() { }
     }

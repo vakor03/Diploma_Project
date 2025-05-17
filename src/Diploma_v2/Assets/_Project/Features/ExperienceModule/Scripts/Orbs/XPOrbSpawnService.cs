@@ -3,7 +3,7 @@ using System.Linq;
 using _Project.Scripts.Infrastructure.AssetProviders;
 using UnityEngine;
 
-namespace _Project.Features.ExperienceModule {
+namespace _Project.Features.ExperienceModule.Orbs {
     public class XPOrbSpawnService : IXPOrbSpawnService {
         private readonly IXPOrbFactory _xpOrbFactory;
         private readonly XPOrbConfiguration _orbConfig;

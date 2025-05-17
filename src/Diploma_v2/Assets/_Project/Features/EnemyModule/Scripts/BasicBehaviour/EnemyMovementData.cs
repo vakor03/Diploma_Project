@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace _Project.Features.EnemyModule._Project.Features.EnemyModule {
+namespace _Project.Features.EnemyModule.BasicBehaviour {
     [CreateAssetMenu(fileName = "EnemyMovementData", menuName = "EnemyModule/Movement Data")] 
     public class EnemyMovementData : ScriptableObject
     {

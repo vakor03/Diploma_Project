@@ -6,7 +6,7 @@ using Global.Helpers.Scripts;
 using UnityEngine;
 using Zenject;
 
-namespace Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	public class RaycastBulletProjectileBehaviour : MonoBehaviour, IRaycastBulletBehaviour, IHitVisitor {
 		[SerializeField] private TrailRenderer _trailRenderer;
 		[SerializeField] private LayerMask _enemyLayerMask;

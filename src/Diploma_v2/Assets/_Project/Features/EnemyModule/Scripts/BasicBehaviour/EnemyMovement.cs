@@ -1,9 +1,8 @@
-﻿using _Project.Features.EnemyModule._Project.Features.EnemyModule;
-using _Project.Features.PlayerModule;
+﻿using _Project.Features.PlayerModule;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace _Project.Features.EnemyModule
+namespace _Project.Features.EnemyModule.BasicBehaviour
 {
     public class EnemyMovement : MonoBehaviour
     {

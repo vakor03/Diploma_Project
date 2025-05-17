@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
 
-namespace _Project.Features.Enemy.Blackboard {
+namespace _Project.Features.EnemyModule.Blackboard {
     [CreateAssetMenu(fileName = nameof(BlackboardStartDataConfiguration) + "_Default",
         menuName = "Configurations/EnemyModule/" + nameof(BlackboardStartDataConfiguration))]
     public class BlackboardStartDataConfiguration : ScriptableObject {

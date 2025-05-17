@@ -1,8 +1,8 @@
 ﻿using _Project.Extensions.ZenjectExtensions;
 using _Project.Features.WeaponModule;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances;
 using _Project.Scripts.Infrastructure.AssetProviders;
-using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using UnityEngine;
 using Zenject;
 

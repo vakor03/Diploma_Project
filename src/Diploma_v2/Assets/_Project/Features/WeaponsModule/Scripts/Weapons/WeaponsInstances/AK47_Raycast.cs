@@ -1,15 +1,15 @@
 ﻿using _Project.Features.StatsModule;
 using _Project.Features.WeaponModule;
+using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
 using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesPool;
 using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponConfigurations;
+using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponSpreadModule;
-using Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
-using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Zenject;
 
-namespace Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
+namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	public class AK47_Raycast : MonoBehaviour, IWeapon, IDirectionalShootable, IReloadable, IRotatable {
 		[SerializeField] private Transform _firePoint;
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace _Project.Features.Enemy.Blackboard {
+namespace _Project.Features.EnemyModule.Blackboard {
     [Serializable]
     public readonly struct BlackboardKey : IEquatable<BlackboardKey> {
         private readonly string _name;
