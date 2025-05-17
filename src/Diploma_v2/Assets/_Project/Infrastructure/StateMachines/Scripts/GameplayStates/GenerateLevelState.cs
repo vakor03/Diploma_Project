@@ -16,7 +16,7 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
         public void Enter() {
             _levelGenerationService.Generate();
 
-            UniTaskHelper.ExecuteAfterOneFrame(() => { _stateMachine.Enter<SpawnEntitiesState>(); }, PlayerLoopTiming.FixedUpdate)
+            UniTaskHelper.ExecuteAfterOneFrame(() => { _stateMachine.Enter<PrepareSceneState>(); }, PlayerLoopTiming.FixedUpdate)
                 .Forget();
         }
     }

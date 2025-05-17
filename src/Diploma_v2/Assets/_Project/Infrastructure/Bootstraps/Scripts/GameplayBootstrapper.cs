@@ -24,7 +24,7 @@ namespace _Project.Scripts.Infrastructure.Bootstraps
             _gameplayStateMachine.RegisterState(_statesFactory.Create<GamePauseState>());
             _gameplayStateMachine.RegisterState(_statesFactory.Create<GameOverState>());
             _gameplayStateMachine.RegisterState(_statesFactory.Create<GenerateLevelState>());
-            _gameplayStateMachine.RegisterState(_statesFactory.Create<SpawnEntitiesState>());
+            _gameplayStateMachine.RegisterState(_statesFactory.Create<PrepareSceneState>());
             _gameplayStateMachine.RegisterState(_statesFactory.Create<ExploreLevelState>());
             _gameplayStateMachine.RegisterState(_statesFactory.Create<ChooseUpgradeState>());
 

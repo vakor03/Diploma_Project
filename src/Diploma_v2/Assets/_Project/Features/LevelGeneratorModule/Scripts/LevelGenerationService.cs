@@ -47,10 +47,10 @@ namespace _Project.Features.LevelGeneratorModule {
             SpawnCollidersForDungeon(dungeon);
             // SpawnCollidersForPlatforms(dungeon);
             foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.PlayerSpawnPoint))
-                _playerSpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, true));
+                _playerSpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, false));
 
             foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.EnemySpawnPoint))
-                _enemySpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, true));
+                _enemySpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, false));
         }
 
         private void SpawnCollidersForPlatforms(Dungeon dungeon) {

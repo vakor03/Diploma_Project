@@ -9,7 +9,7 @@ using UnityEngine;
 using Zenject;
 
 namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
-    public class SpawnEntitiesState : IState {
+    public class PrepareSceneState : IState {
         private readonly IPlayerSpawnerService _playerSpawnerService;
         private readonly IPlayerSpawnPointsService _playerSpawnPointsService;
         private readonly ICameraSpawnService _cameraSpawnService;
@@ -20,7 +20,7 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
         private readonly VisualsConfiguration _visualsConfiguration;
         private readonly GameplayStateMachine _gameplayStateMachine;
 
-        public SpawnEntitiesState(IPlayerSpawnerService playerSpawnerService,
+        public PrepareSceneState(IPlayerSpawnerService playerSpawnerService,
                                   IPlayerSpawnPointsService playerSpawnPointsService, ICameraSpawnService cameraSpawnService,
                                   ICameraService cameraService, EnemyObjectPool enemyObjectPool,
                                   EnemySpawnPointsModel enemySpawnPointsModel, IInstantiator instantiator,
@@ -40,9 +40,13 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
             _cameraSpawnService.SpawnCamera();
             Vector3 playerSpawnPoint = _playerSpawnPointsService.GetPlayerSpawnPoint();
             Player player = _playerSpawnerService.SpawnPlayerAt(playerSpawnPoint);
-            foreach (Vector3 spawnPoint in _enemySpawnPointsModel.SpawnPoints)
+            for (int index = 0; index < _enemySpawnPointsModel.SpawnPoints.Count; index++) {
+                Vector3 spawnPoint = _enemySpawnPointsModel.SpawnPoints[index];
+                GameObject testGo = new GameObject("Enemy" + index);
+                testGo.transform.position = spawnPoint;
                 _enemyObjectPool.Get(EnemyType.ShadowOfStorms)
                     .With(el => el.transform.position = spawnPoint);
+            }
 
             _cameraService.FollowTarget(player.transform);
             _instantiator.InstantiatePrefab(_visualsConfiguration.BackgroundPrefab)
