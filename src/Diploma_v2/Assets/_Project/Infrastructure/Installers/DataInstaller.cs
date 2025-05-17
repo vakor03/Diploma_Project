@@ -3,6 +3,7 @@ using _Project.Features.GameTimeModule;
 using _Project.Features.PlayerModule;
 using _Project.Features.PlayerSpawnerModule;
 using _Project.Features.UIModule.ChooseUpgradesUI;
+using _Project.Features.UIModule.SingleUpgradeUI;
 using _Project.Features.UpgradesModule.API;
 using _Project.Scripts.Infrastructure;
 using Zenject;
@@ -17,6 +18,8 @@ namespace _Project.Infrastructure.Installers {
             InstallModel<UpgradesToShowModel>();
             InstallModel<GamePauseModel>();
             InstallModel<PlayerWeaponModel>();
+
+            Container.Bind<UpgradeEvents>().AsSingle();
         }
         
         private void InstallModel<T> () where T : IModel =>

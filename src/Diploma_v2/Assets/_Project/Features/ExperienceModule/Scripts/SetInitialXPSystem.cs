@@ -14,6 +14,5 @@ namespace _Project.Features.ExperienceModule {
             _model.SetCurrentXP(0);
             _model.SetLevel(1);
         }
-
     }
 }

@@ -2,9 +2,7 @@
 using _Project.Features.Enemy;
 using _Project.Features.PlayerModule;
 using _Project.Features.PlayerSpawnerModule;
-using _Project.Features.UIModule.Windows;
 using _Project.Features.VisualsModule.Scripts;
-using _Project.Infrastructure.MVP.Core;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Global.Helpers.Scripts;
 using UnityEngine;
@@ -16,26 +14,26 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
         private readonly IPlayerSpawnPointsService _playerSpawnPointsService;
         private readonly ICameraSpawnService _cameraSpawnService;
         private readonly ICameraService _cameraService;
-        private readonly IWindowService _windowService;
         private readonly EnemyObjectPool _enemyObjectPool;
         private readonly EnemySpawnPointsModel _enemySpawnPointsModel;
         private readonly IInstantiator _instantiator;
         private readonly VisualsConfiguration _visualsConfiguration;
+        private readonly GameplayStateMachine _gameplayStateMachine;
 
         public SpawnEntitiesState(IPlayerSpawnerService playerSpawnerService,
                                   IPlayerSpawnPointsService playerSpawnPointsService, ICameraSpawnService cameraSpawnService,
-                                  ICameraService cameraService, IWindowService windowService, EnemyObjectPool enemyObjectPool,
+                                  ICameraService cameraService, EnemyObjectPool enemyObjectPool,
                                   EnemySpawnPointsModel enemySpawnPointsModel, IInstantiator instantiator,
-                                  VisualsConfiguration visualsConfiguration) {
+                                  VisualsConfiguration visualsConfiguration, GameplayStateMachine gameplayStateMachine) {
             _playerSpawnerService = playerSpawnerService;
             _playerSpawnPointsService = playerSpawnPointsService;
             _cameraSpawnService = cameraSpawnService;
             _cameraService = cameraService;
-            _windowService = windowService;
             _enemyObjectPool = enemyObjectPool;
             _enemySpawnPointsModel = enemySpawnPointsModel;
             _instantiator = instantiator;
             _visualsConfiguration = visualsConfiguration;
+            _gameplayStateMachine = gameplayStateMachine;
         }
 
         public void Enter() {
@@ -49,8 +47,8 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
             _cameraService.FollowTarget(player.transform);
             _instantiator.InstantiatePrefab(_visualsConfiguration.BackgroundPrefab)
                 .transform.position = player.transform.position;
-
-            _windowService.ShowWindow<HUDWindow>();
+            
+            _gameplayStateMachine.Enter<ExploreLevelState>();
         }
     }
 }

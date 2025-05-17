@@ -12,7 +12,7 @@
             int currentXP = _model.CurrentXP;
             int remainingXP = currentXP + amount;
 
-            while (remainingXP >= _levelConfig.GetXPForLevel(_model.CurrentLevel + 1) && _model.CurrentLevel < _levelConfig.MaxLevel) {
+            while (remainingXP >= _model.MaxXP && _model.CurrentLevel < _levelConfig.MaxLevel) {
                 remainingXP -= _levelConfig.GetXPForLevel(_model.CurrentLevel + 1);
                 _model.IncrementLevel();
                 _model.SetMaxXP(_levelConfig.GetXPForLevel(_model.CurrentLevel + 1));

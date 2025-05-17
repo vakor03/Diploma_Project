@@ -7,17 +7,24 @@ using JetBrains.Annotations;
 using UnityEngine;
 
 namespace _Project.Features.UIModule.SingleUpgradeUI {
+    public class UpgradeEvents {
+        public event Action OnUpgradeClaimed;
+        
+        public void InvokeOnUpgradeClaimed() =>
+            OnUpgradeClaimed?.Invoke();
+    }
+
     [PublicAPI]
     public class SingleUpgradePresenter : PresenterBehaviour<SingleUpgradeViewBase> {
         private readonly IWindowService _windowService;
         private readonly IUpgradeManagerService _upgradeManagerService;
-        private readonly IGamePauseService _gamePauseService;
+        private readonly UpgradeEvents _upgradeEvents;
         private UpgradeData _upgradeData;
 
-        public SingleUpgradePresenter(IWindowService windowService, IUpgradeManagerService upgradeManagerService, IGamePauseService gamePauseService) {
+        public SingleUpgradePresenter(IWindowService windowService, IUpgradeManagerService upgradeManagerService, UpgradeEvents upgradeEvents) {
             _windowService = windowService;
             _upgradeManagerService = upgradeManagerService;
-            _gamePauseService = gamePauseService;
+            _upgradeEvents = upgradeEvents;
         }
 
         public override void OnViewSet() =>
@@ -28,8 +35,7 @@ namespace _Project.Features.UIModule.SingleUpgradeUI {
 
         private void ClaimUpgrade() {
             _upgradeManagerService.TryApplyUpgrade(_upgradeData);
-            _windowService.CloseWindow<ChooseUpgradeWindow>();
-            _gamePauseService.ResumeTime();
+            _upgradeEvents.InvokeOnUpgradeClaimed();
         }
 
         public void SetUpgradeData(UpgradeData upgradeData) {
