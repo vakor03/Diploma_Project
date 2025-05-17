@@ -16,7 +16,7 @@ MonoBehaviour:
     _serializedList:
     - Key: 0
       Value: {fileID: 11400000, guid: 31305dcfd8b5c2c40a3e2295108f7b90, type: 2}
-  enemyStats:
+  <EnemyStats>k__BackingField:
     _serializedList:
     - Key: 1
       Value: {fileID: 11400000, guid: 44d198c284edaa1489d7d0d5a3a7b77c, type: 2}

@@ -1,4 +1,5 @@
-﻿using _Project.Features.UpgradesModule.API;
+﻿using _Project.Features.Enemy;
+using _Project.Features.UpgradesModule.API;
 using AYellowpaper.SerializedCollections;
 using Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule;
 using UnityEngine;
@@ -9,8 +10,9 @@ namespace _Project.Features.StatsModule {
     {
         [Header("Entity Stats")]
         public SerializedDictionary<EntityType, DefaultPlayerStats> playerStats = new SerializedDictionary<EntityType, DefaultPlayerStats>();
-        public SerializedDictionary<EntityType, DefaultEnemyStats> enemyStats = new SerializedDictionary<EntityType, DefaultEnemyStats>();
-    
+
+        [field:SerializeField] public SerializedDictionary<EnemyType, DefaultEnemyStats> EnemyStats { get; private set; } = new();
+
         [Header("Weapon Stats")]
         public SerializedDictionary<WeaponType, DefaultWeaponStats> weaponStats = new SerializedDictionary<WeaponType, DefaultWeaponStats>();
     
@@ -23,9 +25,9 @@ namespace _Project.Features.StatsModule {
             return null;
         }
     
-        public DefaultEnemyStats GetEnemyStats(EntityType enemyType)
+        public DefaultEnemyStats GetEnemyStats(EnemyType enemyType)
         {
-            if (enemyStats.TryGetValue(enemyType, out var stats))
+            if (EnemyStats.TryGetValue(enemyType, out DefaultEnemyStats stats))
                 return stats;
             
             Debug.LogWarning($"No enemy stats found for {enemyType}");
