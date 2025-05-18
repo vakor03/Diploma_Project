@@ -37,7 +37,6 @@ namespace _Project.Features.MapGeneration.PNGExproter {
             { MicroTag.None, Color.gray },
             { MicroTag.PlayerSpawnPoint, Color.green },
             { MicroTag.EnemySpawnPoint, Color.red },
-            { MicroTag.Platform, Color.yellow },
         };
     
         [Flags]

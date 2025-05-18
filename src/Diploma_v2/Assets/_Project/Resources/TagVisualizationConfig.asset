@@ -34,6 +34,8 @@ MonoBehaviour:
     _serializedList:
     - Key: 0
       Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - Key: 7
+      Value: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - Key: 1
       Value: {r: 0.6, g: 0.4, b: 0.2, a: 1}
     - Key: 2

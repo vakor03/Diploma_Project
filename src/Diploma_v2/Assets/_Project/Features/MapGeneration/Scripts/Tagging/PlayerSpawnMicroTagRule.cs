@@ -40,29 +40,29 @@ namespace _Project.Features.MapGeneration.Tagging {
             true;
     }
     
-    public class PlatformMicroTagRule : IMicroTagRule {
-        public int GlobalMaxCount => int.MaxValue;
-        public int LocalMaxCount => int.MaxValue;
-        public Dungeon Context { get; set; }
-        public MicroTag MicroTag => MicroTag.Platform;
-
-        public GlobalPlaceTagFilter GlobalPlaceTagFilter => new GlobalPlaceTagFilter();
-
-        public MacroTagFilter MacroTagFilter => new();
-
-        public bool IsValidForPosition(Vector2Int position, Room room, GlobalPlaceTag globalPlaceTag, MacroTag macroTag,
-                                       DungeonTags dungeonTags) {
-            if ((position.y - room.RoomBounds.yMin) % 5 == 0 && position.y != room.RoomBounds.yMin  && (position.y + 3) <= room.RoomBounds.yMax)
-                return true;
-            return false;
-        }
-
-        public bool IsValidForPosition(Vector2Int position, Tunnel tunnel, GlobalPlaceTag globalPlaceTag, MacroTag macroTag,
-                                       DungeonTags dungeonTags) {
-            int yMin = Mathf.Min(tunnel.Start.y, tunnel.End.y);
-            if ((position.y - yMin) % 5 == 0)
-                return true;
-            return false;
-        }
-    }
+    // public class PlatformMicroTagRule : IMicroTagRule {
+    //     public int GlobalMaxCount => int.MaxValue;
+    //     public int LocalMaxCount => int.MaxValue;
+    //     public Dungeon Context { get; set; }
+    //     public MicroTag MicroTag => MicroTag.Platform;
+    //
+    //     public GlobalPlaceTagFilter GlobalPlaceTagFilter => new GlobalPlaceTagFilter();
+    //
+    //     public MacroTagFilter MacroTagFilter => new();
+    //
+    //     public bool IsValidForPosition(Vector2Int position, Room room, GlobalPlaceTag globalPlaceTag, MacroTag macroTag,
+    //                                    DungeonTags dungeonTags) {
+    //         if ((position.y - room.RoomBounds.yMin) % 5 == 0 && position.y != room.RoomBounds.yMin  && (position.y + 3) <= room.RoomBounds.yMax)
+    //             return true;
+    //         return false;
+    //     }
+    //
+    //     public bool IsValidForPosition(Vector2Int position, Tunnel tunnel, GlobalPlaceTag globalPlaceTag, MacroTag macroTag,
+    //                                    DungeonTags dungeonTags) {
+    //         int yMin = Mathf.Min(tunnel.Start.y, tunnel.End.y);
+    //         if ((position.y - yMin) % 5 == 0)
+    //             return true;
+    //         return false;
+    //     }
+    // }
 }

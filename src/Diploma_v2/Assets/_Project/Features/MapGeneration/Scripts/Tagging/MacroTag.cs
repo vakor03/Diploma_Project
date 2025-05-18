@@ -6,6 +6,7 @@
         Ceiling = 3,
         Door = 4,
         Entrance = 5,
-        Exit = 6
+        Exit = 6,
+        Platform = 7,
     }
 }

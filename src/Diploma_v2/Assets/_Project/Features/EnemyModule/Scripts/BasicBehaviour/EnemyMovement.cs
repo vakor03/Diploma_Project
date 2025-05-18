@@ -4,16 +4,20 @@ using UnityEngine;
 
 namespace _Project.Features.EnemyModule.BasicBehaviour
 {
-    public class EnemyMovement : MonoBehaviour
+    public class EnemyMovement : MonoBehaviour, IMover
     {
         public EnemyMovementData Data;
 
         [SerializeField] private Rigidbody2D _rigidbody2D;
         [SerializeField] private GroundChecker _groundChecker;
+        [SerializeField] private float _reachDistance = 0.1f;
 
         public bool IsFacingRight { get; private set; }
         public float LastOnGroundTime { get; private set; }
         public Vector2 MoveDirection { get; set; }
+        
+        private Vector2Int _currentTargetPosition;
+        private bool _hasTarget = false;
 
         private void Start()
         {
@@ -26,6 +30,19 @@ namespace _Project.Features.EnemyModule.BasicBehaviour
             
             UpdateFacingDirection();
             UpdateGroundedState();
+            
+            // Update movement to target if we have one
+            if (_hasTarget)
+            {
+                Vector3 targetPosition = new Vector3(_currentTargetPosition.x, _currentTargetPosition.y, 0);
+                MoveTo(targetPosition);
+                
+                // Stop moving if we've reached the target
+                if (HasReachedPosition(_currentTargetPosition))
+                {
+                    Stop();
+                }
+            }
         }
 
         private void FixedUpdate()
@@ -96,6 +113,40 @@ namespace _Project.Features.EnemyModule.BasicBehaviour
         public void Stop()
         {
             SetMoveDirection(Vector2.zero);
+            _hasTarget = false;
         }
+        
+        #region IMover Implementation
+        
+        public void MoveTo(Vector2Int position)
+        {
+            _currentTargetPosition = position;
+            _hasTarget = true;
+            Vector3 targetPosition = new Vector3(position.x, position.y, 0);
+            MoveTo(targetPosition);
+        }
+        
+        public void LookAt(Vector2Int position)
+        {
+            // For a 2D game, we only care about the horizontal direction
+            Vector3 currentPos = transform.position;
+            bool shouldFaceRight = position.x > currentPos.x;
+            CheckDirectionToFace(shouldFaceRight);
+        }
+        
+        public bool HasReachedPosition(Vector2Int position)
+        {
+            Vector2 currentPos = new Vector2(transform.position.x, transform.position.y);
+            Vector2 targetPos = new Vector2(position.x, position.y);
+            
+            // Only check horizontal distance for 2D platformer
+            float horizontalDistance = Mathf.Abs(currentPos.x - targetPos.x);
+            
+            // Consider it reached if we're close enough in the horizontal axis
+            // and we're on the ground (to avoid considering "reaching" while falling)
+            return horizontalDistance < _reachDistance && LastOnGroundTime > 0;
+        }
+        
+        #endregion
     }
 }

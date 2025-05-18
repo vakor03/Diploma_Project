@@ -6,34 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/HitBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/HitBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/SimpleMonoDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/SimpleMonoDamageable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/EnemyPool/EnemyPooledObjectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/EnemyPool/EnemyPooledObjectFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/SinglePlatformCollider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/SinglePlatformCollider.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerHealthModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerHealthModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerRun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerRun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerWeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerWeaponController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerSpawnerModule/PlayerSpawnerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerSpawnerModule/PlayerSpawnerService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultEnemyStats_ShadowOfStorms.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultEnemyStats_ShadowOfStorms.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultStatsDatabase_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultStatsDatabase_Default.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultEnemyStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultEntityStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultEnemyStats.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultEntityStats.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultStatsDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultStatsDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/StatDataHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/StatDataHolder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/PlayerHealthUI/PlayerHealthPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/PlayerHealthUI/PlayerHealthPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponModule/SelfRegisterWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponModule/SelfRegisterWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/GameResources/Weapons/AK47_Raycast.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/GameResources/Weapons/AK47_Raycast.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsCoreModule/IPositionalShootable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsCoreModule/IPositionalShootable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsCoreModule/IShootable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsCoreModule/IShootable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsInstances/AK47_Raycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsInstances/AK47_Raycast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dungeon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/GameResources/ShadowOfStorms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/GameResources/ShadowOfStorms.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BasicBehaviour/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BasicBehaviour/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGeneratorInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGeneratorInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/TagVisualizationConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/TagVisualizationConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/IMacroTagRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/IMacroTagRule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/MacroTag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/MacroTag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/MicroTag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/MicroTag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/PlayerSpawnMicroTagRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/PlayerSpawnMicroTagRule.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/PrepareSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/PrepareSceneState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/TagVisualizationConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/TagVisualizationConfig.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +56,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/131dc8adfd6d4dd29afb49ff24f8b5c22f200/0d/f6e84b6f/Physics2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/131dc8adfd6d4dd29afb49ff24f8b5c22f200/95/5668696d/Collider2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/131dc8adfd6d4dd29afb49ff24f8b5c22f200/a3/ae67ce45/ContactFilter2D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13c0c460649d4ce49f991e2c222fa63546ae00/04/6dbcd56e/SafeHandle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13c0c460649d4ce49f991e2c222fa63546ae00/18/94a5785d/List`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13c0c460649d4ce49f991e2c222fa63546ae00/6a/e8666ed0/Random.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13c0c460649d4ce49f991e2c222fa63546ae00/7b/62f8d4e8/Dictionary`2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/00/e8e9877a/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/20/3a0803a8/Debug.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/3a/0ba99a0d/Resources.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2431722e3e3e41d78b6718bb39ab91111df400/48/d8a93664/Vector2.cs" root0="FORCE_HIGHLIGHTING" />
@@ -161,10 +149,10 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="536">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17256">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="536" />
+      <option name="pid" value="17256" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
         <list>
@@ -211,7 +199,7 @@
       <workItem from="1747471637422" duration="5271000" />
       <workItem from="1747509403740" duration="389000" />
       <workItem from="1747511244844" duration="5448000" />
-      <workItem from="1747560028372" duration="10708000" />
+      <workItem from="1747560028372" duration="16265000" />
     </task>
     <servers />
   </component>
@@ -361,6 +349,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs</url>
+          <line>199</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\EnemyModule\Scripts\ShadowOfStormsAI.cs" containingFunctionPresentation="Method 'Process'">
+            <startOffsets>
+              <option value="8349" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8377" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs</url>
+          <line>94</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\EnemyModule\Scripts\ShadowOfStormsAI.cs" containingFunctionPresentation="Method 'GetPatrolPoints'">
+            <startOffsets>
+              <option value="4813" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4814" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BasicBehaviour/EnemyMovement.cs</url>
+          <line>49</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\EnemyModule\Scripts\BasicBehaviour\EnemyMovement.cs" containingFunctionPresentation="Method 'FixedUpdate'">
+            <startOffsets>
+              <option value="1502" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1509" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />

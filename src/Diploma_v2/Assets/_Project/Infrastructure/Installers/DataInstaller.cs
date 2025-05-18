@@ -1,5 +1,6 @@
 ﻿using _Project.Features.ExperienceModule;
 using _Project.Features.GameTimeModule;
+using _Project.Features.LevelGeneratorModule;
 using _Project.Features.PlayerModule;
 using _Project.Features.PlayerSpawnerModule;
 using _Project.Features.UIModule.ChooseUpgradesUI;
@@ -18,6 +19,7 @@ namespace _Project.Infrastructure.Installers {
             InstallModel<GamePauseModel>();
             InstallModel<PlayerWeaponModel>();
             InstallModel<PlayerStatsModel>();
+            InstallModel<BlockGroupsModel>();
 
             Container.Bind<UpgradeEvents>().AsSingle();
         }

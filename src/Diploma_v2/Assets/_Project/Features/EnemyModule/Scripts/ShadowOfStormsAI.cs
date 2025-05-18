@@ -1,19 +1,33 @@
-﻿using _Project.Features.DamageModule;
+﻿using System;
+using System.Collections.Generic;
+using _Project.Features.DamageModule;
+using _Project.Features.EnemyModule.BasicBehaviour;
 using _Project.Features.EnemyModule.BehaviourTrees;
 using _Project.Features.InputModule;
+using _Project.Features.LevelGeneratorModule;
+using _Project.Features.StatsModule;
 using UnityEngine;
 using Zenject;
 
 namespace _Project.Features.EnemyModule {
     public class ShadowOfStormsAI : EnemyAI {
         private IInputService _inputService;
+        private BlockGroupsModel _blockGroupsModel;
+        private IBlockGroupService _blockGroupService;
+        private IStatService<EntityStats> _statService;
         [SerializeField] private SimpleEnemyAttack _attack1;
         [SerializeField] private SimpleEnemyAttack _attack2;
         [SerializeField] private SimpleEnemyAttack _attack3;
+        [SerializeField] private EnemyMovement _enemyMovement;
+        
 
         [Inject]
-        private void InjectDependencies(IInputService inputService) =>
+        private void InjectDependencies(IInputService inputService, BlockGroupsModel blockGroupsModel, IBlockGroupService blockGroupService, IStatService<EntityStats> statService) {
             _inputService = inputService;
+            _blockGroupsModel = blockGroupsModel;
+            _blockGroupService = blockGroupService;
+            _statService = statService;
+        }
 
         protected override void SetupTreeComponents(BehaviourTree behaviourTree) {
             Leaf isUsingAttack1 = new Leaf("IsUsingAttack1", new Condition(IsUsingAttack1));
@@ -46,17 +60,47 @@ namespace _Project.Features.EnemyModule {
             attack3Sequence.AddChild(waitForAttack3End);
             attack3Sequence.AddChild(new Leaf("LogAttack3End", new ActionStrategy(LogAttack3End)));
 
-            PrioritySelector attackSelector = new PrioritySelector("AttackSelector");
+            PrioritySelector attackSelector = new PrioritySelector("AttackSelector", 10);
             attackSelector.AddChild(attack1Sequence);
             attackSelector.AddChild(attack2Sequence);
             attackSelector.AddChild(attack3Sequence);
+            
+            Sequence patrolSequence = new Sequence("PatrolSequence");
+            patrolSequence.AddChild(new Leaf("Patrol", new PatrolStrategy(_enemyMovement, _patrolPoints, 2f)));
+            
+            PrioritySelector overallSelector = new PrioritySelector("OverallSelector");
+            overallSelector.AddChild(attackSelector);
+            overallSelector.AddChild(patrolSequence);
+            
+            Sequence rootSequence = new Sequence("RootSequence");
+            rootSequence.AddChild(new Leaf("IsAlive", new Condition(() => _statService.GetStat(EntityStats.CurrentHealth) > 0)));
+            rootSequence.AddChild(overallSelector);
 
-            behaviourTree.AddChild(attackSelector);
+            behaviourTree.AddChild(rootSequence);
 
             // Add any additional behaviors like patrolling if needed
             // For now they're commented out
             // Leaf patrolLeaf = new Leaf("Patrol", new PatrolStrategy());
             // behaviourTree.AddChild(patrolLeaf);
+        }
+        
+        private List<Vector2Int> _patrolPoints = new List<Vector2Int>();
+
+        protected override void Update() {
+            if (_patrolPoints.Count == 0)
+                GetPatrolPoints(3);
+            base.Update();
+        }
+
+        private void GetPatrolPoints(int patrolPointsCount) {
+            BlockGroup group = _blockGroupService.FindGroupContaining(new Vector2Int((int)transform.position.x, (int)transform.position.y));
+            _patrolPoints.Clear();
+            for (int i = 0; i < patrolPointsCount; i++) {
+                if (group != null && group.Blocks.Count > 0) {
+                    Vector2Int randomBlock = group.Blocks[UnityEngine.Random.Range(0, group.Blocks.Count)];
+                    _patrolPoints.Add(randomBlock);
+                }
+            }
         }
 
         private bool IsUsingAttack1() =>
@@ -97,6 +141,16 @@ namespace _Project.Features.EnemyModule {
             // Implement the logic for attack 3 end
             Debug.Log("Attack 3 Ended");
         }
+
+        private void OnDrawGizmos() {
+            BlockGroup group = _blockGroupService.FindGroupContaining(new Vector2Int((int)transform.position.x, (int)transform.position.y));
+            if (group != null) {
+                foreach (Vector2Int groupBlock in group.Blocks) {
+                    Gizmos.color = Color.green;
+                    Gizmos.DrawWireCube(new Vector3(groupBlock.x, groupBlock.y, 0), Vector3.one);
+                }
+            }
+        }
     }
 
     public class WaitForAttackEndStrategy : IStrategy {
@@ -116,6 +170,57 @@ namespace _Project.Features.EnemyModule {
         public Node.Status Process() {
             _attack.PerformAttack();
             return Node.Status.Success;
+        }
+    }
+    
+    public interface IMover
+    {
+        void MoveTo(Vector2Int position);
+        void LookAt(Vector2Int position);
+        bool HasReachedPosition(Vector2Int position);
+    }
+
+    public class PatrolStrategy : IStrategy
+    {
+        readonly IMover mover;
+        readonly List<Vector2Int> patrolPoints;
+        readonly float patrolSpeed;
+        int currentIndex;
+
+        public PatrolStrategy(IMover mover, List<Vector2Int> patrolPoints, float patrolSpeed = 2f)
+        {
+            this.mover = mover;
+            this.patrolPoints = patrolPoints;
+            this.patrolSpeed = patrolSpeed;
+        }
+
+        public Node.Status Process()
+        {
+            Debug.LogError($"[PatrolStrategy.Process Line 185]");
+            if (patrolPoints.Count == 0)
+                return Node.Status.Failure;
+            
+            if (currentIndex >= patrolPoints.Count)
+                return Node.Status.Success;
+        
+            Vector2Int targetPosition = patrolPoints[currentIndex];
+            mover.MoveTo(targetPosition);
+            mover.LookAt(targetPosition);
+        
+            if (mover.HasReachedPosition(targetPosition))
+            {
+                currentIndex++;
+            
+                if (currentIndex >= patrolPoints.Count)
+                    return Node.Status.Success;
+            }
+        
+            return Node.Status.Running;
+        }
+    
+        public void Reset()
+        {
+            currentIndex = 0;
         }
     }
 }

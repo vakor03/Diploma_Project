@@ -3,6 +3,6 @@
         None = 0,
         PlayerSpawnPoint = 1,
         EnemySpawnPoint = 2,
-        Platform = 3,
+        // Platform = 3,
     }
 }

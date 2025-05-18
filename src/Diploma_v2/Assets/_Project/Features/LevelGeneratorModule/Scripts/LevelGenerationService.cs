@@ -22,12 +22,13 @@ namespace _Project.Features.LevelGeneratorModule {
         private readonly TilemapsDataHolder _tilemapsDataHolder;
         private readonly EnemySpawnPointsModel _enemySpawnPointsModel;
         private readonly TilemapsCollidersConfiguration _tilemapsCollidersConfiguration;
+        private readonly IBlockGroupService _blockGroupService;
 
         public LevelGenerationService(IDungeonGeneratorService dungeonGeneratorService, IStaticDataService staticData,
                                       PlayerSpawnPointsModel playerSpawnPointsModel, IInstantiator instantiator,
                                       ITilemapsBootstrapService tilemapsBootstrapService, ITilemapsService tilemapsService,
                                       TilemapsDataHolder tilemapsDataHolder, EnemySpawnPointsModel enemySpawnPointsModel,
-                                      TilemapsCollidersConfiguration tilemapsCollidersConfiguration) {
+                                      TilemapsCollidersConfiguration tilemapsCollidersConfiguration, IBlockGroupService blockGroupService) {
             _dungeonGeneratorService = dungeonGeneratorService;
             _playerSpawnPointsModel = playerSpawnPointsModel;
             _instantiator = instantiator;
@@ -36,6 +37,7 @@ namespace _Project.Features.LevelGeneratorModule {
             _tilemapsDataHolder = tilemapsDataHolder;
             _enemySpawnPointsModel = enemySpawnPointsModel;
             _tilemapsCollidersConfiguration = tilemapsCollidersConfiguration;
+            _blockGroupService = blockGroupService;
             _levelConfiguration = staticData.GetLevelConfiguration();
         }
 
@@ -49,6 +51,9 @@ namespace _Project.Features.LevelGeneratorModule {
             SpawnPlatformsForDungeon(dungeon);
             SpawnCollidersForFloor(dungeon);
             SpawnCollidersForPlatforms(dungeon);
+            
+            _blockGroupService.GroupHorizontallyConnectedBlocks(dungeon.Tags.GetPositionsWithMacroTag(MacroTag.Floor));
+            
             foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.PlayerSpawnPoint))
                 _playerSpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, false));
 
@@ -61,13 +66,13 @@ namespace _Project.Features.LevelGeneratorModule {
         }
 
         private void SpawnCollidersForPlatforms(Dungeon dungeon) {
-            Vector2Int[] platformIndices = dungeon.Tags.GetPositionsWithMicroTag(MicroTag.Platform).ToArray();
+            Vector2Int[] platformIndices = dungeon.Tags.GetPositionsWithMacroTag(MacroTag.Platform).ToArray();
 
             SpawnCollidersForMatrix(platformIndices, _tilemapsCollidersConfiguration.PlatformTilemapCollider);
         }
 
         private void SpawnPlatformsForDungeon(Dungeon dungeon) {
-            Vector2Int[] platformIndices = dungeon.Tags.GetPositionsWithMicroTag(MicroTag.Platform).ToArray();
+            Vector2Int[] platformIndices = dungeon.Tags.GetPositionsWithMacroTag(MacroTag.Platform).ToArray();
             TileBase[] tileBases = Enumerable.Repeat(_levelConfiguration.TilesConfiguration.PlatformTile, platformIndices.Length)
                 .ToArray();
 

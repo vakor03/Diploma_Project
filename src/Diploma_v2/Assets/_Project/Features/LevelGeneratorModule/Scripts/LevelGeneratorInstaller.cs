@@ -9,6 +9,7 @@ namespace _Project.Features.LevelGeneratorModule
         public override void InstallBindings() {
             Container.BindConfigurationFromAddressables<TilemapsCollidersConfiguration>(AssetPath.Configuration.TILEMAPS_COLLIDERS_CONFIGURATION)
                 .AsSingle();
+            Container.Bind<IBlockGroupService>().To<BlockGroupService>().AsSingle();
             Container.Bind<ILevelGenerationService>().To<LevelGenerationService>().AsSingle();
         }
     }

@@ -78,7 +78,7 @@ namespace _Project.Features.MapGeneration {
 
         private PriorityList<IMicroTagRule> MicroTagRules() {
             PriorityList<IMicroTagRule> rules = new();
-            rules.Add(new PlatformMicroTagRule(), 11);
+            // rules.Add(new PlatformMicroTagRule(), 11);
             rules.Add(new PlayerSpawnMicroTagRule(), 10);
             rules.Add(new EnemySpawnMicroTagRule(), 9);
             return rules;
@@ -86,6 +86,7 @@ namespace _Project.Features.MapGeneration {
 
         private PriorityList<IMacroTagRule> MacroTagRules() {
             PriorityList<IMacroTagRule> rules = new();
+            rules.Add(new PlatformMacroTagRule(), 20);
             rules.Add(new FloorMacroTagRule(), 10);
             return rules;
         }
