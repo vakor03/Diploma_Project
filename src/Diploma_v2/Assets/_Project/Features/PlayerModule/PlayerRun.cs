@@ -11,6 +11,8 @@ namespace _Project.Features.PlayerModule
 
         [SerializeField] private Rigidbody2D _rigidbody2D;
         [SerializeField] private GroundChecker _groundChecker;
+        [SerializeField] private Transform _visuals;
+        
 
         [Inject] private IInputService _inputService;
 
@@ -213,9 +215,9 @@ namespace _Project.Features.PlayerModule
 
         private void Turn()
         {
-            Vector3 scale = transform.localScale;
+            Vector3 scale = _visuals.localScale;
             scale.x *= -1;
-            transform.localScale = scale;
+            _visuals.localScale = scale;
 
             IsFacingRight = !IsFacingRight;
         }

@@ -6,23 +6,34 @@
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/attack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/attack1.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/attack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/attack2.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/gunshotWithFX.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/shadow of storms/gunshotWithFX.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/SimpleEnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/SimpleEnemyAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Enemies.Core/EnemyBehaviourTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Enemies.Core/EnemyBehaviourTree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/GameResources/ShadowOfStorms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/GameResources/ShadowOfStorms.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BehaviourTrees.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BehaviourTrees.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BehaviourTrees/IStrategy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BehaviourTrees/IStrategy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BehaviourTrees/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BehaviourTrees/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BehaviourTrees/Node.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BehaviourTrees/Node.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/EnemyAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/InputModule/IInputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/InputModule/IInputService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/InputModule/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/InputModule/InputSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Muzzles/MuzzlesPoolModule/MonoPooledMuzzle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Muzzles/MuzzlesPoolModule/MonoPooledMuzzle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/HitBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/HitBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/SimpleMonoDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/SimpleMonoDamageable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/EnemyPool/EnemyPooledObjectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/EnemyPool/EnemyPooledObjectFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/SinglePlatformCollider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/GameResources/SinglePlatformCollider.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerHealthModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerHealthModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerRun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerRun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerWeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerWeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerSpawnerModule/PlayerSpawnerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerSpawnerModule/PlayerSpawnerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultEnemyStats_ShadowOfStorms.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultEnemyStats_ShadowOfStorms.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultStatsDatabase_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultStatsDatabase_Default.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultEnemyStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultEntityStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultEnemyStats.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultEntityStats.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultStatsDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/DefaultStatsDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/StatDataHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/StatDataHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/PlayerHealthUI/PlayerHealthPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UIModule/Scripts/PlayerHealthUI/PlayerHealthPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponModule/SelfRegisterWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponModule/SelfRegisterWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/GameResources/Weapons/AK47_Raycast.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/GameResources/Weapons/AK47_Raycast.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsCoreModule/IPositionalShootable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsCoreModule/IPositionalShootable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsCoreModule/IShootable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsCoreModule/IShootable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsInstances/AK47_Raycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/Scripts/Weapons/WeaponsInstances/AK47_Raycast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/SceneContexts/Scripts/GameplayInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/PrepareSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/PrepareSceneState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +211,7 @@
       <workItem from="1747471637422" duration="5271000" />
       <workItem from="1747509403740" duration="389000" />
       <workItem from="1747511244844" duration="5448000" />
-      <workItem from="1747560028372" duration="6940000" />
+      <workItem from="1747560028372" duration="10708000" />
     </task>
     <servers />
   </component>
@@ -350,32 +361,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/EnemyAnimatorStateMachine.cs</url>
-          <line>29</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\DamageModule\Scripts\EnemyAnimatorStateMachine.cs" containingFunctionPresentation="Method 'SwitchToState'">
-            <startOffsets>
-              <option value="1502" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1503" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/AnimationController.cs</url>
-          <line>49</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\DamageModule\Scripts\AnimationController.cs" containingFunctionPresentation="Method 'StartAttackWithState'">
-            <startOffsets>
-              <option value="1612" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1613" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="58" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />

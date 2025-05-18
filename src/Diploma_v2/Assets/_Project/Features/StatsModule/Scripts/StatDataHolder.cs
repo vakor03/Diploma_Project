@@ -7,6 +7,8 @@ namespace _Project.Features.StatsModule {
     {
         private Dictionary<T, float> _stats = new Dictionary<T, float>();
         private Dictionary<T, float> _baseStats = new Dictionary<T, float>();
+        
+        public event Action<T, float> OnStatChanged;
     
         public StatDataHolder() =>
             InitializeStats();
@@ -30,6 +32,7 @@ namespace _Project.Features.StatsModule {
         {
             _stats[statType] = value;
             _baseStats[statType] = value; // Update base value as well
+            OnStatChanged?.Invoke(statType, value);
         }
     
         public void ModifyStat(T statType, float value)
@@ -69,5 +72,7 @@ namespace _Project.Features.StatsModule {
         {
             return new Dictionary<T, float>(_baseStats);
         }
+
+        public float this[T stat] { get => GetStat(stat); }
     }
 }

@@ -20,12 +20,13 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
         private readonly IInstantiator _instantiator;
         private readonly VisualsConfiguration _visualsConfiguration;
         private readonly GameplayStateMachine _gameplayStateMachine;
+        private readonly IPlayerStatInitializeService _playerStatInitializeService;
 
         public PrepareSceneState(IPlayerSpawnerService playerSpawnerService,
                                   IPlayerSpawnPointsService playerSpawnPointsService, ICameraSpawnService cameraSpawnService,
                                   ICameraService cameraService, EnemyObjectPool enemyObjectPool,
                                   EnemySpawnPointsModel enemySpawnPointsModel, IInstantiator instantiator,
-                                  VisualsConfiguration visualsConfiguration, GameplayStateMachine gameplayStateMachine) {
+                                  VisualsConfiguration visualsConfiguration, GameplayStateMachine gameplayStateMachine, IPlayerStatInitializeService playerStatInitializeService) {
             _playerSpawnerService = playerSpawnerService;
             _playerSpawnPointsService = playerSpawnPointsService;
             _cameraSpawnService = cameraSpawnService;
@@ -35,9 +36,11 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
             _instantiator = instantiator;
             _visualsConfiguration = visualsConfiguration;
             _gameplayStateMachine = gameplayStateMachine;
+            _playerStatInitializeService = playerStatInitializeService;
         }
 
         public void Enter() {
+            _playerStatInitializeService.InitializePlayerStats();
             _cameraSpawnService.SpawnCamera();
             Vector3 playerSpawnPoint = _playerSpawnPointsService.GetPlayerSpawnPoint();
             Player player = _playerSpawnerService.SpawnPlayerAt(playerSpawnPoint);

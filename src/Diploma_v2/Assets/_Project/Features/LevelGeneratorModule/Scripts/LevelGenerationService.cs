@@ -113,7 +113,7 @@ namespace _Project.Features.LevelGeneratorModule {
                 BoxCollider2D boxCollider = _instantiator.InstantiatePrefabForComponent<BoxCollider2D>(
                     collidersConfiguration.SingleCollider, worldPos, Quaternion.identity, parentCollider.transform);
 
-                boxCollider.size = new Vector2(cellSize.x, cellSize.y);
+                boxCollider.size *= new Vector2(cellSize.x, cellSize.y);
             }
 
             parentCollider.GenerateGeometry();

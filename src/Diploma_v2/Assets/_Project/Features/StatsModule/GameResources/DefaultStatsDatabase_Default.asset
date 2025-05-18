@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0b2b1a6af04c699f82c97d7bce2057, type: 3}
   m_Name: DefaultStatsDatabase_Default
   m_EditorClassIdentifier: 
-  playerStats:
-    _serializedList:
-    - Key: 0
-      Value: {fileID: 11400000, guid: 31305dcfd8b5c2c40a3e2295108f7b90, type: 2}
+  playerStats: {fileID: 11400000, guid: d9620f75d723c084da1840c588af3a1c, type: 2}
   <EnemyStats>k__BackingField:
     _serializedList:
     - Key: 1

@@ -1,4 +1,5 @@
-﻿using _Project.Features.StatsModule;
+﻿using System;
+using _Project.Features.StatsModule;
 using _Project.Features.WeaponModule;
 using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
 using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesPool;
@@ -8,10 +9,13 @@ using _Project.Features.WeaponsModule.Scripts.Weapons.WeaponSpreadModule;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Zenject;
+using IShootable = _Project.Features.WeaponModule.IShootable;
 
 namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
-	public class AK47_Raycast : MonoBehaviour, IWeapon, IDirectionalShootable, IReloadable, IRotatable {
+	public class AK47_Raycast : MonoBehaviour, IWeapon, IShootable, IReloadable, IRotatable {
 		[SerializeField] private Transform _firePoint;
+		[SerializeField] private Vector2 _attackDirection;
+		
 
 		private const WeaponType WEAPON_TYPE = WeaponType.AK47_Raycast;
 		private const ProjectileType PROJECTILE_TYPE = ProjectileType.BulletRaycast;
@@ -77,6 +81,15 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 		public void RotateInDirection(Vector2 direction)
 		{
 			float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+    
+			if (direction.x < 0)
+			{
+				transform.localScale = new Vector3(-1, 1, 1);
+				angle -= 180;
+			}
+			else
+				transform.localScale = new Vector3(1, 1, 1);
+
 			transform.rotation = Quaternion.Euler(0f, 0f, angle);
 		}
 
@@ -86,6 +99,13 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 		public IStatService<WeaponStats> Stats { get; private set; }
 		public void InitWeaponStats(IStatService<WeaponStats> weaponStats) {
 			Stats = weaponStats;
+		}
+
+		private Vector3 GetAttackDirection() =>
+			transform.rotation * (_attackDirection * transform.localScale.x);
+
+		public void Shoot() {
+			Shoot(GetAttackDirection());
 		}
 	}
 }

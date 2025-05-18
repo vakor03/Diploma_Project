@@ -7,7 +7,7 @@ namespace _Project.Features.WeaponModule
     public class SelfRegisterWeapon : MonoBehaviour
     {
         [Inject] private EntityWeaponDataHolder _dataHolder;
-        [SerializeField] private DefaultEnemyStats _defaultEnemyStats;
+        [SerializeField] private DefaultEntityStats _defaultEntityStats;
         private IWeapon _associatedWeapon;
 
         private void Awake() =>

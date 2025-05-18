@@ -14,10 +14,10 @@ namespace _Project.Infrastructure.Installers {
             InstallModel<PlayerSpawnPointsModel>();
             InstallModel<EnemySpawnPointsModel>();
             InstallModel<ExperienceModel>();
-            InstallModel<PlayerHealthModel>();
             InstallModel<UpgradesToShowModel>();
             InstallModel<GamePauseModel>();
             InstallModel<PlayerWeaponModel>();
+            InstallModel<PlayerStatsModel>();
 
             Container.Bind<UpgradeEvents>().AsSingle();
         }

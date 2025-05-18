@@ -35,13 +35,13 @@ namespace _Project.Features.EnemyModule.EnemyPool {
 
         private StatDataHolder<EntityStats> CreateStatDataHolder(EnemyType type) {
             StatDataHolder<EntityStats> statsHolder = new StatDataHolder<EntityStats>();
-            DefaultEnemyStats defaultEnemyStats = _statsDatabase.GetEnemyStats(type);
-            if (defaultEnemyStats == null) {
+            DefaultEntityStats defaultEntityStats = _statsDatabase.GetEnemyStats(type);
+            if (defaultEntityStats == null) {
                 Debug.LogError($"No stats found for enemy type: {type}");
                 return statsHolder;
             }
 
-            foreach ((EntityStats stats, float value) in defaultEnemyStats.stats)
+            foreach ((EntityStats stats, float value) in defaultEntityStats.stats)
                 statsHolder.SetStat(stats, value);
 
             return statsHolder;

@@ -29,11 +29,13 @@ namespace _Project.Features.PlayerModule
         private void FireWeapons()
         {
             foreach (IWeapon weapon in _weaponDataHolder.EquippedWeapons) {
-                if (weapon is IShootable shootable)
-                    shootable.Shoot();
-
-                if (weapon is IDirectionalShootable dir) {
-                    dir.Shoot(_inputService.GetLookDirection());
+                switch (weapon) {
+                    case IShootable shootable:
+                        shootable.Shoot();
+                        break;
+                    case IDirectionalShootable dir: 
+                        dir.Shoot(_inputService.GetLookDirection()); 
+                        break;
                 }
             }
         }

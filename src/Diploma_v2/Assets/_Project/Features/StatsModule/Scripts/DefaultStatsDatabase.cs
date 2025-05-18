@@ -9,25 +9,20 @@ namespace _Project.Features.StatsModule {
     public class DefaultStatsDatabase : ScriptableObject
     {
         [Header("Entity Stats")]
-        public SerializedDictionary<EntityType, DefaultPlayerStats> playerStats = new SerializedDictionary<EntityType, DefaultPlayerStats>();
+        public DefaultEntityStats playerStats;
 
-        [field:SerializeField] public SerializedDictionary<EnemyType, DefaultEnemyStats> EnemyStats { get; private set; } = new();
+        [field:SerializeField] public SerializedDictionary<EnemyType, DefaultEntityStats> EnemyStats { get; private set; } = new();
 
         [Header("Weapon Stats")]
         public SerializedDictionary<WeaponType, DefaultWeaponStats> weaponStats = new SerializedDictionary<WeaponType, DefaultWeaponStats>();
     
-        public DefaultPlayerStats GetPlayerStats(EntityType playerType = EntityType.Player)
-        {
-            if (playerStats.TryGetValue(playerType, out var stats))
-                return stats;
-            
-            Debug.LogWarning($"No player stats found for {playerType}");
-            return null;
+        public DefaultEntityStats GetPlayerStats() {
+            return playerStats;
         }
     
-        public DefaultEnemyStats GetEnemyStats(EnemyType enemyType)
+        public DefaultEntityStats GetEnemyStats(EnemyType enemyType)
         {
-            if (EnemyStats.TryGetValue(enemyType, out DefaultEnemyStats stats))
+            if (EnemyStats.TryGetValue(enemyType, out DefaultEntityStats stats))
                 return stats;
             
             Debug.LogWarning($"No enemy stats found for {enemyType}");
