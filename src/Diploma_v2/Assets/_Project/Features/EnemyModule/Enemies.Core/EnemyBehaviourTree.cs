@@ -17,13 +17,13 @@ namespace _Project.Features.EnemyModule.Enemies.Core {
             _chooseTargetStrategyFactory = chooseTargetStrategyFactory;
 
         private void Awake() {
-            // _moveStrategy = GetComponent<IMoveStrategy>();
-
-            _behaviourTree = new();
-            _behaviourTree.AddChild(new Leaf(new EntityPatrolStrategy(_patrolArea), "Patrol"));
-            _behaviourTree.AddChild(new Leaf(new WaitStrategy(10), "Wait"));
-            // _behaviourTree.AddChild(new Leaf(new AttackStrategy(_chooseTargetStrategyFactory.Create<PlayerTransformChooseTargetStrategy>(), _weaponSlot.Weapon as IDirectionalShootable, transform),
-                // "Attack Player"));
+            // // _moveStrategy = GetComponent<IMoveStrategy>();
+            //
+            // _behaviourTree = new();
+            // _behaviourTree.AddChild(new Leaf("Patrol", new EntityPatrolStrategy(_patrolArea)));
+            // _behaviourTree.AddChild(new Leaf("Wait", new WaitStrategy(10)));
+            // // _behaviourTree.AddChild(new Leaf(new AttackStrategy(_chooseTargetStrategyFactory.Create<PlayerTransformChooseTargetStrategy>(), _weaponSlot.Weapon as IDirectionalShootable, transform),
+            //     // "Attack Player"));
         }
 
         private void Update() =>

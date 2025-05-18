@@ -1,32 +1,24 @@
-﻿using _Project.Features.EnemyModule.BasicBehaviour;
-using _Project.Features.EnemyModule.BehaviourTrees;
-using _Project.Features.PlayerSpawnerModule;
+﻿using _Project.Features.EnemyModule.BehaviourTrees;
 using UnityEngine;
-using Zenject;
 
 namespace _Project.Features.EnemyModule {
-    public class EnemyAI : MonoBehaviour {
-        [SerializeField] private EnemyMovement _enemyMovement;
-        
+    public abstract class EnemyAI : MonoBehaviour {
         private BehaviourTree _tree;
-        [SerializeField]private bool _isPlayerInRange;
-
-        [Inject] private PlayerTransformDataHolder _playerTransformDataHolder;
+        protected Blackboard.Blackboard Blackboard { get; private set; }
 
         private void Awake() {
-            _tree = new BehaviourTree("EnemyModule");
-            Leaf isPlayerInRange = new Leaf(new Condition(()=> _isPlayerInRange), "IsPlayerInRange");
-            Leaf moveToPlayer = new Leaf(new FollowStrategy(_playerTransformDataHolder.Player,_enemyMovement), "MoveToPlayer");
-
-            Sequence goToPlayer = new Sequence("GoToPlayer");
-            goToPlayer.AddChild(isPlayerInRange);
-            goToPlayer.AddChild(moveToPlayer);
-            
-            _tree.AddChild(goToPlayer);
+            Blackboard = new();
+            ConstructBehaviourTree();
         }
 
-        private void Update() {
+        private void ConstructBehaviourTree() {
+            _tree = new BehaviourTree("EnemyAI");
+            SetupTreeComponents(_tree);
+        }
+
+        protected abstract void SetupTreeComponents(BehaviourTree behaviourTree);
+
+        protected virtual void Update() =>
             _tree.Process();
-        }
     }
 }

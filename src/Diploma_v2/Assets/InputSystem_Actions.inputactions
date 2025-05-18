@@ -979,6 +979,74 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Debug",
+            "id": "b854a35f-ff57-4985-b28c-ad1420368ebd",
+            "actions": [
+                {
+                    "name": "EnemyDebugAttack1",
+                    "type": "Button",
+                    "id": "a02885bc-9fc1-42da-9cfa-9dd0c482bffe",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "EnemyDebugAttack2",
+                    "type": "Button",
+                    "id": "69ccd619-6e3c-4c53-b588-bc7bc6364385",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "EnemyDebugAttack3",
+                    "type": "Button",
+                    "id": "282da8c2-1af9-4254-b689-dc0132579fa1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b5e48195-7799-426c-b907-aad702a8a02a",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnemyDebugAttack1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "81d5d231-e3d4-4a43-800e-007e5b2a4387",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnemyDebugAttack2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d395a23-0ca0-42ad-8ee9-9cb15e393776",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnemyDebugAttack3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

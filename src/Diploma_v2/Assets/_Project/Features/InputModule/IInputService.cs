@@ -14,5 +14,10 @@ namespace _Project.Features.InputModule
         public event Action OnAttackStarted;
         public event Action OnAttackCanceled;
         bool IsAttacking { get; }
+        
+        
+        public bool EnemyDebugAttack1 { get; }
+        public bool EnemyDebugAttack2 { get; }
+        public bool EnemyDebugAttack3 { get; }
     }
 }

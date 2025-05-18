@@ -13,7 +13,9 @@ namespace _Project.Features.DamageModule {
 
         public event Action OnAttackStart;
         public event Action OnAttackEnd;
-        
+
+        public bool IsAttacking { get; private set; }
+
         private int _currentDamageIndex = 0;
 
         [Button]
@@ -23,6 +25,7 @@ namespace _Project.Features.DamageModule {
             _enemyAnimationEvents.DamageDealt += HandleDamageDealtEvent;
             _currentDamageIndex = 0;
             _animationController.StartAttackWithState(_attackState);
+            IsAttacking = true;
         }
 
         private void HandleDamageDealtEvent() {
@@ -31,6 +34,7 @@ namespace _Project.Features.DamageModule {
         }
         
         private void HandleAttackEndEvent() {
+            IsAttacking = false;
             _animationController.StopAttack();
             _enemyAnimationEvents.AttackEnd -= HandleAttackEndEvent;
             _enemyAnimationEvents.DamageDealt -= HandleDamageDealtEvent;

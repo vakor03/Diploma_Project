@@ -27,6 +27,9 @@ namespace _Project.Features.InputModule
         public event Action OnAttackStarted;
         public event Action OnAttackCanceled;
         public bool IsAttacking { get; private set; }
+        public bool EnemyDebugAttack1 => _inputSystemActions.Debug.EnemyDebugAttack1.WasPressedThisFrame();
+        public bool EnemyDebugAttack2 => _inputSystemActions.Debug.EnemyDebugAttack2.WasPressedThisFrame();
+        public bool EnemyDebugAttack3 => _inputSystemActions.Debug.EnemyDebugAttack3.WasPressedThisFrame();
 
         public void Initialize()
         {
@@ -36,6 +39,8 @@ namespace _Project.Features.InputModule
 
             _inputSystemActions.Player.Attack.performed += HandleOnAttackPerformed;
             _inputSystemActions.Player.Attack.canceled += HandleOnAttackCanceled;
+            
+            _inputSystemActions.Debug.Enable();
         }
 
         private void HandleOnAttackCanceled(InputAction.CallbackContext obj) {
@@ -54,6 +59,7 @@ namespace _Project.Features.InputModule
             _inputSystemActions.Player.Attack.canceled -= HandleOnAttackCanceled;
             
             _inputSystemActions.Player.Disable();
+            _inputSystemActions.Debug.Disable();
             _inputSystemActions.Disable();
             _inputSystemActions = null;
         }

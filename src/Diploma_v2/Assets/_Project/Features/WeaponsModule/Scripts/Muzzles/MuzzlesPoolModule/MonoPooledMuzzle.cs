@@ -27,8 +27,12 @@ namespace _Project.Features.WeaponsModule.Scripts.Muzzles.MuzzlesPoolModule {
 		public void OnDisabled() =>
 			gameObject.SetActive(false);
 
-		public void OnDestroyed() =>
+		public void OnDestroyed() {
+			if (gameObject == null)
+				return;
+			
 			Destroy(gameObject);
+		}
 
 		private void ReturnToPool() =>
 			_muzzlesPool.Release(this);

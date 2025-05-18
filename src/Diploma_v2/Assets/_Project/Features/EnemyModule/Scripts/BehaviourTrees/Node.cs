@@ -1,62 +1,112 @@
-﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using UnityEngine;
 
 namespace _Project.Features.EnemyModule.BehaviourTrees {
-    public class BehaviourTree : Node, IStrategy {
-        public BehaviourTree(string name = "Behaviour Tree") : base(name) { }
-
+    // UntilSuccess
+    // Repeat
+    public class UntilFail : Node {
+        public UntilFail(string name) : base(name) { }
+        
         public override Status Process() {
-            while (_currentChild < Children.Count) {
-                Status status = Children[_currentChild].Process();
-                if (status != Status.Success) {
-                    return status;
-                }
-                _currentChild++;
+            if (children[0].Process() == Status.Failure) {
+                Reset();
+                return Status.Failure;
             }
-            return Status.Failure;
+
+            return Status.Running;
         }
     }
-
-    public class Selector : Node {
-        public Selector(string name = "Selector") : base(name) { }
-
+    
+    public class Inverter : Node {
+        public Inverter(string name) : base(name) { }
+        
         public override Status Process() {
-            if (_currentChild < Children.Count) {
-                Status status = Children[_currentChild].Process();
-                switch (status) {
+            switch (children[0].Process()) {
+                case Status.Running:
+                    return Status.Running;
+                case Status.Failure:
+                    return Status.Success;
+                default:
+                    return Status.Failure;
+            }
+        }
+    }
+    
+    public class RandomSelector : PrioritySelector {
+        protected override List<Node> SortChildren() => children.Shuffle().ToList();
+        
+        public RandomSelector(string name, int priority = 0) : base(name, priority) { }
+    }
+    
+    public class PrioritySelector : Selector {
+        List<Node> sortedChildren;
+        List<Node> SortedChildren => sortedChildren ??= SortChildren();
+        
+        protected virtual List<Node> SortChildren() => children.OrderByDescending(child => child.priority).ToList();
+        
+        public PrioritySelector(string name, int priority = 0) : base(name, priority) { }
+        
+        public override void Reset() {
+            base.Reset();
+            sortedChildren = null;
+        }
+        
+        public override Status Process() {
+            foreach (var child in SortedChildren) {
+                switch (child.Process()) {
+                    case Status.Running:
+                        return Status.Running;
                     case Status.Success:
                         Reset();
                         return Status.Success;
-                    case Status.Failure: 
-                        _currentChild++;
-                        return Status.Running;
+                    default:
+                        continue;
+                }
+            }
+
+            Reset();
+            return Status.Failure;
+        }
+    }
+    
+    public class Selector : Node {
+        public Selector(string name, int priority = 0) : base(name, priority) { }
+
+        public override Status Process() {
+            if (currentChild < children.Count) {
+                switch (children[currentChild].Process()) {
                     case Status.Running:
                         return Status.Running;
-                    default: throw new ArgumentOutOfRangeException();
+                    case Status.Success:
+                        Reset();
+                        return Status.Success;
+                    default:
+                        currentChild++;
+                        return Status.Running;
                 }
-                
             }
             
             Reset();
             return Status.Failure;
         }
     }
-
+    
     public class Sequence : Node {
-        public Sequence(string name = "Sequence") : base(name) { }
+        public Sequence(string name, int priority = 0) : base(name, priority) { }
 
         public override Status Process() {
-            if (_currentChild < Children.Count) {
-                switch (Children[_currentChild].Process()) {
-                    case Status.Success:
-                        _currentChild++;
-                        return _currentChild ==  Children.Count ? Status.Success : Status.Running;
-                    case Status.Failure:
-                        Reset();
-                        return Status.Failure;
+            if (currentChild < children.Count) {
+                switch (children[currentChild].Process()) {
                     case Status.Running:
                         return Status.Running;
-                    default: throw new ArgumentOutOfRangeException();
+                    case Status.Failure:
+                        currentChild = 0;
+                        return Status.Failure;
+                    default:
+                        currentChild++;
+                        return currentChild == children.Count ? Status.Success : Status.Running;
                 }
             }
 
@@ -64,45 +114,96 @@ namespace _Project.Features.EnemyModule.BehaviourTrees {
             return Status.Success;
         }
     }
-
+    
     public class Leaf : Node {
-        private readonly IStrategy _strategy;
+        readonly IStrategy strategy;
 
-        public Leaf(IStrategy strategy, string name) : base(name) =>
-            _strategy = strategy;
+        public Leaf(string name, IStrategy strategy, int priority = 0) : base(name, priority) {
+            // Preconditions.CheckNotNull(strategy);
+            this.strategy = strategy;
+        }
+        
+        public override Status Process() => strategy.Process();
 
-        public override Status Process() =>
-            _strategy.Process();
+        public override void Reset() => strategy.Reset();
+    }
+    
+    public class Node {
+        public enum Status { Success, Failure, Running }
+        
+        public readonly string name;
+        public readonly int priority;
+        
+        public readonly List<Node> children = new();
+        protected int currentChild;
+        
+        public Node(string name = "Node", int priority = 0) {
+            this.name = name;
+            this.priority = priority;
+        }
+        
+        public void AddChild(Node child) => children.Add(child);
+        
+        public virtual Status Process() => children[currentChild].Process();
 
-        public override void Reset() =>
-            _strategy.Reset();
+        public virtual void Reset() {
+            currentChild = 0;
+            foreach (var child in children) {
+                child.Reset();
+            }
+        }
+    }
+    
+    public interface IPolicy {
+        bool ShouldReturn(Node.Status status);
     }
 
-    public class Node {
-        public enum Status {
-            Success = 0,
-            Failure = 1,
-            Running = 2,
+    public static class Policies {
+        public static readonly IPolicy RunForever = new RunForeverPolicy();
+        public static readonly IPolicy RunUntilSuccess = new RunUntilSuccessPolicy();
+        public static readonly IPolicy RunUntilFailure = new RunUntilFailurePolicy();
+        
+        class RunForeverPolicy : IPolicy {
+            public bool ShouldReturn(Node.Status status) => false;
+        }
+        
+        class RunUntilSuccessPolicy : IPolicy {
+            public bool ShouldReturn(Node.Status status) => status == Node.Status.Success;
+        }
+        
+        class RunUntilFailurePolicy : IPolicy {
+            public bool ShouldReturn(Node.Status status) => status == Node.Status.Failure;
+        }
+    }
+    
+    public class BehaviourTree : Node {
+        readonly IPolicy policy;
+        
+        public BehaviourTree(string name, IPolicy policy = null) : base(name) {
+            this.policy = policy ?? Policies.RunForever;
         }
 
-        public readonly string Name;
-        public readonly List<Node> Children = new();
+        public override Status Process() {
+            Status status = children[currentChild].Process();
+            if (policy.ShouldReturn(status)) {
+                return status;
+            }
+            
+            currentChild = (currentChild + 1) % children.Count;
+            return Status.Running;
+        }
 
-        protected int _currentChild;
+        public void PrintTree() {
+            StringBuilder sb = new StringBuilder();
+            PrintNode(this, 0, sb);
+            Debug.Log(sb.ToString());
+        }
 
-        public Node(string name = "Node") =>
-            Name = name;
-        
-        public void AddChild(Node child) => 
-            Children.Add(child);
-
-        public virtual Status Process() =>
-            Children[_currentChild].Process();
-        
-        public virtual void Reset() {
-            _currentChild = 0;
-            foreach (Node child in Children)
-                child.Reset();
+        static void PrintNode(Node node, int indentLevel, StringBuilder sb) {
+            sb.Append(' ', indentLevel * 2).AppendLine(node.name);
+            foreach (Node child in node.children) {
+                PrintNode(child, indentLevel + 1, sb);
+            }
         }
     }
 }

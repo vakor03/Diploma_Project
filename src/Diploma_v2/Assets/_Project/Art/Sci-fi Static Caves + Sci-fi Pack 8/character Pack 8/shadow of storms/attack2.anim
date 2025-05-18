@@ -39,7 +39,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Attacker_Attack2/HitBox
+    path: AnimatedColliders/Attack2_HitBox
   m_ScaleCurves: []
   m_FloatCurves:
   - serializedVersion: 2
@@ -68,7 +68,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Size.x
-    path: Attacker_Attack2/HitBox
+    path: AnimatedColliders/Attack2_HitBox
     classID: 70
     script: {fileID: 0}
     flags: 0
@@ -98,7 +98,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Size.y
-    path: Attacker_Attack2/HitBox
+    path: AnimatedColliders/Attack2_HitBox
     classID: 70
     script: {fileID: 0}
     flags: 0
@@ -119,7 +119,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Size.x
-    path: Damageable/HurtBox
+    path: AnimatedColliders/HurtBox
     classID: 61
     script: {fileID: 0}
     flags: 0
@@ -168,7 +168,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2857669787
+      path: 2227310779
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -177,7 +177,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2857669787
+      path: 2227310779
       attribute: 4197328169
       script: {fileID: 0}
       typeID: 70
@@ -186,7 +186,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2857669787
+      path: 2227310779
       attribute: 2368279999
       script: {fileID: 0}
       typeID: 70
@@ -195,7 +195,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3517465254
+      path: 2702464315
       attribute: 4197328169
       script: {fileID: 0}
       typeID: 61
@@ -261,7 +261,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: Attacker_Attack2/HitBox
+    path: AnimatedColliders/Attack2_HitBox
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -291,7 +291,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: Attacker_Attack2/HitBox
+    path: AnimatedColliders/Attack2_HitBox
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -321,7 +321,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: Attacker_Attack2/HitBox
+    path: AnimatedColliders/Attack2_HitBox
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -351,7 +351,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Size.x
-    path: Attacker_Attack2/HitBox
+    path: AnimatedColliders/Attack2_HitBox
     classID: 70
     script: {fileID: 0}
     flags: 0
@@ -381,7 +381,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Size.y
-    path: Attacker_Attack2/HitBox
+    path: AnimatedColliders/Attack2_HitBox
     classID: 70
     script: {fileID: 0}
     flags: 0
@@ -402,7 +402,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Size.x
-    path: Damageable/HurtBox
+    path: AnimatedColliders/HurtBox
     classID: 61
     script: {fileID: 0}
     flags: 0
