@@ -22,7 +22,7 @@ MonoBehaviour:
     offsetFromBorders: 1
     fillProbability: 0.35
     steps: 10
-    birthLimit: 4
+    birthLimit: 5
     deathLimit: 3
   <CorridorParams>k__BackingField:
     WanderChance: 0

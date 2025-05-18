@@ -4,6 +4,7 @@ using _Project.Features.EnemyModule.EnemyPool;
 using _Project.Features.ExperienceModule;
 using _Project.Features.ExperienceModule.Orbs;
 using _Project.Features.Installers;
+using _Project.Features.LevelGeneratorModule;
 using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
 using _Project.Features.MapGeneration;
 using _Project.Features.MapGeneration.Matrix;

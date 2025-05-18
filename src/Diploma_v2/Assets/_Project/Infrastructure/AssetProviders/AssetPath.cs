@@ -27,6 +27,7 @@ namespace _Project.Scripts.Infrastructure.AssetProviders
             public const string WEAPON_INSTANCE_CONFIGURATION = "WeaponInstanceConfiguration";
             public const string ENEMY_POOL_CONFIGURATION = "EnemyPoolConfiguration";
             public const string ENEMY_XP_CONFIGURATION = "EnemyXPConfiguration";
+            public const string TILEMAPS_COLLIDERS_CONFIGURATION = "TilemapsCollidersConfiguration";
         }
         
         public static class Scene

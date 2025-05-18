@@ -70,6 +70,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e3581d17bf636a74dae81fcc2140d48a
+    m_Address: TilemapsCollidersConfiguration
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e7739849f5aa1874e96ed28eab84f47c
     m_Address: LayersConfiguration
     m_ReadOnly: 0

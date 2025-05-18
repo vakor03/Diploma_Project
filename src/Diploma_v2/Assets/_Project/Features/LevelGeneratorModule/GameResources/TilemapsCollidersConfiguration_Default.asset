@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d048013506b44c19a8d6e9ba6b28df81, type: 3}
+  m_Name: TilemapsCollidersConfiguration_Default
+  m_EditorClassIdentifier: 
+  <FloorTilemapCollider>k__BackingField:
+    <CompositeCollider>k__BackingField: {fileID: 6069766971329757432, guid: 66276fcb587ded94695bfd0dc66608dd, type: 3}
+    <SingleCollider>k__BackingField: {fileID: 8926839547590624950, guid: 2bd0859e59dd3fc4f8aff1eb2c9d529a, type: 3}
+    <Layer>k__BackingField: 6
+  <PlatformTilemapCollider>k__BackingField:
+    <CompositeCollider>k__BackingField: {fileID: 6069766971329757432, guid: 087426456fdb4b5478f147ec991dde54, type: 3}
+    <SingleCollider>k__BackingField: {fileID: 8926839547590624950, guid: d9a5cf0f22b30834b8cd5e5bbd30eb4c, type: 3}
+    <Layer>k__BackingField: 7
