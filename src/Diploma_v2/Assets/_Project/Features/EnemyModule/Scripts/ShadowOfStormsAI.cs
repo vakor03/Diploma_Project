@@ -71,6 +71,7 @@ namespace _Project.Features.EnemyModule {
             attackSelector.AddChild(attack3Sequence);
             
             Sequence patrolSequence = new Sequence("PatrolSequence");
+            patrolSequence.AddChild(new Leaf("SetPatrolSpeed", new StatChangeStrategy(_statService, EntityStats.CurrentSpeed, _statService.GetStat(EntityStats.PatrolSpeed))));
             patrolSequence.AddChild(new Leaf("Patrol", new PatrolStrategy(_enemyMovement, _patrolPoints, 2f)));
             
             PrioritySelector overallSelector = new PrioritySelector("OverallSelector");
@@ -224,6 +225,42 @@ namespace _Project.Features.EnemyModule {
         public void Reset()
         {
             movingRight = true;
+        }
+    }
+
+    public class StatChangeStrategy : IStrategy
+    {
+        private readonly IStatService<EntityStats> _statService;
+        private readonly EntityStats _statToChange;
+        private readonly float _newValue;
+        private readonly float _originalValue;
+        private bool _isRestored;
+
+        public StatChangeStrategy(IStatService<EntityStats> statService, EntityStats statToChange, float newValue)
+        {
+            _statService = statService;
+            _statToChange = statToChange;
+            _newValue = newValue;
+            _originalValue = statService.GetStat(statToChange);
+        }
+
+        public Node.Status Process()
+        {
+            if (!_isRestored)
+            {
+                _statService.SetStat(_statToChange, _newValue);
+                _isRestored = true;
+            }
+            return Node.Status.Success;
+        }
+
+        public void Reset()
+        {
+            if (_isRestored)
+            {
+                _statService.SetStat(_statToChange, _originalValue);
+                _isRestored = false;
+            }
         }
     }
 }

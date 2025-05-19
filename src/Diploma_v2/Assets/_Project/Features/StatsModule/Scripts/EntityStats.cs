@@ -8,5 +8,6 @@
         CurrentSpeed = 4,
         MaxJumps = 5,
         JumpHeight = 6,
+        ChaseSpeed = 7,
     }
 }
