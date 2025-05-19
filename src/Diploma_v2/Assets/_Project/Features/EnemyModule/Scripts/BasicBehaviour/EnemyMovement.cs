@@ -1,6 +1,8 @@
 ﻿using _Project.Features.PlayerModule;
+using _Project.Features.StatsModule;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Zenject;
 
 namespace _Project.Features.EnemyModule.BasicBehaviour
 {
@@ -12,12 +14,20 @@ namespace _Project.Features.EnemyModule.BasicBehaviour
         [SerializeField] private GroundChecker _groundChecker;
         [SerializeField] private float _reachDistance = 0.1f;
 
+        private IStatService<EntityStats> _statService;
+
         public bool IsFacingRight { get; private set; }
         public float LastOnGroundTime { get; private set; }
         public Vector2 MoveDirection { get; set; }
         
         private Vector2Int _currentTargetPosition;
         private bool _hasTarget = false;
+
+        [Inject]
+        private void InjectDependencies(IStatService<EntityStats> statService)
+        {
+            _statService = statService;
+        }
 
         private void Start()
         {
@@ -66,15 +76,16 @@ namespace _Project.Features.EnemyModule.BasicBehaviour
 
         private void Move()
         {
-            float targetSpeed = MoveDirection.x * Data.moveMaxSpeed;
+            float currentSpeed = _statService.GetStat(EntityStats.CurrentSpeed);
+            float targetSpeed = MoveDirection.x * currentSpeed;
             float accelRate;
 
             if (LastOnGroundTime > 0)
-                accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? Data.moveAccelAmount : Data.moveDeccelAmount;
+                accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? Data.CalculateMoveAccelAmount(currentSpeed) : Data.CalculateMoveDeccelAmount(currentSpeed);
             else
                 accelRate = (Mathf.Abs(targetSpeed) > 0.01f)
-                    ? Data.moveAccelAmount * Data.accelInAir
-                    : Data.moveDeccelAmount * Data.deccelInAir;
+                    ? Data.CalculateMoveAccelAmount(currentSpeed) * Data.accelInAir
+                    : Data.CalculateMoveDeccelAmount(currentSpeed) * Data.deccelInAir;
 
             float speedDif = targetSpeed - _rigidbody2D.linearVelocity.x;
             float movement = speedDif * accelRate;

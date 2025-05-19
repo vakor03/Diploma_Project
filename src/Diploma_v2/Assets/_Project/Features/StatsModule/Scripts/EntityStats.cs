@@ -5,6 +5,6 @@
         MaxHealth = 1,
         CurrentHealth = 2,
         PatrolSpeed = 3,
-        Speed = 4,
+        CurrentSpeed = 4,
     }
 }
