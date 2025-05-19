@@ -1,10 +1,11 @@
 ﻿using _Project.Features.PlayerModule;
+using _Project.Features.StatsModule;
 using UnityEngine;
+using Zenject;
 
 public class PlayerMovement : MonoBehaviour
 {
     public PlayerRunData Data;
-    public int MaxJumpsAllowed = 2; // Default to double jump
     private int _jumpsRemaining;
 
     [field:SerializeField] public Rigidbody2D RB { get; private set; }
@@ -28,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _moveInput;
     public float LastPressedJumpTime { get; private set; }
 
+    private IStatService<EntityStats> _statService;
+
     [Header("Checks")] 
     [SerializeField] private Transform _groundCheckPoint;
     [SerializeField] private Vector2 _groundCheckSize = new Vector2(0.49f, 0.03f);
@@ -41,6 +44,12 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Transform _playerVisuals;
 
+    [Inject]
+    private void InjectDependencies(IStatService<EntityStats> statService)
+    {
+        _statService = statService;
+    }
+
     private void Start()
     {
         InitializePlayer();
@@ -48,14 +57,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void InitializePlayer()
     {
-        SetGravityScale(Data.gravityScale);
+        SetGravityScale(Data.CalculateGravityScale(_statService.GetStat(EntityStats.JumpHeight)));
         IsFacingRight = true;
         ResetJumps();
     }
     
     private void ResetJumps()
     {
-        _jumpsRemaining = MaxJumpsAllowed;
+        _jumpsRemaining = (int)_statService.GetStat(EntityStats.MaxJumps);
     }
 
     private void Update()
@@ -270,7 +279,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            SetGravityScale(Data.gravityScale);
+            SetGravityScale(Data.CalculateGravityScale(_statService.GetStat(EntityStats.JumpHeight)));
         }
     }
 
@@ -281,13 +290,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void ApplyFastFallGravity()
     {
-        SetGravityScale(Data.gravityScale * Data.fastFallGravityMult);
+        SetGravityScale(Data.CalculateGravityScale(_statService.GetStat(EntityStats.JumpHeight)) * Data.fastFallGravityMult);
         RB.linearVelocity = new Vector2(RB.linearVelocity.x, Mathf.Max(RB.linearVelocity.y, -Data.maxFastFallSpeed));
     }
 
     private void ApplyJumpCutGravity()
     {
-        SetGravityScale(Data.gravityScale * Data.jumpCutGravityMult);
+        SetGravityScale(Data.CalculateGravityScale(_statService.GetStat(EntityStats.JumpHeight)) * Data.jumpCutGravityMult);
         RB.linearVelocity = new Vector2(RB.linearVelocity.x, Mathf.Max(RB.linearVelocity.y, -Data.maxFallSpeed));
     }
 
@@ -299,7 +308,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void ApplyJumpApexGravity()
     {
-        SetGravityScale(Data.gravityScale * Data.jumpHangGravityMult);
+        SetGravityScale(Data.CalculateGravityScale(_statService.GetStat(EntityStats.JumpHeight)) * Data.jumpHangGravityMult);
     }
 
     private bool IsFalling()
@@ -309,7 +318,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void ApplyFallingGravity()
     {
-        SetGravityScale(Data.gravityScale * Data.fallGravityMult);
+        SetGravityScale(Data.CalculateGravityScale(_statService.GetStat(EntityStats.JumpHeight)) * Data.fallGravityMult);
         RB.linearVelocity = new Vector2(RB.linearVelocity.x, Mathf.Max(RB.linearVelocity.y, -Data.maxFallSpeed));
     }
 
@@ -347,7 +356,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Run(float lerpAmount)
     {
-        float targetSpeed = _moveInput.x * Data.runMaxSpeed;
+        float currentSpeed = _statService.GetStat(EntityStats.CurrentSpeed);
+        float targetSpeed = _moveInput.x * currentSpeed;
         targetSpeed = Mathf.Lerp(RB.linearVelocity.x, targetSpeed, lerpAmount);
 
         float accelRate = CalculateAccelerationRate(targetSpeed);
@@ -356,20 +366,21 @@ public class PlayerMovement : MonoBehaviour
 
     private float CalculateAccelerationRate(float targetSpeed)
     {
+        float currentSpeed = _statService.GetStat(EntityStats.CurrentSpeed);
         float accelRate;
         bool isAccelerating = Mathf.Abs(targetSpeed) > 0.01f;
 
         // Ground acceleration rates
         if (LastOnGroundTime > 0)
         {
-            accelRate = isAccelerating ? Data.runAccelAmount : Data.runDeccelAmount;
+            accelRate = isAccelerating ? Data.CalculateRunAccelAmount(currentSpeed) : Data.CalculateRunDeccelAmount(currentSpeed);
         }
         // Air acceleration rates
         else
         {
             accelRate = isAccelerating ? 
-                Data.runAccelAmount * Data.accelInAir : 
-                Data.runDeccelAmount * Data.deccelInAir;
+                Data.CalculateRunAccelAmount(currentSpeed) * Data.accelInAir : 
+                Data.CalculateRunDeccelAmount(currentSpeed) * Data.deccelInAir;
         }
 
         // Apply jump apex acceleration bonus
@@ -419,13 +430,13 @@ public class PlayerMovement : MonoBehaviour
         LastPressedJumpTime = 0;
         
         // Only reset ground time on first jump
-        if (_jumpsRemaining == MaxJumpsAllowed - 1)
+        if (_jumpsRemaining == (int)_statService.GetStat(EntityStats.MaxJumps) - 1)
         {
             LastOnGroundTime = 0;
         }
 
         // Calculate jump force with velocity compensation
-        float force = Data.jumpForce;
+        float force = Data.CalculateJumpForce(_statService.GetStat(EntityStats.JumpHeight));
         // Compensate for downward velocity to ensure consistent jump height
         if (RB.linearVelocity.y < 0)
             force -= RB.linearVelocity.y;

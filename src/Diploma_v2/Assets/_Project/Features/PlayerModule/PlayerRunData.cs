@@ -56,6 +56,33 @@ namespace _Project.Features.PlayerModule {
         [Range(0.01f, 0.5f)] public float coyoteTime; //Grace period after falling off a platform, where you can still jump
         [Range(0.01f, 0.5f)] public float jumpInputBufferTime; //Grace period after pressing jump where a jump will be automatically performed once the requirements (eg. being grounded) are met.
 
+        public float CalculateJumpForce(float jumpHeight)
+        {
+            // Calculate gravity strength using the formula (gravity = 2 * jumpHeight / timeToJumpApex^2) 
+            float gravityStrength = -(2 * jumpHeight) / (jumpTimeToApex * jumpTimeToApex);
+            
+            // Calculate jumpForce using the formula (initialJumpVelocity = gravity * timeToJumpApex)
+            return Mathf.Abs(gravityStrength) * jumpTimeToApex;
+        }
+
+        public float CalculateGravityScale(float jumpHeight)
+        {
+            // Calculate gravity strength using the formula (gravity = 2 * jumpHeight / timeToJumpApex^2) 
+            float gravityStrength = -(2 * jumpHeight) / (jumpTimeToApex * jumpTimeToApex);
+            
+            // Calculate the rigidbody's gravity scale (ie: gravity strength relative to unity's gravity value, see project settings/Physics2D)
+            return gravityStrength / Physics2D.gravity.y;
+        }
+
+        public float CalculateRunAccelAmount(float currentSpeed)
+        {
+            return (50 * runAcceleration) / currentSpeed;
+        }
+
+        public float CalculateRunDeccelAmount(float currentSpeed)
+        {
+            return (50 * runDecceleration) / currentSpeed;
+        }
 
         //Unity Callback, called when the inspector updates
         private void OnValidate() {

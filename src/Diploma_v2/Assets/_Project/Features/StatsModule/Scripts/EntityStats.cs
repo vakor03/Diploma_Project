@@ -6,5 +6,7 @@
         CurrentHealth = 2,
         PatrolSpeed = 3,
         CurrentSpeed = 4,
+        MaxJumps = 5,
+        JumpHeight = 6,
     }
 }
