@@ -50,6 +50,10 @@ namespace _Project.Features.MapGeneration.Tagging {
             if (Context.Matrix[position] == BlockType.Wall)
                 return false;
 
+            // Only allow platforms in vertical tunnels
+            if (globalPlaceTag != GlobalPlaceTag.TunnelVertical)
+                return false;
+
             int yMin = Mathf.Min(tunnel.Start.y, tunnel.End.y);
             if ((position.y - yMin) % 5 == 0)
                 return true;
