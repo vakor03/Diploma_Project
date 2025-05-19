@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c78c7675083d64a8795715a2a54e46, type: 3}
+  m_Name: DecorationConfiguration_Default
+  m_EditorClassIdentifier: 
+  smallFloorDecorations:
+    prefabs:
+    - {fileID: 7145946393229700794, guid: 10b163f8b64b1864a80e585699cd9b73, type: 3}
+    - {fileID: 1335315482027883362, guid: d53879822bf656940a107fbc80005e52, type: 3}
+    - {fileID: 210835696743957376, guid: e513bbab8b5bcb444a673f47e91170a7, type: 3}
+    - {fileID: 9093123527979650767, guid: b8dd808bec79dd349b8d21ae6c351987, type: 3}
+    - {fileID: 8138623129863717585, guid: 68e22de52139e0b479730e013aa288dc, type: 3}
+    - {fileID: 1213697831379411575, guid: 467c9b812d357bc449504cd5f5fe25a6, type: 3}
+    - {fileID: 4420894884755888184, guid: 1a2886c86bd46c44a8cec3e5461374ec, type: 3}
+    - {fileID: 3470477102945313008, guid: ef91e6e72af3a174da9c0a2df4186778, type: 3}
+    - {fileID: 2266316070321807121, guid: 7c1da8605385a564da4b47fd39a6f80c, type: 3}
+    - {fileID: 432905310466971074, guid: 1ab15e126c2ab4d4e8becabe35f33471, type: 3}
+    - {fileID: 2240133012754741861, guid: a43d1cfbe240e29428f8f4d2a96ebc9e, type: 3}
+    - {fileID: 6454879066719610279, guid: 833b9905bfe01084a99316e3e85a8aa3, type: 3}
+    - {fileID: 6914132110207538469, guid: 12bd4d441a6f68044b56852095ec648b, type: 3}
+  bigFloorDecorations:
+    prefabs: []
+  ceilingDecorations:
+    prefabs:
+    - {fileID: 1172397291590706786, guid: 0eb775b462e387b408c700d58863c4d4, type: 3}
+    - {fileID: 8295863599420091207, guid: 6ada97630f1f1f148b77b786d976a491, type: 3}
+    - {fileID: 4115637178166907968, guid: 5ce7454f99074724ba3d9cc4ab67207f, type: 3}
+    - {fileID: 8329815904683198252, guid: 2f4046efd7c072f449eab9ab267a8ca4, type: 3}
+    - {fileID: 1034550241909423870, guid: df7e78271e7daad4d9cfb1bf1225512f, type: 3}
+    - {fileID: 2905649047835263609, guid: 65d6f67b3b2c4724ba0b5d767f3844f8, type: 3}
+    - {fileID: 4264838322393627279, guid: eeb267ab9c82f4d4187831872a8862ea, type: 3}
+    - {fileID: 3233731469449419597, guid: 2e9e8ede32086a84383d5d98eabc5b9c, type: 3}
+    - {fileID: 9218858249531926516, guid: f23585cbadf2dee45b05b5969103cf90, type: 3}
+    - {fileID: 6436465561267272505, guid: 180b0bb4b1b6a054fa4773106ecc80a6, type: 3}
+    - {fileID: 6131135990924009792, guid: 595414fb83b215844957b8e588c37ccc, type: 3}
+    - {fileID: 2628646467576995727, guid: 3fadb5fee6d768e42bc59ef2838c4e3d, type: 3}
+    - {fileID: 5253009626616109261, guid: 422c19d1ca0f0e94197ac00167142a70, type: 3}
+    - {fileID: 8928071511376847221, guid: baa0f507c5547ec4485f729ffae6f2c7, type: 3}
+    - {fileID: 2221304535715149085, guid: 03dfd2f71396fa94ea3a771dcc1a4449, type: 3}
+    - {fileID: 6630959086526207628, guid: 16b958bc157c08e4a9a494ccd47247c5, type: 3}
+    - {fileID: 9002421863202194973, guid: fee70f7b0c7696f4581a5466c48bc1f9, type: 3}
+    - {fileID: 8075426254394382627, guid: 50fba3fa8fce3494cb4638a859873564, type: 3}
+  wallDecorations:
+    prefabs: []
+  decorationSpacing: 2
+  decorationHeightOffset: 0
+  wallDecorationDepth: 0.2

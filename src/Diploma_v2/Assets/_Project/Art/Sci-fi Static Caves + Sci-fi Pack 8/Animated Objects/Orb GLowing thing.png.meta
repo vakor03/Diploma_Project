@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -134,7 +134,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 401
+        y: 414
         width: 77
         height: 46
       alignment: 0
@@ -143,10 +143,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b789849f9abe79810800000000000000
-      internalID: 1772144093657864315
+      spriteID: 45e3345fc08e18341a21ee275c57501f
+      internalID: -205696208
       vertices: []
       indices: 
       edges: []
@@ -155,20 +155,20 @@ TextureImporter:
       name: Orb GLowing thing_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 447
-        width: 14
-        height: 13
+        x: 0
+        y: 368
+        width: 77
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3fb4cc2b9c1598290800000000000000
-      internalID: -7887683345632703501
+      spriteID: 0c9a9a4a4e5231b4085e2ed156f00267
+      internalID: -417573343
       vertices: []
       indices: 
       edges: []
@@ -178,7 +178,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 355
+        y: 322
         width: 77
         height: 46
       alignment: 0
@@ -187,10 +187,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8e62ea236322b3280800000000000000
-      internalID: -9062612208979138840
+      spriteID: 2794b598b709c1648b6d6471770ca59b
+      internalID: -1051475210
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 309
+        y: 276
         width: 77
         height: 46
       alignment: 0
@@ -209,10 +209,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 40c209d43e212ce30800000000000000
-      internalID: 4522197743301569540
+      spriteID: e7b1bc2f0a0c5684098e15bde134329b
+      internalID: -472566504
       vertices: []
       indices: 
       edges: []
@@ -222,7 +222,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 263
+        y: 230
         width: 77
         height: 46
       alignment: 0
@@ -231,10 +231,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b1b7044d544358830800000000000000
-      internalID: 4072718912544865051
+      spriteID: 8d464ed3adb1e3d42ba6671eaf52b29b
+      internalID: 98272914
       vertices: []
       indices: 
       edges: []
@@ -244,7 +244,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 217
+        y: 184
         width: 77
         height: 46
       alignment: 0
@@ -253,10 +253,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b9b3d1e99b38296b0800000000000000
-      internalID: -5291021778962007141
+      spriteID: 739350837796ac243a0a136db8aefdb6
+      internalID: -720676376
       vertices: []
       indices: 
       edges: []
@@ -266,7 +266,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 171
+        y: 138
         width: 77
         height: 46
       alignment: 0
@@ -275,10 +275,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 35eac38e6355cd860800000000000000
-      internalID: 7556007969133735507
+      spriteID: fdbd2d01bfe59d84c8c8c0db8baa448c
+      internalID: -1683569140
       vertices: []
       indices: 
       edges: []
@@ -288,7 +288,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 125
+        y: 92
         width: 77
         height: 46
       alignment: 0
@@ -297,10 +297,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30e25dc2013917fa0800000000000000
-      internalID: -5804696747022930429
+      spriteID: cdf250cfa0d1b8b418a9e29e38c478d7
+      internalID: -1482000992
       vertices: []
       indices: 
       edges: []
@@ -310,7 +310,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 79
+        y: 46
         width: 77
         height: 46
       alignment: 0
@@ -319,10 +319,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a8255cb5ab84cf220800000000000000
-      internalID: 2520969856661410442
+      spriteID: 740b3fc7984c5804b85ed042516c5f73
+      internalID: -979746824
       vertices: []
       indices: 
       edges: []
@@ -332,7 +332,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 33
+        y: 0
         width: 77
         height: 46
       alignment: 0
@@ -341,32 +341,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 55c7d111b15ebc840800000000000000
-      internalID: 5245538095417097301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Orb GLowing thing_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 77
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 841182f5f6c915e10800000000000000
-      internalID: 2184699296403165512
+      spriteID: 1d808d9a12865ba46b1be6b5a8f96a80
+      internalID: -1712054280
       vertices: []
       indices: 
       edges: []
@@ -375,7 +353,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4df72a5d19232134e8dc7c8f28f82f56
     internalID: 0
     vertices: []
     indices: 
@@ -384,7 +362,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Orb GLowing thing_0: -205696208
+      Orb GLowing thing_1: -417573343
+      Orb GLowing thing_2: -1051475210
+      Orb GLowing thing_3: -472566504
+      Orb GLowing thing_4: 98272914
+      Orb GLowing thing_5: -720676376
+      Orb GLowing thing_6: -1683569140
+      Orb GLowing thing_7: -1482000992
+      Orb GLowing thing_8: -979746824
+      Orb GLowing thing_9: -1712054280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

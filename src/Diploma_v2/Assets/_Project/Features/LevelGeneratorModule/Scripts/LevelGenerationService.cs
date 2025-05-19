@@ -3,6 +3,7 @@ using System.Linq;
 using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
 using _Project.Features.MapGeneration;
 using _Project.Features.MapGeneration.BSP;
+using _Project.Features.MapGeneration.Decorations;
 using _Project.Features.MapGeneration.Matrix;
 using _Project.Features.MapGeneration.Tagging;
 using _Project.Features.PlayerSpawnerModule;
@@ -23,12 +24,14 @@ namespace _Project.Features.LevelGeneratorModule {
         private readonly EnemySpawnPointsModel _enemySpawnPointsModel;
         private readonly TilemapsCollidersConfiguration _tilemapsCollidersConfiguration;
         private readonly IBlockGroupService _blockGroupService;
+        private readonly IDecorationFactory _decorationFactory;
 
         public LevelGenerationService(IDungeonGeneratorService dungeonGeneratorService, IStaticDataService staticData,
                                       PlayerSpawnPointsModel playerSpawnPointsModel, IInstantiator instantiator,
                                       ITilemapsBootstrapService tilemapsBootstrapService, ITilemapsService tilemapsService,
                                       TilemapsDataHolder tilemapsDataHolder, EnemySpawnPointsModel enemySpawnPointsModel,
-                                      TilemapsCollidersConfiguration tilemapsCollidersConfiguration, IBlockGroupService blockGroupService) {
+                                      TilemapsCollidersConfiguration tilemapsCollidersConfiguration, IBlockGroupService blockGroupService,
+                                      IDecorationFactory decorationFactory) {
             _dungeonGeneratorService = dungeonGeneratorService;
             _playerSpawnPointsModel = playerSpawnPointsModel;
             _instantiator = instantiator;
@@ -38,6 +41,7 @@ namespace _Project.Features.LevelGeneratorModule {
             _enemySpawnPointsModel = enemySpawnPointsModel;
             _tilemapsCollidersConfiguration = tilemapsCollidersConfiguration;
             _blockGroupService = blockGroupService;
+            _decorationFactory = decorationFactory;
             _levelConfiguration = staticData.GetLevelConfiguration();
         }
 
@@ -51,6 +55,11 @@ namespace _Project.Features.LevelGeneratorModule {
             SpawnPlatformsForDungeon(dungeon);
             SpawnCollidersForFloor(dungeon);
             SpawnCollidersForPlatforms(dungeon);
+
+            // Create decorations parent
+            Transform decorationsParent = new GameObject("Decorations").transform;
+            
+            SpawnDecorations(dungeon, decorationsParent);
             
             _blockGroupService.GroupHorizontallyConnectedBlocks(dungeon.Tags.GetPositionsWithMacroTag(MacroTag.Floor));
             
@@ -59,6 +68,22 @@ namespace _Project.Features.LevelGeneratorModule {
 
             foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.EnemySpawnPoint))
                 _enemySpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, false));
+        }
+
+        private void SpawnDecorations(Dungeon dungeon, Transform decorationsParent) {
+            foreach (Vector2Int position in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.SmallFloorDecoration))
+                _decorationFactory.SpawnSmallFloorDecoration(GetPositionFromTilemap(position, false), decorationsParent);
+
+            foreach (Vector2Int position in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.BigFloorDecoration))
+                _decorationFactory.SpawnBigFloorDecoration(GetPositionFromTilemap(position, true), decorationsParent);
+
+            foreach (Vector2Int position in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.CeilingDecoration))
+                _decorationFactory.SpawnCeilingDecoration(GetPositionFromTilemap(position, false), decorationsParent);
+
+            foreach (Vector2Int position in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.WallDecoration)) {
+                bool isLeftWall = dungeon.Matrix[position + Vector2Int.left] == BlockType.Wall;
+                _decorationFactory.SpawnWallDecoration(GetPositionFromTilemap(position, true), isLeftWall, decorationsParent);
+            }
         }
 
         private void SpawnCollidersForFloor(Dungeon dungeon) {

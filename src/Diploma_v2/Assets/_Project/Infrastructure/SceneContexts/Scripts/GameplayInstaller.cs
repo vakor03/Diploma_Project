@@ -7,6 +7,7 @@ using _Project.Features.Installers;
 using _Project.Features.LevelGeneratorModule;
 using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
 using _Project.Features.MapGeneration;
+using _Project.Features.MapGeneration.Decorations;
 using _Project.Features.MapGeneration.Matrix;
 using _Project.Features.PlayerSpawnerModule;
 using _Project.Features.StatsModule;
@@ -57,6 +58,7 @@ namespace _Project.Infrastructure.SceneContexts.Scripts
             EnemyPoolInstaller.Install(Container);
             EnemyXPInstaller.Install(Container);
             PlayerStatsInstaller.Install(Container);
+            DecorationInstaller.Install(Container);
 
             BindStatesFactory();
 

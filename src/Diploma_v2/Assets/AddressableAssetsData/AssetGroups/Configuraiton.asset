@@ -65,6 +65,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d997e2cb4bcfc6b4693053e6ce43e60d
+    m_Address: DecorationConfiguration
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ded0fb3fd27d0204f9208af22b6543c9
     m_Address: EnemyPoolConfiguration
     m_ReadOnly: 0

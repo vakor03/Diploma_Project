@@ -43,6 +43,9 @@ namespace _Project.Features.MapGeneration.Matrix {
             for (int j = 0; j < _matrix.GetLength(1); j++)
                 _matrix[i, j] = value;
         }
+        
+        public bool IsPositionInBounds(Vector2Int position) =>
+            position.x >= 0 && position.x < Width && position.y >= 0 && position.y < Height;
 
 
         public void Crop(Predicate<T> predicate) {
