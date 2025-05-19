@@ -109,6 +109,7 @@ namespace _Project.Features.LevelGeneratorModule {
             CompositeCollider2D parentCollider =
                 _instantiator.InstantiatePrefabForComponent<CompositeCollider2D>(collidersConfiguration.CompositeCollider);
             parentCollider.gameObject.layer = (int)collidersConfiguration.Layer;
+            parentCollider.generationType = CompositeCollider2D.GenerationType.Manual;
 
             _tilemapsDataHolder.TryGetTilemap(TilemapType.Background, out Tilemap tilemap);
             Vector3 cellSize = tilemap.cellSize;
@@ -122,6 +123,7 @@ namespace _Project.Features.LevelGeneratorModule {
             }
 
             parentCollider.GenerateGeometry();
+            parentCollider.generationType = CompositeCollider2D.GenerationType.Synchronous;
         }
     }
 }
