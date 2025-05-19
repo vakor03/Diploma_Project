@@ -75,6 +75,9 @@ namespace _Project.Features.MapGeneration.Tagging.TagAppliers {
             int appliedCount = 0;
 
             foreach (Vector2Int position in room.Cells.InRandomOrder(_seedService.GetRandom())) {
+                if (dungeonTags.GetMacroTag(position) != MacroTag.None)
+                    continue;
+                
                 if (rule.IsValidForPosition(position, room, globalPlaceTag, dungeonTags)) {
                     dungeonTags.AddMacroTag(rule.MacroTag, position);
                     appliedCount++;
@@ -92,6 +95,9 @@ namespace _Project.Features.MapGeneration.Tagging.TagAppliers {
             int appliedCount = 0;
 
             foreach (Vector2Int position in tunnel.Cells.InRandomOrder(_seedService.GetRandom())) {
+                if (dungeonTags.GetMacroTag(position) != MacroTag.None)
+                    continue;
+                
                 if (rule.IsValidForPosition(position, tunnel, globalPlaceTag, dungeonTags)) {
                     dungeonTags.AddMacroTag(rule.MacroTag, position);
                     appliedCount++;

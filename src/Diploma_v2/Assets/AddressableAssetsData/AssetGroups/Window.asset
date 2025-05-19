@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f8e82ab92fc3434e9fc969697e72bea
+    m_Address: GameOverWindow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d3d772a2cac67174485ddf8cb293bb36
     m_Address: ChooseUpgradeWindow
     m_ReadOnly: 0

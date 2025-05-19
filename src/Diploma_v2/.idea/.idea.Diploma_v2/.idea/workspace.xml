@@ -6,20 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dungeon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dungeon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/GameResources/ShadowOfStorms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/GameResources/ShadowOfStorms.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BasicBehaviour/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/BasicBehaviour/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Window.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Window.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGenerationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGeneratorInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/LevelGeneratorModule/Scripts/LevelGeneratorInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/DungeonGeneratorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/TagVisualizationConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/PNGExproter/TagVisualizationConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/IMacroTagRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/IMacroTagRule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/MacroTag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/MacroTag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/MicroTag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/MicroTag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/PlayerSpawnMicroTagRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/PlayerSpawnMicroTagRule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/Installers/DataInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/TagVisualizationConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/TagVisualizationConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/TagAppliers/MacroTagApplier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/TagAppliers/MacroTagApplier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/EntityStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/EntityStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/ExploreLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/ExploreLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GameOverState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GameOverState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GenerateLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GenerateLevelState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/PrepareSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/PrepareSceneState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/../../../Diploma/DiplomaProject/Assets/_Project/Features/Global/GlobalConfigurations/LayersConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Features/ExperienceModule/Scripts/LevelConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Features/WeaponModule/SelfRegisterWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.unitask@6a18b5d4ef81/Runtime/PlayerLoopHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.cysharp.unitask@6a18b5d4ef81/Runtime/UniTaskScheduler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap.extras@13634da7dbe0/Runtime/Tiles/RuleTile/RuleTile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@624f919d8cdd/Runtime/Core/CinemachineVirtualCameraBase.cs" root0="SKIP_HIGHLIGHTING" />
@@ -95,23 +93,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.17175573&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;release__0.0.1&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "XThreadsFramesViewSplitterKey": "0.17175573",
+    "git-widget-placeholder": "release__0.0.1",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Unity.exe" />
@@ -199,7 +197,7 @@
       <workItem from="1747471637422" duration="5271000" />
       <workItem from="1747509403740" duration="389000" />
       <workItem from="1747511244844" duration="5448000" />
-      <workItem from="1747560028372" duration="16265000" />
+      <workItem from="1747560028372" duration="21984000" />
     </task>
     <servers />
   </component>
@@ -355,10 +353,10 @@
           <line>199</line>
           <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\EnemyModule\Scripts\ShadowOfStormsAI.cs" containingFunctionPresentation="Method 'Process'">
             <startOffsets>
-              <option value="8349" />
+              <option value="8395" />
             </startOffsets>
             <endOffsets>
-              <option value="8377" />
+              <option value="8423" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="60" />
@@ -368,10 +366,10 @@
           <line>94</line>
           <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\EnemyModule\Scripts\ShadowOfStormsAI.cs" containingFunctionPresentation="Method 'GetPatrolPoints'">
             <startOffsets>
-              <option value="4813" />
+              <option value="4833" />
             </startOffsets>
             <endOffsets>
-              <option value="4814" />
+              <option value="4834" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="61" />
@@ -403,5 +401,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

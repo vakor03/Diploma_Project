@@ -42,20 +42,25 @@ namespace _Project.Features.EnemyModule {
             Leaf waitForAttack2End = new Leaf("WaitForAttack2End", new WaitForAttackEndStrategy(_attack2));
             Leaf waitForAttack3End = new Leaf("WaitForAttack3End", new WaitForAttackEndStrategy(_attack3));
 
+            Leaf stopMovement = new Leaf("Stop Mover", new ActionStrategy(() => _enemyMovement.Stop()));
+
             Sequence attack1Sequence = new Sequence("Attack1Sequence");
             attack1Sequence.AddChild(isUsingAttack1);
+            attack1Sequence.AddChild(stopMovement);
             attack1Sequence.AddChild(startAttack1);
             attack1Sequence.AddChild(waitForAttack1End);
             attack1Sequence.AddChild(new Leaf("LogAttack1End", new ActionStrategy(LogAttack1End)));
 
             Sequence attack2Sequence = new Sequence("Attack2Sequence");
             attack2Sequence.AddChild(isUsingAttack2);
+            attack2Sequence.AddChild(stopMovement);
             attack2Sequence.AddChild(startAttack2);
             attack2Sequence.AddChild(waitForAttack2End);
             attack2Sequence.AddChild(new Leaf("LogAttack2End", new ActionStrategy(LogAttack2End)));
 
             Sequence attack3Sequence = new Sequence("Attack3Sequence");
             attack3Sequence.AddChild(isUsingAttack3);
+            attack3Sequence.AddChild(stopMovement);
             attack3Sequence.AddChild(startAttack3);
             attack3Sequence.AddChild(waitForAttack3End);
             attack3Sequence.AddChild(new Leaf("LogAttack3End", new ActionStrategy(LogAttack3End)));
@@ -77,11 +82,6 @@ namespace _Project.Features.EnemyModule {
             rootSequence.AddChild(overallSelector);
 
             behaviourTree.AddChild(rootSequence);
-
-            // Add any additional behaviors like patrolling if needed
-            // For now they're commented out
-            // Leaf patrolLeaf = new Leaf("Patrol", new PatrolStrategy());
-            // behaviourTree.AddChild(patrolLeaf);
         }
         
         private List<Vector2Int> _patrolPoints = new List<Vector2Int>();
@@ -93,7 +93,7 @@ namespace _Project.Features.EnemyModule {
         }
 
         private void GetPatrolPoints(int patrolPointsCount) {
-            BlockGroup group = _blockGroupService.FindGroupContaining(new Vector2Int((int)transform.position.x, (int)transform.position.y));
+            BlockGroup group = _blockGroupService.FindGroupContaining(new Vector2Int(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y)));
             _patrolPoints.Clear();
             for (int i = 0; i < patrolPointsCount; i++) {
                 if (group != null && group.Blocks.Count > 0) {

@@ -1,6 +1,7 @@
 ﻿using _Project.Features.CameraModule;
 using _Project.Features.EnemyModule;
 using _Project.Features.EnemyModule.EnemyPool;
+using _Project.Features.GameTimeModule;
 using _Project.Features.PlayerModule;
 using _Project.Features.PlayerSpawnerModule;
 using _Project.Features.VisualsModule;
@@ -21,12 +22,13 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
         private readonly VisualsConfiguration _visualsConfiguration;
         private readonly GameplayStateMachine _gameplayStateMachine;
         private readonly IPlayerStatInitializeService _playerStatInitializeService;
+        private readonly IGamePauseService _gamePauseService;
 
         public PrepareSceneState(IPlayerSpawnerService playerSpawnerService,
                                   IPlayerSpawnPointsService playerSpawnPointsService, ICameraSpawnService cameraSpawnService,
                                   ICameraService cameraService, EnemyObjectPool enemyObjectPool,
                                   EnemySpawnPointsModel enemySpawnPointsModel, IInstantiator instantiator,
-                                  VisualsConfiguration visualsConfiguration, GameplayStateMachine gameplayStateMachine, IPlayerStatInitializeService playerStatInitializeService) {
+                                  VisualsConfiguration visualsConfiguration, GameplayStateMachine gameplayStateMachine, IPlayerStatInitializeService playerStatInitializeService, IGamePauseService gamePauseService) {
             _playerSpawnerService = playerSpawnerService;
             _playerSpawnPointsService = playerSpawnPointsService;
             _cameraSpawnService = cameraSpawnService;
@@ -37,6 +39,7 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
             _visualsConfiguration = visualsConfiguration;
             _gameplayStateMachine = gameplayStateMachine;
             _playerStatInitializeService = playerStatInitializeService;
+            _gamePauseService = gamePauseService;
         }
 
         public void Enter() {
@@ -55,6 +58,8 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
             _cameraService.FollowTarget(player.transform);
             _instantiator.InstantiatePrefab(_visualsConfiguration.BackgroundPrefab)
                 .transform.position = player.transform.position;
+            
+            _gamePauseService.ForceResumeTime();
             
             _gameplayStateMachine.Enter<ExploreLevelState>();
         }
