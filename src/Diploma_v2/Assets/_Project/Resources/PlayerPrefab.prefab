@@ -332,8 +332,6 @@ Transform:
   - {fileID: 8872660965951592325}
   - {fileID: 8052498727668377834}
   - {fileID: 6761482797844141314}
-  - {fileID: 7304203076818949751}
-  - {fileID: 7354786619228273249}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8291448004986131630
@@ -407,8 +405,8 @@ MonoBehaviour:
   <RB>k__BackingField: {fileID: 2014036811977449448}
   _groundCheckPoint: {fileID: 51839189810222738}
   _groundCheckSize: {x: 0.49, y: 0.03}
-  _frontWallCheckPoint: {fileID: 7354786619228273249}
-  _backWallCheckPoint: {fileID: 7304203076818949751}
+  _frontWallCheckPoint: {fileID: 7304203076818949751}
+  _backWallCheckPoint: {fileID: 7354786619228273249}
   _wallCheckSize: {x: 0.5, y: 1}
   _groundLayer:
     serializedVersion: 2
@@ -590,7 +588,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7304203076818949751}
+  - {fileID: 7354786619228273249}
   m_Father: {fileID: 2800942163848802244}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5981358236376068582
@@ -710,7 +710,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2800942163848802244}
+  m_Father: {fileID: 6761482797844141314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6491200398205153561
 GameObject:
@@ -866,7 +866,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2800942163848802244}
+  m_Father: {fileID: 6761482797844141314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8321751734697551957
 GameObject:

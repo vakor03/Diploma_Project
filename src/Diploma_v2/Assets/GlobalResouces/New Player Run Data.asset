@@ -37,7 +37,7 @@ MonoBehaviour:
   wallJumpForce: {x: 10, y: 20}
   wallJumpRunLerp: 0.5
   wallJumpTime: 0.15
-  doTurnOnWallJump: 1
+  doTurnOnWallJump: 0
   slideSpeed: 0
   slideAccel: 0
   coyoteTime: 0.1
