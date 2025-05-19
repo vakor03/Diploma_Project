@@ -95,11 +95,20 @@ namespace _Project.Features.EnemyModule {
         private void GetPatrolPoints(int patrolPointsCount) {
             BlockGroup group = _blockGroupService.FindGroupContaining(new Vector2Int(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y)));
             _patrolPoints.Clear();
-            for (int i = 0; i < patrolPointsCount; i++) {
-                if (group != null && group.Blocks.Count > 0) {
-                    Vector2Int randomBlock = group.Blocks[UnityEngine.Random.Range(0, group.Blocks.Count)];
-                    _patrolPoints.Add(randomBlock);
+            
+            if (group != null && group.Blocks.Count > 0) {
+                // Find leftmost and rightmost positions
+                Vector2Int leftmost = group.Blocks[0];
+                Vector2Int rightmost = group.Blocks[0];
+                
+                foreach (Vector2Int block in group.Blocks) {
+                    if (block.x < leftmost.x) leftmost = block;
+                    if (block.x > rightmost.x) rightmost = block;
                 }
+                
+                // Add leftmost and rightmost points
+                _patrolPoints.Add(leftmost);
+                _patrolPoints.Add(rightmost);
             }
         }
 
@@ -186,6 +195,7 @@ namespace _Project.Features.EnemyModule {
         readonly List<Vector2Int> patrolPoints;
         readonly float patrolSpeed;
         int currentIndex;
+        bool movingRight = true;
 
         public PatrolStrategy(IMover mover, List<Vector2Int> patrolPoints, float patrolSpeed = 2f)
         {
@@ -196,23 +206,16 @@ namespace _Project.Features.EnemyModule {
 
         public Node.Status Process()
         {
-            Debug.LogError($"[PatrolStrategy.Process Line 185]");
-            if (patrolPoints.Count == 0)
+            if (patrolPoints.Count < 2)
                 return Node.Status.Failure;
-            
-            if (currentIndex >= patrolPoints.Count)
-                return Node.Status.Success;
         
-            Vector2Int targetPosition = patrolPoints[currentIndex];
+            Vector2Int targetPosition = movingRight ? patrolPoints[1] : patrolPoints[0];
             mover.MoveTo(targetPosition);
             mover.LookAt(targetPosition);
         
             if (mover.HasReachedPosition(targetPosition))
             {
-                currentIndex++;
-            
-                if (currentIndex >= patrolPoints.Count)
-                    return Node.Status.Success;
+                movingRight = !movingRight;
             }
         
             return Node.Status.Running;
@@ -220,7 +223,7 @@ namespace _Project.Features.EnemyModule {
     
         public void Reset()
         {
-            currentIndex = 0;
+            movingRight = true;
         }
     }
 }
