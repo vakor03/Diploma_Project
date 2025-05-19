@@ -61,7 +61,7 @@ BoxCollider2D:
     m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 887
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -332,6 +332,8 @@ Transform:
   - {fileID: 8872660965951592325}
   - {fileID: 8052498727668377834}
   - {fileID: 6761482797844141314}
+  - {fileID: 7304203076818949751}
+  - {fileID: 7354786619228273249}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8291448004986131630
@@ -402,9 +404,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 0207a6f46374bff4b9977a18379b59b7, type: 2}
-  _rigidbody2D: {fileID: 2014036811977449448}
-  _groundChecker: {fileID: 3949442171867109297}
-  _visuals: {fileID: 6761482797844141314}
+  <RB>k__BackingField: {fileID: 2014036811977449448}
+  _groundCheckPoint: {fileID: 51839189810222738}
+  _groundCheckSize: {x: 0.49, y: 0.03}
+  _frontWallCheckPoint: {fileID: 7354786619228273249}
+  _backWallCheckPoint: {fileID: 7304203076818949751}
+  _wallCheckSize: {x: 0.5, y: 1}
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 192
+  _playerVisuals: {fileID: 6761482797844141314}
 --- !u!50 &2014036811977449448
 Rigidbody2D:
   serializedVersion: 5
@@ -672,6 +681,37 @@ Transform:
   - {fileID: 532921570827942386}
   m_Father: {fileID: 2800942163848802244}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6376903062109293925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7304203076818949751}
+  m_Layer: 0
+  m_Name: FrontWallCheckPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7304203076818949751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6376903062109293925}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.502, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2800942163848802244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6491200398205153561
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +837,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 183860d05c3e4f409bd5a7bebb9b76d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8099988448336095394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7354786619228273249}
+  m_Layer: 0
+  m_Name: BackWallCheckPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7354786619228273249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8099988448336095394}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.502, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2800942163848802244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8321751734697551957
 GameObject:
   m_ObjectHideFlags: 0

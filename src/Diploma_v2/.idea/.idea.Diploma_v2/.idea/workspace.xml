@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Window.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Window.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GlobalResouces/New Player Run Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GlobalResouces/New Player Run Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/TagAppliers/MacroTagApplier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/MapGeneration/Scripts/Tagging/TagAppliers/MacroTagApplier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/EntityStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/Scripts/EntityStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/ExploreLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/ExploreLevelState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GameOverState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GameOverState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GenerateLevelState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/GenerateLevelState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/PrepareSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Infrastructure/StateMachines/Scripts/GameplayStates/PrepareSceneState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerRun.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerRun.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerMovement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerRunData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerRunData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,23 +91,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "XThreadsFramesViewSplitterKey": "0.17175573",
-    "git-widget-placeholder": "release__0.0.1",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.17175573&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;release__0.0.1&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Unity.exe" />
@@ -147,10 +145,10 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17256">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21368">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17256" />
+      <option name="pid" value="21368" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
         <list>
@@ -198,6 +196,7 @@
       <workItem from="1747509403740" duration="389000" />
       <workItem from="1747511244844" duration="5448000" />
       <workItem from="1747560028372" duration="21984000" />
+      <workItem from="1747684093618" duration="1900000" />
     </task>
     <servers />
   </component>
@@ -386,6 +385,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/DropThroughPlatformController.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\PlayerModule\DropThroughPlatformController.cs" containingFunctionPresentation="Method 'Update'">
+            <startOffsets>
+              <option value="573" />
+            </startOffsets>
+            <endOffsets>
+              <option value="598" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
