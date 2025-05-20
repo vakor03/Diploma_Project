@@ -55,6 +55,7 @@ namespace _Project.Features.LevelGeneratorModule {
             SpawnPlatformsForDungeon(dungeon);
             SpawnCollidersForFloor(dungeon);
             SpawnCollidersForPlatforms(dungeon);
+            SpawnFogOfWar(dungeon);
 
             // Create decorations parent
             Transform decorationsParent = new GameObject("Decorations").transform;
@@ -122,11 +123,42 @@ namespace _Project.Features.LevelGeneratorModule {
         }
 
         private void SpawnTilesForDungeon(Matrix<BlockType> matrix) {
+            HashSet<Vector2Int> wallPositions = new HashSet<Vector2Int>();
+            
+            // Add existing wall positions
             Vector2Int[] floorIndices = matrix.GetAllIndices(el => el == BlockType.Wall).ToArray();
-            TileBase[] tileBases = Enumerable.Repeat(_levelConfiguration.TilesConfiguration.FloorTile, floorIndices.Length).ToArray();
+            wallPositions.UnionWith(floorIndices);
+
+            // Add wall tiles in a 10-block border around the matrix
+            int width = matrix.Width;
+            int height = matrix.Height;
+            
+            // Top and bottom borders
+            for (int x = -10; x < width + 10; x++) {
+                for (int y = -10; y < 0; y++) {
+                    wallPositions.Add(new Vector2Int(x, y));
+                }
+                for (int y = height; y < height + 10; y++) {
+                    wallPositions.Add(new Vector2Int(x, y));
+                }
+            }
+            
+            // Left and right borders
+            for (int y = 0; y < height; y++) {
+                for (int x = -10; x < 0; x++) {
+                    wallPositions.Add(new Vector2Int(x, y));
+                }
+                for (int x = width; x < width + 10; x++) {
+                    wallPositions.Add(new Vector2Int(x, y));
+                }
+            }
+
+            // Convert HashSet to array and create wall tiles
+            Vector2Int[] wallPositionsArray = wallPositions.ToArray();
+            TileBase[] tileBases = Enumerable.Repeat(_levelConfiguration.TilesConfiguration.FloorTile, wallPositionsArray.Length).ToArray();
 
             _tilemapsService.SetTiles(TilemapType.Background,
-                floorIndices,
+                wallPositionsArray,
                 tileBases);
         }
 
@@ -149,6 +181,44 @@ namespace _Project.Features.LevelGeneratorModule {
 
             parentCollider.GenerateGeometry();
             parentCollider.generationType = CompositeCollider2D.GenerationType.Synchronous;
+        }
+
+        private void SpawnFogOfWar(Dungeon dungeon) {
+            HashSet<Vector2Int> fogPositions = new HashSet<Vector2Int>();
+            
+            // Add fog tiles on wall positions
+            Vector2Int[] wallIndices = dungeon.Matrix.GetAllIndices(el => el == BlockType.Wall).ToArray();
+            fogPositions.UnionWith(wallIndices);
+
+            // Add fog tiles in a 10-block border around the matrix
+            int width = dungeon.Matrix.Width;
+            int height = dungeon.Matrix.Height;
+            
+            // Top and bottom borders
+            for (int x = -10; x < width + 10; x++) {
+                for (int y = -10; y < 0; y++) {
+                    fogPositions.Add(new Vector2Int(x, y));
+                }
+                for (int y = height; y < height + 10; y++) {
+                    fogPositions.Add(new Vector2Int(x, y));
+                }
+            }
+            
+            // Left and right borders
+            for (int y = 0; y < height; y++) {
+                for (int x = -10; x < 0; x++) {
+                    fogPositions.Add(new Vector2Int(x, y));
+                }
+                for (int x = width; x < width + 10; x++) {
+                    fogPositions.Add(new Vector2Int(x, y));
+                }
+            }
+
+            // Convert HashSet to array and create fog tiles
+            Vector2Int[] fogPositionsArray = fogPositions.ToArray();
+            TileBase[] fogTiles = Enumerable.Repeat(_levelConfiguration.TilesConfiguration.FogOfWarTile, fogPositionsArray.Length).ToArray();
+
+            _tilemapsService.SetTiles(TilemapType.FogOfWar, fogPositionsArray, fogTiles);
         }
     }
 }

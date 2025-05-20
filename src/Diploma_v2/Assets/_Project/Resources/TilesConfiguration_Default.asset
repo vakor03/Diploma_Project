@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <FloorTile>k__BackingField: {fileID: 11400000, guid: 97079e53f44d6f649a80a84fa286dee2, type: 2}
   <PlatformTile>k__BackingField: {fileID: 11400000, guid: 79494881e77487b44bb380bd35a8964f, type: 2}
+  <FogOfWarTile>k__BackingField: {fileID: 11400000, guid: 49b403f337f24c54b9e3286815740927, type: 2}

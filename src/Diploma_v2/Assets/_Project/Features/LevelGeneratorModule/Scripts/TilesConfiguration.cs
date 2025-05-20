@@ -7,5 +7,6 @@ namespace _Project.Features.LevelGeneratorModule {
     public class TilesConfiguration : ScriptableObject {
         [field: SerializeField] public TileBase FloorTile { get; private set; }
         [field: SerializeField] public TileBase PlatformTile { get; private set; }
+        [field: SerializeField] public TileBase FogOfWarTile { get; private set; }
     }
 }

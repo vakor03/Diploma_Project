@@ -4,5 +4,6 @@
         Background = 1,
         Foreground = 2,
         Platform = 3,
+        FogOfWar = 4,
     }
 }

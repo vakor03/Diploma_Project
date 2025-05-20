@@ -15,6 +15,11 @@ MonoBehaviour:
   <GridPrefab>k__BackingField: {fileID: 7978562324975780251, guid: ff9b44c33449988449c10219590f7381, type: 3}
   <Tilemaps>k__BackingField:
     _serializedList:
+    - Key: 4
+      Value:
+        Prefab: {fileID: 6743215306492577111, guid: 7c58190a65cc28a49b4ab15852a5141c, type: 3}
+        OrderInLayer: 1
+        Layer: 6
     - Key: 1
       Value:
         Prefab: {fileID: 6743215306492577111, guid: 0feac75855c11ce4aaecf5009cdb5ebc, type: 3}
