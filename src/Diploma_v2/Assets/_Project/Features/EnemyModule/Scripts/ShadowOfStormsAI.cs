@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using _Project.Features.DamageModule;
 using _Project.Features.EnemyModule.BasicBehaviour;
@@ -15,6 +15,7 @@ namespace _Project.Features.EnemyModule {
         private BlockGroupsModel _blockGroupsModel;
         private IBlockGroupService _blockGroupService;
         private IStatService<EntityStats> _statService;
+        private PlayerTransformDataHolder _playerTransformDataHolder;
         [SerializeField] private SimpleEnemyAttack _attack1;
         [SerializeField] private SimpleEnemyAttack _attack2;
         [SerializeField] private SimpleEnemyAttack _attack3;
@@ -22,11 +23,13 @@ namespace _Project.Features.EnemyModule {
         
 
         [Inject]
-        private void InjectDependencies(IInputService inputService, BlockGroupsModel blockGroupsModel, IBlockGroupService blockGroupService, IStatService<EntityStats> statService) {
+        private void InjectDependencies(IInputService inputService, BlockGroupsModel blockGroupsModel, 
+            IBlockGroupService blockGroupService, IStatService<EntityStats> statService, PlayerTransformDataHolder playerTransformDataHolder) {
             _inputService = inputService;
             _blockGroupsModel = blockGroupsModel;
             _blockGroupService = blockGroupService;
             _statService = statService;
+            _playerTransformDataHolder = playerTransformDataHolder;
         }
 
         protected override void SetupTreeComponents(BehaviourTree behaviourTree) {
