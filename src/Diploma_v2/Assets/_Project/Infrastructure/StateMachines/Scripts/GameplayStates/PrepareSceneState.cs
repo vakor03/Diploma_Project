@@ -1,10 +1,12 @@
-﻿using _Project.Features.CameraModule;
+﻿using System.Collections.Generic;
+using _Project.Features.CameraModule;
 using _Project.Features.EnemyModule;
 using _Project.Features.EnemyModule.EnemyPool;
 using _Project.Features.GameTimeModule;
 using _Project.Features.PlayerModule;
 using _Project.Features.PlayerSpawnerModule;
 using _Project.Features.VisualsModule;
+using _Project.Scripts.Infrastructure;
 using _Project.Scripts.Infrastructure.StateMachines;
 using Global.Helpers.Scripts;
 using UnityEngine;
@@ -24,11 +26,13 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
         private readonly IPlayerStatInitializeService _playerStatInitializeService;
         private readonly IGamePauseService _gamePauseService;
 
+        [Inject]
         public PrepareSceneState(IPlayerSpawnerService playerSpawnerService,
                                   IPlayerSpawnPointsService playerSpawnPointsService, ICameraSpawnService cameraSpawnService,
                                   ICameraService cameraService, EnemyObjectPool enemyObjectPool,
                                   EnemySpawnPointsModel enemySpawnPointsModel, IInstantiator instantiator,
-                                  VisualsConfiguration visualsConfiguration, GameplayStateMachine gameplayStateMachine, IPlayerStatInitializeService playerStatInitializeService, IGamePauseService gamePauseService) {
+                                  VisualsConfiguration visualsConfiguration, GameplayStateMachine gameplayStateMachine, 
+                                  IPlayerStatInitializeService playerStatInitializeService, IGamePauseService gamePauseService) {
             _playerSpawnerService = playerSpawnerService;
             _playerSpawnPointsService = playerSpawnPointsService;
             _cameraSpawnService = cameraSpawnService;
@@ -47,13 +51,7 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
             _cameraSpawnService.SpawnCamera();
             Vector3 playerSpawnPoint = _playerSpawnPointsService.GetPlayerSpawnPoint();
             Player player = _playerSpawnerService.SpawnPlayerAt(playerSpawnPoint);
-            for (int index = 0; index < _enemySpawnPointsModel.SpawnPoints.Count; index++) {
-                Vector3 spawnPoint = _enemySpawnPointsModel.SpawnPoints[index];
-                GameObject testGo = new GameObject("Enemy" + index);
-                testGo.transform.position = spawnPoint;
-                _enemyObjectPool.Get(EnemyType.OnePlaceGuardRobot)
-                    .With(el => el.transform.position = spawnPoint);
-            }
+            SpawnEnemies();
 
             _cameraService.FollowTarget(player.transform);
             _instantiator.InstantiatePrefab(_visualsConfiguration.BackgroundPrefab)
@@ -62,6 +60,21 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
             _gamePauseService.ForceResumeTime();
             
             _gameplayStateMachine.Enter<ExploreLevelState>();
+        }
+
+        private void SpawnEnemies() {
+            foreach (EnemySpawnData spawnData in _enemySpawnPointsModel.SpawnPoints) {
+                MonoPooledEnemy enemy = _enemyObjectPool.Get(spawnData.Type);
+                enemy.transform.position = spawnData.Position;
+                
+                // Set enemy direction
+                Vector3 scale = enemy.transform.localScale;
+                scale.x = Mathf.Abs(scale.x) * (spawnData.FaceRight ? 1 : -1);
+                enemy.transform.localScale = scale;
+            }
+        }
+
+        public void Exit() {
         }
     }
 }

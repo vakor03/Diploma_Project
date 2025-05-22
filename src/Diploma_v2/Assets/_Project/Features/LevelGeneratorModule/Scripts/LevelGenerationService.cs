@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using _Project.Features.EnemyModule;
 using _Project.Features.LevelGeneratorModule.TilemapsBootstrap;
 using _Project.Features.MapGeneration;
 using _Project.Features.MapGeneration.BSP;
@@ -7,6 +8,7 @@ using _Project.Features.MapGeneration.Decorations;
 using _Project.Features.MapGeneration.Matrix;
 using _Project.Features.MapGeneration.Tagging;
 using _Project.Features.PlayerSpawnerModule;
+using _Project.Features.SeedModule;
 using _Project.Scripts.Infrastructure.AssetProviders;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -25,13 +27,17 @@ namespace _Project.Features.LevelGeneratorModule {
         private readonly TilemapsCollidersConfiguration _tilemapsCollidersConfiguration;
         private readonly IBlockGroupService _blockGroupService;
         private readonly IDecorationFactory _decorationFactory;
+        private readonly ISeedService _seedService;
+        private readonly BlockGroupsModel _blockGroupsModel;
+        private readonly ISpawnPointsCalculatorService _spawnPointsCalculatorService;
 
         public LevelGenerationService(IDungeonGeneratorService dungeonGeneratorService, IStaticDataService staticData,
                                       PlayerSpawnPointsModel playerSpawnPointsModel, IInstantiator instantiator,
                                       ITilemapsBootstrapService tilemapsBootstrapService, ITilemapsService tilemapsService,
                                       TilemapsDataHolder tilemapsDataHolder, EnemySpawnPointsModel enemySpawnPointsModel,
                                       TilemapsCollidersConfiguration tilemapsCollidersConfiguration, IBlockGroupService blockGroupService,
-                                      IDecorationFactory decorationFactory) {
+                                      IDecorationFactory decorationFactory, ISeedService seedService, BlockGroupsModel blockGroupsModel,
+                                      ISpawnPointsCalculatorService spawnPointsCalculatorService) {
             _dungeonGeneratorService = dungeonGeneratorService;
             _playerSpawnPointsModel = playerSpawnPointsModel;
             _instantiator = instantiator;
@@ -42,6 +48,9 @@ namespace _Project.Features.LevelGeneratorModule {
             _tilemapsCollidersConfiguration = tilemapsCollidersConfiguration;
             _blockGroupService = blockGroupService;
             _decorationFactory = decorationFactory;
+            _seedService = seedService;
+            _blockGroupsModel = blockGroupsModel;
+            _spawnPointsCalculatorService = spawnPointsCalculatorService;
             _levelConfiguration = staticData.GetLevelConfiguration();
         }
 
@@ -61,29 +70,30 @@ namespace _Project.Features.LevelGeneratorModule {
             Transform decorationsParent = new GameObject("Decorations").transform;
             
             SpawnDecorations(dungeon, decorationsParent);
-            
-            _blockGroupService.GroupHorizontallyConnectedBlocks(dungeon.Tags.GetPositionsWithMacroTag(MacroTag.Floor));
+
+            List<Vector2Int> positionsWithMacroTag = dungeon.Tags.GetPositionsWithMacroTag(MacroTag.Floor).Where(el=>
+                dungeon.Matrix[el + Vector2Int.up] == BlockType.EmptySpace).ToList();
+            _blockGroupService.GroupHorizontallyConnectedBlocks(positionsWithMacroTag);
             
             foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.PlayerSpawnPoint))
-                _playerSpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, false));
+                _playerSpawnPointsModel.SpawnPoints.Add(_spawnPointsCalculatorService.GetPositionFromTilemap(vector2Int, false));
 
-            foreach (Vector2Int vector2Int in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.EnemySpawnPoint))
-                _enemySpawnPointsModel.SpawnPoints.Add(GetPositionFromTilemap(vector2Int, false));
+            _spawnPointsCalculatorService.CalculateEnemySpawnPoints();
         }
 
         private void SpawnDecorations(Dungeon dungeon, Transform decorationsParent) {
             foreach (Vector2Int position in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.SmallFloorDecoration))
-                _decorationFactory.SpawnSmallFloorDecoration(GetPositionFromTilemap(position, false), decorationsParent);
+                _decorationFactory.SpawnSmallFloorDecoration(_spawnPointsCalculatorService.GetPositionFromTilemap(position, false), decorationsParent);
 
             foreach (Vector2Int position in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.BigFloorDecoration))
-                _decorationFactory.SpawnBigFloorDecoration(GetPositionFromTilemap(position, true), decorationsParent);
+                _decorationFactory.SpawnBigFloorDecoration(_spawnPointsCalculatorService.GetPositionFromTilemap(position, true), decorationsParent);
 
             foreach (Vector2Int position in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.CeilingDecoration))
-                _decorationFactory.SpawnCeilingDecoration(GetPositionFromTilemap(position, false), decorationsParent);
+                _decorationFactory.SpawnCeilingDecoration(_spawnPointsCalculatorService.GetPositionFromTilemap(position, false), decorationsParent);
 
             foreach (Vector2Int position in dungeon.Tags.GetPositionsWithMicroTag(MicroTag.WallDecoration)) {
                 bool isLeftWall = dungeon.Matrix[position + Vector2Int.left] == BlockType.Wall;
-                _decorationFactory.SpawnWallDecoration(GetPositionFromTilemap(position, true), isLeftWall, decorationsParent);
+                _decorationFactory.SpawnWallDecoration(_spawnPointsCalculatorService.GetPositionFromTilemap(position, true), isLeftWall, decorationsParent);
             }
         }
 

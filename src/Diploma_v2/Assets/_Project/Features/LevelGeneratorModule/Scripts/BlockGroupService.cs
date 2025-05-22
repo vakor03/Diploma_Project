@@ -5,6 +5,7 @@ using UnityEngine;
 namespace _Project.Features.LevelGeneratorModule {
     public class BlockGroupService : IBlockGroupService {
         private readonly BlockGroupsModel _model;
+        private const int MIN_GROUP_SIZE = 5;
 
         public BlockGroupService(BlockGroupsModel model) =>
             _model = model;
@@ -23,7 +24,7 @@ namespace _Project.Features.LevelGeneratorModule {
 
             foreach (Vector2Int block in sortedBlocks) {
                 if (block.y != currentY || block.x != expectedNextX) {
-                    if (currentGroup != null && currentGroup.Blocks.Count > 0) {
+                    if (currentGroup != null && currentGroup.Blocks.Count >= MIN_GROUP_SIZE) {
                         _model.AddGroup(currentGroup);
                     }
 
@@ -38,7 +39,7 @@ namespace _Project.Features.LevelGeneratorModule {
                 expectedNextX = block.x + 1;
             }
 
-            if (currentGroup != null && currentGroup.Blocks.Count > 0)
+            if (currentGroup != null && currentGroup.Blocks.Count >= MIN_GROUP_SIZE)
                 _model.AddGroup(currentGroup);
         }
 

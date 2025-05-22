@@ -5,5 +5,6 @@
         StormHead = 2,
         SwordOfStorms = 3,
         OnePlaceGuardRobot = 4,
+        BigGuardRobot = 5,
     }
 }
