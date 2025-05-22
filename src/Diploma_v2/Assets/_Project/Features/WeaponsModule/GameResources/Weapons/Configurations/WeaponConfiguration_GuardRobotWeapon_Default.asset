@@ -12,12 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b2b851719146c6a0921d4aab0d0ec1, type: 3}
   m_Name: WeaponConfiguration_GuardRobotWeapon_Default
   m_EditorClassIdentifier: 
-  _damage: 2
+  _damage: 0.2
   _speed: 50
-  _reloadTime: 2
+  _reloadTime: 4
   _spread: 0.05
   _maxDistance: 100
   _trailRendererConfiguration: {fileID: 11400000, guid: 4c838bb898ddc4d4c8d4320f1c30fd64, type: 2}
   _burstCount: 1
-  _magazineSize: 30
-  _fireRate: 20 
+  _magazineSize: 20
+  _fireRate: 10
+  _cameraShakeConfiguration:
+    intensity: 0
+    duration: 0
+  _damageButCurve:
+    m_Mode: 0
+    m_CurveMultiplier: 0
+    m_CurveMin:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_CurveMax:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ConstantMin: 0
+    m_ConstantMax: 0
