@@ -16,7 +16,7 @@ namespace _Project.Features.EnemyModule.Blackboard {
         public bool Equals(BlackboardKey other) =>
             _hashedKey == other._hashedKey;
 
-        public override bool Equals(object obj) =>
+        public override bool Equals(object obj) => 
             obj is BlackboardKey other && Equals(other);
 
         public override int GetHashCode() =>
@@ -53,7 +53,7 @@ namespace _Project.Features.EnemyModule.Blackboard {
 
     [Serializable]
     public class Blackboard {
-        private Dictionary<string, BlackboardKey> _keys;
+        private Dictionary<string, BlackboardKey> _keys = new();
         private Dictionary<BlackboardKey, object> _entries = new();
 
         public bool TryGetValue<T>(BlackboardKey key, out T value) {

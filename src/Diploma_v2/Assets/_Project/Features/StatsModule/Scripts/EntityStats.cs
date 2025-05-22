@@ -9,5 +9,7 @@
         MaxJumps = 5,
         JumpHeight = 6,
         ChaseSpeed = 7,
+        DetectionRange = 8,
+        DetectionConeAngle = 9,
     }
 }

@@ -16,6 +16,10 @@ MonoBehaviour:
     _serializedList:
     - Key: 1
       Value: 100
+    - Key: 9
+      Value: 60
+    - Key: 8
+      Value: 10
     - Key: 4
       Value: 1
     - Key: 3

@@ -372,6 +372,7 @@ Transform:
   - {fileID: 6236137355048435844}
   - {fileID: 2507314638118994106}
   - {fileID: 5178277128745111467}
+  - {fileID: 7009130892753321620}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3102587130823250649
@@ -499,6 +500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479529bfc3b9486dae052b59044f9368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isPlayerInRange: 0
+  _isChasingPlayer: 0
   _attack1: {fileID: 418795788806978335}
   _attack2: {fileID: 5383365305538643661}
   _attack3: {fileID: 2179601994950782008}
@@ -519,6 +522,57 @@ MonoBehaviour:
   _rigidbody2D: {fileID: 5203926069703046409}
   _groundChecker: {fileID: 7927830260783881633}
   _reachDistance: 0.1
+--- !u!1 &6518242943213120927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7009130892753321620}
+  - component: {fileID: 6097185754916905370}
+  m_Layer: 0
+  m_Name: Inspectors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7009130892753321620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6518242943213120927}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7491434414100068538}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6097185754916905370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6518242943213120927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404e0577d27e4436a484bee8f4b56229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shadowOfStormsAI: {fileID: 4448437104035235647}
+  coneAngle: 60
+  rayCount: 15
+  showDebugRays: 1
+  debugRayColor: {r: 1, g: 0, b: 0, a: 1}
+  hitRayColor: {r: 0, g: 1, b: 0, a: 1}
+  _rotationRoot: {fileID: 7491434414100068538}
 --- !u!1 &7277927658152969251
 GameObject:
   m_ObjectHideFlags: 0

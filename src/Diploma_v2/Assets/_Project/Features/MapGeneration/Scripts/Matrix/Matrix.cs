@@ -85,6 +85,13 @@ namespace _Project.Features.MapGeneration.Matrix {
             Width = newWidth;
         }
 
-        public T this[Vector2Int position] {get=> _matrix[position.x, position.y]; set => _matrix[position.x, position.y] = value; }
+        public T this[Vector2Int position] {
+            get {
+                if (!IsPositionInBounds(position))
+                    return (T)default;
+                return _matrix[position.x, position.y];
+            }
+            set => _matrix[position.x, position.y] = value;
+        }
     }
 }

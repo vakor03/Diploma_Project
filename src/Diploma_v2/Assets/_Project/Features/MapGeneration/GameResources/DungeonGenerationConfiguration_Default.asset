@@ -20,7 +20,7 @@ MonoBehaviour:
     ShrinkageFactor: 0.382
   <CACaveRoomParams>k__BackingField:
     offsetFromBorders: 1
-    fillProbability: 0.35
+    fillProbability: 0.3
     steps: 10
     birthLimit: 5
     deathLimit: 3

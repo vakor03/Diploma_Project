@@ -4,7 +4,7 @@ using UnityEngine;
 namespace _Project.Features.EnemyModule {
     public abstract class EnemyAI : MonoBehaviour {
         private BehaviourTree _tree;
-        protected Blackboard.Blackboard Blackboard { get; private set; }
+        public Blackboard.Blackboard Blackboard { get; private set; }
 
         private void Awake() {
             Blackboard = new();
