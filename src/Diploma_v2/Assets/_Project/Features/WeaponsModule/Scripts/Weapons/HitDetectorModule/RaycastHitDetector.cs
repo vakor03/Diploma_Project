@@ -21,11 +21,11 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.HitDetectorModule
             _environmentHitResults = new RaycastHit2D[_initialBufferSize];
         }
 
-        public Hit DetectHit(Vector2 startPosition, Vector2 direction, float maxDistance) 
+        public Hit DetectHit(Vector2 startPosition, Vector2 direction, float maxDistance, LayerMask enemyLayerMask) 
         {
             _validHits.Clear();
 
-            PerformEnemyRaycast(startPosition, direction, maxDistance);
+            PerformEnemyRaycast(startPosition, direction, maxDistance, enemyLayerMask);
             PerformEnvironmentRaycast(startPosition, direction, maxDistance);
 
             _validHits.Sort((a, b) => a.Hit.distance.CompareTo(b.Hit.distance));
@@ -82,13 +82,13 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.HitDetectorModule
             }
         }
 
-        private void PerformEnemyRaycast(Vector2 startPosition, Vector2 direction, float maxDistance) {
+        private void PerformEnemyRaycast(Vector2 startPosition, Vector2 direction, float maxDistance, LayerMask enemyLayerMask) {
             int enemyHitCount = Physics2D.RaycastNonAlloc(
                 startPosition, 
                 direction, 
                 _enemyHitResults, 
                 maxDistance, 
-                _layersConfiguration.EnemyLayerMask
+                enemyLayerMask
             );
             
             if (enemyHitCount > _enemyHitResults.Length) 
@@ -100,7 +100,7 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.HitDetectorModule
                     direction, 
                     _enemyHitResults, 
                     maxDistance, 
-                    _layersConfiguration.EnemyLayerMask
+                    enemyLayerMask
                 );
             }
 

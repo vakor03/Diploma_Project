@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using _Project.Features.StatsModule;
 using _Project.Features.WeaponModule;
 using _Project.Features.WeaponsModule.Scripts.Projectiles.ProjectilesCoreModule;
@@ -13,11 +13,11 @@ using Zenject;
 using IShootable = _Project.Features.WeaponModule.IShootable;
 
 namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
-	public class AK47_Raycast : MonoBehaviour, IWeapon, IShootable, IReloadable, IRotatable {
+	public class GuardRobotWeapon : MonoBehaviour, IWeapon, IShootable, IReloadable, IRotatable {
 		[SerializeField] private Transform _firePoint;
 		[SerializeField] private Vector2 _attackDirection;
 
-		private const WeaponType WEAPON_TYPE = WeaponType.AK47_Raycast;
+		private const WeaponType WEAPON_TYPE = WeaponType.GuardRobotWeapon;
 		private const ProjectileType PROJECTILE_TYPE = ProjectileType.BulletRaycast;
 
 		private ProjectilesObjectPool _projectilesPool;
@@ -67,7 +67,7 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 			          .SetDamage(_weaponConfiguration.Damage)
 			          .SetSpeed(_weaponConfiguration.Speed)
 			          .SetMaxDistance(_weaponConfiguration.MaxDistance)
-			          .SetEnemyLayerMask(_layersConfiguration.EnemyLayerMask)
+			          .SetEnemyLayerMask(_layersConfiguration.PlayerLayerMask)
 			          .SetTrailRendererConfiguration(_weaponConfiguration.TrailRendererConfiguration);
 
 			projectile.Launch();
@@ -77,11 +77,14 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 				StartReloading();
 		}
 
+		public void Shoot() =>
+			Shoot(GetAttackDirection());
+
 		public bool IsReloading => _reloadingTimer > 0;
 
 		public void StartReloading() =>
 			_reloadingTimer = _weaponConfiguration.ReloadTime;
-		
+
 		public void RotateInDirection(Vector2 direction)
 		{
 			float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
@@ -101,15 +104,12 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 			_bulletsInMagazine = _weaponConfiguration.MagazineSize;
 
 		public IStatService<WeaponStats> Stats { get; private set; }
+
 		public void InitWeaponStats(IStatService<WeaponStats> weaponStats) {
 			Stats = weaponStats;
 		}
 
 		private Vector3 GetAttackDirection() =>
 			transform.rotation * (_attackDirection * transform.localScale.x);
-
-		public void Shoot() {
-			Shoot(GetAttackDirection());
-		}
 	}
-}
+} 

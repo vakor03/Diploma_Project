@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: WeaponInstanceConfiguration_Default
   m_EditorClassIdentifier: 
   <WeaponPrefabs>k__BackingField:
-    m_Keys: 01000000
+    m_Keys: 0100000005000000
     m_Values:
     - {fileID: 6044620519910715698, guid: 3eee6f63d9ab7724089dce462f7e12ab, type: 3}
+    - {fileID: 6044620519910715698, guid: 5912f5b2af1cc9b4083d189a7e468306, type: 3}

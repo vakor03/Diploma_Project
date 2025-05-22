@@ -51,7 +51,7 @@ namespace _Project.Infrastructure.StateMachines.Scripts.GameplayStates {
                 Vector3 spawnPoint = _enemySpawnPointsModel.SpawnPoints[index];
                 GameObject testGo = new GameObject("Enemy" + index);
                 testGo.transform.position = spawnPoint;
-                _enemyObjectPool.Get(EnemyType.ShadowOfStorms)
+                _enemyObjectPool.Get(EnemyType.OnePlaceGuardRobot)
                     .With(el => el.transform.position = spawnPoint);
             }
 

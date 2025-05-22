@@ -9,7 +9,7 @@ using Zenject;
 namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	public class RaycastBulletProjectileBehaviour : MonoBehaviour, IRaycastBulletBehaviour, IHitVisitor {
 		[SerializeField] private TrailRenderer _trailRenderer;
-		[SerializeField] private LayerMask _enemyLayerMask;
+		private LayerMask _enemyLayerMask;
 
 		private float _damage;
 		private Vector2 _direction;
@@ -44,7 +44,7 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 
 			transform.position = _startPosition;
 
-			_raycastHitDetector.DetectHit(_startPosition, _direction, _maxDistance).Accept(this);
+			_raycastHitDetector.DetectHit(_startPosition, _direction, _maxDistance, _enemyLayerMask).Accept(this);
 		}
 
 		private IEnumerator InvokeOnHitAfterTime(Vector2 hitPoint, float timeToReach) {
@@ -99,10 +99,11 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 			this.With(() => _maxDistance = maxDistance);
 
 		public IRaycastBulletBehaviour SetTrailRendererConfiguration(
-			TrailRendererConfiguration trailRendererConfiguration) {
-			trailRendererConfiguration.ApplyTo(_trailRenderer);
-			return this;
-		}
+			TrailRendererConfiguration trailRendererConfiguration) =>
+			this.With(() => trailRendererConfiguration.ApplyTo(_trailRenderer));
+
+		public IRaycastBulletBehaviour SetEnemyLayerMask(LayerMask enemyLayerMask) =>
+			this.With(() => _enemyLayerMask = enemyLayerMask);
 
 		#endregion
 	}

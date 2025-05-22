@@ -27,6 +27,7 @@ namespace _Project.Features.EnemyModule.Blackboard {
 
         private static Dictionary<AnyValue.ValueType, Action<Blackboard, BlackboardKey, AnyValue>> _setValueDispatchTable = new() {
             { AnyValue.ValueType.Bool, (blackboard, key, anyValue) => blackboard.SetValue<bool>(key, anyValue) },
+            { AnyValue.ValueType.Vector2Int, (blackboard, key, anyValue) => blackboard.SetValue<Vector2Int>(key, anyValue) }
         };
         
         public void OnBeforeSerialize() { }
@@ -42,22 +43,29 @@ namespace _Project.Features.EnemyModule.Blackboard {
             Bool = 2,
             String = 3,
             Vector3 = 4,
+            Vector2Int = 5
         }
         
         public ValueType type;
 
         public bool BoolValue;
+        public Vector2Int Vector2IntValue;
 
         public static implicit operator bool(AnyValue value) =>
             value.ConvertValue<bool>();
 
+        public static implicit operator Vector2Int(AnyValue value) =>
+            value.ConvertValue<Vector2Int>();
+
         private T ConvertValue<T>() {
             return type switch {
                 ValueType.Bool => AsBool<T>(BoolValue),
+                ValueType.Vector2Int => AsVector2Int<T>(Vector2IntValue),
                 _              => throw new NotSupportedException($"Not supported value type: {typeof(T)}")
             };
         }
 
         private T AsBool<T>(bool value) => typeof(T)  == typeof(bool) && value is T correctType ? correctType : default;
+        private T AsVector2Int<T>(Vector2Int value) => typeof(T) == typeof(Vector2Int) && value is T correctType ? correctType : default;
     }
 }

@@ -32,15 +32,9 @@ MonoBehaviour:
         StartCapacity: 5
         DefaultCapacity: 5
         MaxSize: 5
-    - Key: 2
+    - Key: 4
       Value:
-        Prefab: {fileID: 6239193435523365897, guid: e8f648fee5bc5684681f651e93266788, type: 3}
-        StartCapacity: 5
-        DefaultCapacity: 5
-        MaxSize: 5
-    - Key: 3
-      Value:
-        Prefab: {fileID: 6239193435523365897, guid: e8f648fee5bc5684681f651e93266788, type: 3}
+        Prefab: {fileID: 6239193435523365897, guid: f493aea25a317ff449885f225e1e21b2, type: 3}
         StartCapacity: 5
         DefaultCapacity: 5
         MaxSize: 5

@@ -10,7 +10,7 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 		public IRaycastBulletBehaviour SetSpeed(float speed);
 		public IRaycastBulletBehaviour SetMaxDistance(float maxDistance);
 
-		public IRaycastBulletBehaviour SetTrailRendererConfiguration(
-			TrailRendererConfiguration trailRendererConfiguration);
+		public IRaycastBulletBehaviour SetTrailRendererConfiguration(TrailRendererConfiguration trailRendererConfiguration);
+		public IRaycastBulletBehaviour SetEnemyLayerMask(LayerMask enemyLayerMask);
 	}
 }

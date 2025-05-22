@@ -130,7 +130,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -193,177 +193,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_0
+      name: Idle
       rect:
         serializedVersion: 2
-        x: 2
-        y: 138
-        width: 23
-        height: 24
+        x: 0
+        y: 136
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d9d3acb8b82072240800000000000000
-      internalID: 4766781528963956125
+      spriteID: 7228699eab0f59b4687261ce788887df
+      internalID: -288757688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_1
+      name: TurnOn_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 104
-        width: 23
-        height: 24
+        x: 0
+        y: 102
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fbe9059e4d00c1aa0800000000000000
-      internalID: -6189070873466462529
+      spriteID: 38682c9e464b53f4aa3279a696ad582c
+      internalID: -392809472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_2
+      name: TurnOn_1
       rect:
         serializedVersion: 2
-        x: 28
-        y: 104
-        width: 23
-        height: 24
+        x: 26
+        y: 102
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2f692a2a0f1eed4d0800000000000000
-      internalID: -3107798269202098446
+      spriteID: 4c4f440ffda05fe42a463d7372612af2
+      internalID: -1359082226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_3
+      name: TurnOn_2
       rect:
         serializedVersion: 2
-        x: 54
-        y: 104
-        width: 23
-        height: 24
+        x: 52
+        y: 102
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 892244d1ef16a6de0800000000000000
-      internalID: -1339150195148709224
+      spriteID: dc2184a155cca1c4aa1a602cb8b6dfb3
+      internalID: 1092631141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_4
+      name: TurnOn_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 104
-        width: 23
-        height: 24
+        x: 78
+        y: 102
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dabe2e9bc8806c290800000000000000
-      internalID: -7870593898276262995
+      spriteID: 7c2a9dc0903fbbd4ea991b0210da9628
+      internalID: -1737448203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_5
+      name: TurnOn_4
       rect:
         serializedVersion: 2
-        x: 106
-        y: 105
-        width: 23
-        height: 24
+        x: 104
+        y: 102
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 79210cb9f7a2a2d40800000000000000
-      internalID: 5560303417504567959
+      spriteID: af943c231f45d7e4e907bfdf4fea578a
+      internalID: 1895210065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_6
+      name: TurnOn_5
       rect:
         serializedVersion: 2
-        x: 132
-        y: 105
-        width: 23
-        height: 28
+        x: 130
+        y: 102
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1b2deb243ad995670800000000000000
-      internalID: 8528020693927776945
+      spriteID: f823057ea65222448a4fce0647f19f7f
+      internalID: 1757460077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_7
+      name: TurnOn_6
       rect:
         serializedVersion: 2
-        x: 158
-        y: 105
-        width: 23
-        height: 30
+        x: 156
+        y: 102
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 80465f159e7d1b9e0800000000000000
-      internalID: -1607266194892168184
+      spriteID: 5c609f7225541f34cb44c003d6b42af0
+      internalID: -1935016990
       vertices: []
       indices: 
       edges: []
@@ -372,20 +372,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_8
       rect:
         serializedVersion: 2
-        x: 2
-        y: 71
-        width: 23
-        height: 31
+        x: 0
+        y: 68
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c1c095f5f80770860800000000000000
-      internalID: 7496083865863785500
+      spriteID: dbf88e4ec74ea27438d639fefdb387b1
+      internalID: 1952988773
       vertices: []
       indices: 
       edges: []
@@ -394,20 +394,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_9
       rect:
         serializedVersion: 2
-        x: 28
-        y: 71
-        width: 23
-        height: 31
+        x: 26
+        y: 68
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e2e511df2fc960730800000000000000
-      internalID: 3965029089388092974
+      spriteID: 2374716c8f01acd4c89b6d842870c7b0
+      internalID: 207007244
       vertices: []
       indices: 
       edges: []
@@ -416,20 +416,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_10
       rect:
         serializedVersion: 2
-        x: 54
-        y: 71
-        width: 23
-        height: 32
+        x: 52
+        y: 68
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1c23d45fd51c86f90800000000000000
-      internalID: -6960100614809505087
+      spriteID: 270c41529162efc45af7f56b86422381
+      internalID: 1555419138
       vertices: []
       indices: 
       edges: []
@@ -438,20 +438,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_11
       rect:
         serializedVersion: 2
-        x: 80
-        y: 71
-        width: 23
-        height: 32
+        x: 78
+        y: 68
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ee26cf066a3ec8f0800000000000000
-      internalID: -518412697075306778
+      spriteID: 6b600788f9fb4b4488212841d45f3426
+      internalID: 315015724
       vertices: []
       indices: 
       edges: []
@@ -460,20 +460,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_12
       rect:
         serializedVersion: 2
-        x: 106
-        y: 71
-        width: 23
-        height: 32
+        x: 104
+        y: 68
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c23c7071769f96650800000000000000
-      internalID: 6226782180979753772
+      spriteID: a929dd3ecfd65024ab39ebcc060be2c3
+      internalID: 1848405148
       vertices: []
       indices: 
       edges: []
@@ -482,20 +482,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_13
       rect:
         serializedVersion: 2
-        x: 132
-        y: 71
-        width: 23
-        height: 31
+        x: 130
+        y: 68
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2bada54b204a9a3f0800000000000000
-      internalID: -888999119906219342
+      spriteID: cdf5d3fdc1b15c24d8b8076d37b9f4a8
+      internalID: 144797994
       vertices: []
       indices: 
       edges: []
@@ -504,20 +504,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_14
       rect:
         serializedVersion: 2
-        x: 158
-        y: 71
-        width: 23
-        height: 31
+        x: 156
+        y: 68
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6142cd5c707f6c560800000000000000
-      internalID: 7333820655975801878
+      spriteID: 1ac177e1e237d274fbb98967c4627af3
+      internalID: -158690316
       vertices: []
       indices: 
       edges: []
@@ -526,20 +526,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_15
       rect:
         serializedVersion: 2
-        x: 184
-        y: 71
-        width: 23
-        height: 30
+        x: 182
+        y: 68
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 56d6cfc365db7dea0800000000000000
-      internalID: -5847997413029286555
+      spriteID: 255c609102c0a4d4a9ae090df0e78aba
+      internalID: 2096139319
       vertices: []
       indices: 
       edges: []
@@ -548,20 +548,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_16
       rect:
         serializedVersion: 2
-        x: 210
-        y: 71
-        width: 23
-        height: 29
+        x: 208
+        y: 68
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5aa9e41e4b7b18220800000000000000
-      internalID: 2486470456787245733
+      spriteID: 6acd0d7916a7b814991d649050d3b6d5
+      internalID: -749882345
       vertices: []
       indices: 
       edges: []
@@ -570,20 +570,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_17
       rect:
         serializedVersion: 2
-        x: 236
-        y: 71
-        width: 23
-        height: 30
+        x: 234
+        y: 68
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0c01caec2028e2fb0800000000000000
-      internalID: -4670652814967697216
+      spriteID: e9699e31c62e7ce46bacd357667459d0
+      internalID: -1274171230
       vertices: []
       indices: 
       edges: []
@@ -592,20 +592,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_18
       rect:
         serializedVersion: 2
-        x: 3
-        y: 38
-        width: 21
-        height: 30
+        x: 0
+        y: 34
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 44bdb0f53240635a0800000000000000
-      internalID: -6542036858744087740
+      spriteID: 1bb7583541f176b4f995190a15fcbf07
+      internalID: 1228730515
       vertices: []
       indices: 
       edges: []
@@ -614,20 +614,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_19
       rect:
         serializedVersion: 2
-        x: 29
-        y: 38
-        width: 23
-        height: 31
+        x: 26
+        y: 34
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3865e24afcaf92410800000000000000
-      internalID: 1452968124523370115
+      spriteID: b74c0a4174c01cc4aa60707b2db5b640
+      internalID: -819939752
       vertices: []
       indices: 
       edges: []
@@ -636,20 +636,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_20
       rect:
         serializedVersion: 2
-        x: 55
-        y: 38
-        width: 24
-        height: 31
+        x: 52
+        y: 34
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95934554e7e57a000800000000000000
-      internalID: 47110217532717401
+      spriteID: e1510a59f483ad043b2ee85aca9a5eda
+      internalID: -483782430
       vertices: []
       indices: 
       edges: []
@@ -658,20 +658,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_21
       rect:
         serializedVersion: 2
-        x: 80
-        y: 37
-        width: 25
-        height: 27
+        x: 78
+        y: 34
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bccbb39acb71f8840800000000000000
-      internalID: 5228423791460990155
+      spriteID: 2ff17e83c68cfc14f864ac7308240bb4
+      internalID: 1227948781
       vertices: []
       indices: 
       edges: []
@@ -681,19 +681,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 104
-        y: 37
-        width: 53
-        height: 27
+        y: 34
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dbaac3a079cc8b3f0800000000000000
-      internalID: -884732377694426435
+      spriteID: fbe9fb537083990449b2a773d2f26337
+      internalID: -1769642915
       vertices: []
       indices: 
       edges: []
@@ -702,20 +702,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_23
       rect:
         serializedVersion: 2
-        x: 156
-        y: 37
-        width: 24
-        height: 28
+        x: 130
+        y: 34
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 992e520ee8e6bba80800000000000000
-      internalID: -8450038715905613159
+      spriteID: 854b54cd5ca2dd94f8dff46ef09b6a6b
+      internalID: -180738159
       vertices: []
       indices: 
       edges: []
@@ -724,20 +724,20 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_24
       rect:
         serializedVersion: 2
-        x: 184
-        y: 37
-        width: 20
-        height: 30
+        x: 156
+        y: 34
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bdd07a7fde25c8ae0800000000000000
-      internalID: -1545769390079275557
+      spriteID: c9a3fdfdb4d201c46a4b05e63c9929b4
+      internalID: 1143174650
       vertices: []
       indices: 
       edges: []
@@ -746,152 +746,174 @@ TextureImporter:
       name: Robot 1 - green 26x34 Without Shadows_25
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 23
-        height: 30
+        x: 182
+        y: 34
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07f1d7a50164c5a00800000000000000
-      internalID: 746548674288230256
+      spriteID: a3a0eaf2f70d8c7418f990ffc6961cb4
+      internalID: -1590733468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_26
+      name: Turn_off_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 3
-        width: 23
-        height: 28
+        x: 0
+        y: 0
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4cec0b07e37b8e300800000000000000
-      internalID: 281676455517146820
+      spriteID: 5c5f37038321f1d46bc9e2c047b98764
+      internalID: 1337520579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_27
+      name: Turn_off_1
       rect:
         serializedVersion: 2
-        x: 54
-        y: 3
-        width: 23
-        height: 24
+        x: 26
+        y: 0
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d18541fb46edc1790800000000000000
-      internalID: -7557921550350657507
+      spriteID: cedd4cfd9279f774eb015efe362cdd45
+      internalID: 1854676928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_28
+      name: Turn_off_2
       rect:
         serializedVersion: 2
-        x: 80
-        y: 2
-        width: 23
-        height: 24
+        x: 52
+        y: 0
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f7f32dfcadf75f0a0800000000000000
-      internalID: -6848427080580710529
+      spriteID: 6b4a4fa28dc033b479b1e74448554e98
+      internalID: 1513229537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_29
+      name: Turn_off_3
       rect:
         serializedVersion: 2
-        x: 106
-        y: 2
-        width: 23
-        height: 24
+        x: 78
+        y: 0
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 199c831c6b2a59d80800000000000000
-      internalID: -8244504637022353007
+      spriteID: 0d39ffa14e71b3349a0a142cf33af783
+      internalID: 1430466390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_30
+      name: Turn_off_4
       rect:
         serializedVersion: 2
-        x: 132
-        y: 2
-        width: 23
-        height: 24
+        x: 104
+        y: 0
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a878399ed81437c10800000000000000
-      internalID: 2050054333148661642
+      spriteID: efc62bf1accfb1a4a82287d96bd5a7e6
+      internalID: 1967469704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Robot 1 - green 26x34 Without Shadows_31
+      name: Turn_off_5
       rect:
         serializedVersion: 2
-        x: 158
-        y: 2
-        width: 23
-        height: 24
+        x: 130
+        y: 0
+        width: 26
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6e9966a09c70b7290800000000000000
-      internalID: -7891705361992345114
+      spriteID: 19fdc05544eac4544a2bd0aea6960844
+      internalID: 426625415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turn_off_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ef2c1191c0a3749863717c9aa9addd
+      internalID: -2000728835
       vertices: []
       indices: 
       edges: []
@@ -900,7 +922,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3fdf541d15789de47b4553f53f552d95
     internalID: 0
     vertices: []
     indices: 
@@ -909,7 +931,40 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Idle: -288757688
+      Robot 1 - green 26x34 Without Shadows_10: 1555419138
+      Robot 1 - green 26x34 Without Shadows_11: 315015724
+      Robot 1 - green 26x34 Without Shadows_12: 1848405148
+      Robot 1 - green 26x34 Without Shadows_13: 144797994
+      Robot 1 - green 26x34 Without Shadows_14: -158690316
+      Robot 1 - green 26x34 Without Shadows_15: 2096139319
+      Robot 1 - green 26x34 Without Shadows_16: -749882345
+      Robot 1 - green 26x34 Without Shadows_17: -1274171230
+      Robot 1 - green 26x34 Without Shadows_18: 1228730515
+      Robot 1 - green 26x34 Without Shadows_19: -819939752
+      Robot 1 - green 26x34 Without Shadows_20: -483782430
+      Robot 1 - green 26x34 Without Shadows_21: 1227948781
+      Robot 1 - green 26x34 Without Shadows_22: -1769642915
+      Robot 1 - green 26x34 Without Shadows_23: -180738159
+      Robot 1 - green 26x34 Without Shadows_24: 1143174650
+      Robot 1 - green 26x34 Without Shadows_25: -1590733468
+      Robot 1 - green 26x34 Without Shadows_8: 1952988773
+      Robot 1 - green 26x34 Without Shadows_9: 207007244
+      TurnOn_0: -392809472
+      TurnOn_1: -1359082226
+      TurnOn_2: 1092631141
+      TurnOn_3: -1737448203
+      TurnOn_4: 1895210065
+      TurnOn_5: 1757460077
+      TurnOn_6: -1935016990
+      Turn_off_0: 1337520579
+      Turn_off_1: 1854676928
+      Turn_off_2: 1513229537
+      Turn_off_3: 1430466390
+      Turn_off_4: 1967469704
+      Turn_off_5: 426625415
+      Turn_off_6: -2000728835
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

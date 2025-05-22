@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using _Project.Features.EnemyModule.Blackboard;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -99,5 +100,65 @@ namespace _Project.Features.EnemyModule.BehaviourTrees {
         }
 
         public void Reset() => isPathCalculated = false;
-    }    
+    }
+
+    public class MoveToPoint : IStrategy {
+        readonly IMover mover;
+        readonly Blackboard.Blackboard blackboard;
+        readonly BlackboardKey targetPointKey;
+        bool hasReachedTarget;
+
+        public MoveToPoint(IMover mover, Blackboard.Blackboard blackboard, BlackboardKey targetPointKey) {
+            this.mover = mover;
+            this.blackboard = blackboard;
+            this.targetPointKey = targetPointKey;
+            this.hasReachedTarget = false;
+        }
+
+        public Node.Status Process() {
+            if (hasReachedTarget) {
+                return Node.Status.Success;
+            }
+
+            if (!blackboard.TryGetValue(targetPointKey, out Vector2Int targetPoint)) {
+                return Node.Status.Failure;
+            }
+
+            mover.MoveTo(targetPoint);
+            mover.LookAt(targetPoint);
+
+            if (mover.HasReachedPosition(targetPoint)) {
+                hasReachedTarget = true;
+                return Node.Status.Success;
+            }
+
+            return Node.Status.Running;
+        }
+
+        public void Reset() {
+            hasReachedTarget = false;
+        }
+    }
+
+    public class StepTowardsTarget : IStrategy {
+        readonly IMover mover;
+        readonly Blackboard.Blackboard blackboard;
+        readonly BlackboardKey targetPointKey;
+
+        public StepTowardsTarget(IMover mover, Blackboard.Blackboard blackboard, BlackboardKey targetPointKey) {
+            this.mover = mover;
+            this.blackboard = blackboard;
+            this.targetPointKey = targetPointKey;
+        }
+
+        public Node.Status Process() {
+            if (!blackboard.TryGetValue(targetPointKey, out Vector2Int targetPoint)) {
+                return Node.Status.Failure;
+            }
+
+            mover.MoveTo(targetPoint);
+            mover.LookAt(targetPoint);
+            return Node.Status.Success;
+        }
+    }
 }

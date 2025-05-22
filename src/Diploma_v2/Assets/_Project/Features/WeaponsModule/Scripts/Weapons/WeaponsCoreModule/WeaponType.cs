@@ -10,5 +10,7 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsCoreModule {
 		Shotgun = 2,
 		Sniper = 3,
 		Minigun = 4,
+		[Tooltip("Guard Robot Weapon")]
+		GuardRobotWeapon = 5,
 	}
 }

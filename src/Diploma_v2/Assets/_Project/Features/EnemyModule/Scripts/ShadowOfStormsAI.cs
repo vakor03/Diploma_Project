@@ -45,65 +45,68 @@ namespace _Project.Features.EnemyModule {
         }
 
         protected override void SetupTreeComponents(BehaviourTree behaviourTree) {
-            Leaf isUsingAttack1 = new Leaf("IsUsingAttack1", new Condition(IsUsingAttack1));
-            Leaf isUsingAttack2 = new Leaf("IsUsingAttack2", new Condition(IsUsingAttack2));
-            Leaf isUsingAttack3 = new Leaf("IsUsingAttack3", new Condition(IsUsingAttack3));
-
-            Leaf startAttack1 = new Leaf("StartAttack1", new StartAttackStrategy(_attack1));
-            Leaf startAttack2 = new Leaf("StartAttack2", new StartAttackStrategy(_attack2));
-            Leaf startAttack3 = new Leaf("StartAttack3", new StartAttackStrategy(_attack3));
-
+            Node playerInRangeNode = new Sequence("PlayerInRangeSequence");
+            playerInRangeNode.AddChild(CreateMoveToPlayerNode());
+            playerInRangeNode.AddChild(new Leaf("Is Distance To Attack1", new Condition(() => Vector3.Distance(
+                _playerTransformDataHolder.Player.position, transform.position) < 1.5f)));
+            playerInRangeNode.AddChild(new Leaf("Attack1", new StartAttackStrategy(_attack1)));
             Leaf waitForAttack1End = new Leaf("WaitForAttack1End", new WaitForAttackEndStrategy(_attack1));
-            Leaf waitForAttack2End = new Leaf("WaitForAttack2End", new WaitForAttackEndStrategy(_attack2));
-            Leaf waitForAttack3End = new Leaf("WaitForAttack3End", new WaitForAttackEndStrategy(_attack3));
+            playerInRangeNode.AddChild(waitForAttack1End);
 
-            Leaf stopMovement = new Leaf("Stop Mover", new ActionStrategy(() => _enemyMovement.Stop()));
+            Node playerNotInRangeNode = new Sequence("PlayerNotInRangeSequence");
+            playerNotInRangeNode.AddChild(new Leaf("LogPlayerNotInRange", new ActionStrategy(() => Debug.Log("Player not in range"))));
+            playerNotInRangeNode.AddChild(CreatePatrolSequence());
 
-            Sequence attack1Sequence = new Sequence("Attack1Sequence");
-            attack1Sequence.AddChild(isUsingAttack1);
-            attack1Sequence.AddChild(stopMovement);
-            attack1Sequence.AddChild(startAttack1);
-            attack1Sequence.AddChild(waitForAttack1End);
-            attack1Sequence.AddChild(new Leaf("WaitForTime", new WaitForTimeStrategy(10.5f)));
-            attack1Sequence.AddChild(new Leaf("LogAttack1End", new ActionStrategy(LogAttack1End)));
+            Node playerInRangeConditionNode = CreateConditionalNode(playerInRangeNode, playerNotInRangeNode, () => IsPlayerInRange);
 
-            Sequence attack2Sequence = new Sequence("Attack2Sequence");
-            attack2Sequence.AddChild(isUsingAttack2);
-            attack2Sequence.AddChild(stopMovement);
-            attack2Sequence.AddChild(startAttack2);
-            attack2Sequence.AddChild(waitForAttack2End);
-            attack2Sequence.AddChild(new Leaf("LogAttack2End", new ActionStrategy(LogAttack2End)));
+            behaviourTree.AddChild(playerInRangeConditionNode);
+        }
 
-            Sequence attack3Sequence = new Sequence("Attack3Sequence");
-            attack3Sequence.AddChild(isUsingAttack3);
-            attack3Sequence.AddChild(stopMovement);
-            attack3Sequence.AddChild(startAttack3);
-            attack3Sequence.AddChild(waitForAttack3End);
-            attack3Sequence.AddChild(new Leaf("LogAttack3End", new ActionStrategy(LogAttack3End)));
-
-            PrioritySelector attackSelector = new PrioritySelector("AttackSelector", 10);
-            attackSelector.AddChild(attack1Sequence);
-            attackSelector.AddChild(attack2Sequence);
-            attackSelector.AddChild(attack3Sequence);
-
+        private Node CreatePatrolSequence() {
             Sequence patrolSequence = new Sequence("PatrolSequence", -1);
             patrolSequence.AddChild(new Leaf("SetPatrolSpeed",
                 new StatChangeStrategy(_statService, EntityStats.CurrentSpeed, _statService.GetStat(EntityStats.PatrolSpeed))));
             patrolSequence.AddChild(new Leaf("Patrol", new PatrolStrategy(_enemyMovement, _patrolPoints, 2f)));
+            return patrolSequence;
+        }
 
-            Node chaseSequence = CreateChaseSequence();
+        private Node CreateMoveToPlayerNode() {
+            Sequence moveToPointSequence = new Sequence("MoveToPointSequence");
+            moveToPointSequence.AddChild(new Leaf("Set Destination Point", new ActionStrategy(() => {
+                if (Blackboard.TryGetValue(LastKnownPlayerPositionKey, out Vector3 lastKnownPosition)) {
+                    Vector2Int targetPosition =
+                        new Vector2Int(Mathf.RoundToInt(lastKnownPosition.x), Mathf.RoundToInt(lastKnownPosition.y));
+                    Blackboard.SetValue(TargetPointKey, targetPosition);
+                }
+            })));
+            moveToPointSequence.AddChild(new Leaf("Set Chase Speed",
+                new StatChangeStrategy(_statService, EntityStats.CurrentSpeed, _statService.GetStat(EntityStats.ChaseSpeed))));
+            moveToPointSequence.AddChild(new Leaf("StepTowardsTarget", new StepTowardsTarget(_enemyMovement, Blackboard, TargetPointKey)));
+            return moveToPointSequence;
+        }
 
-            PrioritySelector overallSelector = new PrioritySelector("OverallSelector");
-            overallSelector.AddChild(attackSelector);
-            overallSelector.AddChild(patrolSequence);
-            overallSelector.AddChild(chaseSequence);
+        private Node CreateMoveToPointSequence() {
+            Sequence moveToPointSequence = new Sequence("MoveToPointSequence");
+            moveToPointSequence.AddChild(new Leaf("Set Chase Speed",
+                new StatChangeStrategy(_statService, EntityStats.CurrentSpeed, _statService.GetStat(EntityStats.ChaseSpeed))));
+            moveToPointSequence.AddChild(new Leaf("MoveToPoint", new MoveToPoint(_enemyMovement, Blackboard, TargetPointKey)));
+            return moveToPointSequence;
+        }
 
-            Sequence rootSequence = new Sequence("RootSequence");
-            rootSequence.AddChild(new Leaf("IsAlive", new Condition(() => _statService.GetStat(EntityStats.CurrentHealth) > 0)));
-            rootSequence.AddChild(overallSelector);
+        private Node CreateConditionalNode(Node trueNode, Node falseNode, Func<bool> condition) {
+            PrioritySelector selectorNode = new PrioritySelector("ConditionalSelector" + trueNode.name + falseNode.name);
 
+            Sequence trueSequence = new Sequence("TrueSequence", 1);
+            trueSequence.AddChild(new Leaf("ConditionCheck", new Condition(condition)));
+            trueSequence.AddChild(trueNode);
 
-            behaviourTree.AddChild(rootSequence);
+            Sequence falseSequence = new Sequence("FalseSequence", 0);
+            falseSequence.AddChild(new Leaf("ConditionCheck", new Condition(() => !condition())));
+            falseSequence.AddChild(falseNode);
+
+            selectorNode.AddChild(trueSequence);
+            selectorNode.AddChild(falseSequence);
+            return selectorNode;
         }
 
         private List<Vector2Int> _patrolPoints = new List<Vector2Int>();
@@ -149,14 +152,13 @@ namespace _Project.Features.EnemyModule {
 
         private BlackboardKey IsPlayerInRangeKey => Blackboard.GetOrRegisterKey(BlackboardKeys.Bool.IS_PLAYER_IN_RANGE);
         private BlackboardKey IsChasingPlayerKey => Blackboard.GetOrRegisterKey(BlackboardKeys.Bool.IS_CHASING_PLAYER);
+        private BlackboardKey TargetPointKey => Blackboard.GetOrRegisterKey(BlackboardKeys.Vector2Int.TARGET_POINT);
+        private BlackboardKey LastKnownPlayerPositionKey => Blackboard.GetOrRegisterKey(BlackboardKeys.Vector3.LAST_KNOWN_PLAYER_POSITION);
 
         protected override void Update() {
             if (_patrolPoints.Count == 0)
                 GetPatrolPoints(3);
             base.Update();
-            if (IsPlayerInRange) {
-                Debug.LogError($"[ShadowOfStormsAI.Update Line 152]");
-            }
         }
 
         private void GetPatrolPoints(int patrolPointsCount) {
@@ -232,6 +234,68 @@ namespace _Project.Features.EnemyModule {
                     Gizmos.DrawWireCube(new Vector3(groupBlock.x, groupBlock.y, 0), Vector3.one);
                 }
             }
+        }
+
+        private void Deprecated(BehaviourTree behaviourTree) {
+            Leaf isUsingAttack1 = new Leaf("IsUsingAttack1", new Condition(IsUsingAttack1));
+            Leaf isUsingAttack2 = new Leaf("IsUsingAttack2", new Condition(IsUsingAttack2));
+            Leaf isUsingAttack3 = new Leaf("IsUsingAttack3", new Condition(IsUsingAttack3));
+
+            Leaf startAttack1 = new Leaf("StartAttack1", new StartAttackStrategy(_attack1));
+            Leaf startAttack2 = new Leaf("StartAttack2", new StartAttackStrategy(_attack2));
+            Leaf startAttack3 = new Leaf("StartAttack3", new StartAttackStrategy(_attack3));
+
+            Leaf waitForAttack1End = new Leaf("WaitForAttack1End", new WaitForAttackEndStrategy(_attack1));
+            Leaf waitForAttack2End = new Leaf("WaitForAttack2End", new WaitForAttackEndStrategy(_attack2));
+            Leaf waitForAttack3End = new Leaf("WaitForAttack3End", new WaitForAttackEndStrategy(_attack3));
+
+            Leaf stopMovement = new Leaf("Stop Mover", new ActionStrategy(() => _enemyMovement.Stop()));
+
+            Sequence attack1Sequence = new Sequence("Attack1Sequence");
+            attack1Sequence.AddChild(isUsingAttack1);
+            attack1Sequence.AddChild(stopMovement);
+            attack1Sequence.AddChild(startAttack1);
+            attack1Sequence.AddChild(waitForAttack1End);
+            attack1Sequence.AddChild(new Leaf("WaitForTime", new WaitForTimeStrategy(10.5f)));
+            attack1Sequence.AddChild(new Leaf("LogAttack1End", new ActionStrategy(LogAttack1End)));
+
+            Sequence attack2Sequence = new Sequence("Attack2Sequence");
+            attack2Sequence.AddChild(isUsingAttack2);
+            attack2Sequence.AddChild(stopMovement);
+            attack2Sequence.AddChild(startAttack2);
+            attack2Sequence.AddChild(waitForAttack2End);
+            attack2Sequence.AddChild(new Leaf("LogAttack2End", new ActionStrategy(LogAttack2End)));
+
+            Sequence attack3Sequence = new Sequence("Attack3Sequence");
+            attack3Sequence.AddChild(isUsingAttack3);
+            attack3Sequence.AddChild(stopMovement);
+            attack3Sequence.AddChild(startAttack3);
+            attack3Sequence.AddChild(waitForAttack3End);
+            attack3Sequence.AddChild(new Leaf("LogAttack3End", new ActionStrategy(LogAttack3End)));
+
+            PrioritySelector attackSelector = new PrioritySelector("AttackSelector", 10);
+            attackSelector.AddChild(attack1Sequence);
+            attackSelector.AddChild(attack2Sequence);
+            attackSelector.AddChild(attack3Sequence);
+
+            Sequence patrolSequence = new Sequence("PatrolSequence", -1);
+            patrolSequence.AddChild(new Leaf("SetPatrolSpeed",
+                new StatChangeStrategy(_statService, EntityStats.CurrentSpeed, _statService.GetStat(EntityStats.PatrolSpeed))));
+            patrolSequence.AddChild(new Leaf("Patrol", new PatrolStrategy(_enemyMovement, _patrolPoints, 2f)));
+
+            Node chaseSequence = CreateChaseSequence();
+
+            PrioritySelector overallSelector = new PrioritySelector("OverallSelector");
+            overallSelector.AddChild(attackSelector);
+            overallSelector.AddChild(patrolSequence);
+            overallSelector.AddChild(chaseSequence);
+
+            Sequence rootSequence = new Sequence("RootSequence");
+            rootSequence.AddChild(new Leaf("IsAlive", new Condition(() => _statService.GetStat(EntityStats.CurrentHealth) > 0)));
+            rootSequence.AddChild(overallSelector);
+
+
+            behaviourTree.AddChild(rootSequence);
         }
     }
 
@@ -320,7 +384,6 @@ namespace _Project.Features.EnemyModule {
         private readonly EntityStats _statToChange;
         private readonly float _newValue;
         private readonly float _originalValue;
-        private bool _isRestored;
 
         public StatChangeStrategy(IStatService<EntityStats> statService, EntityStats statToChange, float newValue) {
             _statService = statService;
@@ -330,19 +393,10 @@ namespace _Project.Features.EnemyModule {
         }
 
         public Node.Status Process() {
-            if (!_isRestored) {
-                _statService.SetStat(_statToChange, _newValue);
-                _isRestored = true;
-            }
-
+            _statService.SetStat(_statToChange, _newValue);
             return Node.Status.Success;
         }
 
-        public void Reset() {
-            if (_isRestored) {
-                _statService.SetStat(_statToChange, _originalValue);
-                _isRestored = false;
-            }
-        }
+        public void Reset() { }
     }
 }

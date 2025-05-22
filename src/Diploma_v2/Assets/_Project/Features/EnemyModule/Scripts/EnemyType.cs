@@ -4,5 +4,6 @@
         ShadowOfStorms = 1,
         StormHead = 2,
         SwordOfStorms = 3,
+        OnePlaceGuardRobot = 4,
     }
 }

@@ -7,7 +7,7 @@ using Zenject;
 
 namespace _Project.Features.EnemyModule {
     public class PlayerInspector : MonoBehaviour {
-        [SerializeField] private ShadowOfStormsAI _shadowOfStormsAI;
+        [SerializeField] private EnemyAI _shadowOfStormsAI;
         [SerializeField] private Transform _rotationRoot;
 
         private LayersConfiguration _layersConfiguration;
@@ -21,7 +21,6 @@ namespace _Project.Features.EnemyModule {
 
         private BlackboardKey _lastKnownPlayerPositionKey;
         private BlackboardKey _isPlayerInRangeKey;
-
 
         [Inject]
         private void InjectDependencies(LayersConfiguration layersConfiguration, IStatService<EntityStats> statService,
