@@ -16,6 +16,7 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 	public class GuardRobotWeapon : MonoBehaviour, IWeapon, IShootable, IReloadable, IRotatable {
 		[SerializeField] private Transform _firePoint;
 		[SerializeField] private Vector2 _attackDirection;
+		
 
 		private const WeaponType WEAPON_TYPE = WeaponType.GuardRobotWeapon;
 		private const ProjectileType PROJECTILE_TYPE = ProjectileType.BulletRaycast;
@@ -110,6 +111,6 @@ namespace _Project.Features.WeaponsModule.Scripts.Weapons.WeaponsInstances {
 		}
 
 		private Vector3 GetAttackDirection() =>
-			transform.rotation * (_attackDirection * transform.localScale.x);
+			transform.rotation * (_attackDirection * Mathf.Sign(transform.lossyScale.x));
 	}
 } 

@@ -22,6 +22,8 @@ namespace _Project.Features.EnemyModule.BasicBehaviour
         
         private Vector2Int _currentTargetPosition;
         private bool _hasTarget = false;
+        
+        public bool IsMoving => MoveDirection != Vector2.zero && _hasTarget;
 
         [Inject]
         private void InjectDependencies(IStatService<EntityStats> statService)

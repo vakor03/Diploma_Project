@@ -57,19 +57,27 @@ namespace _Project.Features.LevelGeneratorModule
                 }
 
                 List<Vector2Int> availablePositions = new List<Vector2Int>(group.Blocks);
-                for (int i = 0; i < 3 && availablePositions.Count > 0; i++)
+                for (int i = 0; i < 2 && availablePositions.Count > 0; i++)
                 {
                     int randomIndex = random.Next(0, availablePositions.Count);
                     Vector2Int spawnPos = availablePositions[randomIndex];
                     availablePositions.RemoveAt(randomIndex);
 
                     Vector3 worldPos = GetPositionFromTilemap(spawnPos, false);
-                    bool faceRight = random.Next(0, 2) == 1;
-                    EnemyType enemyType = (EnemyType)random.Next(0, 2);
+                    // bool faceRight = random.Next(0, 2) == 1;
+                    bool faceRight = true;
+                    EnemyType enemyType = ChooseRandom(new List<EnemyType>() { EnemyType.BigGuardRobot , EnemyType.ShadowOfStorms});
 
-                    _enemySpawnPointsModel.SpawnPoints.Add(new EnemySpawnData(worldPos, EnemyType.ShadowOfStorms, faceRight));
+                    _enemySpawnPointsModel.SpawnPoints.Add(new EnemySpawnData(worldPos, enemyType, faceRight));
+                    // return;
                 }
             }
+        }
+        
+        private EnemyType ChooseRandom(List<EnemyType> enemyTypes)
+        {
+            int randomIndex = _seedService.GetRandom().Next(0, enemyTypes.Count);
+            return enemyTypes[randomIndex];
         }
 
         public Vector3 GetPositionFromTilemap(Vector2Int tilePosition, bool centerOfTile)

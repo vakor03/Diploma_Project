@@ -1,6 +1,7 @@
 ﻿using System;
 using _Project.Features.StatsModule;
 using _Project.Features.WeaponsModule.Scripts.Weapons.DamagablesModule;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using Zenject;
 
@@ -37,6 +38,11 @@ namespace _Project.Features.DamageModule {
                 OnDeath?.Invoke();
                 OnAfterDeath?.Invoke();
             }
+        }
+        
+        [Button]
+        private void InstantDeath() {
+            TakeDamage(float.MaxValue);
         }
     }
 }
