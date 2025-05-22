@@ -33,6 +33,7 @@ namespace _Project.Features.LevelGeneratorModule
 
         public void CalculateEnemySpawnPoints()
         {
+            _enemySpawnPointsModel.SpawnPoints.Clear();
             var random = _seedService.GetRandom();
 
             foreach (BlockGroup group in _blockGroupsModel.Groups)
