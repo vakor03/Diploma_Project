@@ -1,4 +1,5 @@
 ﻿using System;
+using _Project.Features.InputModule;
 using _Project.Features.PlayerModule;
 using _Project.Features.StatsModule;
 using UnityEngine;
@@ -44,11 +45,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask _groundLayer;
 
     [SerializeField] private Transform _playerVisuals;
+    private IInputService _inputService;
 
     [Inject]
-    private void InjectDependencies(IStatService<EntityStats> statService)
-    {
+    private void InjectDependencies(IStatService<EntityStats> statService, IInputService inputService) {
         _statService = statService;
+        _inputService = inputService;
     }
 
     private void Start()
@@ -95,8 +97,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleInput()
     {
-        _moveInput.x = Input.GetAxisRaw("Horizontal");
-        _moveInput.y = Input.GetAxisRaw("Vertical");
+        Vector2 moveDirection = _inputService.GetMoveDirection();
+        _moveInput.x = moveDirection.x;
+        _moveInput.y = moveDirection.y;
 
         if (_moveInput.x != 0)
             CheckDirectionToFace(_moveInput.x > 0);
@@ -106,12 +109,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckJumpInputs()
     {
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
+        if(_inputService.GetJumpPressed())
         {
             OnJumpInput();
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.J))
+        if (_inputService.GetJumpReleased())
         {
             OnJumpUpInput();
         }
