@@ -135,6 +135,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -459,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rusty Robot Purple 20x29 Without Shadow_0: 8515602600888395237
+      Rusty Robot Purple 20x29 Without Shadow_1: 7441964923825300805
+      Rusty Robot Purple 20x29 Without Shadow_10: -2069297684058166666
+      Rusty Robot Purple 20x29 Without Shadow_11: -4795077544279790131
+      Rusty Robot Purple 20x29 Without Shadow_12: -8474523816370709087
+      Rusty Robot Purple 20x29 Without Shadow_13: -1067897543364313912
+      Rusty Robot Purple 20x29 Without Shadow_2: -7716366070138107201
+      Rusty Robot Purple 20x29 Without Shadow_3: 2869639122087138295
+      Rusty Robot Purple 20x29 Without Shadow_4: 2975630819164149909
+      Rusty Robot Purple 20x29 Without Shadow_5: -426182585272839462
+      Rusty Robot Purple 20x29 Without Shadow_6: 5355734299009817695
+      Rusty Robot Purple 20x29 Without Shadow_7: -3790648619752392267
+      Rusty Robot Purple 20x29 Without Shadow_8: 7199736056322990095
+      Rusty Robot Purple 20x29 Without Shadow_9: 8783698859089153402
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -306,6 +306,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1884,7 +1910,78 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Planter Bot Blue_0: 4392707692872154192
+      Planter Bot Blue_1: 6854457143508856042
+      Planter Bot Blue_10: 1954330527437613875
+      Planter Bot Blue_11: 112252063495784311
+      Planter Bot Blue_12: -4388146395126375536
+      Planter Bot Blue_13: -3705142246006299395
+      Planter Bot Blue_14: -5556176815035071338
+      Planter Bot Blue_15: 4583974332339776506
+      Planter Bot Blue_16: 2862251630274617325
+      Planter Bot Blue_17: -3455842132906816192
+      Planter Bot Blue_18: -4110227082735995066
+      Planter Bot Blue_19: -6499470227695730002
+      Planter Bot Blue_2: 1404128763187831978
+      Planter Bot Blue_20: 5940780779129551995
+      Planter Bot Blue_21: -7903874250699276328
+      Planter Bot Blue_22: 3860369701692952002
+      Planter Bot Blue_23: 1161626705711108747
+      Planter Bot Blue_24: -7402157699629717584
+      Planter Bot Blue_25: 1566034860001045548
+      Planter Bot Blue_26: 2055610989066975674
+      Planter Bot Blue_27: 6871296913065420993
+      Planter Bot Blue_28: -6987537093068621736
+      Planter Bot Blue_29: 1815195990335724955
+      Planter Bot Blue_3: -2162295416486716724
+      Planter Bot Blue_30: 1360771208772817480
+      Planter Bot Blue_31: 4242135451503030271
+      Planter Bot Blue_32: -8008333452232481111
+      Planter Bot Blue_33: -3393289493115986493
+      Planter Bot Blue_34: -6423410331554812918
+      Planter Bot Blue_35: -5570004251540082362
+      Planter Bot Blue_36: 5249601506724386965
+      Planter Bot Blue_37: -6431591917073838541
+      Planter Bot Blue_38: -6954132417233486035
+      Planter Bot Blue_39: -3327471918789775476
+      Planter Bot Blue_4: 4188272806558635431
+      Planter Bot Blue_40: 1526894155429888103
+      Planter Bot Blue_41: -6575902982283294433
+      Planter Bot Blue_42: -1666783790752238790
+      Planter Bot Blue_43: -1211920706529244924
+      Planter Bot Blue_44: -3143500355142187590
+      Planter Bot Blue_45: -1458836856940482620
+      Planter Bot Blue_46: -8052369666599556107
+      Planter Bot Blue_47: 6874872764317451711
+      Planter Bot Blue_48: 2121047476080533046
+      Planter Bot Blue_49: -4097907026469337386
+      Planter Bot Blue_5: -5368511470393525155
+      Planter Bot Blue_50: 4523883923445762684
+      Planter Bot Blue_51: 300147045994595632
+      Planter Bot Blue_52: -4319371647054761921
+      Planter Bot Blue_53: -2168676653093125442
+      Planter Bot Blue_54: -1021623749880430261
+      Planter Bot Blue_55: -477997025250743568
+      Planter Bot Blue_56: 858119392351425320
+      Planter Bot Blue_57: 8413915876130517605
+      Planter Bot Blue_58: 3012270073510836882
+      Planter Bot Blue_59: 389965387174035901
+      Planter Bot Blue_6: -4753944479239618434
+      Planter Bot Blue_60: 5342603276017112270
+      Planter Bot Blue_61: -4608286468900852317
+      Planter Bot Blue_62: -3369711438568452832
+      Planter Bot Blue_63: -2808682123581084430
+      Planter Bot Blue_64: 5416962018448612445
+      Planter Bot Blue_65: -2635522612483206230
+      Planter Bot Blue_66: 3828147051252365501
+      Planter Bot Blue_67: 5503626127087968312
+      Planter Bot Blue_68: 4131706407342142056
+      Planter Bot Blue_69: 4493793213032660571
+      Planter Bot Blue_7: -3049563472907747570
+      Planter Bot Blue_70: -7828967149452734708
+      Planter Bot Blue_8: 3844889895841276003
+      Planter Bot Blue_9: -8181949907115690471
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

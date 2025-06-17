@@ -189,6 +189,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -909,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Robot 1 - Blue 26x34 without shadows_0: 6752799936862011671
+      Robot 1 - Blue 26x34 without shadows_1: 3826713929839821109
+      Robot 1 - Blue 26x34 without shadows_10: -2811428043987241960
+      Robot 1 - Blue 26x34 without shadows_11: 4388407044694871326
+      Robot 1 - Blue 26x34 without shadows_12: -5163230842152879060
+      Robot 1 - Blue 26x34 without shadows_13: -1001001769763721163
+      Robot 1 - Blue 26x34 without shadows_14: -7088344401069728984
+      Robot 1 - Blue 26x34 without shadows_15: 3129032095008439726
+      Robot 1 - Blue 26x34 without shadows_16: -3130868678227916912
+      Robot 1 - Blue 26x34 without shadows_17: 6124662140021713341
+      Robot 1 - Blue 26x34 without shadows_18: 473202386051701757
+      Robot 1 - Blue 26x34 without shadows_19: -7589550848051460715
+      Robot 1 - Blue 26x34 without shadows_2: -1339845082157289318
+      Robot 1 - Blue 26x34 without shadows_20: -6701539761407731772
+      Robot 1 - Blue 26x34 without shadows_21: -4661087714327968149
+      Robot 1 - Blue 26x34 without shadows_22: -6853107591531686709
+      Robot 1 - Blue 26x34 without shadows_23: -4889043108997616791
+      Robot 1 - Blue 26x34 without shadows_24: 8320013324318297897
+      Robot 1 - Blue 26x34 without shadows_25: 5516842910914293890
+      Robot 1 - Blue 26x34 without shadows_26: -6227333098711888802
+      Robot 1 - Blue 26x34 without shadows_27: 1652335784506845265
+      Robot 1 - Blue 26x34 without shadows_28: 4521168754504768049
+      Robot 1 - Blue 26x34 without shadows_29: 843083231779725274
+      Robot 1 - Blue 26x34 without shadows_3: -3798840997096581899
+      Robot 1 - Blue 26x34 without shadows_30: 515347025557291428
+      Robot 1 - Blue 26x34 without shadows_31: 9133207080653299091
+      Robot 1 - Blue 26x34 without shadows_4: 4416556394380473973
+      Robot 1 - Blue 26x34 without shadows_5: -6790316763396341511
+      Robot 1 - Blue 26x34 without shadows_6: 2329164314991492289
+      Robot 1 - Blue 26x34 without shadows_7: 8657720045068625027
+      Robot 1 - Blue 26x34 without shadows_8: -1667734722561203095
+      Robot 1 - Blue 26x34 without shadows_9: -3255409246457420333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

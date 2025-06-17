@@ -144,6 +144,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -534,7 +560,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Delivery Bot yellow without shadow 23x21_0: -7293966666900466483
+      Delivery Bot yellow without shadow 23x21_1: -4032351173477234123
+      Delivery Bot yellow without shadow 23x21_10: 2118151888322874347
+      Delivery Bot yellow without shadow 23x21_11: -1240085735576439321
+      Delivery Bot yellow without shadow 23x21_12: 6092380324959209708
+      Delivery Bot yellow without shadow 23x21_13: 1320640842674507520
+      Delivery Bot yellow without shadow 23x21_14: 2482060629883464162
+      Delivery Bot yellow without shadow 23x21_15: 1266804859908901481
+      Delivery Bot yellow without shadow 23x21_16: -6488618462627836223
+      Delivery Bot yellow without shadow 23x21_2: 6756381994522848817
+      Delivery Bot yellow without shadow 23x21_3: -2763674980040484905
+      Delivery Bot yellow without shadow 23x21_4: 623064130837855922
+      Delivery Bot yellow without shadow 23x21_5: -409814475910109830
+      Delivery Bot yellow without shadow 23x21_6: -7514352498167669929
+      Delivery Bot yellow without shadow 23x21_7: -4548165446648649564
+      Delivery Bot yellow without shadow 23x21_8: -3622594871859940576
+      Delivery Bot yellow without shadow 23x21_9: 1721076328648143231
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

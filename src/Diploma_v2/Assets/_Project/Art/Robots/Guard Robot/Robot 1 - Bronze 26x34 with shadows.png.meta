@@ -174,6 +174,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -784,7 +810,34 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Robot 1 - Bronze 26x34 with shadows_0: -1943464185035895730
+      Robot 1 - Bronze 26x34 with shadows_1: -7760439628184643612
+      Robot 1 - Bronze 26x34 with shadows_10: -1492378069296358153
+      Robot 1 - Bronze 26x34 with shadows_11: 8379441724233558416
+      Robot 1 - Bronze 26x34 with shadows_12: -2700534188946889783
+      Robot 1 - Bronze 26x34 with shadows_13: 769255355893424461
+      Robot 1 - Bronze 26x34 with shadows_14: 7825818560071355686
+      Robot 1 - Bronze 26x34 with shadows_15: 462503850989784499
+      Robot 1 - Bronze 26x34 with shadows_16: 7292816009901471870
+      Robot 1 - Bronze 26x34 with shadows_17: 7399646907538688216
+      Robot 1 - Bronze 26x34 with shadows_18: 4401319189279636387
+      Robot 1 - Bronze 26x34 with shadows_19: 6697247165097108213
+      Robot 1 - Bronze 26x34 with shadows_2: -8261158783446989500
+      Robot 1 - Bronze 26x34 with shadows_20: 6328503405165408260
+      Robot 1 - Bronze 26x34 with shadows_21: -1116592526643117528
+      Robot 1 - Bronze 26x34 with shadows_22: -4697815592160598568
+      Robot 1 - Bronze 26x34 with shadows_23: 1226131963549710377
+      Robot 1 - Bronze 26x34 with shadows_24: 946265502918957151
+      Robot 1 - Bronze 26x34 with shadows_25: 133792444695650847
+      Robot 1 - Bronze 26x34 with shadows_26: -8401273682167897166
+      Robot 1 - Bronze 26x34 with shadows_3: -1679747639705558661
+      Robot 1 - Bronze 26x34 with shadows_4: 3330075235376272894
+      Robot 1 - Bronze 26x34 with shadows_5: -439674459664143226
+      Robot 1 - Bronze 26x34 with shadows_6: -308160257272357145
+      Robot 1 - Bronze 26x34 with shadows_7: -920513869978125919
+      Robot 1 - Bronze 26x34 with shadows_8: 201213761368448259
+      Robot 1 - Bronze 26x34 with shadows_9: 3428381392974659410
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

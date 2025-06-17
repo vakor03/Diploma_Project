@@ -213,6 +213,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1109,7 +1135,47 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Planter Bot Red no shadow_0: 5622231678719449477
+      Planter Bot Red no shadow_1: 1613840240371992744
+      Planter Bot Red no shadow_10: -7043727900887858960
+      Planter Bot Red no shadow_11: -8585957560896182553
+      Planter Bot Red no shadow_12: 7044220885360582934
+      Planter Bot Red no shadow_13: -8658512506288485173
+      Planter Bot Red no shadow_14: -3391238442907555789
+      Planter Bot Red no shadow_15: -6244511184587091974
+      Planter Bot Red no shadow_16: -1891213859369945083
+      Planter Bot Red no shadow_17: -79532476323125492
+      Planter Bot Red no shadow_18: 3777526686310927444
+      Planter Bot Red no shadow_19: 6640994375468996135
+      Planter Bot Red no shadow_2: 4980837867711028344
+      Planter Bot Red no shadow_20: 4711788298356130374
+      Planter Bot Red no shadow_21: 3763487066158871294
+      Planter Bot Red no shadow_22: -1157907614456947678
+      Planter Bot Red no shadow_23: 8314866264636577375
+      Planter Bot Red no shadow_24: -707687795549839524
+      Planter Bot Red no shadow_25: -6170789378013832431
+      Planter Bot Red no shadow_26: -7563356410906708571
+      Planter Bot Red no shadow_27: 475823515960764082
+      Planter Bot Red no shadow_28: 8347840208834514508
+      Planter Bot Red no shadow_29: -7157805834284653289
+      Planter Bot Red no shadow_3: 2007879459841493148
+      Planter Bot Red no shadow_30: 3656582610230846632
+      Planter Bot Red no shadow_31: 626490119522954685
+      Planter Bot Red no shadow_32: 7703904406137513677
+      Planter Bot Red no shadow_33: -1860308167628020073
+      Planter Bot Red no shadow_34: 8552774052988504629
+      Planter Bot Red no shadow_35: -5477409324041812956
+      Planter Bot Red no shadow_36: 948890501690725695
+      Planter Bot Red no shadow_37: -718442584663075448
+      Planter Bot Red no shadow_38: 2004595115450772942
+      Planter Bot Red no shadow_39: -4199937676039154034
+      Planter Bot Red no shadow_4: 6717203828600506363
+      Planter Bot Red no shadow_5: -8591978272733927759
+      Planter Bot Red no shadow_6: -6559633593267845025
+      Planter Bot Red no shadow_7: 2257473396298619842
+      Planter Bot Red no shadow_8: -4217690423692742897
+      Planter Bot Red no shadow_9: 4509561909950102295
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -132,6 +132,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -434,7 +460,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rusty Robot Purple 20x29 With Shadow_0: -5913741308965281594
+      Rusty Robot Purple 20x29 With Shadow_1: 7678326558656161620
+      Rusty Robot Purple 20x29 With Shadow_10: 2488750183061794902
+      Rusty Robot Purple 20x29 With Shadow_11: -3555790769732251870
+      Rusty Robot Purple 20x29 With Shadow_12: -522294032518009575
+      Rusty Robot Purple 20x29 With Shadow_2: -8870134981527133766
+      Rusty Robot Purple 20x29 With Shadow_3: 2049636346383704835
+      Rusty Robot Purple 20x29 With Shadow_4: -9136597376428180206
+      Rusty Robot Purple 20x29 With Shadow_5: 910919491716802747
+      Rusty Robot Purple 20x29 With Shadow_6: 6146777013919269242
+      Rusty Robot Purple 20x29 With Shadow_7: -7627410456103299629
+      Rusty Robot Purple 20x29 With Shadow_8: -3312550832273819941
+      Rusty Robot Purple 20x29 With Shadow_9: 3628415928294535315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -306,6 +306,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1884,7 +1910,78 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Planter Bot Red_0: -7943714626118032398
+      Planter Bot Red_1: 521987784053743066
+      Planter Bot Red_10: 9059370864697677073
+      Planter Bot Red_11: 4373124070425197152
+      Planter Bot Red_12: -3224998952075036350
+      Planter Bot Red_13: 68493228146158119
+      Planter Bot Red_14: -8573571711759652012
+      Planter Bot Red_15: 2525997666299728483
+      Planter Bot Red_16: -8960835824433024329
+      Planter Bot Red_17: 6183327077618401466
+      Planter Bot Red_18: 3732842712082298440
+      Planter Bot Red_19: 37799966057561528
+      Planter Bot Red_2: 6983244319768815713
+      Planter Bot Red_20: 552971774986311206
+      Planter Bot Red_21: 6338434806938653559
+      Planter Bot Red_22: -1223181910342251265
+      Planter Bot Red_23: -5332189608483860707
+      Planter Bot Red_24: -308757180630615356
+      Planter Bot Red_25: 5840582975082079059
+      Planter Bot Red_26: 2159101194227346621
+      Planter Bot Red_27: -4995858241787797921
+      Planter Bot Red_28: -1474077876639501773
+      Planter Bot Red_29: 8182457327313381277
+      Planter Bot Red_3: 8937102964003668673
+      Planter Bot Red_30: 6068802478304586540
+      Planter Bot Red_31: 2137258977898960871
+      Planter Bot Red_32: 2330745073197106276
+      Planter Bot Red_33: -3515455625889172093
+      Planter Bot Red_34: -4870548317739112242
+      Planter Bot Red_35: -3462448723149486176
+      Planter Bot Red_36: 4977021519171257834
+      Planter Bot Red_37: -9214971944940779998
+      Planter Bot Red_38: -7995929784731152704
+      Planter Bot Red_39: -7999853575356364863
+      Planter Bot Red_4: -3574447478928925623
+      Planter Bot Red_40: -9003228213755280408
+      Planter Bot Red_41: 6127138563556518213
+      Planter Bot Red_42: -251508432602290207
+      Planter Bot Red_43: -7791019322129126780
+      Planter Bot Red_44: -8985176599700980505
+      Planter Bot Red_45: 5355680400801006061
+      Planter Bot Red_46: 4893482170490354842
+      Planter Bot Red_47: 9096562712201620650
+      Planter Bot Red_48: -8453401084328403131
+      Planter Bot Red_49: 3283191971507291355
+      Planter Bot Red_5: -370414604770473945
+      Planter Bot Red_50: 1097427443491425162
+      Planter Bot Red_51: -1350621958577141936
+      Planter Bot Red_52: -5038150777902548468
+      Planter Bot Red_53: -2924212755821361961
+      Planter Bot Red_54: -7993241053519668795
+      Planter Bot Red_55: 885792789121325438
+      Planter Bot Red_56: -222390465033115803
+      Planter Bot Red_57: 1473890652383422040
+      Planter Bot Red_58: -5803823909335799450
+      Planter Bot Red_59: 6323401000730258203
+      Planter Bot Red_6: 1791830663675425478
+      Planter Bot Red_60: 2615958090565303083
+      Planter Bot Red_61: -8164482535732580656
+      Planter Bot Red_62: 6168789447887629994
+      Planter Bot Red_63: 6032412805839560211
+      Planter Bot Red_64: 769905932489153616
+      Planter Bot Red_65: 1979742875443388762
+      Planter Bot Red_66: 1145815392143686595
+      Planter Bot Red_67: 1923675059223211469
+      Planter Bot Red_68: 4636075205075926321
+      Planter Bot Red_69: -771744224330751957
+      Planter Bot Red_7: 846826883995164494
+      Planter Bot Red_70: 935928613983617879
+      Planter Bot Red_8: 671492129900777733
+      Planter Bot Red_9: 3761500705865423880
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

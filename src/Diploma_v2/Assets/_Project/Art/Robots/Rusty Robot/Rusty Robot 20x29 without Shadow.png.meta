@@ -135,6 +135,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -459,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rusty Robot 20x29 without Shadow_0: 3907202194768388664
+      Rusty Robot 20x29 without Shadow_1: -3292934872489183540
+      Rusty Robot 20x29 without Shadow_10: -4185254130258176367
+      Rusty Robot 20x29 without Shadow_11: -4876996569298038317
+      Rusty Robot 20x29 without Shadow_12: 8138306580087306861
+      Rusty Robot 20x29 without Shadow_13: 495349818574050394
+      Rusty Robot 20x29 without Shadow_2: -6983386979025472566
+      Rusty Robot 20x29 without Shadow_3: 2381534470635212393
+      Rusty Robot 20x29 without Shadow_4: 1789462426616340095
+      Rusty Robot 20x29 without Shadow_5: 655559025042956530
+      Rusty Robot 20x29 without Shadow_6: -2890717177324681020
+      Rusty Robot 20x29 without Shadow_7: 1624406096193725633
+      Rusty Robot 20x29 without Shadow_8: 1894702559235891007
+      Rusty Robot 20x29 without Shadow_9: -5150689194673151136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

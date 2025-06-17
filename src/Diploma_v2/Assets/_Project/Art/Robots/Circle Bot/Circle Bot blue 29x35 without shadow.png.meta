@@ -114,6 +114,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -284,7 +310,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Circle Bot blue 29x35 without shadow_0: 6299157052668567651
+      Circle Bot blue 29x35 without shadow_1: 5065386256628689350
+      Circle Bot blue 29x35 without shadow_2: 4155853343437063282
+      Circle Bot blue 29x35 without shadow_3: -5878123111047589967
+      Circle Bot blue 29x35 without shadow_4: -153406310701194440
+      Circle Bot blue 29x35 without shadow_5: 4351757288931671022
+      Circle Bot blue 29x35 without shadow_6: -7316266686687826992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

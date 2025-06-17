@@ -132,6 +132,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -434,7 +460,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rusty Robot 20x29 with Shadow_0: 4440933061986742997
+      Rusty Robot 20x29 with Shadow_1: -3151626858371220138
+      Rusty Robot 20x29 with Shadow_10: 3779524557910611437
+      Rusty Robot 20x29 with Shadow_11: 3404340705723008342
+      Rusty Robot 20x29 with Shadow_12: -5458465867956146415
+      Rusty Robot 20x29 with Shadow_2: 3519052211411852342
+      Rusty Robot 20x29 with Shadow_3: 5530356325238754928
+      Rusty Robot 20x29 with Shadow_4: 6443916103654689043
+      Rusty Robot 20x29 with Shadow_5: 3950872345522622767
+      Rusty Robot 20x29 with Shadow_6: -7373816228502330873
+      Rusty Robot 20x29 with Shadow_7: 5602197914834304593
+      Rusty Robot 20x29 with Shadow_8: 4185476745839278531
+      Rusty Robot 20x29 with Shadow_9: -4865897634192427434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

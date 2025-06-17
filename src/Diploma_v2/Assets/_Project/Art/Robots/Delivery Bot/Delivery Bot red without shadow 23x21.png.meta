@@ -144,6 +144,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -534,7 +560,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Delivery Bot red without shadow 23x21_0: -7474232846811052537
+      Delivery Bot red without shadow 23x21_1: -803588642602456533
+      Delivery Bot red without shadow 23x21_10: 1852510537062816220
+      Delivery Bot red without shadow 23x21_11: 2382119166746989638
+      Delivery Bot red without shadow 23x21_12: -6821595672552061878
+      Delivery Bot red without shadow 23x21_13: 2395091297646211086
+      Delivery Bot red without shadow 23x21_14: -6075498821225933949
+      Delivery Bot red without shadow 23x21_15: -3305246527557659749
+      Delivery Bot red without shadow 23x21_16: -1105065968289509048
+      Delivery Bot red without shadow 23x21_2: -4716739728517849821
+      Delivery Bot red without shadow 23x21_3: 1833836074476927084
+      Delivery Bot red without shadow 23x21_4: 159723357296120306
+      Delivery Bot red without shadow 23x21_5: 8371682383247919114
+      Delivery Bot red without shadow 23x21_6: -1509378919869587685
+      Delivery Bot red without shadow 23x21_7: 3833759713752712349
+      Delivery Bot red without shadow 23x21_8: 3144603479328981970
+      Delivery Bot red without shadow 23x21_9: 584920524862880757
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

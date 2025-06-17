@@ -135,6 +135,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -459,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rusty Robot grey 20x29 without Shadow_0: -7125347927242033721
+      Rusty Robot grey 20x29 without Shadow_1: -8674798885883164296
+      Rusty Robot grey 20x29 without Shadow_10: 24148509312565977
+      Rusty Robot grey 20x29 without Shadow_11: 6216861676664981525
+      Rusty Robot grey 20x29 without Shadow_12: -7396566881451786504
+      Rusty Robot grey 20x29 without Shadow_13: 3688706061748266434
+      Rusty Robot grey 20x29 without Shadow_2: 3865654287200177593
+      Rusty Robot grey 20x29 without Shadow_3: 5764493675908846635
+      Rusty Robot grey 20x29 without Shadow_4: 6463665327578802473
+      Rusty Robot grey 20x29 without Shadow_5: -8316956896501092762
+      Rusty Robot grey 20x29 without Shadow_6: -2724546442256633146
+      Rusty Robot grey 20x29 without Shadow_7: 1542777250513321552
+      Rusty Robot grey 20x29 without Shadow_8: 2337799417875171846
+      Rusty Robot grey 20x29 without Shadow_9: 7305179476165220155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

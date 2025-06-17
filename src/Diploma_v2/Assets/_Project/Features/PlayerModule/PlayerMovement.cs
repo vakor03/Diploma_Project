@@ -1,4 +1,5 @@
-﻿using _Project.Features.PlayerModule;
+﻿using System;
+using _Project.Features.PlayerModule;
 using _Project.Features.StatsModule;
 using UnityEngine;
 using Zenject;
