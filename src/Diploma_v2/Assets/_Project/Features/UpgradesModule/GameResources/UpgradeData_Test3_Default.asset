@@ -13,21 +13,22 @@ MonoBehaviour:
   m_Name: UpgradeData_Test3_Default
   m_EditorClassIdentifier: 
   upgradeId: 4
-  displayName: asdfhbgfhd
-  description: sedtgjnsdrtyfgjkfsg
+  displayName: More damage
+  description: 
   rarity: 2
   upgradeType: 1
-  icon: {fileID: -537221702989897742, guid: 154ccd4fa6b97d94584a7cdfb2d7d49f, type: 3}
+  icon: {fileID: -3391257396490946495, guid: 5048b38a9f540634f8854dccb27d8eb1, type: 3}
   statData:
     statType: 0
     baseValue: 10
     valuePerLevel: 5
     isPercentage: 0
   weaponData:
-    weaponId: 
-    modifiers: []
+    weaponType: 0
+    modifiers:
+    - statToModify: 0
+      baseValue: 1
+      valuePerLevel: 1
+      isPercentage: 0
   unlockData:
-    weaponPrefab: {fileID: 0}
-    weaponId: 
-    spawnOffset: {x: 0, y: 0, z: 0}
-    isPassiveWeapon: 0
+    weaponType: 0

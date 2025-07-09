@@ -13,21 +13,18 @@ MonoBehaviour:
   m_Name: UpgradeData_Test1_Default 1
   m_EditorClassIdentifier: 
   upgradeId: 1
-  displayName: sdfgsdfg
+  displayName: More Jumps
   description: gfdjdfgjhdfgjhdfgj
   rarity: 0
   upgradeType: 0
-  icon: {fileID: -3956352792666799710, guid: 5048b38a9f540634f8854dccb27d8eb1, type: 3}
+  icon: {fileID: 7336298474659753992, guid: d0837404b006f2a42bfe602049e3783d, type: 3}
   statData:
-    statType: 0
-    baseValue: 10
-    valuePerLevel: 5
+    statType: 5
+    baseValue: 1
+    valuePerLevel: 1
     isPercentage: 0
   weaponData:
-    weaponId: 
+    weaponType: 0
     modifiers: []
   unlockData:
-    weaponPrefab: {fileID: 0}
-    weaponId: 
-    spawnOffset: {x: 0, y: 0, z: 0}
-    isPassiveWeapon: 0
+    weaponType: 0

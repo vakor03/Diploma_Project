@@ -45,15 +45,20 @@ namespace _Project.Features.EnemyModule {
         }
 
         protected override void SetupTreeComponents(BehaviourTree behaviourTree) {
+            Leaf waitForAttack1End = new Leaf("WaitForAttack1End", new WaitForAttackEndStrategy(_attack1));
             Node playerInRangeNode = new Sequence("PlayerInRangeSequence");
+            Node playerNotInRangeNode = new Sequence("PlayerNotInRangeSequence");
+            
+            playerInRangeNode.AddChild(new Leaf("Reset player not in range node", new ActionStrategy(() => {
+                playerNotInRangeNode.Reset();
+            })));
             playerInRangeNode.AddChild(CreateMoveToPlayerNode());
             playerInRangeNode.AddChild(new Leaf("Is Distance To Attack1", new Condition(() => Vector3.Distance(
                 _playerTransformDataHolder.Player.position, transform.position) < 1.5f)));
+            playerInRangeNode.AddChild(new Leaf("Stop Mover", new ActionStrategy(() => _enemyMovement.Stop())));
             playerInRangeNode.AddChild(new Leaf("Attack1", new StartAttackStrategy(_attack1)));
-            Leaf waitForAttack1End = new Leaf("WaitForAttack1End", new WaitForAttackEndStrategy(_attack1));
             playerInRangeNode.AddChild(waitForAttack1End);
 
-            Node playerNotInRangeNode = new Sequence("PlayerNotInRangeSequence");
             playerNotInRangeNode.AddChild(new Leaf("LogPlayerNotInRange", new ActionStrategy(() => Debug.Log("Player not in range"))));
             playerNotInRangeNode.AddChild(CreatePatrolSequence());
 

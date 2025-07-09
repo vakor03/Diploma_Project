@@ -5,104 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f81ec1c5-378a-40bd-a4b0-d1261408a595" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/indexLayout.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Diploma_v2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/3 Cyborg/Animations/CyborgAnimatior.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/3 Cyborg/Animations/CyborgAnimatior.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Door/door open 41x48.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Door/door open 41x48.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Flower/flower glow 16x16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Flower/flower glow 16x16.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Portal/idle 28x41.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Portal/idle 28x41.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Portal/warp 28x41.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Portal/warp 28x41.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Save/down 16x19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Save/down 16x19.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Save/idle 16x19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Save/idle 16x19.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Save/start up16x19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Save/start up16x19.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Torch/Torch 16x16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Animated objects/Torch/Torch 16x16.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/Blinding Spider.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/Blinding Spider.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/blind attack 16x16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/blind attack 16x16.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/damaged 16x16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/damaged 16x16.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/deah 16x16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/deah 16x16.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/prep blind attack 16x16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/prep blind attack 16x16.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/static idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/static idle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/walk 16x16.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Blinding Spider/walk 16x16.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/Flower Enemy.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/Flower Enemy.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/attack 32x32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/attack 32x32.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/death 32x32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/death 32x32.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/hit 32x32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/hit 32x32.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/move 32x32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/move 32x32.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/viking.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Flower Enemy/viking.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/attack 92x36.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/attack 92x36.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/death 92x36.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/death 92x36.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/hit 92x36.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/hit 92x36.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/idle 92x36.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/idle 92x36.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/run 92x36.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/run 92x36.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/shoot 92x36.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Hell Bot DARK/shoot 92x36.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/charge 112x26.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/charge 112x26.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/damaged 112x26.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/damaged 112x26.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/death 112x26.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/death 112x26.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/fire dash 112x26.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/fire dash 112x26.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/hot wheel dark.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/hot wheel dark.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/idle 112x26.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/idle 112x26.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/move 112x26.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/move 112x26.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/shoot 112x26.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/shoot 112x26.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/wake 112x26.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/Wheel Bot/wake 112x26.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/flame dude dark 94x64.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Sprites/flame dude dark 94x64.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Tileset/DARK Edition Tileset No background.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Tileset/DARK Edition Tileset No background.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Tileset/DARK Edition Tileset with background.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/DARK Edition/Tileset/DARK Edition Tileset with background.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Loading Bar-Transparent.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Loading Bar-Transparent.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot blue 29x35 with shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot blue 29x35 with shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot blue 29x35 without shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot blue 29x35 without shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot green 29x35 with shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot green 29x35 with shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot green 29x35 without shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot green 29x35 without shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot purple 29x35 with shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot purple 29x35 with shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot purple 29x35 without shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Circle Bot/Circle Bot purple 29x35 without shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot blue grey with shadow 23x21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot blue grey with shadow 23x21.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot blue grey without shadow 23x21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot blue grey without shadow 23x21.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot red with shadow 23x21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot red with shadow 23x21.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot red without shadow 23x21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot red without shadow 23x21.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot yellow 23x21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot yellow 23x21.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot yellow without shadow 23x21.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Delivery Bot/Delivery Bot yellow without shadow 23x21.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - Blue 26x34 with shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - Blue 26x34 with shadows.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - Blue 26x34 without shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - Blue 26x34 without shadows.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - Bronze 26x34 with shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - Bronze 26x34 with shadows.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - Bronze 26x34 without shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - Bronze 26x34 without shadows.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - Red 26x34 with shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - Red 26x34 with shadows.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - green 26x34 With Shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Guard Robot/Robot 1 - green 26x34 With Shadows.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Planter Robot/Planter Bot Blue no shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Planter Robot/Planter Bot Blue no shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Planter Robot/Planter Bot Blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Planter Robot/Planter Bot Blue.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Planter Robot/Planter Bot Red no shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Planter Robot/Planter Bot Red no shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Planter Robot/Planter Bot Red.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Planter Robot/Planter Bot Red.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot 20x29 with Shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot 20x29 with Shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot 20x29 without Shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot 20x29 without Shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot Purple 20x29 With Shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot Purple 20x29 With Shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot Purple 20x29 Without Shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot Purple 20x29 Without Shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot grey 20x29 With Shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot grey 20x29 With Shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot grey 20x29 without Shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Robots/Rusty Robot/Rusty Robot grey 20x29 without Shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/Volley Projectile 157x122.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/Volley Projectile 157x122.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner 157x107 with shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner 157x107 with shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Appear.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Appear.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Attack.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Death.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Death.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Idle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Idle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Range Attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Range Attack.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Teleport.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/STRANDED - Electrocutioner/With Shadow/Electricuitioner-Teleport.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/Animated Objects/Orb GLowing thing.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/Animated Objects/Orb GLowing thing.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/Animated Objects/plant.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/Animated Objects/plant.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/Misc/Example.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/Misc/Example.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/Misc/banner.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/Misc/banner.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/Misc/banner.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/Misc/banner.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/cover .png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/cover .png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/StormHead small.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/StormHead small.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/StormHead.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/StormHead.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/The Shadow of Storms small.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/The Shadow of Storms small.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/The Shadow of Storms.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/The Shadow of Storms.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/heal.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/heal.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/healbig.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/healbig.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/healsmall.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/healsmall.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/sword storm big.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/sword storm big.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/sword storm.gif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Sci-fi Static Caves + Sci-fi Pack 8/character Pack 8/gifs/sword storm.gif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Button Icon/Icon Button Close Hover.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Button Icon/Icon Button Close Hover.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Button Icon/Icon Button Close.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Button Icon/Icon Button Close.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Button Icon/Icon Button Hover.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Button Icon/Icon Button Hover.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Button Icon/Icon Button.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Button Icon/Icon Button.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/01.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/02.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/03.png.meta" afterDir="false" />
@@ -138,207 +44,17 @@
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/33.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/33.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/34.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/34.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/35.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Icons/35.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 10.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 11.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 12.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 8.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/Original Color/Potion 9.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 1/Button Active.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 1/Button Active.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 1/Button Disable.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 1/Button Disable.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 1/Button Hover.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 1/Button Hover.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 1/Button Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 1/Button Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 2/Button Active.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 2/Button Active.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 2/Button Disabled.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 2/Button Disabled.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 2/Button Hover.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 2/Button Hover.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 2/Button Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 2/Button Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 3/Active.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 3/Active.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 3/Disabled.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 3/Disabled.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 3/Hover.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 3/Hover.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 3/Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 3/Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 4/Button Active 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 4/Button Active 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 4/Button Hover 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 4/Button Hover 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 4/Button Normal 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button 4/Button Normal 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button Panel/Button Panel 1 Hover.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button Panel/Button Panel 1 Hover.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button Panel/Button Panel 1 Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Button Panel/Button Panel 1 Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X1/Card X1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X1/Card X1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X1/Card X2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X1/Card X2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X1/Panel Empty Green.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X1/Panel Empty Green.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X1/Panel Empty.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X1/Panel Empty.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X1/Panel Red.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X1/Panel Red.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X2/Card X2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X2/Card X2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X2/Card X3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X2/Card X3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X3/Card X5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X3/Card X5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X3/Card X6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X3/Card X6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X4/Card X7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X4/Card X7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X4/Card X8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X4/Card X8.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X4/Panel Border 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X4/Panel Border 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X4/Panel Border 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X4/Panel Border 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X5/Card X10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X5/Card X10.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X5/Card X9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X5/Card X9.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X5/Cell 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X5/Cell 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X5/Cell.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X5/Cell.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X6/Card X11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X6/Card X11.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X6/Card X12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X6/Card X12.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X7/Button SQR Hover.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X7/Button SQR Hover.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X7/Button SQR Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X7/Button SQR Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X7/Card X12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X7/Card X12.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X7/Card X124.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X7/Card X124.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Bar 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Bar 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Button Active 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Button Active 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Button Hover 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Button Hover 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Button Hover.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Button Hover.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Button Normal 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Button Normal 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Button Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Button Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Card X100.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Card X100.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Card X101.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Card X101.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Card X102.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Card X102.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Panel.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Panel.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Slider 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/Card X8/Slider 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/CheckBox/CheckBox Disabled.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/CheckBox/CheckBox Disabled.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/CheckBox/CheckBox False.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/CheckBox/CheckBox False.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/CheckBox/CheckBox True.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/CheckBox/CheckBox True.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/ProgressBar/ProgressBar Background.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/ProgressBar/ProgressBar Background.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/ProgressBar/ProgressBarForeground.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/ProgressBar/ProgressBarForeground.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/SliderBar 1/Bar 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/SliderBar 1/Bar 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/SliderBar 1/Slider 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/SciFI/UI/SliderBar 1/Slider 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_04.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_05.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_06.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_07.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Backgrounds/Back_08.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Normal_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_01_Pressed_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Normal_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_02_Pressed_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Normal_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_03_Pressed_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Normal_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_04_Pressed_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Normal_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_05_Pressed_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Normal_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_06_Pressed_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Normal_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_07_Pressed_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Normal_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Shoot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Shoot.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Shoot_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Shoot_B.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Up.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Up.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Virgin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Buttons/Button_08_Pressed_Virgin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_04.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_05.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_06.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_07.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Art/Virtual Joystick Pack/Joystick/Joystick_08.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/PlayerModule/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Resources/PlayerPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultEntityStats_BigGuardRobot.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultEntityStats_BigGuardRobot.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultEntityStats_Player.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultEntityStats_Player.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultEntityStats_ShadowOfStorms.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/StatsModule/GameResources/DefaultEntityStats_ShadowOfStorms.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/GameResources/UpgradeData_Test1_Default 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/GameResources/UpgradeData_Test1_Default 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/GameResources/UpgradeData_Test1_Default 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/GameResources/UpgradeData_Test1_Default 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/GameResources/UpgradeData_Test1_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/GameResources/UpgradeData_Test1_Default.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/GameResources/UpgradeData_Test2_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/GameResources/UpgradeData_Test2_Default.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/GameResources/UpgradeData_Test3_Default.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/UpgradesModule/GameResources/UpgradeData_Test3_Default.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/GameResources/Weapons/AK47_Raycast.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Features/WeaponsModule/GameResources/Weapons/AK47_Raycast.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/GameplayScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,6 +80,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
@@ -411,10 +129,10 @@
     <setting file="file://$USER_HOME$/Downloads/Telegram Desktop/Voronoi.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/VoronoiHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="SWEA" />
@@ -430,23 +148,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.1724138&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;release__0.0.1&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "XThreadsFramesViewSplitterKey": "0.1724138",
+    "git-widget-placeholder": "release__0.0.1",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "SamplePage",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.41f1\Editor\Unity.exe" />
@@ -538,7 +256,8 @@
       <workItem from="1747769152656" duration="931000" />
       <workItem from="1747857530250" duration="390000" />
       <workItem from="1747907044391" duration="27335000" />
-      <workItem from="1750190243726" duration="969000" />
+      <workItem from="1750190243726" duration="5090000" />
+      <workItem from="1750507956256" duration="120000" />
     </task>
     <servers />
   </component>
@@ -663,19 +382,6 @@
           </properties>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/AnimationController.cs</url>
-          <line>56</line>
-          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\DamageModule\Scripts\AnimationController.cs" containingFunctionPresentation="Method 'StopAttack'">
-            <startOffsets>
-              <option value="1789" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1807" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Project/Features/DamageModule/Scripts/AnimationController.cs</url>
           <line>35</line>
@@ -701,6 +407,34 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <condition expression="playerDetected == false" language="C#" />
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/PlayerInspector.cs</url>
+          <line>47</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\EnemyModule\Scripts\PlayerInspector.cs" containingFunctionPresentation="Method 'DetectPlayerInCone'">
+            <startOffsets>
+              <option value="1917" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1955" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <condition expression="_statService.GetStat(_statToChange) != _newValue" language="C#" />
+          <url>file://$PROJECT_DIR$/Assets/_Project/Features/EnemyModule/Scripts/ShadowOfStormsAI.cs</url>
+          <line>400</line>
+          <properties documentPath="C:\Projects\Diploma_Project\src\Diploma_v2\Assets\_Project\Features\EnemyModule\Scripts\ShadowOfStormsAI.cs" containingFunctionPresentation="Method 'Process'">
+            <startOffsets>
+              <option value="17638" />
+            </startOffsets>
+            <endOffsets>
+              <option value="17685" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />

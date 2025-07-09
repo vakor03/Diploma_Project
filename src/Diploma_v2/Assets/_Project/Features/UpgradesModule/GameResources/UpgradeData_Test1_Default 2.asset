@@ -13,21 +13,18 @@ MonoBehaviour:
   m_Name: UpgradeData_Test1_Default 2
   m_EditorClassIdentifier: 
   upgradeId: 2
-  displayName: ryuirtyu
+  displayName: Jump Height
   description: dfjgdfgjd
   rarity: 0
   upgradeType: 0
-  icon: {fileID: 339051261737948287, guid: 5048b38a9f540634f8854dccb27d8eb1, type: 3}
+  icon: {fileID: -796155573255488767, guid: c91202bc8da206246a8187f2ba941d44, type: 3}
   statData:
-    statType: 0
-    baseValue: 10
-    valuePerLevel: 5
+    statType: 6
+    baseValue: 2
+    valuePerLevel: 2
     isPercentage: 0
   weaponData:
-    weaponId: 
+    weaponType: 0
     modifiers: []
   unlockData:
-    weaponPrefab: {fileID: 0}
-    weaponId: 
-    spawnOffset: {x: 0, y: 0, z: 0}
-    isPassiveWeapon: 0
+    weaponType: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   stats:
     _serializedList:
     - Key: 1
-      Value: 100
+      Value: 80
     - Key: 4
       Value: 10
     - Key: 5
