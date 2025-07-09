@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Run hello-world') {
+            steps {
+                script {
+                    // Run the hello-world container and print its logs
+                    def output = sh(script: "docker run --rm hello-world", returnStdout: true).trim()
+                    echo output
+                }
+            }
+        }
+    }
+}
